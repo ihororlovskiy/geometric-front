@@ -7,6 +7,18 @@ $parallaxSubtitle = "Mansory Portfolio (4 Columns)";
 include('../partials/geo-parallax.php');
 ?>
 
+<div class="geo-portfolio-list geo-portfolio-list-mansory geo-portfolio-list-mansory-4-col">
+	<div class="container">
+		<div class="geo-content-area">
+
+			<ul id="filters" class="geo-portfolio-filter">
+				<li><a class="is-checked" data-filter="*">All</a></li>
+				<li><a data-filter=".art">Art</a></li>
+				<li><a data-filter=".business">Business</a></li>
+				<li><a data-filter=".fashion">Fashion</a></li>
+				<li><a data-filter=".photography">Photography</a></li>
+			</ul>
+
 			<div class="geo-portfolio-isotope clearfix">
 
 				<article class="clearfix art " data-category="art">
