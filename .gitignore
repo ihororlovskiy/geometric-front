@@ -1,0 +1,4 @@
+config.rb
+img/*
+sass/*
+.sass-cache/*
