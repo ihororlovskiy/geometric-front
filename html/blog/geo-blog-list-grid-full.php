@@ -1,16 +1,11 @@
 <?include('../partials/geo-body-open.php');?>
 
-<div class="geo-header-section">
-  <div class="geo-feature-title">
-    <div class="container">
-      <h6>Layouts</h6>
-      <h1>Your Blog</h1>
-    </div>
-    <div class="geo-page-subtitle">Grid Blog</div>
-  </div>
-  <div class="geo-pattern"></div>
-  <div class="geo-bg-image" style="background-image: url(/img/image-2.jpg);"></div>
-</div>
+<?
+$parallaxH6 = "Layouts";
+$parallaxH1 = "Your Blog";
+$parallaxSubtitle = "Grid Blog (Full)";
+include('../partials/geo-parallax.php');
+?>
 
 <div class="geo-blog geo-blog-grid geo-blog-grid-2-cols">
   <div class="container-fluid">

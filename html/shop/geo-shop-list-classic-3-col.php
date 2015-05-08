@@ -1,14 +1,11 @@
 <?include('../partials/geo-body-open.php');?>
 
-<div class="geo-header-section" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="/img/parallax/header-02.jpg" data-natural-width="1920" data-natural-height="754">
-	<div class="geo-feature-title">
-		<div class="container">
-			<h6>Layouts</h6>
-			<h1>Your Shop</h1>
-		</div>
-		<div class="geo-page-subtitle">Classic Shop</div>
-	</div>
-</div>
+<?
+$parallaxH6 = "Layouts";
+$parallaxH1 = "Your Shop";
+$parallaxSubtitle = "Classic Shop (3 Columns)";
+include('../partials/geo-parallax.php');
+?>
 
 <div class="geo-shop-list geo-shop-list-classic geo-shop-list-classic-3-col">
 	<div class="container">
