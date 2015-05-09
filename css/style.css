@@ -2488,7 +2488,9 @@ ul.geo-relative-posts > li > a > h6 {
   margin: 0 auto;
 }
 .geo-shop-list .geo-shop-filter div {
-  display: inline-block;
+  float: left;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 .geo-shop-list .geo-shop-isotope {
   margin-bottom: 40px;
@@ -2521,6 +2523,9 @@ ul.geo-relative-posts > li > a > h6 {
 
 .geo-shop-list-classic .geo-content-area {
   width: 100%;
+}
+.geo-shop-list-classic .geo-shop-isotope {
+  margin: 0 -15px;
 }
 .geo-shop-list-classic article {
   padding: 15px;

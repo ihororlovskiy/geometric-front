@@ -11,7 +11,7 @@ include('../partials/geo-parallax.php');
 	<div class="container">
 		<div class="geo-content-area">
 
-			<div class="geo-shop-filter">
+			<div class="geo-shop-filter clearfix">
 				<div>The best offers</div>
 				<div>Sort by</div>
 				<div>Featured Items <i class="fa fa-angle-down"></i></div>

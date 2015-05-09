@@ -195,7 +195,7 @@ include('../partials/geo-parallax.php');
 							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
-					<a href="#"><h4>Video Post</h4></a>
+					<a href="#"><h4>SoundCloud Post</h4></a>
 					<p>The term minimalism is also used to describe a  influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is...</p>
 					<div class="geo-blog-meta-bottom">
 						<ul>
