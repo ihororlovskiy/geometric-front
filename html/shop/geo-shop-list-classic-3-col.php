@@ -25,7 +25,7 @@ include('../partials/geo-parallax.php');
 					<div class="visual">
 						<a href="#"><img src="/img/shop/list-classic-01.jpg" alt="..." /></a>
 						<span class="status new">New</span>
-						<a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+						<a href="#" class="add-to-cart"><span class="icon-uniE12F"></span> Add to cart</a>
 					</div>
 					<div class="info">
 						<div class="title"><a href="#">Bicycle</a></div>
@@ -44,7 +44,7 @@ include('../partials/geo-parallax.php');
 					<div class="visual">
 						<a href="#"><img src="/img/shop/list-classic-02.jpg" alt="..." /></a>
 						<span class="status out">Out of stock</span>
-						<a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+						<a href="#" class="add-to-cart"><span class="icon-uniE12F"></span> Add to cart</a>
 					</div>
 					<div class="info">
 						<div class="title"><a href="#">Brass Saxophone</a></div>
@@ -62,7 +62,7 @@ include('../partials/geo-parallax.php');
 				<article>
 					<div class="visual">
 						<a href="#"><img src="/img/shop/list-classic-03.jpg" alt="..." /></a>
-						<a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+						<a href="#" class="add-to-cart"><span class="icon-uniE12F"></span> Add to cart</a>
 					</div>
 					<div class="info">
 						<div class="title"><a href="#">Cinema 3D LED TV</a></div>
@@ -81,7 +81,7 @@ include('../partials/geo-parallax.php');
 					<div class="visual">
 						<a href="#"><img src="/img/shop/list-classic-04.jpg" alt="..." /></a>
 						<span class="status last">Last examples</span>
-						<a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+						<a href="#" class="add-to-cart"><span class="icon-uniE12F"></span> Add to cart</a>
 					</div>
 					<div class="info">
 						<div class="title"><a href="#">Premium Gold Smartphone</a></div>
@@ -99,7 +99,7 @@ include('../partials/geo-parallax.php');
 				<article>
 					<div class="visual">
 						<a href="#"><img src="/img/shop/list-classic-05.jpg" alt="..." /></a>
-						<a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+						<a href="#" class="add-to-cart"><span class="icon-uniE12F"></span> Add to cart</a>
 					</div>
 					<div class="info">
 						<div class="title"><a href="#">Adipisicing elit</a></div>
@@ -117,7 +117,7 @@ include('../partials/geo-parallax.php');
 				<article>
 					<div class="visual">
 						<a href="#"><img src="/img/shop/list-classic-06.jpg" alt="..." /></a>
-						<a href="#" class="add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+						<a href="#" class="add-to-cart"><span class="icon-uniE12F"></span> Add to cart</a>
 					</div>
 					<div class="info">
 						<div class="title"><a href="#">Amet consectetur</a></div>

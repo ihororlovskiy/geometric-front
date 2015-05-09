@@ -2536,7 +2536,8 @@ ul.geo-relative-posts > li > a > h6 {
 }
 .geo-shop-list-classic article .visual a > img {
   opacity: 1;
-  transition: .2s;
+  transition: .2s, transform 1s;
+  transform: translateZ(0);
 }
 .geo-shop-list-classic article .visual .status {
   opacity: 1;
@@ -2576,11 +2577,12 @@ ul.geo-relative-posts > li > a > h6 {
   text-transform: uppercase;
   transition: .2s;
 }
-.geo-shop-list-classic article .visual a.add-to-cart i.fa {
+.geo-shop-list-classic article .visual a.add-to-cart > [class^="icon-"] {
   padding-right: 15px;
-  font-size: 24px;
+  font-size: 20px;
   position: relative;
   top: 3px;
+  font-weight: 400;
 }
 .geo-shop-list-classic article .visual a.add-to-cart:hover {
   background: #5198ce;
@@ -2631,6 +2633,9 @@ ul.geo-relative-posts > li > a > h6 {
   color: #e6e6e6;
   padding-left: 15px;
 }
+.geo-shop-list-classic article:hover .visual a > img {
+  transform: translateZ(0) scale(1.2);
+}
 
 .geo-shop-list-classic.geo-shop-list-classic-3-col article {
   width: 33.3333333333333333333%;
@@ -2642,3 +2647,151 @@ ul.geo-relative-posts > li > a > h6 {
 
 /* SHOP ITEM
 ============================================================================ */
+.geo-shop-item {
+  margin-bottom: 80px;
+}
+
+.geo-related-products .geo-related-head {
+  position: relative;
+}
+.geo-related-products .geo-related-head .related-title {
+  line-height: 40px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.geo-related-products .geo-related-head .prev,
+.geo-related-products .geo-related-head .next {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  line-height: 42px;
+  height: 40px;
+  background: #fafafa;
+  color: #6a6a6a;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.geo-related-products .geo-related-head .prev {
+  right: 50px;
+}
+.geo-related-products .geo-related-head .next {
+  right: 0;
+}
+.geo-related-products .geo-related-body {
+  text-align: center;
+  margin: 0 -15px;
+}
+.geo-related-products .geo-related-body article {
+  width: 25.0%;
+  float: left;
+  padding: 15px;
+}
+.geo-related-products .geo-related-body article .visual {
+  position: relative;
+  overflow: hidden;
+}
+.geo-related-products .geo-related-body article .visual a > img {
+  opacity: 1;
+  transition: .2s, transform 1s;
+  transform: translateZ(0);
+}
+.geo-related-products .geo-related-body article .visual .status {
+  opacity: 1;
+  transition: .2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #559acf;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 10px 20px;
+}
+.geo-related-products .geo-related-body article .visual .status.new {
+  background-color: #559acf;
+}
+.geo-related-products .geo-related-body article .visual .status.out {
+  background-color: #6b6b6b;
+}
+.geo-related-products .geo-related-body article .visual .status.last {
+  background-color: #de7846;
+}
+.geo-related-products .geo-related-body article .visual a.add-to-cart {
+  position: absolute;
+  left: 10%;
+  top: 100%;
+  right: 10%;
+  opacity: 0;
+  margin: 0 auto;
+  display: inline-block;
+  color: #fff;
+  background: #4591cb;
+  padding: 12px 0;
+  max-width: 210px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: .2s;
+}
+.geo-related-products .geo-related-body article .visual a.add-to-cart > [class^="icon-"] {
+  padding-right: 15px;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+  font-weight: 400;
+}
+.geo-related-products .geo-related-body article .visual a.add-to-cart:hover {
+  background: #5198ce;
+}
+.geo-related-products .geo-related-body article .visual a.add-to-cart:active {
+  background: #3582bc;
+}
+.geo-related-products .geo-related-body article .visual:hover a > img {
+  opacity: .25;
+}
+.geo-related-products .geo-related-body article .visual:hover .status {
+  opacity: .25;
+}
+.geo-related-products .geo-related-body article .visual:hover a.add-to-cart {
+  top: 42%;
+  opacity: 1;
+}
+.geo-related-products .geo-related-body article .info {
+  padding: 15px;
+  text-align: left;
+}
+.geo-related-products .geo-related-body article .info .title {
+  color: #3787c4;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+}
+.geo-related-products .geo-related-body article .info .title a {
+  transition: .2s;
+}
+.geo-related-products .geo-related-body article .info .rating i.fa {
+  color: #e6e6e6;
+  cursor: pointer;
+  transition: .2s;
+}
+.geo-related-products .geo-related-body article .info .rating i.fa.active {
+  color: #3787c4;
+}
+.geo-related-products .geo-related-body article .info .rating i.fa:hover {
+  color: #3787c4;
+}
+.geo-related-products .geo-related-body article .info .price {
+  color: #878787;
+  font-size: 15px;
+  font-weight: 700;
+}
+.geo-related-products .geo-related-body article .info .price del {
+  color: #e6e6e6;
+  padding-left: 15px;
+}
+.geo-related-products .geo-related-body article:hover .visual a > img {
+  transform: translateZ(0) scale(1.2);
+}
