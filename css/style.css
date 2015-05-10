@@ -95,6 +95,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-uniE03F:before {
+  content: "\e03f";
+}
+
 .icon-uni46:before {
   content: "\46";
 }
@@ -125,6 +129,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .icon-uniE5CD:before {
   content: "\e5cd";
+}
+
+.icon-uniE040:before {
+  content: "\e040";
 }
 
 .icon-uniE139:before {
@@ -2620,15 +2628,19 @@ ul.geo-relative-posts > li > a > h6 {
 .geo-shop-list-classic article .info .title a {
   transition: .2s;
 }
-.geo-shop-list-classic article .info .rating i.fa {
+.geo-shop-list-classic article .info .rating {
+  font-size: 10px;
+}
+.geo-shop-list-classic article .info .rating > [class^="icon-"] {
   color: #e6e6e6;
   cursor: pointer;
   transition: .2s;
+  margin-right: 2px;
 }
-.geo-shop-list-classic article .info .rating i.fa.active {
+.geo-shop-list-classic article .info .rating > [class^="icon-"].active {
   color: #3787c4;
 }
-.geo-shop-list-classic article .info .rating i.fa:hover {
+.geo-shop-list-classic article .info .rating > [class^="icon-"]:hover {
   color: #3787c4;
 }
 .geo-shop-list-classic article .info .price {
@@ -2775,6 +2787,153 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
 .geo-shop-item {
   margin-bottom: 80px;
 }
+.geo-shop-item .geo-shop-item-info {
+  position: relative;
+}
+.geo-shop-item .geo-shop-item-info ol.breadcrumb {
+  padding: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.geo-shop-item .geo-shop-item-info ol.breadcrumb li {
+  font-size: 10px;
+}
+.geo-shop-item .geo-shop-item-info h1 {
+  font-weight: 300;
+  font-size: 40px;
+  color: #6a6a6a;
+}
+.geo-shop-item .geo-shop-item-info .rating {
+  font-size: 10px;
+}
+.geo-shop-item .geo-shop-item-info .rating > [class^="icon-"] {
+  color: #e6e6e6;
+  cursor: pointer;
+  transition: .2s;
+  margin-right: 2px;
+}
+.geo-shop-item .geo-shop-item-info .rating > [class^="icon-"].active {
+  color: #3787c4;
+}
+.geo-shop-item .geo-shop-item-info .rating > [class^="icon-"]:hover {
+  color: #3787c4;
+}
+.geo-shop-item .geo-shop-item-info .price {
+  float: left;
+  width: 40%;
+  line-height: 50px;
+  color: #5a9ed2;
+  font-size: 20px;
+  font-weight: 700;
+}
+.geo-shop-item .geo-shop-item-info .price del {
+  color: #e6e6e6;
+  padding-left: 15px;
+}
+.geo-shop-item .geo-shop-item-info form.quantity {
+  float: left;
+  width: 60%;
+}
+.geo-shop-item .geo-shop-item-info form.quantity input.quantity-input {
+  float: right;
+  width: 100px;
+  border: none;
+  text-align: center;
+  color: #909090;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 11px 15px 11px 25px;
+}
+.geo-shop-item .geo-shop-item-info form.quantity input.quantity-input:focus {
+  background-color: #eee;
+  color: #4591cb;
+}
+.geo-shop-item .geo-shop-item-info form.quantity button.quantity-submit {
+  float: right;
+  outline: none;
+  border: none;
+  display: inline-block;
+  color: #fff;
+  background: #4591cb;
+  padding: 10px 20px;
+  max-width: 210px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: .2s;
+}
+.geo-shop-item .geo-shop-item-info form.quantity button.quantity-submit > [class^="icon-"] {
+  padding-right: 15px;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+  font-weight: 400;
+}
+.geo-shop-item .geo-shop-item-info form.quantity button.quantity-submit:hover {
+  background: #5198ce;
+}
+.geo-shop-item .geo-shop-item-info form.quantity button.quantity-submit:active {
+  background: #3582bc;
+}
+.geo-shop-item .geo-shop-item-info .size {
+  color: #515151;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.geo-shop-item .geo-shop-item-info .color {
+  color: #515151;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.geo-shop-item .geo-shop-item-info .description {
+  color: #515151;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.geo-shop-item .geo-shop-item-info .sku {
+  color: #515151;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.geo-shop-item .geo-shop-item-info .categories {
+  color: #515151;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.geo-shop-item .geo-shop-item-info .tags {
+  color: #515151;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.geo-shop-item .geo-shop-item-info .prev,
+.geo-shop-item .geo-shop-item-info .next {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  line-height: 42px;
+  height: 40px;
+  background: #fafafa;
+  color: #6a6a6a;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.geo-shop-item .geo-shop-item-info .prev {
+  right: 50px;
+}
+.geo-shop-item .geo-shop-item-info .next {
+  right: 0;
+}
 
 .geo-related-products .geo-related-head {
   position: relative;
@@ -2897,15 +3056,19 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
 .geo-related-products .geo-related-body article .info .title a {
   transition: .2s;
 }
-.geo-related-products .geo-related-body article .info .rating i.fa {
+.geo-related-products .geo-related-body article .info .rating {
+  font-size: 10px;
+}
+.geo-related-products .geo-related-body article .info .rating > [class^="icon-"] {
   color: #e6e6e6;
   cursor: pointer;
   transition: .2s;
+  margin-right: 2px;
 }
-.geo-related-products .geo-related-body article .info .rating i.fa.active {
+.geo-related-products .geo-related-body article .info .rating > [class^="icon-"].active {
   color: #3787c4;
 }
-.geo-related-products .geo-related-body article .info .rating i.fa:hover {
+.geo-related-products .geo-related-body article .info .rating > [class^="icon-"]:hover {
   color: #3787c4;
 }
 .geo-related-products .geo-related-body article .info .price {

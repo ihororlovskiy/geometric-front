@@ -55,18 +55,18 @@ include('../partials/geo-parallax.php');
 
 				<article>
 					<div class="visual">
-						<a href="#"><img src="/img/shop/list-classic-01.jpg" alt="..." /></a>
+						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-01.jpg" alt="..." /></a>
 						<span class="status new">New</span>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 					</div>
 					<div class="info">
-						<div class="title"><a href="#">Bicycle</a></div>
+						<div class="title"><a href="/html/shop/geo-shop-item.php">Bicycle</a></div>
 						<div class="rating">
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F"></span>
+							<span class="icon-uniE03F"></span>
 						</div>
 						<div class="price">£230.00</div>
 					</div>
@@ -74,18 +74,18 @@ include('../partials/geo-parallax.php');
 
 				<article>
 					<div class="visual">
-						<a href="#"><img src="/img/shop/list-classic-02.jpg" alt="..." /></a>
+						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-02.jpg" alt="..." /></a>
 						<span class="status out">Out of stock</span>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 					</div>
 					<div class="info">
-						<div class="title"><a href="#">Brass Saxophone</a></div>
+						<div class="title"><a href="/html/shop/geo-shop-item.php">Brass Saxophone</a></div>
 						<div class="rating">
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F"></span>
+							<span class="icon-uniE03F"></span>
+							<span class="icon-uniE03F"></span>
 						</div>
 						<div class="price">£196.00 <del>£256.00</del></div>
 					</div>
@@ -93,17 +93,17 @@ include('../partials/geo-parallax.php');
 
 				<article>
 					<div class="visual">
-						<a href="#"><img src="/img/shop/list-classic-03.jpg" alt="..." /></a>
+						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-03.jpg" alt="..." /></a>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 					</div>
 					<div class="info">
-						<div class="title"><a href="#">Cinema 3D LED TV</a></div>
+						<div class="title"><a href="/html/shop/geo-shop-item.php">Cinema 3D LED TV</a></div>
 						<div class="rating">
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star"></i>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F"></span>
 						</div>
 						<div class="price">£230.00</div>
 					</div>
@@ -111,18 +111,18 @@ include('../partials/geo-parallax.php');
 
 				<article>
 					<div class="visual">
-						<a href="#"><img src="/img/shop/list-classic-04.jpg" alt="..." /></a>
+						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-04.jpg" alt="..." /></a>
 						<span class="status last">Last examples</span>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 					</div>
 					<div class="info">
-						<div class="title"><a href="#">Dicta qui</a></div>
+						<div class="title"><a href="/html/shop/geo-shop-item.php">Dicta qui</a></div>
 						<div class="rating">
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F"></span>
+							<span class="icon-uniE03F"></span>
 						</div>
 						<div class="price">£196.00 <del>£256.00</del></div>
 					</div>
@@ -130,17 +130,17 @@ include('../partials/geo-parallax.php');
 
 				<article>
 					<div class="visual">
-						<a href="#"><img src="/img/shop/list-classic-05.jpg" alt="..." /></a>
+						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-05.jpg" alt="..." /></a>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 					</div>
 					<div class="info">
-						<div class="title"><a href="#">Adipisicing elit</a></div>
+						<div class="title"><a href="/html/shop/geo-shop-item.php">Adipisicing elit</a></div>
 						<div class="rating">
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star"></i>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F"></span>
 						</div>
 						<div class="price">£230.00</div>
 					</div>
@@ -148,17 +148,17 @@ include('../partials/geo-parallax.php');
 
 				<article>
 					<div class="visual">
-						<a href="#"><img src="/img/shop/list-classic-06.jpg" alt="..." /></a>
+						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-06.jpg" alt="..." /></a>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 					</div>
 					<div class="info">
-						<div class="title"><a href="#">Amet consectetur</a></div>
+						<div class="title"><a href="/html/shop/geo-shop-item.php">Amet consectetur</a></div>
 						<div class="rating">
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star"></i>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F"></span>
 						</div>
 						<div class="price">£230.00</div>
 					</div>
@@ -166,17 +166,17 @@ include('../partials/geo-parallax.php');
 
 				<article>
 					<div class="visual">
-						<a href="#"><img src="/img/shop/list-classic-07.jpg" alt="..." /></a>
+						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-07.jpg" alt="..." /></a>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 					</div>
 					<div class="info">
-						<div class="title"><a href="#">Dolor sit</a></div>
+						<div class="title"><a href="/html/shop/geo-shop-item.php">Dolor sit</a></div>
 						<div class="rating">
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star"></i>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F"></span>
 						</div>
 						<div class="price">£230.00</div>
 					</div>
@@ -184,17 +184,17 @@ include('../partials/geo-parallax.php');
 
 				<article>
 					<div class="visual">
-						<a href="#"><img src="/img/shop/list-classic-08.jpg" alt="..." /></a>
+						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-08.jpg" alt="..." /></a>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 					</div>
 					<div class="info">
-						<div class="title"><a href="#">Lorem ipsum</a></div>
+						<div class="title"><a href="/html/shop/geo-shop-item.php">Lorem ipsum</a></div>
 						<div class="rating">
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star active"></i>
-							<i class="fa fa-star"></i>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F active"></span>
+							<span class="icon-uniE03F"></span>
 						</div>
 						<div class="price">£230.00</div>
 					</div>
