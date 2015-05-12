@@ -80,6 +80,18 @@
 						</form>
 					</div>
 
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+  </label>
+</div>
+
 					<!-- <div class="color">Color: Black</div> -->
 
 					<!-- <div class="color">
@@ -126,17 +138,9 @@
 		<div class="row">
 			<div class="col-sm-12">
 
-				<div class="hello_world">
+					<h1 style="margin-bottom:200px;">Here Plase For Tabs</h1>
 
-					 <div data-pws-tab="anynameyouwant1" data-pws-tab-name="Description">
-					 Our first tab
-					 </div>
-					 <div data-pws-tab="anynameyouwant2" data-pws-tab-name="Additional Information">Our second tab</div>
-					 <div data-pws-tab="anynameyouwant3" data-pws-tab-name="Tab Title 3">Reviews (2)</div>
-
-				</div>
-
-					Weight 
+					<!-- Weight 
 					1.5 kg
 					Dimensions
 					90 x 60 x 90 cm
@@ -147,7 +151,7 @@
 					Other Info  
 					Machine wash according to instructions on care label
 					Size
-					One Size Fits All, Extra Small, Small, Medium, Large, Extra Large
+					One Size Fits All, Extra Small, Small, Medium, Large, Extra Large -->
 
 			</div>
 		</div>

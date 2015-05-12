@@ -2785,6 +2785,7 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
 /* SHOP ITEM
 ============================================================================ */
 .geo-shop-item {
+  margin-top: 40px;
   margin-bottom: 80px;
 }
 .geo-shop-item .geo-shop-item-info {
@@ -2800,8 +2801,15 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   text-transform: uppercase;
   font-weight: 700;
 }
-.geo-shop-item .geo-shop-item-info ol.breadcrumb li {
+.geo-shop-item .geo-shop-item-info ol.breadcrumb > li {
   font-size: 10px;
+}
+.geo-shop-item .geo-shop-item-info ol.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #6a6a6a;
+  content: '>';
+  position: relative;
+  top: -1px;
 }
 .geo-shop-item .geo-shop-item-info h1 {
   font-weight: 300;
@@ -2885,6 +2893,12 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   margin-bottom: 20px;
   line-height: 1.4;
   font-size: 14px;
+}
+.geo-shop-item .geo-shop-item-info .size input {
+  width: 20px;
+}
+.geo-shop-item .geo-shop-item-info .size span {
+  margin-right: 10px;
 }
 .geo-shop-item .geo-shop-item-info .color {
   color: #515151;

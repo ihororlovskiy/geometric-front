@@ -51,11 +51,15 @@ $( '.header-waypoint' ).each( function(i) {
 
 // Isotope Blog
 $(document).ready(function() {
-		$('.geo-blog-masonry .geo-content-area').isotope({
-				itemSelector: '.geo-blog-masonry-item'
-		});
+		
+
 		$('.geo-blog-grid .geo-content-area').isotope({
 				itemSelector: '.geo-blog-grid-item'
+		});
+		$('.geo-blog-masonry').imagesLoaded( function() {
+			$('.geo-blog-masonry .geo-content-area').isotope({
+					itemSelector: '.geo-blog-masonry-item'
+			});
 		});
  });
 
