@@ -8,7 +8,7 @@ include('../partials/geo-parallax.php');
 ?>
 
 <div class="geo-blog geo-blog-masonry geo-blog-masonry-3-cols">
-	<div class="container-fluid">
+
 		<div class="geo-content-area">
 
 			<article class="geo-blog-masonry-item clearfix">
@@ -275,7 +275,7 @@ include('../partials/geo-parallax.php');
 			</article>
 
 		</div>
-	</div>
+
 </div>
 
 <div class="geo-blog-pagination geo-blog-show-more clearfix">

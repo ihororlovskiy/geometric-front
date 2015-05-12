@@ -8,7 +8,7 @@ include('../partials/geo-parallax.php');
 ?>
 
 <div class="geo-blog geo-blog-grid geo-blog-grid-2-cols">
-	<div class="container-fluid">
+
 		<div class="geo-content-area">
 
 			<article class="geo-blog-grid-item clearfix">
@@ -224,7 +224,7 @@ include('../partials/geo-parallax.php');
 			</article>
 
 		</div>
-	</div>
+
 </div>
 
 <div class="geo-blog-pagination clearfix">

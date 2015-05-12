@@ -1005,37 +1005,33 @@ nav.geo-searchbox-menu .geo-searchbox.geo-searchbox-open {
   border-bottom: none;
   margin-bottom: 0;
 }
-
-.geo-blog-masonry.geo-blog-masonry-2-cols article.geo-blog-masonry-item {
-  width: 50.0%;
-}
-
-.geo-blog-masonry.geo-blog-masonry-3-cols article.geo-blog-masonry-item {
-  width: 33.3%;
-}
-
-.geo-blog-masonry.geo-blog-masonry-4-cols article.geo-blog-masonry-item {
-  width: 25.0%;
-}
-
 .geo-blog-masonry .geo-content-area {
   width: 100%;
 }
-
-.geo-blog-masonry article.geo-blog-masonry-item {
+.geo-blog-masonry article {
   padding: 20px 20px 40px;
 }
-
-.geo-blog-masonry article.geo-blog-masonry-item .geo-blog-meta-bottom {
+.geo-blog-masonry article .geo-blog-meta-bottom {
   margin-bottom: 0;
   padding-bottom: 20px;
   border-bottom: 1px solid #f5f5f5;
 }
-
 .geo-blog-masonry article.geo-blog-quote-item .geo-blog-meta-bottom {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
+}
+
+.geo-blog-masonry.geo-blog-masonry-2-cols article {
+  width: 50.0%;
+}
+
+.geo-blog-masonry.geo-blog-masonry-3-cols article {
+  width: 33.3%;
+}
+
+.geo-blog-masonry.geo-blog-masonry-4-cols article {
+  width: 25.0%;
 }
 
 .geo-blog-grid.geo-blog-grid-2-cols article.geo-blog-grid-item {
