@@ -51,9 +51,9 @@ include('../partials/geo-parallax.php');
 				</ul>
 			</nav>
 
-			<div class="geo-shop-isotope clearfix">
+			<div class="isotope-container">
 
-				<article>
+				<article class="isotope-item">
 					<div class="visual">
 						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-01.jpg" alt="..." /></a>
 						<span class="status new">New</span>
@@ -72,7 +72,7 @@ include('../partials/geo-parallax.php');
 					</div>
 				</article>
 
-				<article>
+				<article class="isotope-item">
 					<div class="visual">
 						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-02.jpg" alt="..." /></a>
 						<span class="status out">Out of stock</span>
@@ -91,7 +91,7 @@ include('../partials/geo-parallax.php');
 					</div>
 				</article>
 
-				<article>
+				<article class="isotope-item">
 					<div class="visual">
 						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-03.jpg" alt="..." /></a>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
@@ -109,7 +109,7 @@ include('../partials/geo-parallax.php');
 					</div>
 				</article>
 
-				<article>
+				<article class="isotope-item">
 					<div class="visual">
 						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-04.jpg" alt="..." /></a>
 						<span class="status last">Last examples</span>
@@ -128,7 +128,7 @@ include('../partials/geo-parallax.php');
 					</div>
 				</article>
 
-				<article>
+				<article class="isotope-item">
 					<div class="visual">
 						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-05.jpg" alt="..." /></a>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
@@ -146,7 +146,7 @@ include('../partials/geo-parallax.php');
 					</div>
 				</article>
 
-				<article>
+				<article class="isotope-item">
 					<div class="visual">
 						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-06.jpg" alt="..." /></a>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>

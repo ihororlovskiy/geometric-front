@@ -2500,8 +2500,8 @@ ul.geo-relative-posts > li > a > h6 {
   width: 75%;
   margin: 0 auto;
 }
-.geo-shop-list .geo-shop-isotope {
-  margin-bottom: 40px;
+.geo-shop-list .isotope-container {
+  margin-bottom: 60px;
 }
 .geo-shop-list article {
   position: relative;

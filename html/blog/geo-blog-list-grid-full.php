@@ -9,9 +9,9 @@ include('../partials/geo-parallax.php');
 
 <div class="geo-blog geo-blog-grid geo-blog-grid-2-cols">
 
-		<div class="geo-content-area">
+		<div class="geo-content-area isotope-container">
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="isotope-item">
 				<div class="geo-media geo-media-single">
 					<a href="#">
 						<img src="/img/geo-photo-2.png" alt="Post image">
@@ -38,7 +38,7 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="isotope-item">
 				<div class="geo-media geo-media-slider">
 					<!-- <a href="#"> -->
 						<img src="/img/geo-photo-3.png" alt="Post image">
@@ -66,7 +66,7 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="isotope-item">
 				<div class="geo-media geo-media-video">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Kic80qSfQD0"></iframe>
@@ -90,7 +90,7 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="isotope-item">
 				<div class="geo-media geo-media-single">
 					<a href="#">
 						<img src="/img/geo-photo-1.png" alt="Post image">
@@ -117,7 +117,7 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="isotope-item">
 				<div class="geo-media geo-media-single">
 					<a href="#">
 						<img src="/img/geo-photo-2.png" alt="Post image">
@@ -144,7 +144,7 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="isotope-item">
 				<div class="geo-media geo-media-slider">
 					<!-- <a href="#"> -->
 						<img src="/img/geo-photo-3.png" alt="Post image">
@@ -172,7 +172,7 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="isotope-item">
 				<div class="geo-media geo-media-video">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/5771025&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
@@ -196,7 +196,7 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="isotope-item">
 				<div class="geo-media geo-media-single">
 					<a href="#">
 						<img src="/img/geo-photo-1.png" alt="Post image">

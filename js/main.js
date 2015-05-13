@@ -29,12 +29,7 @@ $(function() {
 
 // Isotope Blog
 var $container = $('.isotope-container');
-
 $(document).ready(function() {
-	// $('.geo-blog-grid .geo-content-area').isotope({
-	// 		itemSelector: '.geo-blog-grid-item'
-	// });
-
 	$container.imagesLoaded( function() {
 		$container.isotope({
 				itemSelector: '.isotope-item',
@@ -99,13 +94,6 @@ $( function() {
 			$buttonGroup.find('.is-checked').removeClass('is-checked');
 			$( this ).addClass('is-checked');
 		});
-	});
-});
-
-// Isotope Shop
-$(function() {
-	var $container = $('.geo-shop-isotope').isotope({
-		itemSelector: 'article',
 	});
 });
 
