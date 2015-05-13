@@ -14,7 +14,7 @@ include('../partials/geo-parallax.php');
 			<article class="geo-blog-grid-item clearfix">
 				<div class="geo-media geo-media-single">
 					<a href="#">
-						<img src="http://geometric.sentimony.com/img/geo-photo-2.png" alt="Post image">
+						<img src="/img/geo-photo-2.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<span><i>Read more</i></span>
 						</div>
@@ -41,7 +41,7 @@ include('../partials/geo-parallax.php');
 			<article class="geo-blog-grid-item clearfix">
 				<div class="geo-media geo-media-slider">
 					<!-- <a href="#"> -->
-						<img src="http://geometric.sentimony.com/img/geo-photo-3.png" alt="Post image">
+						<img src="/img/geo-photo-3.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<a href="#"><i class="fa fa-angle-left"></i></a>
 							<a href="#"><i class="fa fa-angle-right"></i></a>
@@ -93,7 +93,7 @@ include('../partials/geo-parallax.php');
 			<article class="geo-blog-grid-item clearfix">
 				<div class="geo-media geo-media-single">
 					<a href="#">
-						<img src="http://geometric.sentimony.com/img/geo-photo-1.png" alt="Post image">
+						<img src="/img/geo-photo-1.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<span><i>Read more</i></span>
 						</div>
@@ -120,7 +120,7 @@ include('../partials/geo-parallax.php');
 			<article class="geo-blog-grid-item clearfix">
 				<div class="geo-media geo-media-single">
 					<a href="#">
-						<img src="http://geometric.sentimony.com/img/geo-photo-2.png" alt="Post image">
+						<img src="/img/geo-photo-2.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<span><i>Read more</i></span>
 						</div>
@@ -147,7 +147,7 @@ include('../partials/geo-parallax.php');
 			<article class="geo-blog-grid-item clearfix">
 				<div class="geo-media geo-media-slider">
 					<!-- <a href="#"> -->
-						<img src="http://geometric.sentimony.com/img/geo-photo-3.png" alt="Post image">
+						<img src="/img/geo-photo-3.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<a href="#"><i class="fa fa-angle-left"></i></a>
 							<a href="#"><i class="fa fa-angle-right"></i></a>
@@ -199,7 +199,7 @@ include('../partials/geo-parallax.php');
 			<article class="geo-blog-grid-item clearfix">
 				<div class="geo-media geo-media-single">
 					<a href="#">
-						<img src="http://geometric.sentimony.com/img/geo-photo-1.png" alt="Post image">
+						<img src="/img/geo-photo-1.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<span><i>Read more</i></span>
 						</div>
@@ -226,7 +226,7 @@ include('../partials/geo-parallax.php');
 			<article class="geo-blog-grid-item clearfix">
 				<div class="geo-media geo-media-single">
 					<a href="#">
-						<img src="http://geometric.sentimony.com/img/geo-photo-2.png" alt="Post image">
+						<img src="/img/geo-photo-2.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<span><i>Read more</i></span>
 						</div>

@@ -1034,46 +1034,43 @@ nav.geo-searchbox-menu .geo-searchbox.geo-searchbox-open {
   width: 25.0%;
 }
 
-.geo-blog-grid.geo-blog-grid-2-cols article.geo-blog-grid-item {
-  width: 50.0%;
-}
-
-.geo-blog-grid.geo-blog-grid-3-cols article.geo-blog-grid-item {
-  width: 33.3%;
-}
-
-.geo-blog-grid.geo-blog-grid-4-cols article.geo-blog-grid-item {
-  width: 25.0%;
-}
-
 .geo-blog-grid .geo-content-area {
   width: 100%;
 }
-
-.geo-blog-grid article.geo-blog-grid-item {
+.geo-blog-grid article {
   padding: 10px 10px 30px;
 }
-
-.geo-blog-grid article.geo-blog-grid-item p {
+.geo-blog-grid article p {
   overflow: hidden;
   min-height: 56px;
   max-height: 56px;
 }
-
-.geo-blog-grid article.geo-blog-grid-item .geo-blog-meta-bottom {
+.geo-blog-grid article .geo-blog-meta-bottom {
   padding-bottom: 20px;
   border-bottom: 1px solid #f5f5f5;
 }
 
-.geo-blog-grid.geo-blog-grid-2-cols article.geo-blog-grid-item:nth-last-child(1) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-2-cols article.geo-blog-grid-item:nth-last-child(2) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-3-cols article.geo-blog-grid-item:nth-last-child(1) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-3-cols article.geo-blog-grid-item:nth-last-child(2) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-3-cols article.geo-blog-grid-item:nth-last-child(3) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-4-cols article.geo-blog-grid-item:nth-last-child(1) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-4-cols article.geo-blog-grid-item:nth-last-child(2) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-4-cols article.geo-blog-grid-item:nth-last-child(3) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-4-cols article.geo-blog-grid-item:nth-last-child(4) .geo-blog-meta-bottom {
+.geo-blog-grid.geo-blog-grid-2-cols article {
+  width: 50.0%;
+}
+
+.geo-blog-grid.geo-blog-grid-3-cols article {
+  width: 33.3%;
+}
+
+.geo-blog-grid.geo-blog-grid-4-cols article {
+  width: 25.0%;
+}
+
+.geo-blog-grid.geo-blog-grid-2-cols article:nth-last-child(1) .geo-blog-meta-bottom,
+.geo-blog-grid.geo-blog-grid-2-cols article:nth-last-child(2) .geo-blog-meta-bottom,
+.geo-blog-grid.geo-blog-grid-3-cols article:nth-last-child(1) .geo-blog-meta-bottom,
+.geo-blog-grid.geo-blog-grid-3-cols article:nth-last-child(2) .geo-blog-meta-bottom,
+.geo-blog-grid.geo-blog-grid-3-cols article:nth-last-child(3) .geo-blog-meta-bottom,
+.geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(1) .geo-blog-meta-bottom,
+.geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(2) .geo-blog-meta-bottom,
+.geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(3) .geo-blog-meta-bottom,
+.geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(4) .geo-blog-meta-bottom {
   padding-bottom: 0;
   border-bottom: none;
 }

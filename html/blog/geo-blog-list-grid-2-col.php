@@ -9,12 +9,12 @@ include('../partials/geo-parallax.php');
 
 <div class="geo-blog geo-blog-grid geo-blog-grid-2-cols">
 	<div class="container">
-		<div class="geo-content-area">
+		<div class="geo-content-area isotope-container">
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="geo-blog-grid-item isotope-item">
 				<div class="geo-media geo-media-single">
 					<a href="#">
-						<img src="http://geometric.sentimony.com/img/geo-photo-2.png" alt="Post image">
+						<img src="/img/geo-photo-2.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<span><i>Read more</i></span>
 						</div>
@@ -38,10 +38,10 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="geo-blog-grid-item isotope-item">
 				<div class="geo-media geo-media-slider">
 					<!-- <a href="#"> -->
-						<img src="http://geometric.sentimony.com/img/geo-photo-3.png" alt="Post image">
+						<img src="/img/geo-photo-3.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<a href="#"><i class="fa fa-angle-left"></i></a>
 							<a href="#"><i class="fa fa-angle-right"></i></a>
@@ -66,7 +66,7 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="geo-blog-grid-item isotope-item">
 				<div class="geo-media geo-media-video">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Kic80qSfQD0"></iframe>
@@ -90,10 +90,10 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="geo-blog-grid-item isotope-item">
 				<div class="geo-media geo-media-single">
 					<a href="#">
-						<img src="http://geometric.sentimony.com/img/geo-photo-1.png" alt="Post image">
+						<img src="/img/geo-photo-1.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<span><i>Read more</i></span>
 						</div>
@@ -117,10 +117,10 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="geo-blog-grid-item isotope-item">
 				<div class="geo-media geo-media-single">
 					<a href="#">
-						<img src="http://geometric.sentimony.com/img/geo-photo-2.png" alt="Post image">
+						<img src="/img/geo-photo-2.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<span><i>Read more</i></span>
 						</div>
@@ -144,10 +144,10 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="geo-blog-grid-item isotope-item">
 				<div class="geo-media geo-media-slider">
 					<!-- <a href="#"> -->
-						<img src="http://geometric.sentimony.com/img/geo-photo-3.png" alt="Post image">
+						<img src="/img/geo-photo-3.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<a href="#"><i class="fa fa-angle-left"></i></a>
 							<a href="#"><i class="fa fa-angle-right"></i></a>
@@ -172,7 +172,7 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="geo-blog-grid-item isotope-item">
 				<div class="geo-media geo-media-video">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/5771025&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
@@ -196,10 +196,10 @@ include('../partials/geo-parallax.php');
 				</div>
 			</article>
 
-			<article class="geo-blog-grid-item clearfix">
+			<article class="geo-blog-grid-item isotope-item">
 				<div class="geo-media geo-media-single">
 					<a href="#">
-						<img src="http://geometric.sentimony.com/img/geo-photo-1.png" alt="Post image">
+						<img src="/img/geo-photo-1.png" alt="Post image">
 						<div class="geo-media-fxlayout">
 							<span><i>Read more</i></span>
 						</div>
@@ -231,6 +231,5 @@ include('../partials/geo-parallax.php');
 	<a href="#" class="geo-btn geo-btn-primary geo-btn-lg"><span class="icon-uniE5CC"></span> Previous</a>
 	<a href="#" class="geo-btn geo-btn-primary geo-btn-lg disabled">Next <span class="icon-uniE5CD"></span></a>
 </div>
-
 
 <?include('../partials/geo-body-close.php');?>

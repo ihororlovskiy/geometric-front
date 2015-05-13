@@ -31,9 +31,9 @@ $(function() {
 var $container = $('.isotope-container');
 
 $(document).ready(function() {
-	$('.geo-blog-grid .geo-content-area').isotope({
-			itemSelector: '.geo-blog-grid-item'
-	});
+	// $('.geo-blog-grid .geo-content-area').isotope({
+	// 		itemSelector: '.geo-blog-grid-item'
+	// });
 
 	$container.imagesLoaded( function() {
 		$container.isotope({
