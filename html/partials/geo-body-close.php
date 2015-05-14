@@ -102,9 +102,10 @@
   </footer>
 
   <script src="/js/vendor/jquery-1.11.3.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+  <script src="/js/vendor/bootstrap.min.js"></script>
+  <script src="/js/vendor/imagesloaded.pkgd.min.js"></script>
   <script src="/js/vendor/isotope.pkgd.min.js"></script>
+  <script src="/js/vendor/packery.pkgd.min.js"></script>
   <script src="/js/vendor/waypoints.min.js"></script>
   <script src="/js/vendor/parallax.min.js"></script>
   <script src="/js/vendor/jquery.flexslider-min.js"></script>

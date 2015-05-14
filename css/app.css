@@ -1,0 +1,42 @@
+/*
+Error: Invalid CSS after "...ns/plugins-dir'": expected selector or at-rule, was "@import '1-base..."
+        on line 2 of /Users/ihororlovskyi/work/GeometricTheme/geometric-front/./sass/app.scss
+
+1: @import '0-plugins/plugins-dir'
+2: @import '1-base/base-dir'
+3: @import '2-modules/modules-dir'
+4: @import '3-layouts/layouts-dir'
+
+Backtrace:
+/Users/ihororlovskyi/work/GeometricTheme/geometric-front/./sass/app.scss:2
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1165:in `expected'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1101:in `expected'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:43:in `parse'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:393:in `_to_tree'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `call'
+/Users/ihororlovskyi/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/Users/ihororlovskyi/.rvm/gems/ruby-2.0.0-p598/bin/compass:23:in `load'
+/Users/ihororlovskyi/.rvm/gems/ruby-2.0.0-p598/bin/compass:23:in `<main>'
+/Users/ihororlovskyi/.rvm/gems/ruby-2.0.0-p598/bin/ruby_executable_hooks:15:in `eval'
+/Users/ihororlovskyi/.rvm/gems/ruby-2.0.0-p598/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ns/plugins-dir'\": expected selector or at-rule, was \"@import '1-base...\"\A         on line 2 of /Users/ihororlovskyi/work/GeometricTheme/geometric-front/./sass/app.scss\A \A 1: @import '0-plugins/plugins-dir'\A 2: @import '1-base/base-dir'\A 3: @import '2-modules/modules-dir'\A 4: @import '3-layouts/layouts-dir'"; }
