@@ -2650,9 +2650,6 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
 .geo-shop-list-classic .geo-content-area {
   width: 100%;
 }
-.geo-shop-list-classic .geo-shop-isotope {
-  margin: 0 -15px;
-}
 .geo-shop-list-classic article {
   padding: 15px;
 }
@@ -2773,6 +2770,166 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
 
 .geo-shop-list-classic.geo-shop-list-classic-4-col article {
   width: 25.0%;
+}
+
+/* SHOP
+============================================================================ */
+.geo-shoplist {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.geo-shoplist .geo-content-area {
+  width: 75%;
+  margin: 0 auto;
+}
+.geo-shoplist .isotope-container {
+  margin-bottom: 60px;
+}
+.geo-shoplist article {
+  position: relative;
+  overflow: hidden;
+}
+.geo-shoplist a.show-more {
+  transition: .2s;
+  color: #fff;
+  background: #4591cb;
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 25px 30px;
+  display: inline-block;
+}
+.geo-shoplist a.show-more span {
+  color: rgba(255, 255, 255, 0.6);
+}
+.geo-shoplist a.show-more:hover {
+  background: #5198ce;
+}
+.geo-shoplist a.show-more:active {
+  background: #3582bc;
+}
+
+.geo-shoplist-meticulous .geo-content-area {
+  width: 100%;
+}
+.geo-shoplist-meticulous article {
+  width: 33.3333333333333%;
+  padding: 15px;
+}
+.geo-shoplist-meticulous article .visual {
+  position: relative;
+  overflow: hidden;
+}
+.geo-shoplist-meticulous article .visual a > img {
+  opacity: 1;
+  transition: .2s, transform 1s;
+  transform: translateZ(0);
+}
+.geo-shoplist-meticulous article .visual .status {
+  opacity: 1;
+  transition: .2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #559acf;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 10px 20px;
+}
+.geo-shoplist-meticulous article .visual .status.new {
+  background-color: #559acf;
+}
+.geo-shoplist-meticulous article .visual .status.out {
+  background-color: #6b6b6b;
+}
+.geo-shoplist-meticulous article .visual .status.last {
+  background-color: #de7846;
+}
+.geo-shoplist-meticulous article .visual a.add-to-cart {
+  position: absolute;
+  left: 10%;
+  top: 100%;
+  right: 10%;
+  opacity: 0;
+  margin: 0 auto;
+  display: inline-block;
+  color: #fff;
+  background: #4591cb;
+  padding: 12px 0;
+  max-width: 210px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: .2s;
+}
+.geo-shoplist-meticulous article .visual a.add-to-cart > [class^="icon-"] {
+  padding-right: 15px;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+  font-weight: 400;
+}
+.geo-shoplist-meticulous article .visual a.add-to-cart:hover {
+  background: #5198ce;
+}
+.geo-shoplist-meticulous article .visual a.add-to-cart:active {
+  background: #3582bc;
+}
+.geo-shoplist-meticulous article .visual:hover a > img {
+  opacity: .25;
+}
+.geo-shoplist-meticulous article .visual:hover .status {
+  opacity: .25;
+}
+.geo-shoplist-meticulous article .visual:hover a.add-to-cart {
+  top: 42%;
+  opacity: 1;
+}
+.geo-shoplist-meticulous article .info {
+  padding: 15px;
+  text-align: left;
+}
+.geo-shoplist-meticulous article .info .title {
+  color: #3787c4;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+}
+.geo-shoplist-meticulous article .info .title a {
+  transition: .2s;
+}
+.geo-shoplist-meticulous article .info .rating {
+  font-size: 10px;
+}
+.geo-shoplist-meticulous article .info .rating > [class^="icon-"] {
+  color: #e6e6e6;
+  cursor: pointer;
+  transition: .2s;
+  margin-right: 2px;
+}
+.geo-shoplist-meticulous article .info .rating > [class^="icon-"].active {
+  color: #3787c4;
+}
+.geo-shoplist-meticulous article .info .rating > [class^="icon-"]:hover {
+  color: #3787c4;
+}
+.geo-shoplist-meticulous article .info .price {
+  color: #878787;
+  font-size: 15px;
+  font-weight: 700;
+}
+.geo-shoplist-meticulous article .info .price del {
+  color: #e6e6e6;
+  padding-left: 15px;
+}
+.geo-shoplist-meticulous article:hover .visual a > img {
+  transform: translateZ(0) scale(1.2);
+}
+.geo-shoplist-meticulous article.w2 {
+  width: 66.6666666666666%;
 }
 
 /* SHOP ITEM

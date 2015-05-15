@@ -7,7 +7,7 @@ $parallaxSubtitle = "Grid Shop";
 include('../partials/geo-parallax.php');
 ?>
 
-<div class="geo-shop-list geo-shop-list-classic geo-shop-list-classic-3-col">
+<div class="geo-shoplist geo-shoplist-meticulous">
 	<div class="container">
 		<div class="geo-content-area">
 
@@ -146,7 +146,7 @@ include('../partials/geo-parallax.php');
 					</div>
 				</article>
 
-				<article class="packery-item">
+				<article class="packery-item w2">
 					<div class="visual">
 						<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-06.jpg" alt="..." /></a>
 						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
