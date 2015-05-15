@@ -2529,6 +2529,124 @@ ul.geo-relative-posts > li > a > h6 {
   background: #3582bc;
 }
 
+nav.geo-filter {
+  margin: 20px 0 50px;
+}
+nav.geo-filter > ul > li {
+  display: block;
+  float: left;
+  margin: 6px 20px;
+  position: relative;
+}
+nav.geo-filter > ul > li > p,
+nav.geo-filter > ul > li > a {
+  text-transform: uppercase;
+  display: block;
+  float: left;
+  padding: 0 10px;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+}
+nav.geo-filter > ul > li > p {
+  color: #a7a7a7;
+}
+nav.geo-filter > ul > li > a {
+  color: #6a6a6a;
+}
+nav.geo-filter > ul > li.dropdown {
+  position: relative;
+}
+nav.geo-filter > ul > li.dropdown > a > [class^="icon-"] {
+  font-size: 10px;
+  position: relative;
+  top: -1px;
+  font-weight: 700;
+}
+nav.geo-filter > ul > li.dropdown > ul.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  z-index: -1000;
+  float: left;
+  min-width: 160px;
+  opacity: 0;
+  display: block;
+  padding: 8px 0;
+  margin: 20px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #4385b8;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+nav.geo-filter > ul > li.dropdown > ul.dropdown-menu > li > a {
+  clear: both;
+  font-weight: 400;
+  line-height: 1;
+  transition: .2s;
+  display: block;
+  color: #fff;
+  white-space: normal;
+  padding: 0 20px;
+  outline: none;
+}
+nav.geo-filter > ul > li.dropdown > ul.dropdown-menu > li > a:focus,
+nav.geo-filter > ul > li.dropdown > ul.dropdown-menu > li > a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #3779ac;
+}
+nav.geo-filter > ul > li.dropdown > ul.dropdown-menu:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 100%;
+  border-bottom: 8px solid #4385b8;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+nav.geo-filter > ul > li.dropdown.open > ul.dropdown-menu {
+  transition: opacity .2s;
+  z-index: 1000;
+  opacity: 1;
+}
+nav.geo-filter > ul > li.dropdown.open > ul.dropdown-menu > li > a {
+  line-height: 1.42857143;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+nav.geo-filter > ul.filter-left {
+  float: left;
+}
+nav.geo-filter > ul.filter-left > li.dropdown > a > [class^="icon-"] {
+  margin-right: 10px;
+}
+nav.geo-filter > ul.filter-left > li.dropdown > ul.dropdown-menu {
+  left: 0;
+}
+nav.geo-filter > ul.filter-left > li.dropdown > ul.dropdown-menu:after {
+  left: 6px;
+}
+nav.geo-filter > ul.filter-right {
+  float: right;
+}
+nav.geo-filter > ul.filter-right > li.dropdown > a > [class^="icon-"] {
+  margin-left: 10px;
+}
+nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu {
+  right: 0;
+  left: auto;
+}
+nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
+  right: 8px;
+}
+
 .geo-shop-list-classic .geo-content-area {
   width: 100%;
 }
@@ -2655,124 +2773,6 @@ ul.geo-relative-posts > li > a > h6 {
 
 .geo-shop-list-classic.geo-shop-list-classic-4-col article {
   width: 25.0%;
-}
-
-nav.geo-filter {
-  margin: 20px 0 50px;
-}
-nav.geo-filter > ul > li {
-  display: block;
-  float: left;
-  margin: 6px 20px;
-  position: relative;
-}
-nav.geo-filter > ul > li > p,
-nav.geo-filter > ul > li > a {
-  text-transform: uppercase;
-  display: block;
-  float: left;
-  padding: 0 10px;
-  line-height: 30px;
-  font-weight: 400;
-  font-size: 13px;
-  margin: 0;
-}
-nav.geo-filter > ul > li > p {
-  color: #a7a7a7;
-}
-nav.geo-filter > ul > li > a {
-  color: #6a6a6a;
-}
-nav.geo-filter > ul > li.dropdown {
-  position: relative;
-}
-nav.geo-filter > ul > li.dropdown > a > [class^="icon-"] {
-  font-size: 10px;
-  position: relative;
-  top: -1px;
-  font-weight: 700;
-}
-nav.geo-filter > ul > li.dropdown > ul.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  z-index: -1000;
-  float: left;
-  min-width: 160px;
-  opacity: 0;
-  display: block;
-  padding: 8px 0;
-  margin: 20px 0 0;
-  font-size: 14px;
-  text-align: left;
-  list-style: none;
-  background-color: #4385b8;
-  background-clip: border-box;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-}
-nav.geo-filter > ul > li.dropdown > ul.dropdown-menu > li > a {
-  clear: both;
-  font-weight: 400;
-  line-height: 1;
-  transition: .2s;
-  display: block;
-  color: #fff;
-  white-space: normal;
-  padding: 0 20px;
-  outline: none;
-}
-nav.geo-filter > ul > li.dropdown > ul.dropdown-menu > li > a:focus,
-nav.geo-filter > ul > li.dropdown > ul.dropdown-menu > li > a:hover {
-  color: #fff;
-  text-decoration: none;
-  background-color: #3779ac;
-}
-nav.geo-filter > ul > li.dropdown > ul.dropdown-menu:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: 100%;
-  border-bottom: 8px solid #4385b8;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-}
-nav.geo-filter > ul > li.dropdown.open > ul.dropdown-menu {
-  transition: opacity .2s;
-  z-index: 1000;
-  opacity: 1;
-}
-nav.geo-filter > ul > li.dropdown.open > ul.dropdown-menu > li > a {
-  line-height: 1.42857143;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-nav.geo-filter > ul.filter-left {
-  float: left;
-}
-nav.geo-filter > ul.filter-left > li.dropdown > a > [class^="icon-"] {
-  margin-right: 10px;
-}
-nav.geo-filter > ul.filter-left > li.dropdown > ul.dropdown-menu {
-  left: 0;
-}
-nav.geo-filter > ul.filter-left > li.dropdown > ul.dropdown-menu:after {
-  left: 6px;
-}
-nav.geo-filter > ul.filter-right {
-  float: right;
-}
-nav.geo-filter > ul.filter-right > li.dropdown > a > [class^="icon-"] {
-  margin-left: 10px;
-}
-nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu {
-  right: 0;
-  left: auto;
-}
-nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
-  right: 8px;
 }
 
 /* SHOP ITEM

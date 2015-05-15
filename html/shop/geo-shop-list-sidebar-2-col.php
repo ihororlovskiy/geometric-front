@@ -1,5 +1,10 @@
 <?include('../partials/geo-body-open.php');?>
 
-<h1>shop-list-sidebar-2-col</h1>
+<?
+$parallaxH6 = "Layouts";
+$parallaxH1 = "Your Shop";
+$parallaxSubtitle = "Classic Shop (2 Columns) + Sidebar";
+include('../partials/geo-parallax.php');
+?>
 
 <?include('../partials/geo-body-close.php');?>
