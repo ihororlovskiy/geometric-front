@@ -2814,9 +2814,11 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
 .geo-shoplist-meticulous .geo-content-area {
   width: 100%;
 }
+.geo-shoplist-meticulous .packery-container {
+  margin-bottom: 40px;
+}
 .geo-shoplist-meticulous article {
   width: 33.3333333333333%;
-  padding: 15px;
 }
 .geo-shoplist-meticulous article .visual {
   position: relative;
@@ -2928,7 +2930,7 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
 .geo-shoplist-meticulous article:hover .visual a > img {
   transform: translateZ(0) scale(1.2);
 }
-.geo-shoplist-meticulous article.w2 {
+.geo-shoplist-meticulous article:nth-child(8) {
   width: 66.6666666666666%;
 }
 

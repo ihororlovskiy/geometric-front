@@ -63,6 +63,7 @@ $(document).ready(function() {
 			gutter: 10
 		});
 	});
+});
 
 // Isotope Portfolio
 $(function() {
