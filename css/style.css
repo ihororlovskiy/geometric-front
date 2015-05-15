@@ -1615,7 +1615,7 @@ nav.geo-searchbox-menu .geo-searchbox.geo-searchbox-open {
   right: 100%;
 }
 
-/* geo-pheader-section
+/* sidebar
 ============================================================================ */
 aside {
   width: 25%;
@@ -2490,24 +2490,25 @@ ul.geo-relative-posts > li > a > h6 {
   margin-top: 60px;
 }
 
-/* SHOP LISTs
+/* SHOP LIST
 ============================================================================ */
-.geo-shop-list {
+.geo-shoplist {
   text-align: center;
   margin-bottom: 80px;
 }
-.geo-shop-list .geo-content-area {
+.geo-shoplist .geo-content-area {
   width: 75%;
   margin: 0 auto;
 }
-.geo-shop-list .isotope-container {
-  margin-bottom: 60px;
+.geo-shoplist .isotope-container {
+  margin-bottom: 40px;
+  overflow: hidden;
 }
-.geo-shop-list article {
+.geo-shoplist article {
   position: relative;
   overflow: hidden;
 }
-.geo-shop-list a.show-more {
+.geo-shoplist a.show-more {
   transition: .2s;
   color: #fff;
   background: #4591cb;
@@ -2519,14 +2520,22 @@ ul.geo-relative-posts > li > a > h6 {
   padding: 25px 30px;
   display: inline-block;
 }
-.geo-shop-list a.show-more span {
+.geo-shoplist a.show-more span {
   color: rgba(255, 255, 255, 0.6);
 }
-.geo-shop-list a.show-more:hover {
+.geo-shoplist a.show-more:hover {
   background: #5198ce;
 }
-.geo-shop-list a.show-more:active {
+.geo-shoplist a.show-more:active {
   background: #3582bc;
+}
+
+.geo-shoplist.col-3 article {
+  width: 33.3333333333333333333%;
+}
+
+.geo-shoplist.col-4 article {
+  width: 25.0%;
 }
 
 nav.geo-filter {
@@ -2647,22 +2656,22 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   right: 8px;
 }
 
-.geo-shop-list-classic .geo-content-area {
+.geo-shoplist-classic .geo-content-area {
   width: 100%;
 }
-.geo-shop-list-classic article {
+.geo-shoplist-classic article {
   padding: 15px;
 }
-.geo-shop-list-classic article .visual {
+.geo-shoplist-classic article .visual {
   position: relative;
   overflow: hidden;
 }
-.geo-shop-list-classic article .visual a > img {
+.geo-shoplist-classic article .visual a > img {
   opacity: 1;
   transition: .2s, transform 1s;
   transform: translateZ(0);
 }
-.geo-shop-list-classic article .visual .status {
+.geo-shoplist-classic article .visual .status {
   opacity: 1;
   transition: .2s;
   position: absolute;
@@ -2674,16 +2683,16 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   line-height: 1.1;
   padding: 10px 20px;
 }
-.geo-shop-list-classic article .visual .status.new {
+.geo-shoplist-classic article .visual .status.new {
   background-color: #559acf;
 }
-.geo-shop-list-classic article .visual .status.out {
+.geo-shoplist-classic article .visual .status.out {
   background-color: #6b6b6b;
 }
-.geo-shop-list-classic article .visual .status.last {
+.geo-shoplist-classic article .visual .status.last {
   background-color: #de7846;
 }
-.geo-shop-list-classic article .visual a.add-to-cart {
+.geo-shoplist-classic article .visual a.add-to-cart {
   position: absolute;
   left: 10%;
   top: 100%;
@@ -2700,250 +2709,99 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   text-transform: uppercase;
   transition: .2s;
 }
-.geo-shop-list-classic article .visual a.add-to-cart > [class^="icon-"] {
+.geo-shoplist-classic article .visual a.add-to-cart > [class^="icon-"] {
   padding-right: 15px;
   font-size: 20px;
   position: relative;
   top: 3px;
   font-weight: 400;
 }
-.geo-shop-list-classic article .visual a.add-to-cart:hover {
+.geo-shoplist-classic article .visual a.add-to-cart:hover {
   background: #5198ce;
 }
-.geo-shop-list-classic article .visual a.add-to-cart:active {
+.geo-shoplist-classic article .visual a.add-to-cart:active {
   background: #3582bc;
 }
-.geo-shop-list-classic article .visual:hover a > img {
+.geo-shoplist-classic article .visual:hover a > img {
   opacity: .25;
 }
-.geo-shop-list-classic article .visual:hover .status {
+.geo-shoplist-classic article .visual:hover .status {
   opacity: .25;
 }
-.geo-shop-list-classic article .visual:hover a.add-to-cart {
+.geo-shoplist-classic article .visual:hover a.add-to-cart {
   top: 42%;
   opacity: 1;
 }
-.geo-shop-list-classic article .info {
+.geo-shoplist-classic article .info {
   padding: 15px;
   text-align: left;
 }
-.geo-shop-list-classic article .info .title {
+.geo-shoplist-classic article .info .title {
   color: #3787c4;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
 }
-.geo-shop-list-classic article .info .title a {
+.geo-shoplist-classic article .info .title a {
   transition: .2s;
 }
-.geo-shop-list-classic article .info .rating {
+.geo-shoplist-classic article .info .rating {
   font-size: 10px;
 }
-.geo-shop-list-classic article .info .rating > [class^="icon-"] {
+.geo-shoplist-classic article .info .rating > [class^="icon-"] {
   color: #e6e6e6;
   cursor: pointer;
   transition: .2s;
   margin-right: 2px;
 }
-.geo-shop-list-classic article .info .rating > [class^="icon-"].active {
+.geo-shoplist-classic article .info .rating > [class^="icon-"].active {
   color: #3787c4;
 }
-.geo-shop-list-classic article .info .rating > [class^="icon-"]:hover {
+.geo-shoplist-classic article .info .rating > [class^="icon-"]:hover {
   color: #3787c4;
 }
-.geo-shop-list-classic article .info .price {
+.geo-shoplist-classic article .info .price {
   color: #878787;
   font-size: 15px;
   font-weight: 700;
 }
-.geo-shop-list-classic article .info .price del {
+.geo-shoplist-classic article .info .price del {
   color: #e6e6e6;
   padding-left: 15px;
 }
-.geo-shop-list-classic article:hover .visual a > img {
+.geo-shoplist-classic article:hover .visual a > img {
   transform: translateZ(0) scale(1.2);
 }
 
-.geo-shop-list-classic.geo-shop-list-classic-3-col article {
-  width: 33.3333333333333333333%;
-}
-
-.geo-shop-list-classic.geo-shop-list-classic-4-col article {
-  width: 25.0%;
-}
-
-/* SHOP
-============================================================================ */
-.geo-shoplist {
-  text-align: center;
-  margin-bottom: 80px;
-}
-.geo-shoplist .geo-content-area {
-  width: 75%;
-  margin: 0 auto;
-}
-.geo-shoplist .isotope-container {
-  margin-bottom: 60px;
-}
-.geo-shoplist article {
-  position: relative;
-  overflow: hidden;
-}
-.geo-shoplist a.show-more {
-  transition: .2s;
-  color: #fff;
-  background: #4591cb;
-  margin: 0 auto;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
-  padding: 25px 30px;
-  display: inline-block;
-}
-.geo-shoplist a.show-more span {
-  color: rgba(255, 255, 255, 0.6);
-}
-.geo-shoplist a.show-more:hover {
-  background: #5198ce;
-}
-.geo-shoplist a.show-more:active {
-  background: #3582bc;
-}
-
-.geo-shoplist-meticulous .geo-content-area {
+.geo-shoplist-masonry .geo-content-area {
   width: 100%;
 }
-.geo-shoplist-meticulous .packery-container {
-  margin-bottom: 40px;
-}
-.geo-shoplist-meticulous article {
+.geo-shoplist-masonry article {
   width: 33.3333333333333%;
 }
-.geo-shoplist-meticulous article .visual {
-  position: relative;
-  overflow: hidden;
-}
-.geo-shoplist-meticulous article .visual a > img {
-  opacity: 1;
-  transition: .2s, transform 1s;
-  transform: translateZ(0);
-}
-.geo-shoplist-meticulous article .visual .status {
-  opacity: 1;
-  transition: .2s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #559acf;
-  color: #fff;
-  font-weight: 700;
-  line-height: 1.1;
-  padding: 10px 20px;
-}
-.geo-shoplist-meticulous article .visual .status.new {
-  background-color: #559acf;
-}
-.geo-shoplist-meticulous article .visual .status.out {
-  background-color: #6b6b6b;
-}
-.geo-shoplist-meticulous article .visual .status.last {
-  background-color: #de7846;
-}
-.geo-shoplist-meticulous article .visual a.add-to-cart {
-  position: absolute;
-  left: 10%;
-  top: 100%;
-  right: 10%;
-  opacity: 0;
-  margin: 0 auto;
-  display: inline-block;
-  color: #fff;
-  background: #4591cb;
-  padding: 12px 0;
-  max-width: 210px;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: .2s;
-}
-.geo-shoplist-meticulous article .visual a.add-to-cart > [class^="icon-"] {
-  padding-right: 15px;
-  font-size: 20px;
-  position: relative;
-  top: 3px;
-  font-weight: 400;
-}
-.geo-shoplist-meticulous article .visual a.add-to-cart:hover {
-  background: #5198ce;
-}
-.geo-shoplist-meticulous article .visual a.add-to-cart:active {
-  background: #3582bc;
-}
-.geo-shoplist-meticulous article .visual:hover a > img {
-  opacity: .25;
-}
-.geo-shoplist-meticulous article .visual:hover .status {
-  opacity: .25;
-}
-.geo-shoplist-meticulous article .visual:hover a.add-to-cart {
-  top: 42%;
-  opacity: 1;
-}
-.geo-shoplist-meticulous article .info {
-  padding: 15px;
-  text-align: left;
-}
-.geo-shoplist-meticulous article .info .title {
-  color: #3787c4;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 500;
-}
-.geo-shoplist-meticulous article .info .title a {
-  transition: .2s;
-}
-.geo-shoplist-meticulous article .info .rating {
-  font-size: 10px;
-}
-.geo-shoplist-meticulous article .info .rating > [class^="icon-"] {
-  color: #e6e6e6;
-  cursor: pointer;
-  transition: .2s;
-  margin-right: 2px;
-}
-.geo-shoplist-meticulous article .info .rating > [class^="icon-"].active {
-  color: #3787c4;
-}
-.geo-shoplist-meticulous article .info .rating > [class^="icon-"]:hover {
-  color: #3787c4;
-}
-.geo-shoplist-meticulous article .info .price {
-  color: #878787;
-  font-size: 15px;
-  font-weight: 700;
-}
-.geo-shoplist-meticulous article .info .price del {
-  color: #e6e6e6;
-  padding-left: 15px;
-}
-.geo-shoplist-meticulous article:hover .visual a > img {
-  transform: translateZ(0) scale(1.2);
-}
-.geo-shoplist-meticulous article:nth-child(8) {
+.geo-shoplist-masonry article:nth-child(8) {
   width: 66.6666666666666%;
+}
+
+.geo-shoplist-classic-sidebar aside {
+  width: 25%;
+  float: left;
+}
+.geo-shoplist-classic-sidebar .geo-content-area {
+  width: 75%;
+  float: right;
 }
 
 /* SHOP ITEM
 ============================================================================ */
-.geo-shop-item {
+.geo-shopitem {
   margin-top: 40px;
   margin-bottom: 80px;
 }
-.geo-shop-item .geo-shop-item-info {
+.geo-shopitem .geo-shopitem-info {
   position: relative;
 }
-.geo-shop-item .geo-shop-item-info ol.breadcrumb {
+.geo-shopitem .geo-shopitem-info ol.breadcrumb {
   padding: 0;
   margin-bottom: 20px;
   list-style: none;
@@ -2953,37 +2811,37 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   text-transform: uppercase;
   font-weight: 700;
 }
-.geo-shop-item .geo-shop-item-info ol.breadcrumb > li {
+.geo-shopitem .geo-shopitem-info ol.breadcrumb > li {
   font-size: 10px;
 }
-.geo-shop-item .geo-shop-item-info ol.breadcrumb > li + li:before {
+.geo-shopitem .geo-shopitem-info ol.breadcrumb > li + li:before {
   padding: 0 5px;
   color: #6a6a6a;
   content: '>';
   position: relative;
   top: -1px;
 }
-.geo-shop-item .geo-shop-item-info h1 {
+.geo-shopitem .geo-shopitem-info h1 {
   font-weight: 300;
   font-size: 40px;
   color: #6a6a6a;
 }
-.geo-shop-item .geo-shop-item-info .rating {
+.geo-shopitem .geo-shopitem-info .rating {
   font-size: 10px;
 }
-.geo-shop-item .geo-shop-item-info .rating > [class^="icon-"] {
+.geo-shopitem .geo-shopitem-info .rating > [class^="icon-"] {
   color: #e6e6e6;
   cursor: pointer;
   transition: .2s;
   margin-right: 2px;
 }
-.geo-shop-item .geo-shop-item-info .rating > [class^="icon-"].active {
+.geo-shopitem .geo-shopitem-info .rating > [class^="icon-"].active {
   color: #3787c4;
 }
-.geo-shop-item .geo-shop-item-info .rating > [class^="icon-"]:hover {
+.geo-shopitem .geo-shopitem-info .rating > [class^="icon-"]:hover {
   color: #3787c4;
 }
-.geo-shop-item .geo-shop-item-info .price {
+.geo-shopitem .geo-shopitem-info .price {
   float: left;
   width: 40%;
   line-height: 50px;
@@ -2991,15 +2849,15 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   font-size: 20px;
   font-weight: 700;
 }
-.geo-shop-item .geo-shop-item-info .price del {
+.geo-shopitem .geo-shopitem-info .price del {
   color: #e6e6e6;
   padding-left: 15px;
 }
-.geo-shop-item .geo-shop-item-info form.quantity {
+.geo-shopitem .geo-shopitem-info form.quantity {
   float: left;
   width: 60%;
 }
-.geo-shop-item .geo-shop-item-info form.quantity input.quantity-input {
+.geo-shopitem .geo-shopitem-info form.quantity input.quantity-input {
   float: right;
   width: 100px;
   border: none;
@@ -3009,11 +2867,11 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   font-size: 20px;
   padding: 11px 15px 11px 25px;
 }
-.geo-shop-item .geo-shop-item-info form.quantity input.quantity-input:focus {
+.geo-shopitem .geo-shopitem-info form.quantity input.quantity-input:focus {
   background-color: #eee;
   color: #4591cb;
 }
-.geo-shop-item .geo-shop-item-info form.quantity button.quantity-submit {
+.geo-shopitem .geo-shopitem-info form.quantity button.quantity-submit {
   float: right;
   outline: none;
   border: none;
@@ -3027,62 +2885,62 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   text-transform: uppercase;
   transition: .2s;
 }
-.geo-shop-item .geo-shop-item-info form.quantity button.quantity-submit > [class^="icon-"] {
+.geo-shopitem .geo-shopitem-info form.quantity button.quantity-submit > [class^="icon-"] {
   padding-right: 15px;
   font-size: 20px;
   position: relative;
   top: 3px;
   font-weight: 400;
 }
-.geo-shop-item .geo-shop-item-info form.quantity button.quantity-submit:hover {
+.geo-shopitem .geo-shopitem-info form.quantity button.quantity-submit:hover {
   background: #5198ce;
 }
-.geo-shop-item .geo-shop-item-info form.quantity button.quantity-submit:active {
+.geo-shopitem .geo-shopitem-info form.quantity button.quantity-submit:active {
   background: #3582bc;
 }
-.geo-shop-item .geo-shop-item-info .size {
+.geo-shopitem .geo-shopitem-info .size {
   color: #515151;
   margin-bottom: 20px;
   line-height: 1.4;
   font-size: 14px;
 }
-.geo-shop-item .geo-shop-item-info .size input {
+.geo-shopitem .geo-shopitem-info .size input {
   width: 20px;
 }
-.geo-shop-item .geo-shop-item-info .size span {
+.geo-shopitem .geo-shopitem-info .size span {
   margin-right: 10px;
 }
-.geo-shop-item .geo-shop-item-info .color {
+.geo-shopitem .geo-shopitem-info .color {
   color: #515151;
   margin-bottom: 20px;
   line-height: 1.4;
   font-size: 14px;
 }
-.geo-shop-item .geo-shop-item-info .description {
+.geo-shopitem .geo-shopitem-info .description {
   color: #515151;
   margin-bottom: 20px;
   line-height: 1.4;
   font-size: 14px;
 }
-.geo-shop-item .geo-shop-item-info .sku {
+.geo-shopitem .geo-shopitem-info .sku {
   color: #515151;
   margin-bottom: 20px;
   line-height: 1.4;
   font-size: 14px;
 }
-.geo-shop-item .geo-shop-item-info .categories {
+.geo-shopitem .geo-shopitem-info .categories {
   color: #515151;
   line-height: 1.4;
   font-size: 14px;
 }
-.geo-shop-item .geo-shop-item-info .tags {
+.geo-shopitem .geo-shopitem-info .tags {
   color: #515151;
   margin-bottom: 20px;
   line-height: 1.4;
   font-size: 14px;
 }
-.geo-shop-item .geo-shop-item-info .prev,
-.geo-shop-item .geo-shop-item-info .next {
+.geo-shopitem .geo-shopitem-info .prev,
+.geo-shopitem .geo-shopitem-info .next {
   position: absolute;
   top: 0;
   width: 40px;
@@ -3094,10 +2952,10 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   font-size: 16px;
   font-weight: 700;
 }
-.geo-shop-item .geo-shop-item-info .prev {
+.geo-shopitem .geo-shopitem-info .prev {
   right: 50px;
 }
-.geo-shop-item .geo-shop-item-info .next {
+.geo-shopitem .geo-shopitem-info .next {
   right: 0;
 }
 

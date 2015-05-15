@@ -105,13 +105,9 @@
   <script src="/js/vendor/bootstrap.min.js"></script>
   <script src="/js/vendor/imagesloaded.pkgd.min.js"></script>
   <script src="/js/vendor/isotope.pkgd.min.js"></script>
-  <script src="/js/vendor/packery.pkgd.min.js"></script>
   <script src="/js/vendor/waypoints.min.js"></script>
   <script src="/js/vendor/parallax.min.js"></script>
   <script src="/js/vendor/jquery.flexslider-min.js"></script>
-<!-- 
-  <script src="http://fat.github.io/zoom.js/js/zoom.js"></script>
-   -->
   <script src="/js/main.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

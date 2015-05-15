@@ -54,17 +54,6 @@ $(document).ready(function() {
 
 });
 
-// Packery
-var $container = $('.packery-container');
-$(document).ready(function() {
-	$container.imagesLoaded( function() {
-		$container.isotope({
-			itemSelector: '.packery-item',
-			gutter: 10
-		});
-	});
-});
-
 // Isotope Portfolio
 $(function() {
 	// init Isotope

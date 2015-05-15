@@ -1,6 +1,6 @@
 <?include('../partials/geo-body-open.php');?>
 
-<article class="geo-shop-item">
+<article class="geo-shopitem">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
@@ -28,11 +28,11 @@
 
 			</div>
 			<div class="col-sm-6">
-				<div class="geo-shop-item-info">
+				<div class="geo-shopitem-info">
 
 					<ol class="breadcrumb">
 						<li><a href="/">Home</a></li>
-						<li><a href="/html/shop/geo-shop-list-classic-4-col.php">Shop</a></li>
+						<li><a href="/html/shop/geo-shoplist-classic.php">Shop</a></li>
 						<li class="active">Coats & Jackets</li>
 					</ol>
 
@@ -130,8 +130,8 @@
 						<a href="#">Theme</a>.
 					</div>
 
-					<a href="/html/shop/geo-shop-item.php" class="prev"><span class="icon-uniE5CC"></span></i></a>
-					<a href="/html/shop/geo-shop-item.php" class="next"><span class="icon-uniE5CD"></span></a>
+					<a href="/html/shop/geo-shopitem.php" class="prev"><span class="icon-uniE5CC"></span></i></a>
+					<a href="/html/shop/geo-shopitem.php" class="next"><span class="icon-uniE5CD"></span></a>
 				</div>
 			</div>
 		</div>
@@ -196,20 +196,20 @@
 
 				<div class="geo-related-head">
 					<div class="related-title">Related Products</div>
-					<a href="/html/shop/geo-shop-item.php" class="prev"><span class="icon-uniE5CC"></span></i></a>
-					<a href="/html/shop/geo-shop-item.php" class="next"><span class="icon-uniE5CD"></span></a>
+					<a href="/html/shop/geo-shopitem.php" class="prev"><span class="icon-uniE5CC"></span></i></a>
+					<a href="/html/shop/geo-shopitem.php" class="next"><span class="icon-uniE5CD"></span></a>
 				</div>
 
 				<div class="geo-related-body clearfix">
 
 					<article>
 						<div class="visual">
-							<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-01.jpg" alt="..." /></a>
+							<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-classic-01.jpg" alt="..." /></a>
 							<span class="status new">New</span>
 							<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 						</div>
 						<div class="info">
-							<div class="title"><a href="/html/shop/geo-shop-item.php">Bicycle</a></div>
+							<div class="title"><a href="/html/shop/geo-shopitem.php">Bicycle</a></div>
 							<div class="rating">
 								<span class="icon-uniE03F active"></span>
 								<span class="icon-uniE03F active"></span>
@@ -223,12 +223,12 @@
 
 					<article>
 						<div class="visual">
-							<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-02.jpg" alt="..." /></a>
+							<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-classic-02.jpg" alt="..." /></a>
 							<span class="status out">Out of stock</span>
 							<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 						</div>
 						<div class="info">
-							<div class="title"><a href="/html/shop/geo-shop-item.php">Brass Saxophone</a></div>
+							<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
 							<div class="rating">
 								<span class="icon-uniE03F active"></span>
 								<span class="icon-uniE03F active"></span>
@@ -242,11 +242,11 @@
 
 					<article>
 						<div class="visual">
-							<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-03.jpg" alt="..." /></a>
+							<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-classic-03.jpg" alt="..." /></a>
 							<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 						</div>
 						<div class="info">
-							<div class="title"><a href="/html/shop/geo-shop-item.php">Cinema 3D LED TV</a></div>
+							<div class="title"><a href="/html/shop/geo-shopitem.php">Cinema 3D LED TV</a></div>
 							<div class="rating">
 								<span class="icon-uniE03F active"></span>
 								<span class="icon-uniE03F active"></span>
@@ -260,12 +260,12 @@
 
 					<article>
 						<div class="visual">
-							<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-classic-04.jpg" alt="..." /></a>
+							<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-classic-04.jpg" alt="..." /></a>
 							<span class="status last">Last examples</span>
 							<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
 						</div>
 						<div class="info">
-							<div class="title"><a href="/html/shop/geo-shop-item.php">Dicta qui</a></div>
+							<div class="title"><a href="/html/shop/geo-shopitem.php">Dicta qui</a></div>
 							<div class="rating">
 								<span class="icon-uniE03F active"></span>
 								<span class="icon-uniE03F active"></span>
