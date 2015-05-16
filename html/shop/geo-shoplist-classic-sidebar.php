@@ -7,15 +7,52 @@ $parallaxSubtitle = "Classic Shop List + Sidebar";
 include('../partials/geo-parallax.php');
 ?>
 
-<div class="geo-shoplist geo-shoplist-classic geo-shoplist-classic-sidebar col-3"><!-- or .col-4 -->
+<div class="geo-shoplist geo-shoplist-classic geo-shoplist-withsidebar col-3"><!-- or .col-4 -->
 	<div class="container">
 
-		<aside>
-			PRODUCT CATEGORIES
-			
-		</aside>
+		<?include('../shop/_shop-sidebar.php');?>
 
 		<div class="geo-content-area">
+
+			<!-- <nav class="geo-filter clearfix">
+				<ul class="filter-left">
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown"><span class="icon-uniE5CA"></span> All products</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Jewelry & Watches</a></li>
+							<li><a href="#">Handbags & Accessories</a></li>
+							<li><a href="#">Health & Beauty</a></li>
+							<li><a href="#">Shoes</a></li>
+							<li><a href="#">Sales & Events</a></li>
+						</ul>
+						<p>Showing 1–8 of 21 Results</p>
+					</li>
+				</ul>
+
+				<ul class="filter-right">
+					<li class="dropdown">
+						<p>Sort by</p>
+						<a href="#" data-toggle="dropdown">Featured Items <span class="icon-uniE5CA"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Jewelry & Watches</a></li>
+							<li><a href="#">Handbags & Accessories</a></li>
+							<li><a href="#">Health & Beauty</a></li>
+							<li><a href="#">Shoes</a></li>
+							<li><a href="#">Sales & Events</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<p>Show</p>
+						<a href="#" data-toggle="dropdown">8 items <span class="icon-uniE5CA"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">16 items</a></li>
+							<li><a href="#">32 items</a></li>
+							<li><a href="#">64 items</a></li>
+							<li><a href="#">128 items</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav> -->
 
 			<div class="isotope-container">
 

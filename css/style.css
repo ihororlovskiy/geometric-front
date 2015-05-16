@@ -2783,15 +2783,6 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   transform: translateZ(0) scale(1.2);
 }
 
-.geo-shoplist-classic-sidebar aside {
-  width: 25%;
-  float: left;
-}
-.geo-shoplist-classic-sidebar .geo-content-area {
-  width: 75%;
-  float: right;
-}
-
 .geo-shoplist-masonry .geo-content-area {
   width: 100%;
 }
@@ -2896,6 +2887,44 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
 }
 .geo-shoplist-masonry article:nth-child(8) {
   width: 66.6666666666666%;
+}
+
+.geo-shoplist-withsidebar .geo-content-area {
+  width: 75%;
+  float: right;
+}
+
+.geo-shoplist-sidebar {
+  width: 25%;
+  float: left;
+  text-align: left;
+  padding-right: 30px;
+}
+.geo-shoplist-sidebar .sidebar__item {
+  margin-bottom: 40px;
+}
+.geo-shoplist-sidebar .sidebar__item .title {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #6a6a6a;
+  margin-bottom: 20px;
+}
+.geo-shoplist-sidebar .sidebar__item .subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6a6a6a;
+  margin-bottom: 20px;
+}
+
+.bestsales__item__img {
+  float: left;
+  width: 25%;
+}
+
+.bestsales__item__info {
+  float: left;
+  width: 75%;
 }
 
 /* SHOP ITEM
