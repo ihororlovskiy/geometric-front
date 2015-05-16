@@ -54,63 +54,276 @@ include('../partials/geo-parallax.php');
 			<div class="isotope-container">
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-01.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-01.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-02.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-02.jpg" alt="..." /></a>
+					<span class="status new">New</span>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-03.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-03.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-04.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-04.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-05.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-05.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-06.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-06.jpg" alt="..." /></a>
+					<span class="status last">Last examples</span>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-07.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-07.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-08.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-08.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-09.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-09.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-10.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-10.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-11.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-11.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-12.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-12.jpg" alt="..." /></a>
+					<span class="status out">Out of stock</span>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-13.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-13.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-14.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-14.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 				<article class="isotope-item">
-					<a href="/html/shop/geo-shop-item.php"><img src="/img/shop/list-masonry-15.jpg" alt="..." /></a>
+					<a href="/html/shop/geo-shopitem.php"><img src="/img/shop/list-masonry-15.jpg" alt="..." /></a>
+					<div class="info">
+						<div class="vertical-centering">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F active"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+									<span class="icon-uniE03F"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+						</div>
+						<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
+					</div>
 				</article>
 
 			</div>

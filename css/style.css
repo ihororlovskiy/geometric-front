@@ -2490,7 +2490,17 @@ ul.geo-relative-posts > li > a > h6 {
   margin-top: 60px;
 }
 
-/* SHOP LIST
+/* vertical centering module
+============================================================================ */
+div.vertical-centering {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+
+/* SHOP LISTS
 ============================================================================ */
 .geo-shoplist {
   text-align: center;
@@ -2699,11 +2709,11 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   right: 10%;
   opacity: 0;
   margin: 0 auto;
+  max-width: 210px;
   display: inline-block;
   color: #fff;
   background: #4591cb;
   padding: 12px 0;
-  max-width: 210px;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -2773,16 +2783,6 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   transform: translateZ(0) scale(1.2);
 }
 
-.geo-shoplist-masonry .geo-content-area {
-  width: 100%;
-}
-.geo-shoplist-masonry article {
-  width: 33.3333333333333%;
-}
-.geo-shoplist-masonry article:nth-child(8) {
-  width: 66.6666666666666%;
-}
-
 .geo-shoplist-classic-sidebar aside {
   width: 25%;
   float: left;
@@ -2790,6 +2790,112 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
 .geo-shoplist-classic-sidebar .geo-content-area {
   width: 75%;
   float: right;
+}
+
+.geo-shoplist-masonry .geo-content-area {
+  width: 100%;
+}
+.geo-shoplist-masonry article {
+  width: 33.3333333333333%;
+}
+.geo-shoplist-masonry article a > img {
+  opacity: 1;
+  transition: .2s, transform 1s;
+  transform: translateZ(0);
+}
+.geo-shoplist-masonry article .status {
+  opacity: 1;
+  transition: .2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #559acf;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 10px 20px;
+}
+.geo-shoplist-masonry article .status.new {
+  background-color: #559acf;
+}
+.geo-shoplist-masonry article .status.out {
+  background-color: #6b6b6b;
+}
+.geo-shoplist-masonry article .status.last {
+  background-color: #de7846;
+}
+.geo-shoplist-masonry article .info {
+  padding: 15px;
+  position: absolute;
+  top: 100%;
+  padding-top: 20%;
+  width: 100%;
+  transition: .2s;
+  background: rgba(255, 255, 255, 0.95);
+  height: 100%;
+}
+.geo-shoplist-masonry article .info .title {
+  color: #3787c4;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+}
+.geo-shoplist-masonry article .info .title a {
+  transition: .2s;
+}
+.geo-shoplist-masonry article .info .rating {
+  font-size: 10px;
+}
+.geo-shoplist-masonry article .info .rating > [class^="icon-"] {
+  color: #e6e6e6;
+  cursor: pointer;
+  transition: .2s;
+  margin-right: 2px;
+}
+.geo-shoplist-masonry article .info .rating > [class^="icon-"].active {
+  color: #3787c4;
+}
+.geo-shoplist-masonry article .info .rating > [class^="icon-"]:hover {
+  color: #3787c4;
+}
+.geo-shoplist-masonry article .info .price {
+  color: #878787;
+  font-size: 15px;
+  font-weight: 700;
+}
+.geo-shoplist-masonry article .info .price del {
+  color: #e6e6e6;
+  padding-left: 15px;
+}
+.geo-shoplist-masonry article .info a.add-to-cart {
+  position: absolute;
+  left: 10%;
+  bottom: 20px;
+  right: 10%;
+  margin: 0 auto;
+  max-width: 210px;
+  display: inline-block;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: .2s;
+}
+.geo-shoplist-masonry article .info a.add-to-cart > [class^="icon-"] {
+  padding-right: 15px;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+  font-weight: 400;
+}
+.geo-shoplist-masonry article:hover a > img {
+  transform: translateZ(0) scale(1.2);
+}
+.geo-shoplist-masonry article:hover .info {
+  top: 0;
+}
+.geo-shoplist-masonry article:nth-child(8) {
+  width: 66.6666666666666%;
 }
 
 /* SHOP ITEM
