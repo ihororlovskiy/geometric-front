@@ -18,10 +18,45 @@
 		<div class="title">Filter</div>
 		Clear all
 		<div class="subtitle">Price</div>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<label for="amount">Price range:</label>
+<input type="text" id="amount">
+
+<div id="slider-range"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div>
 		210.00                -     1.560.00
 		£100
 		£3.650.00
-		Filtered
+		Filtered</div>
 
 		<div class="subtitle">Brands</div>
 		<div class="checkbox">
