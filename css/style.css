@@ -95,6 +95,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-star:before,
 .icon-uniE03F:before {
   content: "\e03f";
 }
@@ -2555,7 +2556,7 @@ div.vertical-centering {
   height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: 1.5s;
+  transition: .75s;
 }
 
 .vtabs__tabcontent__item.active {
@@ -2593,6 +2594,58 @@ div.vertical-centering {
   font-size: 15px;
   padding: 25px 0;
   line-height: 20px;
+}
+
+/* review
+============================================================================ */
+.review {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.review__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.review__text {
+  margin-left: 80px;
+  min-height: 80px;
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #afafaf;
+  line-height: 1.4;
+}
+
+.review__text__rating {
+  font-size: 10px;
+  line-height: 1;
+  margin: 10px 0;
+}
+.review__text__rating > [class^="icon-"] {
+  color: #e6e6e6;
+  cursor: pointer;
+  transition: .2s;
+  margin-right: 2px;
+}
+.review__text__rating > [class^="icon-"].active {
+  color: #3787c4;
+}
+.review__text__rating > [class^="icon-"]:hover {
+  color: #3787c4;
+}
+
+.review__text__message > p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 15px;
+  font-weight: 300;
+  color: #515151;
 }
 
 /* SHOP LISTS

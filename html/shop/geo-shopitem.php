@@ -150,11 +150,15 @@
 			<ul class="vtabs__tablist" role="tablist">
 				<li role="presentation" class="vtabs__tablist__item active"><a href="#Description" aria-controls="Description" role="tab" data-toggle="tab">Description</a></li>
 				<li role="presentation" class="vtabs__tablist__item"><a href="#Information" aria-controls="Information" role="tab" data-toggle="tab">Additional Information</a></li>
-				<li role="presentation" class="vtabs__tablist__item"><a href="#Reviews" aria-controls="Reviews" role="tab" data-toggle="tab">Reviews (2)</a></li>
+				<li role="presentation" class="vtabs__tablist__item"><a href="#Reviews" aria-controls="Reviews" role="tab" data-toggle="tab">Reviews <span>(3)</span></a></li>
 			</ul>
 
 			<div class="vtabs__tabcontent">
 				<div role="tabpanel" class="vtabs__tabcontent__item active" id="Description">
+					<p>Meggings next level yr, 90’s small batch four loko brunch wes anderson fixie american apparel flexitarian pitchfork neutra. Constructed in cotton sweat fabric, this lovely piece, lacus eu mattis auctor, dolor lectus venenatis nulla, at tristique eros sem vel ante. Sed leo enim, iaculis ornare tristique non, vulputate sit amet ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean fringilla laoreet mauris lectus pellentesque eu.</p>
+				</div>
+
+				<div role="tabpanel" class="vtabs__tabcontent__item" id="Information">
 					<table class="gtable">
 						<tbody>
 							<tr>
@@ -185,12 +189,62 @@
 					</table>
 				</div>
 
-				<div role="tabpanel" class="vtabs__tabcontent__item" id="Information">
-					Additional Information
-				</div>
-
 				<div role="tabpanel" class="vtabs__tabcontent__item" id="Reviews">
-					Reviews
+
+					<div class="review">
+						<img class="review__img" src="/img/shop/user1.jpg" alt="...">
+						<div class="review__text">
+							<span class="review__text__name">Vitaly Portnikov</span>,
+							<span class="review__text__date">January 26, 2015</span>
+							<div class="review__text__rating">
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star"></span>
+							</div>
+							<div class="review__text__message">
+								<p>The Best Products in this collection</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="review">
+						<img class="review__img" src="/img/shop/user2.jpg" alt="...">
+						<div class="review__text">
+							<span class="review__text__name">Vitaly Portnikov</span>,
+							<span class="review__text__date">January 26, 2015</span>
+							<div class="review__text__rating">
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+							</div>
+							<div class="review__text__message">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga totam rem consequuntur esse non quibusdam saepe laborum recusandae minus, aspernatur expedita voluptatum consequatur vero quam sequi voluptas hic commodi vitae, id nesciunt repellendus. Dolor illum doloremque exercitationem, quam. Porro, architecto!</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="review">
+						<img class="review__img" src="/img/shop/user3.jpg" alt="...">
+						<div class="review__text">
+							<span class="review__text__name">Vitaly Portnikov</span>,
+							<span class="review__text__date">January 26, 2015</span>
+							<div class="review__text__rating">
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+							</div>
+							<div class="review__text__message">
+								<p>Ciao mi chiamo il italiano</p>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
