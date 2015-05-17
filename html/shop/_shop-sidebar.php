@@ -16,47 +16,21 @@
 
 	<div class="sidebar__item filter">
 		<div class="title">Filter</div>
-		Clear all
 		<div class="subtitle">Price</div>
-
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
-<label for="amount">Price range:</label>
-<input type="text" id="amount">
-
-<div id="slider-range"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<div>
-		210.00                -     1.560.00
-		£100
-		£3.650.00
-		Filtered</div>
+		<form action="" class="filter__form">
+				<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+				<input type="text" id="amount">
+				<div id="slider-range"></div>
+				<!--
+				210.00
+				- 
+				1.560.00
+				£100
+				£3.650.00
+				Filtered
+				-->
+				<button class="btn btn-primary" type="submit">Filtered</button>
+		</form>
 
 		<div class="subtitle">Brands</div>
 		<div class="checkbox">
@@ -104,6 +78,8 @@
 		<div class="checkbox">
 			<label><input type="checkbox"> Oliver Peoples</label>
 		</div>
+
+		<a href="#" class="clear-all">Clear all</a>
 	</div>
 
 	<div class="sidebar__item search">

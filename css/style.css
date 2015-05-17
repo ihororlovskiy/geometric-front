@@ -2916,6 +2916,17 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   color: #6a6a6a;
   margin-bottom: 20px;
 }
+.geo-shoplist-sidebar .filter {
+  position: relative;
+}
+.geo-shoplist-sidebar .filter form.filter__form {
+  margin-bottom: 20px;
+}
+.geo-shoplist-sidebar .filter a.clear-all {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 .bestsales__item__img {
   float: left;

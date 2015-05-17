@@ -135,57 +135,55 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-12">
 
-					<h1 style="margin-bottom:200px;">Here Plase For Tabs</h1>
-
-
-<div class="vertical-tabs-container">
-	<div class="vertical-tabs">
-		<a href="javascript:void(0)" class="js-vertical-tab vertical-tab is-active" rel="tab1">Item 1</a>
-		<a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab2">Item 2</a>
-		<a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab3">Item 3</a>
-		<a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab4">Item 4</a>
-	</div>
-
-	<div class="vertical-tab-content-container">
-		<a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading is-active" rel="tab1">Item 1</a>
-		<div id="tab1" class="js-vertical-tab-content vertical-tab-content">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
-		</div>
-
-		<a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab2">Item 2</a>
-		<div id="tab2" class="js-vertical-tab-content vertical-tab-content">
-			<p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum.</p>
-		</div>
-
-		<a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab3">Item 3</a>
-		<div id="tab3" class="js-vertical-tab-content vertical-tab-content">
-			<p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>
-		</div>
-
-		<a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab4">Item 4</a>
-		<div id="tab4" class="js-vertical-tab-content vertical-tab-content">
-			<p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna, mollis vel suscipit in, pharetra at ligula. Pellentesque a est vel est fermentum pellentesque sed sit amet dolor. Nunc in dapibus nibh. Aliquam erat volutpat. Phasellus vel dui sed nibh iaculis convallis id sit amet urna. Proin nec tellus quis justo consequat accumsan. Vivamus turpis enim, auctor eget placerat eget, aliquam ut sapien.</p>
-		</div>
-	</div>
-</div>
-
-
-					<!-- Weight 
-					1.5 kg
-					Dimensions
-					90 x 60 x 90 cm
-					Composition
-					100% Cotton
-					Size & Fit  
-					This style comes in a regular fit which fits true to size.
-					Other Info  
-					Machine wash according to instructions on care label
-					Size
-					One Size Fits All, Extra Small, Small, Medium, Large, Extra Large -->
-
+		<!-- Tabs -->
+		<div class="row" role="tabpanel">
+			<div class="col-sm-3">
+				<ul class="nav nav-stacked" role="tablist">
+					<li role="presentation" class="active"><a href="#Description" aria-controls="Description" role="tab" data-toggle="tab">Description</a></li>
+					<li role="presentation"><a href="#Information" aria-controls="Information" role="tab" data-toggle="tab">Additional Information</a></li>
+					<li role="presentation"><a href="#Reviews" aria-controls="Reviews" role="tab" data-toggle="tab">Reviews (2)</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-9">
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="Description">
+						<table class="table">
+							<tbody>
+								<tr>
+									<th>Weight</th>
+									<td>1.5 kg</td>
+								</tr>
+								<tr>
+									<th>Dimensions</th>
+									<td>90 x 60 x 90 cm</td>
+								</tr>
+								<tr>
+									<th>Composition</th>
+									<td>100% Cotton</td>
+								</tr>
+								<tr>
+									<th>Size & Fit</th>
+									<td>This style comes in a regular fit which fits true to size.</td>
+								</tr>
+								<tr>
+									<th>Other Info</th>
+									<td>Machine wash according to instructions on care label</td>
+								</tr>
+								<tr>
+									<th>Size</th>
+									<td>One Size Fits All, Extra Small, Small, Medium, Large, Extra Large</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="Information">
+						Additional Information
+					</div>
+					<div role="tabpanel" class="tab-pane" id="Reviews">
+						Reviews
+					</div>
+				</div>
 			</div>
 		</div>
 
