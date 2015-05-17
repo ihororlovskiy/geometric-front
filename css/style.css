@@ -97,7 +97,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .icon-star:before,
 .icon-uniE03F:before {
-  content: "\e03f";
+  content: '\e03f';
+}
+
+.icon-arrow-left:before,
+.icon-uniE5CC:before {
+  content: '\e5cc';
+}
+
+.icon-arrow-right:before,
+.icon-uniE5CD:before {
+  content: '\e5cd';
+}
+
+.icon-cart:before,
+.icon-uniE139:before {
+  content: '\e139';
 }
 
 .icon-uni46:before {
@@ -124,20 +139,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: "\e4ba";
 }
 
-.icon-uniE5CC:before {
-  content: "\e5cc";
-}
-
-.icon-uniE5CD:before {
-  content: "\e5cd";
-}
-
 .icon-uniE040:before {
   content: "\e040";
-}
-
-.icon-uniE139:before {
-  content: "\e139";
 }
 
 .icon-uniE5CA:before {
@@ -2501,6 +2504,50 @@ div.vertical-centering {
   right: 0;
 }
 
+/* breadcrumb
+============================================================================ */
+ol.breadcrumb {
+  padding: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+ol.breadcrumb > li {
+  font-size: 10px;
+}
+ol.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #6a6a6a;
+  content: '>';
+  position: relative;
+  top: -1px;
+}
+
+/* Alpha Arrows
+============================================================================ */
+.arrows-a__prev,
+.arrows-a__next {
+  width: 40px;
+  line-height: 42px;
+  height: 40px;
+  background: #fafafa;
+  color: #6a6a6a;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  width: 40px;
+  display: block;
+  float: left;
+}
+
+.arrows-a__prev {
+  margin-right: 10px;
+}
+
 /* vertical tabs
 ============================================================================ */
 .vtabs {
@@ -3227,103 +3274,6 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
 .geo-shopitem .geo-shopitem-info {
   position: relative;
 }
-.geo-shopitem .geo-shopitem-info ol.breadcrumb {
-  padding: 0;
-  margin-bottom: 20px;
-  list-style: none;
-  background-color: transparent;
-  border-radius: 0;
-  line-height: 1;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.geo-shopitem .geo-shopitem-info ol.breadcrumb > li {
-  font-size: 10px;
-}
-.geo-shopitem .geo-shopitem-info ol.breadcrumb > li + li:before {
-  padding: 0 5px;
-  color: #6a6a6a;
-  content: '>';
-  position: relative;
-  top: -1px;
-}
-.geo-shopitem .geo-shopitem-info h1 {
-  font-weight: 300;
-  font-size: 40px;
-  color: #6a6a6a;
-}
-.geo-shopitem .geo-shopitem-info .rating {
-  font-size: 10px;
-}
-.geo-shopitem .geo-shopitem-info .rating > [class^="icon-"] {
-  color: #e6e6e6;
-  cursor: pointer;
-  transition: .2s;
-  margin-right: 2px;
-}
-.geo-shopitem .geo-shopitem-info .rating > [class^="icon-"].active {
-  color: #3787c4;
-}
-.geo-shopitem .geo-shopitem-info .rating > [class^="icon-"]:hover {
-  color: #3787c4;
-}
-.geo-shopitem .geo-shopitem-info .price {
-  float: left;
-  width: 40%;
-  line-height: 50px;
-  color: #5a9ed2;
-  font-size: 20px;
-  font-weight: 700;
-}
-.geo-shopitem .geo-shopitem-info .price del {
-  color: #e6e6e6;
-  padding-left: 15px;
-}
-.geo-shopitem .geo-shopitem-info form.quantity {
-  float: left;
-  width: 60%;
-}
-.geo-shopitem .geo-shopitem-info form.quantity input.quantity-input {
-  float: right;
-  width: 100px;
-  border: none;
-  text-align: center;
-  color: #909090;
-  font-weight: 700;
-  font-size: 20px;
-  padding: 11px 15px 11px 25px;
-}
-.geo-shopitem .geo-shopitem-info form.quantity input.quantity-input:focus {
-  background-color: #eee;
-  color: #4591cb;
-}
-.geo-shopitem .geo-shopitem-info form.quantity button.quantity-submit {
-  float: right;
-  outline: none;
-  border: none;
-  display: inline-block;
-  color: #fff;
-  background: #4591cb;
-  padding: 10px 20px;
-  max-width: 210px;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: .2s;
-}
-.geo-shopitem .geo-shopitem-info form.quantity button.quantity-submit > [class^="icon-"] {
-  padding-right: 15px;
-  font-size: 20px;
-  position: relative;
-  top: 3px;
-  font-weight: 400;
-}
-.geo-shopitem .geo-shopitem-info form.quantity button.quantity-submit:hover {
-  background: #5198ce;
-}
-.geo-shopitem .geo-shopitem-info form.quantity button.quantity-submit:active {
-  background: #3582bc;
-}
 .geo-shopitem .geo-shopitem-info .size {
   color: #515151;
   margin-bottom: 20px;
@@ -3365,24 +3315,121 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   line-height: 1.4;
   font-size: 14px;
 }
-.geo-shopitem .geo-shopitem-info .prev,
-.geo-shopitem .geo-shopitem-info .next {
+
+.shopitem__arrows {
   position: absolute;
+  right: 0;
   top: 0;
-  width: 40px;
-  line-height: 42px;
-  height: 40px;
-  background: #fafafa;
+}
+
+.shopitem__title {
+  font-weight: 300;
+  font-size: 40px;
   color: #6a6a6a;
-  text-align: center;
-  font-size: 16px;
+}
+
+.shopitem__rating {
+  font-size: 12px;
+}
+.shopitem__rating > [class^="icon-"] {
+  color: #e6e6e6;
+  cursor: pointer;
+  transition: .2s;
+  margin-right: 2px;
+}
+.shopitem__rating > [class^="icon-"].active {
+  color: #3787c4;
+}
+.shopitem__rating > [class^="icon-"]:hover {
+  color: #3787c4;
+}
+
+.shopitem__form {
+  margin: 30px 0 40px;
+  padding-top: 10px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.shopitem__form__price {
+  line-height: 50px;
+  color: #5a9ed2;
+  font-size: 20px;
   font-weight: 700;
 }
-.geo-shopitem .geo-shopitem-info .prev {
-  right: 50px;
+.shopitem__form__price del {
+  color: #e6e6e6;
+  padding-left: 15px;
+  font-size: 14px;
 }
-.geo-shopitem .geo-shopitem-info .next {
-  right: 0;
+
+.shopitem__form__number {
+  width: 100px;
+  border: none;
+  text-align: center;
+  color: #909090;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 11px 15px 11px 25px;
+}
+
+.shopitem__form__number:hover,
+.shopitem__form__number:focus {
+  background-color: #eee;
+  color: #4591cb;
+  border: none;
+}
+
+.shopitem__form__submit {
+  outline: none;
+  border: none;
+  display: block;
+  color: #fff;
+  background: #4591cb;
+  padding: 10px 20px;
+  max-width: 210px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: .2s;
+}
+.shopitem__form__submit > [class^="icon-"] {
+  padding-right: 15px;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+  font-weight: 400;
+}
+
+.shopitem__form__submit:hover {
+  background: #5198ce;
+}
+
+.shopitem__form__submit:active {
+  background: #3582bc;
+}
+
+.shopitem .description {
+  color: #515151;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.shopitem .sku {
+  color: #515151;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.shopitem .categories {
+  color: #515151;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.shopitem .tags {
+  color: #515151;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 14px;
 }
 
 .geo-related-products .geo-related-head {

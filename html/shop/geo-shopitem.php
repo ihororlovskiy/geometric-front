@@ -1,6 +1,6 @@
 <?include('../partials/geo-body-open.php');?>
 
-<article class="geo-shopitem">
+<article class="geo-shopitem shopitem">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
@@ -28,7 +28,11 @@
 
 			</div>
 			<div class="col-sm-6">
-				<div class="geo-shopitem-info">
+
+					<div class="shopitem__arrows arrows-a">
+						<a href="/html/shop/geo-shopitem.php" class="arrows-a__prev"><span class="icon-arrow-left"></span></a>
+						<a href="/html/shop/geo-shopitem.php" class="arrows-a__next"><span class="icon-arrow-right"></span></a>
+					</div>
 
 					<ol class="breadcrumb">
 						<li><a href="/">Home</a></li>
@@ -36,37 +40,86 @@
 						<li class="active">Coats & Jackets</li>
 					</ol>
 
-					<h1>Black Leather Dress</h1>
+					<h1 class="shopitem__title">Black Leather Dress</h1>
 
-					<div class="rating">
-						<span class="icon-uniE03F active"></span>
-						<span class="icon-uniE03F active"></span>
-						<span class="icon-uniE03F active"></span>
-						<span class="icon-uniE03F"></span>
-						<span class="icon-uniE03F"></span>
+					<div class="shopitem__rating">
+						<span class="icon-star active"></span>
+						<span class="icon-star active"></span>
+						<span class="icon-star active"></span>
+						<span class="icon-star"></span>
+						<span class="icon-star"></span>
 					</div>
 
-					<hr>
+						<form class="shopitem__form">
 
-					<div class="clearfix">
-						<div class="price">£230.00 <del>£320.00</del></div>
-						<form class="quantity">
-							<button class="quantity-submit" type="submit"><span class="icon-uniE139"></span> Add to cart</button>
-							<input class="quantity-input" type="number" step="1" min="1" name="quantity" value="1">
-						</form>
-					</div>
+							<div class="shopitem__form__price">£230.00 <del>£320.00</del></div>
+							<input class="shopitem__form__number" type="number" step="1" min="1" name="quantity" value="1">
+							<input class="shopitem__form__hidden" type="hidden" name="product" value="4994">
+							<button class="shopitem__form__submit" type="submit"><span class="icon-cart"></span> Add to cart</button>
 
-					<hr>
+							<!-- <hr> -->
 
-					<!-- <div class="size">
-						Size:
-						XS
-						S
-						M
-						L
-						XL
-						XXL
+					<!-- <span>Size: </span>
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary active">
+							<input type="radio" name="options" id="option1" autocomplete="off"> XS
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="option2" autocomplete="off"> S
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="option3" autocomplete="off" checked> M
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="option3" autocomplete="off"> L
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="option3" autocomplete="off"> XL
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="option3" autocomplete="off"> XXL
+						</label>
 					</div> -->
+
+					<!-- <div class="color">
+						<div class="dropdown">
+							<span>Color: </span>
+							<a href="#" data-toggle="dropdown">Black <span class="icon-uniE5CA"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Jewelry & Watches</a></li>
+								<li><a href="#">Handbags & Accessories</a></li>
+								<li><a href="#">Health & Beauty</a></li>
+								<li><a href="#">Shoes</a></li>
+								<li><a href="#">Sales & Events</a></li>
+							</ul>
+						</div>
+					</div> -->
+
+					<div class="shopitem__form__size">
+						<span>Size: </span>
+						<select name="size">
+							<option value="xs">XS</option>
+							<option value="s">S</option>
+							<option value="m">M</option>
+							<option value="l">L</option>
+							<option value="xl">XL</option>
+							<option value="xxl">XXL</option>
+						</select>
+					</div>
+
+					<div class="shopitem__form__color">
+						<span>Color: </span>
+						<select name="color">
+							<option value="black">Black</option>
+							<option value="white">White</option>
+							<option value="red">Red</option>
+							<option value="yellow">Yellow</option>
+							<option value="pink">Pink</option>
+						</select>
+					</div>
+
+
+						</form>
 
 					<!-- <div class="size">
 						<span>Size: </span>
@@ -80,53 +133,6 @@
 						</form>
 					</div> -->
 
-					<span>Size: </span>
-					<div class="btn-group" data-toggle="buttons">
-						<label class="btn btn-primary active">
-							<input type="radio" name="options" id="option1" autocomplete="off" checked> XS
-						</label>
-						<label class="btn btn-primary">
-							<input type="radio" name="options" id="option2" autocomplete="off"> S
-						</label>
-						<label class="btn btn-primary">
-							<input type="radio" name="options" id="option3" autocomplete="off"> M
-						</label>
-						<label class="btn btn-primary">
-							<input type="radio" name="options" id="option3" autocomplete="off"> L
-						</label>
-						<label class="btn btn-primary">
-							<input type="radio" name="options" id="option3" autocomplete="off"> XL
-						</label>
-						<label class="btn btn-primary">
-							<input type="radio" name="options" id="option3" autocomplete="off"> XXL
-						</label>
-					</div>
-
-					<div class="color">
-						<div class="dropdown">
-							<span>Color: </span>
-							<a href="#" data-toggle="dropdown">Black <span class="icon-uniE5CA"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Jewelry & Watches</a></li>
-								<li><a href="#">Handbags & Accessories</a></li>
-								<li><a href="#">Health & Beauty</a></li>
-								<li><a href="#">Shoes</a></li>
-								<li><a href="#">Sales & Events</a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="color">
-						<span>Color: </span>
-						<select>
-							<option>Black</option>
-							<option>White</option>
-							<option>Red</option>
-							<option>Yellow</option>
-							<option>Pink</option>
-						</select>
-					</div>
-
 					<div class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</div>
 					<div class="sku">SKU: 4324231546</div>
 					<div class="categories">Categories:
@@ -138,9 +144,7 @@
 						<a href="#">Theme</a>.
 					</div>
 
-					<a href="/html/shop/geo-shopitem.php" class="prev"><span class="icon-uniE5CC"></span></i></a>
-					<a href="/html/shop/geo-shopitem.php" class="next"><span class="icon-uniE5CD"></span></a>
-				</div>
+				
 			</div>
 		</div>
 
@@ -306,11 +310,11 @@
 						<div class="info">
 							<div class="title"><a href="/html/shop/geo-shopitem.php">Bicycle</a></div>
 							<div class="rating">
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F"></span>
-								<span class="icon-uniE03F"></span>
-								<span class="icon-uniE03F"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star"></span>
+								<span class="icon-star"></span>
+								<span class="icon-star"></span>
 							</div>
 							<div class="price">£230.00</div>
 						</div>
@@ -325,11 +329,11 @@
 						<div class="info">
 							<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
 							<div class="rating">
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star"></span>
 							</div>
 							<div class="price">£196.00 <del>£256.00</del></div>
 						</div>
@@ -343,11 +347,11 @@
 						<div class="info">
 							<div class="title"><a href="/html/shop/geo-shopitem.php">Cinema 3D LED TV</a></div>
 							<div class="rating">
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F"></span>
-								<span class="icon-uniE03F"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star"></span>
+								<span class="icon-star"></span>
 							</div>
 							<div class="price">£230.00</div>
 						</div>
@@ -362,11 +366,11 @@
 						<div class="info">
 							<div class="title"><a href="/html/shop/geo-shopitem.php">Dicta qui</a></div>
 							<div class="rating">
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F active"></span>
-								<span class="icon-uniE03F"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star active"></span>
+								<span class="icon-star"></span>
 							</div>
 							<div class="price">£196.00 <del>£256.00</del></div>
 						</div>
