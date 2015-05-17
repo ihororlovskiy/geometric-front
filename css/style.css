@@ -2500,6 +2500,101 @@ div.vertical-centering {
   right: 0;
 }
 
+/* vertical tabs
+============================================================================ */
+.vtabs {
+  border: 0 solid #f2f2f2;
+  border-width: 1px 0;
+  margin-bottom: 40px;
+  padding: 30px 0;
+}
+
+.vtabs__tablist {
+  width: 25%;
+  float: left;
+  border-right: 1px solid #f2f2f2;
+  padding-bottom: 60px;
+}
+
+.vtabs__tablist__item {
+  padding-right: 30px;
+}
+
+.vtabs__tablist__item > a {
+  text-transform: uppercase;
+  color: #515151;
+  font-weight: 700;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+}
+
+.vtabs__tablist__item > a:after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #f2f2f2;
+  transition: .2s;
+}
+
+.vtabs__tablist__item.active > a:after {
+  height: 2px;
+  background: #488cc0;
+}
+
+.vtabs__tabcontent {
+  width: 75%;
+  float: left;
+  padding-left: 30px;
+}
+
+.vtabs__tabcontent__item {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 1.5s;
+}
+
+.vtabs__tabcontent__item.active {
+  height: auto;
+  opacity: 1;
+}
+
+/* table
+============================================================================ */
+.gtable {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.gtable tr {
+  border-bottom: 1px dotted #cdcdcd;
+}
+
+.gtable tr:last-child {
+  border-bottom: none;
+}
+
+.gtable th {
+  color: #515151;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 20px 0;
+  line-height: 20px;
+}
+
+.gtable td {
+  color: #515151;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 25px 0;
+  line-height: 20px;
+}
+
 /* SHOP LISTS
 ============================================================================ */
 .geo-shoplist {

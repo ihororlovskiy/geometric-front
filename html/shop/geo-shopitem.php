@@ -49,7 +49,7 @@
 					<hr>
 
 					<div class="clearfix">
-						<div class="price">£230.00</div>
+						<div class="price">£230.00 <del>£320.00</del></div>
 						<form class="quantity">
 							<button class="quantity-submit" type="submit"><span class="icon-uniE139"></span> Add to cart</button>
 							<input class="quantity-input" type="number" step="1" min="1" name="quantity" value="1">
@@ -68,7 +68,7 @@
 						XXL
 					</div> -->
 
-					<div class="size">
+					<!-- <div class="size">
 						<span>Size: </span>
 						<form action="">
 							<input type="radio" name="sex" value="XS"><span>XS</span>
@@ -78,23 +78,31 @@
 							<input type="radio" name="sex" value="XL"><span>XL</span>
 							<input type="radio" name="sex" value="XXL"><span>XXL</span>
 						</form>
+					</div> -->
+
+					<span>Size: </span>
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary active">
+							<input type="radio" name="options" id="option1" autocomplete="off" checked> XS
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="option2" autocomplete="off"> S
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="option3" autocomplete="off"> M
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="option3" autocomplete="off"> L
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="option3" autocomplete="off"> XL
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="option3" autocomplete="off"> XXL
+						</label>
 					</div>
 
-<div class="btn-group" data-toggle="buttons">
-	<label class="btn btn-primary active">
-		<input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-	</label>
-	<label class="btn btn-primary">
-		<input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-	</label>
-	<label class="btn btn-primary">
-		<input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-	</label>
-</div>
-
-					<!-- <div class="color">Color: Black</div> -->
-
-					<!-- <div class="color">
+					<div class="color">
 						<div class="dropdown">
 							<span>Color: </span>
 							<a href="#" data-toggle="dropdown">Black <span class="icon-uniE5CA"></span></a>
@@ -106,7 +114,7 @@
 								<li><a href="#">Sales & Events</a></li>
 							</ul>
 						</div>
-					</div> -->
+					</div>
 
 					<div class="color">
 						<span>Color: </span>
@@ -137,54 +145,55 @@
 		</div>
 
 		<!-- Tabs -->
-		<div class="row" role="tabpanel">
-			<div class="col-sm-3">
-				<ul class="nav nav-stacked" role="tablist">
-					<li role="presentation" class="active"><a href="#Description" aria-controls="Description" role="tab" data-toggle="tab">Description</a></li>
-					<li role="presentation"><a href="#Information" aria-controls="Information" role="tab" data-toggle="tab">Additional Information</a></li>
-					<li role="presentation"><a href="#Reviews" aria-controls="Reviews" role="tab" data-toggle="tab">Reviews (2)</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-9">
-				<div class="tab-content">
-					<div role="tabpanel" class="tab-pane active" id="Description">
-						<table class="table">
-							<tbody>
-								<tr>
-									<th>Weight</th>
-									<td>1.5 kg</td>
-								</tr>
-								<tr>
-									<th>Dimensions</th>
-									<td>90 x 60 x 90 cm</td>
-								</tr>
-								<tr>
-									<th>Composition</th>
-									<td>100% Cotton</td>
-								</tr>
-								<tr>
-									<th>Size & Fit</th>
-									<td>This style comes in a regular fit which fits true to size.</td>
-								</tr>
-								<tr>
-									<th>Other Info</th>
-									<td>Machine wash according to instructions on care label</td>
-								</tr>
-								<tr>
-									<th>Size</th>
-									<td>One Size Fits All, Extra Small, Small, Medium, Large, Extra Large</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div role="tabpanel" class="tab-pane" id="Information">
-						Additional Information
-					</div>
-					<div role="tabpanel" class="tab-pane" id="Reviews">
-						Reviews
-					</div>
+		<div class="vtabs clearfix" role="tabpanel">
+
+			<ul class="vtabs__tablist" role="tablist">
+				<li role="presentation" class="vtabs__tablist__item active"><a href="#Description" aria-controls="Description" role="tab" data-toggle="tab">Description</a></li>
+				<li role="presentation" class="vtabs__tablist__item"><a href="#Information" aria-controls="Information" role="tab" data-toggle="tab">Additional Information</a></li>
+				<li role="presentation" class="vtabs__tablist__item"><a href="#Reviews" aria-controls="Reviews" role="tab" data-toggle="tab">Reviews (2)</a></li>
+			</ul>
+
+			<div class="vtabs__tabcontent">
+				<div role="tabpanel" class="vtabs__tabcontent__item active" id="Description">
+					<table class="gtable">
+						<tbody>
+							<tr>
+								<th>Weight</th>
+								<td>1.5 kg</td>
+							</tr>
+							<tr>
+								<th>Dimensions</th>
+								<td>90 x 60 x 90 cm</td>
+							</tr>
+							<tr>
+								<th>Composition</th>
+								<td>100% Cotton</td>
+							</tr>
+							<tr>
+								<th>Size & Fit</th>
+								<td>This style comes in a regular fit which fits true to size.</td>
+							</tr>
+							<tr>
+								<th>Other Info</th>
+								<td>Machine wash according to instructions on care label</td>
+							</tr>
+							<tr>
+								<th>Size</th>
+								<td>One Size Fits All, Extra Small, Small, Medium, Large, Extra Large</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div role="tabpanel" class="vtabs__tabcontent__item" id="Information">
+					Additional Information
+				</div>
+
+				<div role="tabpanel" class="vtabs__tabcontent__item" id="Reviews">
+					Reviews
 				</div>
 			</div>
+
 		</div>
 
 		<div class="row">
@@ -284,6 +293,5 @@
 
 	</div>
 </article>
-
 
 <?include('../partials/geo-body-close.php');?>
