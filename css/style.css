@@ -2648,6 +2648,138 @@ div.vertical-centering {
   color: #515151;
 }
 
+/* add review
+============================================================================ */
+.addreview {
+  margin: 60px 0 30px;
+  text-align: center;
+  border-top: 1px solid #f2f2f2;
+}
+
+.addreview__button {
+  margin: 0 auto 20px;
+  display: block;
+  transform: translateY(-50%);
+}
+
+.addreview__button__add {
+  display: block;
+  opacity: 1;
+  transition: .75s;
+}
+
+.addreview__button__close {
+  display: none;
+  opacity: 0;
+  transition: .75s;
+}
+
+.addreview__form {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: .75s;
+  text-align: left;
+}
+
+.addreview__form__body {
+  height: 112px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.addreview__form__author {
+  width: 28%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.addreview__form__email {
+  width: 28%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.addreview__form__textarea {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.addreview__form__rating {
+  float: left;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.addreview__form__rating .addreview__form__rating__title {
+  color: #afafaf;
+  margin-right: 10px;
+}
+.addreview__form__rating > [class^="icon-"] {
+  color: #e6e6e6;
+  cursor: pointer;
+  transition: .2s;
+  margin-right: 2px;
+  font-size: 10px;
+}
+.addreview__form__rating > [class^="icon-"].active {
+  color: #3787c4;
+}
+.addreview__form__rating > [class^="icon-"]:hover {
+  color: #3787c4;
+}
+
+.addreview__form__submit {
+  width: auto;
+  float: right;
+}
+
+.addreview--add .addreview__button__add {
+  display: none;
+  opacity: 0;
+}
+
+.addreview--add .addreview__button__close {
+  display: block;
+  opacity: 1;
+}
+
+.addreview--add .addreview__form {
+  height: auto;
+  opacity: 1;
+}
+
+/* btns
+============================================================================ */
+.gbtn {
+  border: 0;
+  background: red;
+  color: white;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.gbtn:hover {
+  border: 0;
+}
+
+.gbtn:focus {
+  border: 0;
+}
+
+.gbtn:active {
+  border: 0;
+}
+
 /* SHOP LISTS
 ============================================================================ */
 .geo-shoplist {

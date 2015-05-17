@@ -156,3 +156,10 @@ function buttonUp() {
 		$('.geo-searchbox-icon').css('display', 'block');
 	}
 }
+
+// Add review
+$(document).ready(function(){
+    $('.addreview>button').click(function(){
+        $('.addreview').toggleClass('addreview--add');
+    });
+});
