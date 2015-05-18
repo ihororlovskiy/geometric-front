@@ -53,11 +53,37 @@
 						<form class="shopitem__form">
 
 							<div class="shopitem__form__price">£230.00 <del>£320.00</del></div>
-							<input class="shopitem__form__number" type="number" step="1" min="1" name="quantity" value="1">
 							<input class="shopitem__form__hidden" type="hidden" name="product" value="4994">
+							<input class="shopitem__form__quantity" type="number" step="1" min="1" name="quantity" value="1">
 							<button class="shopitem__form__submit" type="submit"><span class="icon-cart"></span> Add to cart</button>
 
 							<!-- <hr> -->
+
+							<nav class="geo-filter clearfix">
+								<ul class="filter-right">
+									<li class="dropdown">
+										<p>Color</p>
+										<a href="#" data-toggle="dropdown">Black <span class="icon-uniE5CA"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">White</a></li>
+											<li><a href="#">Red</a></li>
+											<li><a href="#">Yellow</a></li>
+											<li><a href="#">Pink</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+
+							<div class="shopitem__form__color">
+								<span>Color: </span>
+								<select name="color" required>
+									<option value="black">Black</option>
+									<option value="white">White</option>
+									<option value="red" selected>Red</option>
+									<option value="yellow">Yellow</option>
+									<option value="pink">Pink</option>
+								</select>
+							</div>
 
 					<!-- <span>Size: </span>
 					<div class="btn-group" data-toggle="buttons">
@@ -97,29 +123,18 @@
 
 					<div class="shopitem__form__size">
 						<span>Size: </span>
-						<select name="size">
+						<select name="size" required>
 							<option value="xs">XS</option>
 							<option value="s">S</option>
-							<option value="m">M</option>
+							<option value="m" selected>M</option>
 							<option value="l">L</option>
 							<option value="xl">XL</option>
 							<option value="xxl">XXL</option>
 						</select>
 					</div>
 
-					<div class="shopitem__form__color">
-						<span>Color: </span>
-						<select name="color">
-							<option value="black">Black</option>
-							<option value="white">White</option>
-							<option value="red">Red</option>
-							<option value="yellow">Yellow</option>
-							<option value="pink">Pink</option>
-						</select>
-					</div>
-
-
 						</form>
+
 
 					<!-- <div class="size">
 						<span>Size: </span>

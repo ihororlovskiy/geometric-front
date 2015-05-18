@@ -14,8 +14,6 @@
  License URI:
 */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=cyrillic-ext,latin-ext);
-/* colors
-============================================================================ */
 /* reset
 ============================================================================ */
 html, body, div, span, applet, object, iframe,
@@ -61,7 +59,6 @@ caption, th, td {
 q, blockquote {
   quotes: none;
 }
-
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
@@ -2494,6 +2491,19 @@ ul.geo-relative-posts > li > a > h6 {
   margin-top: 60px;
 }
 
+/* clearfix
+============================================================================ */
+.bestsales__item {
+  *zoom: 1;
+}
+.bestsales__item:before, .bestsales__item:after {
+  content: " ";
+  display: table;
+}
+.bestsales__item:after {
+  clear: both;
+}
+
 /* vertical centering module
 ============================================================================ */
 div.vertical-centering {
@@ -3255,14 +3265,28 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   right: 0;
 }
 
-.bestsales__item__img {
-  float: left;
-  width: 25%;
+.bestsales__item {
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
 
-.bestsales__item__info {
+.bestsales__item__img {
   float: left;
-  width: 75%;
+  width: 80px;
+  margin-right: 10px;
+}
+
+.bestsales__item__title {
+  color: #488cc0;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.bestsales__item__price {
+  color: #898989;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 /* SHOP ITEM
@@ -3348,6 +3372,7 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   margin: 30px 0 40px;
   padding-top: 10px;
   border-top: 1px solid #f2f2f2;
+  display: none;
 }
 
 .shopitem__form__price {
@@ -3362,7 +3387,7 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   font-size: 14px;
 }
 
-.shopitem__form__number {
+.shopitem__form__quantity {
   width: 100px;
   border: none;
   text-align: center;
@@ -3372,8 +3397,8 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   padding: 11px 15px 11px 25px;
 }
 
-.shopitem__form__number:hover,
-.shopitem__form__number:focus {
+.shopitem__form__quantity:hover,
+.shopitem__form__quantity:focus {
   background-color: #eee;
   color: #4591cb;
   border: none;

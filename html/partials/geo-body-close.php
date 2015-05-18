@@ -109,7 +109,7 @@
 	<script src="/js/vendor/parallax.min.js"></script>
 	<script src="/js/vendor/jquery.flexslider-min.js"></script>
 
-
+	<!-- <script src="/js/vendor/jquery.selectBox.min.js"></script> -->
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   
   <script>

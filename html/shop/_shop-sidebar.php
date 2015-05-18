@@ -86,34 +86,37 @@
 		<div class="title">Search</div>
 	</div>
 
-	<div class="sidebar__item bestsales">
-
+	<div class="sidebar__item">
 		<div class="title">The Best Sellers</div>
-
-		<div class="bestsales__item">
-			<img class="bestsales__item__img" src="" alt="...">
-			<div class="bestsales__item__info">
-				<div class="bestsales__item__info__title">Jack Wills Polo Shirt</div>
-				<div class="bestsales__item__info__price">£1.560.00</div>
-			</div>
-		</div>
-
-		<div class="bestsales__item">
-			<img class="bestsales__item__img" src="" alt="...">
-			<div class="bestsales__item__info">
-				<div class="bestsales__item__info__title">Alan Alwin Tee</div>
-				<div class="bestsales__item__info__price">£1.560.00</div>
-			</div>
-		</div>
-
-		<div class="bestsales__item">
-			<img class="bestsales__item__img" src="" alt="...">
-			<div class="bestsales__item__info">
-				<div class="bestsales__item__info__title">Solid Dale Knit</div>
-				<div class="bestsales__item__info__price">£1.560.00</div>
-			</div>
-		</div>
-
+		<ul class="bestsales">
+			<li class="bestsales__item">
+				<a href="/html/shop/geo-shopitem.php">
+					
+						<img class="bestsales__item__img" src="/img/shop/list-classic-01.jpg" alt="...">
+						<span class="bestsales__item__title">Jack Wills Polo Shirt</span>
+					
+				</a>
+				<span class="bestsales__item__price">£1.560.00</span>
+			</li>
+			<li class="bestsales__item">
+				<a href="/html/shop/geo-shopitem.php">
+					
+						<img class="bestsales__item__img" src="/img/shop/list-classic-02.jpg" alt="...">
+						<span class="bestsales__item__title">Jack Wills Polo Shirt</span>
+					
+				</a>
+				<span class="bestsales__item__price">£1.560.00</span>
+			</li>
+			<li class="bestsales__item">
+				<a href="/html/shop/geo-shopitem.php">
+					
+						<img class="bestsales__item__img" src="/img/shop/list-classic-03.jpg" alt="...">
+						<span class="bestsales__item__title">Jack Wills Polo Shirt</span>
+					
+				</a>
+				<span class="bestsales__item__price">£1.560.00</span>
+			</li>
+		</ul>
 	</div>
 
 </div>

@@ -163,3 +163,8 @@ $(document).ready(function(){
         $('.addreview').toggleClass('addreview--add');
     });
 });
+
+// convert select
+// $(document).ready(function(){
+// 	$('#select').selectBox();
+// });
