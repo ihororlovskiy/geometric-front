@@ -112,8 +112,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: '\e139';
 }
 
+.icon-loupe:before,
 .icon-uni46:before {
-  content: "\46";
+  content: '\46';
 }
 
 .icon-uniE029:before {
@@ -356,18 +357,6 @@ textarea:focus::-webkit-input-placeholder {
 
 .geo-btn-sm {
   font-size: 0.8em;
-}
-
-/* geo-clearfix
-============================================================================ */
-.geo-clearfix:before,
-.geo-clearfix:after {
-  content: '';
-  display: table;
-}
-
-.geo-clearfix:after {
-  clear: both;
 }
 
 /* geo-box
@@ -2493,14 +2482,14 @@ ul.geo-relative-posts > li > a > h6 {
 
 /* clearfix
 ============================================================================ */
-.bestsales__item {
+.vtabs, nav.geo-filter, .bestsales__item {
   *zoom: 1;
 }
-.bestsales__item:before, .bestsales__item:after {
+.vtabs:before, nav.geo-filter:before, .bestsales__item:before, .vtabs:after, nav.geo-filter:after, .bestsales__item:after {
   content: " ";
   display: table;
 }
-.bestsales__item:after {
+.vtabs:after, nav.geo-filter:after, .bestsales__item:after {
   clear: both;
 }
 
@@ -3231,38 +3220,54 @@ nav.geo-filter > ul.filter-right > li.dropdown > ul.dropdown-menu:after {
   float: right;
 }
 
-.geo-shoplist-sidebar {
+.sidebar {
   width: 25%;
   float: left;
   text-align: left;
   padding-right: 30px;
 }
-.geo-shoplist-sidebar .sidebar__item {
+
+.sidebar__item {
   margin-bottom: 40px;
 }
-.geo-shoplist-sidebar .sidebar__item .title {
+
+.sidebar__item__title {
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
   color: #6a6a6a;
   margin-bottom: 20px;
 }
-.geo-shoplist-sidebar .sidebar__item .subtitle {
+
+.sidebar__item__subtitle {
   font-size: 18px;
   font-weight: 500;
   color: #6a6a6a;
   margin-bottom: 20px;
 }
-.geo-shoplist-sidebar .filter {
+
+.filter {
   position: relative;
 }
-.geo-shoplist-sidebar .filter form.filter__form {
+.filter form.filter__form {
   margin-bottom: 20px;
 }
-.geo-shoplist-sidebar .filter a.clear-all {
+.filter a.clear-all {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+form.search {
+  position: relative;
+}
+
+.search__icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #b0b0b0;
+  font-size: 24px;
 }
 
 .bestsales__item {

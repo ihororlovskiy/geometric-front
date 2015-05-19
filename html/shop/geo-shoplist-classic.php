@@ -11,7 +11,7 @@ include('../partials/geo-parallax.php');
 	<div class="container">
 		<div class="geo-content-area">
 
-			<nav class="geo-filter clearfix">
+			<nav class="geo-filter">
 				<ul class="filter-left">
 					<li class="dropdown">
 						<a href="#" data-toggle="dropdown"><span class="icon-uniE5CA"></span> All products</a>

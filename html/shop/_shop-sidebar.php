@@ -1,7 +1,7 @@
-<div class="geo-shoplist-sidebar">
+<div class="sidebar">
 
 	<div class="sidebar__item categories">
-		<div class="title">Product Categories</div>
+		<div class="sidebar__item__title">Product Categories</div>
 		<ul>
 			<li><a href="#">Activewear & Sports</a></li>
 			<li><a href="#">Beautifull Dresses</a></li>
@@ -15,8 +15,8 @@
 	</div>
 
 	<div class="sidebar__item filter">
-		<div class="title">Filter</div>
-		<div class="subtitle">Price</div>
+		<div class="sidebar__item__title">Filter</div>
+		<div class="sidebar__item__subtitle">Price</div>
 		<form action="" class="filter__form">
 				<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 				<input type="text" id="amount">
@@ -32,7 +32,7 @@
 				<button class="btn btn-primary" type="submit">Filtered</button>
 		</form>
 
-		<div class="subtitle">Brands</div>
+		<div class="sidebar__item__subtitle">Brands</div>
 		<div class="checkbox">
 			<label><input type="checkbox"> Bvlgari</label>
 		</div>
@@ -83,36 +83,36 @@
 	</div>
 
 	<div class="sidebar__item search">
-		<div class="title">Search</div>
+		<div class="sidebar__item__title">Search</div>
+		<form class="search">
+			<label class="search__icon" for="search">
+				<span class="icon-loupe"></span>
+			</label>
+			<input class="search__input" type="search" name="search" placeholder="Type and hit En" id="search">
+		</form>
 	</div>
 
 	<div class="sidebar__item">
-		<div class="title">The Best Sellers</div>
+		<div class="sidebar__item__title">The Best Sellers</div>
 		<ul class="bestsales">
 			<li class="bestsales__item">
 				<a href="/html/shop/geo-shopitem.php">
-					
-						<img class="bestsales__item__img" src="/img/shop/list-classic-01.jpg" alt="...">
-						<span class="bestsales__item__title">Jack Wills Polo Shirt</span>
-					
+					<img class="bestsales__item__img" src="/img/shop/list-classic-01.jpg" alt="...">
+					<span class="bestsales__item__title">Jack Wills Polo Shirt</span>
 				</a>
 				<span class="bestsales__item__price">£1.560.00</span>
 			</li>
 			<li class="bestsales__item">
 				<a href="/html/shop/geo-shopitem.php">
-					
-						<img class="bestsales__item__img" src="/img/shop/list-classic-02.jpg" alt="...">
-						<span class="bestsales__item__title">Jack Wills Polo Shirt</span>
-					
+					<img class="bestsales__item__img" src="/img/shop/list-classic-02.jpg" alt="...">
+					<span class="bestsales__item__title">Jack Wills Polo Shirt</span>
 				</a>
 				<span class="bestsales__item__price">£1.560.00</span>
 			</li>
 			<li class="bestsales__item">
 				<a href="/html/shop/geo-shopitem.php">
-					
-						<img class="bestsales__item__img" src="/img/shop/list-classic-03.jpg" alt="...">
-						<span class="bestsales__item__title">Jack Wills Polo Shirt</span>
-					
+					<img class="bestsales__item__img" src="/img/shop/list-classic-03.jpg" alt="...">
+					<span class="bestsales__item__title">Jack Wills Polo Shirt</span>
 				</a>
 				<span class="bestsales__item__price">£1.560.00</span>
 			</li>

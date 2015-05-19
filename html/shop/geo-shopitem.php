@@ -164,7 +164,7 @@
 		</div>
 
 		<!-- Tabs -->
-		<div class="vtabs clearfix" role="tabpanel">
+		<div class="vtabs" role="tabpanel">
 
 			<ul class="vtabs__tablist" role="tablist">
 				<li role="presentation" class="vtabs__tablist__item"><a href="#Description" aria-controls="Description" role="tab" data-toggle="tab">Description</a></li>
