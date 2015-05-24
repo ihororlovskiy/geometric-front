@@ -33,6 +33,27 @@
 		</form>
 
 		<div class="sidebar__item__subtitle">Brands</div>
+
+		<label class="checkbox" for="checkbox1">
+			<input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" class="custom-checkbox">
+			<span class="icons">
+				<span class="icon-unchecked"></span>
+				<span class="icon-checked"></span>
+			</span>
+			Unchecked
+		</label>
+
+<div class="geo-radio">
+  <input type="radio" id="radio01" name="radio" />
+  <label for="radio01"><span></span>Radio Button 1</label>
+</div>
+
+<div class="geo-radio">
+ <input type="radio" id="radio02" name="radio" />
+ <label for="radio02"><span></span>Radio Button 2</label>
+</div>
+
+
 		<div class="checkbox">
 			<label><input type="checkbox"> Bvlgari</label>
 		</div>

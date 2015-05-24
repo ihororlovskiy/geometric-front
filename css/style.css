@@ -2799,7 +2799,7 @@ ol.breadcrumb > li + li:before {
   opacity: 1;
 }
 
-/* btns
+/* buttons
 ============================================================================ */
 .gbtn {
   border: 0;
@@ -2824,6 +2824,53 @@ ol.breadcrumb > li + li:before {
 
 .gbtn:active {
   border: 0;
+}
+
+/* radio buttons
+============================================================================ */
+div.geo-radio {
+  margin: 0 0 0.75em 0;
+}
+
+div.geo-radio label {
+  cursor: pointer;
+}
+
+div.geo-radio input[type="radio"] {
+  display: none;
+}
+
+div.geo-radio input[type="radio"] + label {
+  color: #292321;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+div.geo-radio input[type="radio"] + label span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+div.geo-radio input[type="radio"] + label span {
+  background-color: #292321;
+}
+
+div.geo-radio input[type="radio"]:checked + label span {
+  background-color: #CC3300;
+}
+
+div.geo-radio input[type="radio"] + label span,
+div.geo-radio input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
 }
 
 /* SHOP LISTS
