@@ -20,7 +20,7 @@ include('../partials/geo-parallax.php');
 	<div>
 		<span class="icon-uni46"></span>
 		<span class="icon-uniE029"></span>
-		<span class="icon-uniE035"></span>
+		<span class="icon-hart"></span>
 		<span class="icon-uniE04A"></span>
 		<span class="icon-uniE12F"></span>
 		<span class="icon-uniE4BA"></span>

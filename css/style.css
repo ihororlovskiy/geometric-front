@@ -117,10 +117,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: '\46';
 }
 
+.icon-loupe:before,
 .icon-uniE029:before {
   content: "\e029";
 }
 
+.icon-hart:before,
 .icon-uniE035:before {
   content: "\e035";
 }
