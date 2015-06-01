@@ -18,8 +18,8 @@ include('../partials/geo-parallax.php');
 						<div class="geo-media-fxlayout">
 							<div class="geo-blog-meta-custom">
 								<ul>
-									<li><span class="icon-uniE035"></span> 12</li>
-									<li><span class="icon-uniE04A"></span> 135</li>
+									<li><span class="icon-hart"></span> 12</li>
+									<li><span class="icon-comment"></span> 135</li>
 								</ul>
 							</div>
 						</div>
@@ -28,7 +28,7 @@ include('../partials/geo-parallax.php');
 						<div class="geo-blog-meta-custom">
 							<ul>
 								<li>October 4, 2015</li>
-								<li><span class="icon-uniE029"></span> By Ray Michael</i></li>
+								<li><span class="icon-flag"></span> By Ray Michael</i></li>
 							</ul>
 						</div>
 						<h4>This Is The First Awesome Post</h4>
@@ -46,8 +46,8 @@ include('../partials/geo-parallax.php');
 						<div class="geo-media-fxlayout">
 							<div class="geo-blog-meta-custom">
 								<ul>
-									<li><span class="icon-uniE035"></span> 12</li>
-									<li><span class="icon-uniE04A"></span> 135</li>
+									<li><span class="icon-hart"></span> 12</li>
+									<li><span class="icon-comment"></span> 135</li>
 								</ul>
 							</div>
 						</div>
@@ -56,7 +56,7 @@ include('../partials/geo-parallax.php');
 						<div class="geo-blog-meta-custom">
 							<ul>
 								<li>October 4, 2015</li>
-								<li><span class="icon-uniE029"></span> By Ray Michael</i></li>
+								<li><span class="icon-flag"></span> By Ray Michael</i></li>
 							</ul>
 						</div>
 						<h4>And the second one</h4>
@@ -74,8 +74,8 @@ include('../partials/geo-parallax.php');
 						<div class="geo-media-fxlayout">
 							<div class="geo-blog-meta-custom">
 								<ul>
-									<li><span class="icon-uniE035"></span> 12</li>
-									<li><span class="icon-uniE04A"></span> 135</li>
+									<li><span class="icon-hart"></span> 12</li>
+									<li><span class="icon-comment"></span> 135</li>
 								</ul>
 							</div>
 						</div>
@@ -84,7 +84,7 @@ include('../partials/geo-parallax.php');
 						<div class="geo-blog-meta-custom">
 							<ul>
 								<li>October 4, 2015</li>
-								<li><span class="icon-uniE029"></span> By Ray Michael</i></li>
+								<li><span class="icon-flag"></span> By Ray Michael</i></li>
 							</ul>
 						</div>
 						<h4>Cool video post</h4>
@@ -102,8 +102,8 @@ include('../partials/geo-parallax.php');
 						<div class="geo-media-fxlayout">
 							<div class="geo-blog-meta-custom">
 								<ul>
-									<li><span class="icon-uniE035"></span> 12</li>
-									<li><span class="icon-uniE04A"></span> 135</li>
+									<li><span class="icon-hart"></span> 12</li>
+									<li><span class="icon-comment"></span> 135</li>
 								</ul>
 							</div>
 						</div>
@@ -112,7 +112,7 @@ include('../partials/geo-parallax.php');
 						<div class="geo-blog-meta-custom">
 							<ul>
 								<li>October 4, 2015</li>
-								<li><span class="icon-uniE029"></span> By Ray Michael</i></li>
+								<li><span class="icon-flag"></span> By Ray Michael</i></li>
 							</ul>
 						</div>
 						<h4>This Is The First Awesome Post</h4>
@@ -130,8 +130,8 @@ include('../partials/geo-parallax.php');
 						<div class="geo-media-fxlayout">
 							<div class="geo-blog-meta-custom">
 								<ul>
-									<li><span class="icon-uniE035"></span> 12</li>
-									<li><span class="icon-uniE04A"></span> 135</li>
+									<li><span class="icon-hart"></span> 12</li>
+									<li><span class="icon-comment"></span> 135</li>
 								</ul>
 							</div>
 						</div>
@@ -140,7 +140,7 @@ include('../partials/geo-parallax.php');
 						<div class="geo-blog-meta-custom">
 							<ul>
 								<li>October 4, 2015</li>
-								<li><span class="icon-uniE029"></span> By Ray Michael</i></li>
+								<li><span class="icon-flag"></span> By Ray Michael</i></li>
 							</ul>
 						</div>
 						<h4>And the second one</h4>
@@ -158,8 +158,8 @@ include('../partials/geo-parallax.php');
 						<div class="geo-media-fxlayout">
 							<div class="geo-blog-meta-custom">
 								<ul>
-									<li><span class="icon-uniE035"></span> 12</li>
-									<li><span class="icon-uniE04A"></span> 135</li>
+									<li><span class="icon-hart"></span> 12</li>
+									<li><span class="icon-comment"></span> 135</li>
 								</ul>
 							</div>
 						</div>
@@ -168,7 +168,7 @@ include('../partials/geo-parallax.php');
 						<div class="geo-blog-meta-custom">
 							<ul>
 								<li>October 4, 2015</li>
-								<li><span class="icon-uniE029"></span> By Ray Michael</i></li>
+								<li><span class="icon-flag"></span> By Ray Michael</i></li>
 							</ul>
 						</div>
 						<h4>Cool video post</h4>

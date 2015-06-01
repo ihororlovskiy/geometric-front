@@ -16,9 +16,9 @@
 
 				<div class="geo-post-meta">
 					<ul>
-						<li><a href="#">43 <span class="icon-uniE035"></span> Like</a></li>
-						<li><a href="#"><span class="icon-uniE04A"></span> 3 Comments</a></li>
-						<li><a href="#"><span class="icon-uniE029"></span> Le Coque de Author</i></a></li>
+						<li><a href="#">43 <span class="icon-hart"></span> Like</a></li>
+						<li><a href="#"><span class="icon-comment"></span> 3 Comments</a></li>
+						<li><a href="#"><span class="icon-flag"></span> Le Coque de Author</i></a></li>
 					</ul>
 				</div>
 
