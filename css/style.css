@@ -1058,104 +1058,75 @@ article.item-quote .geo-blog-meta-bottom ul li a:hover {
 }
 .geo-blog-grid article {
   padding: 10px 10px 30px;
+  margin-bottom: 20px;
+  position: relative;
 }
-.geo-blog-grid article p {
-  overflow: hidden;
-  min-height: 56px;
-  max-height: 56px;
-}
-.geo-blog-grid article .geo-blog-meta-bottom {
-  padding-bottom: 20px;
+.geo-blog-grid article:after {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  content: '';
   border-bottom: 1px solid #f5f5f5;
 }
-
 .geo-blog-grid.geo-blog-grid-2-cols article {
   width: 50.0%;
 }
-
 .geo-blog-grid.geo-blog-grid-3-cols article {
   width: 33.3%;
 }
-
 .geo-blog-grid.geo-blog-grid-4-cols article {
   width: 25.0%;
 }
-
-.geo-blog-grid.geo-blog-grid-2-cols article:nth-last-child(1) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-2-cols article:nth-last-child(2) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-3-cols article:nth-last-child(1) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-3-cols article:nth-last-child(2) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-3-cols article:nth-last-child(3) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(1) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(2) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(3) .geo-blog-meta-bottom,
-.geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(4) .geo-blog-meta-bottom {
-  padding-bottom: 0;
-  border-bottom: none;
+.geo-blog-grid.geo-blog-grid-2-cols article:nth-last-child(1):after, .geo-blog-grid.geo-blog-grid-2-cols article:nth-last-child(2):after, .geo-blog-grid.geo-blog-grid-3-cols article:nth-last-child(1):after, .geo-blog-grid.geo-blog-grid-3-cols article:nth-last-child(2):after, .geo-blog-grid.geo-blog-grid-3-cols article:nth-last-child(3):after, .geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(1):after, .geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(2):after, .geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(3):after, .geo-blog-grid.geo-blog-grid-4-cols article:nth-last-child(4):after {
+  border: none;
 }
 
 .geo-blog-custom {
   padding-bottom: 0;
   border-bottom: none;
 }
-
 .geo-blog-custom .geo-content-area {
   width: 100%;
   margin: 0 auto;
 }
-
-.geo-blog-custom.geo-blog-custom-sidebar .geo-content-area {
-  width: 75%;
-  margin: 0;
-  padding-right: 100px;
-  float: left;
-}
-
 .geo-blog-custom article {
   border-bottom: 1px solid #f5f5f5;
 }
-
 .geo-blog-custom article a {
   padding-right: 120px;
   display: block;
 }
-
 .geo-blog-custom article a .geo-media {
   float: left;
   width: 25%;
   margin: 0;
 }
-
 .geo-blog-custom article a .geo-media .geo-media-fxlayout {
   opacity: 0;
   background-color: #5596c7;
   color: #fff;
   text-align: center;
 }
-
 .geo-blog-custom article a .geo-media .geo-media-fxlayout .geo-blog-meta-custom {
   display: table;
   width: 100%;
   height: 100%;
 }
-
 .geo-blog-custom article a .geo-media .geo-media-fxlayout .geo-blog-meta-custom ul {
   display: table-cell;
   vertical-align: middle;
 }
-
 .geo-blog-custom article a .geo-media .geo-media-fxlayout .geo-blog-meta-custom ul li span {
   font-size: 24px;
   position: relative;
   top: 4px;
 }
-
 .geo-blog-custom article a .geo-content {
   float: left;
   width: 75%;
   padding-left: 30px;
 }
-
 .geo-blog-custom article a .geo-content .geo-blog-meta-custom {
   margin-top: 30px;
   color: #9e9e9e;
@@ -1163,11 +1134,9 @@ article.item-quote .geo-blog-meta-bottom ul li a:hover {
   text-transform: uppercase;
   font-weight: 700;
 }
-
 .geo-blog-custom article a .geo-content h4 {
   margin-bottom: 0;
 }
-
 .geo-blog-custom article a .geo-post-arrow {
   position: absolute;
   top: 50%;
@@ -1175,6 +1144,13 @@ article.item-quote .geo-blog-meta-bottom ul li a:hover {
   font-size: 40px;
   right: 100px;
   opacity: 0;
+}
+
+.geo-blog-custom.geo-blog-custom-sidebar .geo-content-area {
+  width: 75%;
+  margin: 0;
+  padding-right: 100px;
+  float: left;
 }
 
 .geo-blog-custom.geo-blog-custom-sidebar article a {
