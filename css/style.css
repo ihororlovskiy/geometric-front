@@ -117,38 +117,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: '\46';
 }
 
-.icon-loupe:before,
+.icon-flag:before,
 .icon-uniE029:before {
-  content: "\e029";
+  content: '\e029';
 }
 
 .icon-hart:before,
 .icon-uniE035:before {
-  content: "\e035";
+  content: '\e035';
 }
 
+.icon-quote:before,
+.icon-uni2D:before {
+  content: '\2d';
+}
+
+.icon-comment:before,
 .icon-uniE04A:before {
-  content: "\e04a";
+  content: '\e04a';
 }
 
 .icon-uniE12F:before {
-  content: "\e12f";
+  content: '\e12f';
 }
 
 .icon-uniE4BA:before {
-  content: "\e4ba";
+  content: '\e4ba';
 }
 
 .icon-uniE040:before {
-  content: "\e040";
+  content: '\e040';
 }
 
 .icon-uniE5CA:before {
-  content: "\e5ca";
+  content: '\e5ca';
 }
 
 .icon-uniE5CB:before {
-  content: "\e5cb";
+  content: '\e5cb';
 }
 
 /* colors
@@ -862,27 +868,22 @@ nav.geo-searchbox-menu .geo-searchbox.geo-searchbox-open {
   top: 1px;
 }
 
-.geo-blog-quote-item .geo-blog-meta-top ul li:first-child {
+article.item-quote .geo-blog-meta-top ul li:first-child {
   color: #fff;
 }
-
-.geo-blog-quote-item .geo-blog-meta-top ul li a {
+article.item-quote .geo-blog-meta-top ul li a {
   color: #fff;
 }
-
-.geo-blog-quote-item .geo-blog-meta-top ul li a:hover {
+article.item-quote .geo-blog-meta-top ul li a:hover {
   color: #ddd;
 }
-
-.geo-blog-quote-item .geo-blog-meta-bottom ul li:first-child {
+article.item-quote .geo-blog-meta-bottom ul li:first-child {
   color: #fff;
 }
-
-.geo-blog-quote-item .geo-blog-meta-bottom ul li a {
+article.item-quote .geo-blog-meta-bottom ul li a {
   color: #fff;
 }
-
-.geo-blog-quote-item .geo-blog-meta-bottom ul li a:hover {
+article.item-quote .geo-blog-meta-bottom ul li a:hover {
   color: #ddd;
 }
 
@@ -928,33 +929,44 @@ nav.geo-searchbox-menu .geo-searchbox.geo-searchbox-open {
   margin-bottom: 0;
 }
 
-.geo-blog article.geo-blog-quote-item .geo-content {
+.geo-blog article.item-quote .geo-content {
   background-color: #5596c7;
-  padding: 80px 20px 20px;
   position: relative;
+  padding: 40px 30px 20px;
 }
-
-.geo-blog article.geo-blog-quote-item .geo-content:before {
+.geo-blog article.item-quote .geo-content a.quote-link {
+  position: relative;
+  padding-left: 50px;
+  text-align: center;
+  display: inline-block;
+}
+.geo-blog article.item-quote .geo-content a.quote-link span.icon-quote {
   position: absolute;
-  content: '“';
-  font-size: 100px;
-  line-height: 1;
-  top: 10px;
-  left: 20px;
+  top: 8px;
+  left: 0;
   color: #fff;
+  font-size: 40px;
+  font-weight: 400;
 }
-
-.geo-blog article.geo-blog-quote-item .geo-content h4 {
+.geo-blog article.item-quote .geo-content p {
   color: #fff;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-bottom: 40px;
 }
-
-.geo-blog article.geo-blog-quote-item .geo-content p {
-  color: #fff;
+.geo-blog article.item-quote .geo-content p.p-quote {
+  font-size: 20px;
 }
-
-.geo-blog article.geo-blog-quote-item .geo-content p.geo-quote-autor {
-  font-size: 13px;
-  font-weight: 700;
+.geo-blog article.item-quote .geo-content p.p-quote:before {
+  content: '«';
+  padding-right: 10px;
+}
+.geo-blog article.item-quote .geo-content p.p-quote:after {
+  content: '»';
+  padding-left: 10px;
+}
+.geo-blog article.item-quote .geo-content p.quote-autor {
+  font-size: 14px;
 }
 
 .geo-blog-large article {
@@ -1008,7 +1020,7 @@ nav.geo-searchbox-menu .geo-searchbox.geo-searchbox-open {
   padding-bottom: 20px;
   border-bottom: 1px solid #f5f5f5;
 }
-.geo-blog-masonry article.geo-blog-quote-item .geo-blog-meta-bottom {
+.geo-blog-masonry article.item-quote .geo-blog-meta-bottom {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
@@ -1017,13 +1029,29 @@ nav.geo-searchbox-menu .geo-searchbox.geo-searchbox-open {
 .geo-blog-masonry.geo-blog-masonry-2-cols article {
   width: 50.0%;
 }
-
+.geo-blog-masonry.geo-blog-masonry-2-cols article.item-quote .geo-content {
+  padding: 40px 30px 20px;
+}
+.geo-blog-masonry.geo-blog-masonry-2-cols article.item-quote .geo-content p.p-quote {
+  font-size: 20px;
+}
 .geo-blog-masonry.geo-blog-masonry-3-cols article {
   width: 33.3%;
 }
-
+.geo-blog-masonry.geo-blog-masonry-3-cols article.item-quote .geo-content {
+  padding: 35px 25px 20px;
+}
+.geo-blog-masonry.geo-blog-masonry-3-cols article.item-quote .geo-content p.p-quote {
+  font-size: 18px;
+}
 .geo-blog-masonry.geo-blog-masonry-4-cols article {
   width: 25.0%;
+}
+.geo-blog-masonry.geo-blog-masonry-4-cols article.item-quote .geo-content {
+  padding: 30px 20px 20px;
+}
+.geo-blog-masonry.geo-blog-masonry-4-cols article.item-quote .geo-content p.p-quote {
+  font-size: 14px;
 }
 
 .geo-blog-grid .geo-content-area {

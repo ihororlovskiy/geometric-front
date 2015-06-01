@@ -3,11 +3,11 @@
 <?
 $parallaxH6 = "Layouts";
 $parallaxH1 = "Your Blog";
-$parallaxSubtitle = "Masonry Blog (4 Columns)";
+$parallaxSubtitle = "Masonry Blog (3 Columns)";
 include('../partials/geo-parallax.php');
 ?>
 
-<div class="geo-blog geo-blog-masonry geo-blog-masonry-4-cols">
+<div class="geo-blog geo-blog-masonry geo-blog-masonry-3-cols">
 	<div class="container">
 		<div class="geo-content-area isotope-container">
 
@@ -24,15 +24,15 @@ include('../partials/geo-parallax.php');
 					<div class="geo-blog-meta-top">
 						<ul>
 							<li>October 4, 2015</li>
-							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
+							<li><a href="#"><span class="icon-flag"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
 					<a href="#"><h4>Post Single Image</h4></a>
 					<p>The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is...</p>
 					<div class="geo-blog-meta-bottom">
 						<ul>
-							<li><a href="#"><span class="icon-uniE035"></span> 12 likes</a></li>
-							<li><a href="#"><span class="icon-uniE04A"></span> 135 comments</a></li>
+							<li><a href="#"><span class="icon-hart"></span> 12 likes</a></li>
+							<li><a href="#"><span class="icon-comment"></span> 135 comments</a></li>
 						</ul>
 					</div>
 				</div>
@@ -43,15 +43,15 @@ include('../partials/geo-parallax.php');
 					<div class="geo-blog-meta-top">
 						<ul>
 							<li>October 4, 2015</li>
-							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
+							<li><a href="#"><span class="icon-flag"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
 					<a href="#"><h4>Text Post</h4></a>
 					<p>The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is...</p>
 					<div class="geo-blog-meta-bottom">
 						<ul>
-							<li><a href="#"><span class="icon-uniE035"></span> 12 likes</a></li>
-							<li><a href="#"><span class="icon-uniE04A"></span> 135 comments</a></li>
+							<li><a href="#"><span class="icon-hart"></span> 12 likes</a></li>
+							<li><a href="#"><span class="icon-comment"></span> 135 comments</a></li>
 						</ul>
 					</div>
 				</div>
@@ -69,15 +69,15 @@ include('../partials/geo-parallax.php');
 					<div class="geo-blog-meta-top">
 						<ul>
 							<li>October 4, 2015</li>
-							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
+							<li><a href="#"><span class="icon-flag"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
 					<a href="#"><h4>Post With Slider</h4></a>
 					<p>The term minimalism is also used to describe a trend in design and necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is...</p>
 					<div class="geo-blog-meta-bottom">
 						<ul>
-							<li><a href="#"><span class="icon-uniE035"></span> 12 likes</a></li>
-							<li><a href="#"><span class="icon-uniE04A"></span> 135 comments</a></li>
+							<li><a href="#"><span class="icon-hart"></span> 12 likes</a></li>
+							<li><a href="#"><span class="icon-comment"></span> 135 comments</a></li>
 						</ul>
 					</div>
 				</div>
@@ -93,37 +93,37 @@ include('../partials/geo-parallax.php');
 					<div class="geo-blog-meta-top">
 						<ul>
 							<li>October 4, 2015</li>
-							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
+							<li><a href="#"><span class="icon-flag"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
 					<a href="#"><h4>Video Post</h4></a>
 					<p>The term minimalism is also used to describe a  influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is...</p>
 					<div class="geo-blog-meta-bottom">
 						<ul>
-							<li><a href="#"><span class="icon-uniE035"></span> 12 likes</a></li>
-							<li><a href="#"><span class="icon-uniE04A"></span> 135 comments</a></li>
+							<li><a href="#"><span class="icon-hart"></span> 12 likes</a></li>
+							<li><a href="#"><span class="icon-comment"></span> 135 comments</a></li>
 						</ul>
 					</div>
 				</div>
 			</article>
 
-			<article class="geo-blog-quote-item isotope-item">
+			<article class="item-quote isotope-item">
 				<div class="geo-content">
-					<a href="#">
-						<span></span>
-						<p>Art Is The Only Serious Thing In The World. And The Artist Is The Only Person Who Is Never Serious. Art Is The Only Serious Thing In The World. </p>
-						<p class="geo-quote-autor">— Oscar Wilde Yellow Sunset</p>
+					<a href="#" class="quote-link">
+						<span class="icon-quote"></span>
+						<p class="p-quote">Art Is The Only Serious Thing In The World. And The Artist Is The Only Person Who Is Never Serious. Art Is The Only Serious Thing In The World.</p>
+						<p class="quote-autor">— Oscar Wilde Yellow Sunset</p>
 					</a>
 					<div class="geo-blog-meta-top">
 						<ul>
 							<li>October 4, 2015</li>
-							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
+							<li><a href="#"><span class="icon-flag"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
 					<div class="geo-blog-meta-bottom">
 						<ul>
-							<li><a href="#"><span class="icon-uniE035"></span> 12 likes</a></li>
-							<li><a href="#"><span class="icon-uniE04A"></span> 135 comments</a></li>
+							<li><a href="#"><span class="icon-hart"></span> 12 likes</a></li>
+							<li><a href="#"><span class="icon-comment"></span> 135 comments</a></li>
 						</ul>
 					</div>
 				</div>
@@ -142,15 +142,15 @@ include('../partials/geo-parallax.php');
 					<div class="geo-blog-meta-top">
 						<ul>
 							<li>October 4, 2015</li>
-							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
+							<li><a href="#"><span class="icon-flag"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
 					<a href="#"><h4>Post Single Image</h4></a>
 					<p>The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is...</p>
 					<div class="geo-blog-meta-bottom">
 						<ul>
-							<li><a href="#"><span class="icon-uniE035"></span> 12 likes</a></li>
-							<li><a href="#"><span class="icon-uniE04A"></span> 135 comments</a></li>
+							<li><a href="#"><span class="icon-hart"></span> 12 likes</a></li>
+							<li><a href="#"><span class="icon-comment"></span> 135 comments</a></li>
 						</ul>
 					</div>
 				</div>
@@ -168,15 +168,15 @@ include('../partials/geo-parallax.php');
 					<div class="geo-blog-meta-top">
 						<ul>
 							<li>October 4, 2015</li>
-							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
+							<li><a href="#"><span class="icon-flag"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
 					<a href="#"><h4>Post With Slider</h4></a>
 					<p>The term minimalism is also used to describe a trend in design and necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is...</p>
 					<div class="geo-blog-meta-bottom">
 						<ul>
-							<li><a href="#"><span class="icon-uniE035"></span> 12 likes</a></li>
-							<li><a href="#"><span class="icon-uniE04A"></span> 135 comments</a></li>
+							<li><a href="#"><span class="icon-hart"></span> 12 likes</a></li>
+							<li><a href="#"><span class="icon-comment"></span> 135 comments</a></li>
 						</ul>
 					</div>
 				</div>
@@ -192,37 +192,37 @@ include('../partials/geo-parallax.php');
 					<div class="geo-blog-meta-top">
 						<ul>
 							<li>October 4, 2015</li>
-							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
+							<li><a href="#"><span class="icon-flag"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
 					<a href="#"><h4>SoundCloud Post</h4></a>
 					<p>The term minimalism is also used to describe a  influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is...</p>
 					<div class="geo-blog-meta-bottom">
 						<ul>
-							<li><a href="#"><span class="icon-uniE035"></span> 12 likes</a></li>
-							<li><a href="#"><span class="icon-uniE04A"></span> 135 comments</a></li>
+							<li><a href="#"><span class="icon-hart"></span> 12 likes</a></li>
+							<li><a href="#"><span class="icon-comment"></span> 135 comments</a></li>
 						</ul>
 					</div>
 				</div>
 			</article>
 
-			<article class="geo-blog-quote-item isotope-item">
+			<article class="item-quote isotope-item">
 				<div class="geo-content">
-					<a href="#">
-						<span></span>
-						<p>Art Is The Only Serious Thing In The World. And The Artist Is The Only Person Who Is Never Serious. Art Is The Only Serious Thing In The World. </p>
-						<p class="geo-quote-autor">— Oscar Wilde Yellow Sunset</p>
+					<a href="#" class="quote-link">
+						<span class="icon-quote"></span>
+						<p class="p-quote">Art Is The Only Serious Thing In The World. And The Artist Is The Only Person Who Is Never Serious. Art Is The Only Serious Thing In The World.</p>
+						<p class="quote-autor">— Oscar Wilde Yellow Sunset</p>
 					</a>
 					<div class="geo-blog-meta-top">
 						<ul>
 							<li>October 4, 2015</li>
-							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
+							<li><a href="#"><span class="icon-flag"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
 					<div class="geo-blog-meta-bottom">
 						<ul>
-							<li><a href="#"><span class="icon-uniE035"></span> 12 likes</a></li>
-							<li><a href="#"><span class="icon-uniE04A"></span> 135 comments</a></li>
+							<li><a href="#"><span class="icon-hart"></span> 12 likes</a></li>
+							<li><a href="#"><span class="icon-comment"></span> 135 comments</a></li>
 						</ul>
 					</div>
 				</div>
@@ -241,15 +241,15 @@ include('../partials/geo-parallax.php');
 					<div class="geo-blog-meta-top">
 						<ul>
 							<li>October 4, 2015</li>
-							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
+							<li><a href="#"><span class="icon-flag"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
 					<a href="#"><h4>Post Single Image</h4></a>
 					<p>The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is...</p>
 					<div class="geo-blog-meta-bottom">
 						<ul>
-							<li><a href="#"><span class="icon-uniE035"></span> 12 likes</a></li>
-							<li><a href="#"><span class="icon-uniE04A"></span> 135 comments</a></li>
+							<li><a href="#"><span class="icon-hart"></span> 12 likes</a></li>
+							<li><a href="#"><span class="icon-comment"></span> 135 comments</a></li>
 						</ul>
 					</div>
 				</div>
@@ -260,15 +260,15 @@ include('../partials/geo-parallax.php');
 					<div class="geo-blog-meta-top">
 						<ul>
 							<li>October 4, 2015</li>
-							<li><a href="#"><span class="icon-uniE029"></span> By Ray Michael</i></a></li>
+							<li><a href="#"><span class="icon-flag"></span> By Ray Michael</i></a></li>
 						</ul>
 					</div>
 					<a href="#"><h4>Text Post</h4></a>
 					<p>The term minimalism is also used to describe a trend in design and architecture where in the subject is reduced to its architecture where in the subject is reduced to its necessary elements. Minimalist design has been highly influenced by Japanese traditional design and architecture. In addition, the work of De Stijl artists is...</p>
 					<div class="geo-blog-meta-bottom">
 						<ul>
-							<li><a href="#"><span class="icon-uniE035"></span> 12 likes</a></li>
-							<li><a href="#"><span class="icon-uniE04A"></span> 135 comments</a></li>
+							<li><a href="#"><span class="icon-hart"></span> 12 likes</a></li>
+							<li><a href="#"><span class="icon-comment"></span> 135 comments</a></li>
 						</ul>
 					</div>
 				</div>

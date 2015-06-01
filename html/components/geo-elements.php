@@ -18,10 +18,10 @@ include('../partials/geo-parallax.php');
 
 	<h4>SVG Icons</h4>
 	<div>
-		<span class="icon-uni46"></span>
-		<span class="icon-uniE029"></span>
+		<span class="icon-loupe"></span>
+		<span class="icon-flag"></span>
 		<span class="icon-hart"></span>
-		<span class="icon-uniE04A"></span>
+		<span class="icon-comment"></span>
 		<span class="icon-uniE12F"></span>
 		<span class="icon-uniE4BA"></span>
 		<span class="icon-uniE5CC"></span>
@@ -31,6 +31,7 @@ include('../partials/geo-parallax.php');
 		<span class="icon-uniE139"></span>
 		<span class="icon-uniE03F"></span>
 		<span class="icon-uniE040"></span>
+		<span class="icon-quote"></span>
 	</div>
 
 	<div>
