@@ -1,3 +1,5 @@
 # Geometric Front
 
-[geometric.sentimony.com](http://geometric.sentimony.com)
+Front-end development of Geometric Theme
+
+Actual version here [geometric.sentimony.com](http://geometric.sentimony.com)
