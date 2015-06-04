@@ -107,26 +107,34 @@
 	<script src="/js/vendor/isotope.pkgd.min.js"></script>
 	<script src="/js/vendor/waypoints.min.js"></script>
 	<script src="/js/vendor/parallax.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	
+	<script src="http://fat.github.io/zoom.js/js/zoom.js"></script>
+	<!-- 
+
 	<script src="/js/vendor/jquery.flexslider-min.js"></script>
 
-	<!-- <script src="/js/vendor/jquery.selectBox.min.js"></script> -->
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  
-  <script>
-  $(function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-  });
-  </script>
+	<script src="/js/vendor/jquery.selectBox.min.js"></script>
 
+	<script>
+	$(function() {
+		$( "#slider-range" ).slider({
+			range: true,
+			min: 0,
+			max: 500,
+			values: [ 75, 300 ],
+			slide: function( event, ui ) {
+				$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+			}
+		});
+		$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+	});
+	</script>
+
+
+	-->
+	
 	<script src="/js/main.js"></script>
 
 	<script>

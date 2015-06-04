@@ -21,7 +21,7 @@
 
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" href="http://fat.github.io/zoom.js/css/zoom.css"> -->
+	<link href="http://fat.github.io/zoom.js/css/zoom.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<!-- <link rel="stylesheet" href="/sass-bourbon/app.css"> -->
 

@@ -5,7 +5,24 @@
 		<div class="row">
 			<div class="col-sm-6">
 
-				<link rel="stylesheet" href="http://praxis.sentimony.com/woothemes-FlexSlider-6df2881/flexslider.css" type="text/css" media="screen" />
+				<div class="shopitem-slider">
+
+					<main>
+						<a href="#"><img src="/img/shop/item-01-big.jpg"></a>
+					</main>
+
+					<nav>
+						<a href="#" class="active"><img src="/img/shop/item-01-small.jpg"></a>
+						<a href="#"><img src="/img/shop/item-02-small.jpg"></a>
+						<a href="#"><img src="/img/shop/item-03-small.jpg"></a>
+						<a href="#"><img src="/img/shop/item-04-small.jpg"></a>
+					</nav>
+
+					<div class="status">New</div>
+
+				</div>
+
+				<!-- <link rel="stylesheet" href="http://praxis.sentimony.com/woothemes-FlexSlider-6df2881/flexslider.css" type="text/css" media="screen" />
 
 				<section class="slider">
 					<div class="flexslider">
@@ -24,7 +41,7 @@
 							</li>
 						</ul>
 					</div>
-				</section>
+				</section> -->
 
 			</div>
 			<div class="col-sm-6">
