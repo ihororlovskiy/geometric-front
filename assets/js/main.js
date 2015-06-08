@@ -1,13 +1,3 @@
-// Stateful Buttons
-// $(function() { 
-// 	$(".btn").click(function(){
-// 		$(this).button('loading').delay(1000).queue(function() {
-// 			$(this).button('reset');
-// 			$(this).dequeue();
-// 		});        
-// 	});
-// });
-
 // Header menu FX
 var $head = $( '.geo-header' );
 $('.header-waypoint').each( function(i) {
@@ -44,70 +34,22 @@ $(document).ready(function() {
 		$container.isotope({
 			itemSelector: '.isotope-item',
 		});
-	});
-});
-
-// Isotope Portfolio
-$(function() {
-	// init Isotope
-	var $container = $('.geo-portfolio-isotope-fitrows').isotope({
-		itemSelector: 'article',
-		layoutMode: 'fitRows',
-	});
-	// filter functions
-	var filterFns = {
-	};
-	// bind filter button click
-	$('#filters').on( 'click', 'a', function() {
-		var filterValue = $( this ).attr('data-filter');
-		// use filterFn if matches value
-		filterValue = filterFns[ filterValue ] || filterValue;
-		$container.isotope({ filter: filterValue });
-	});
-	// change is-checked class on buttons
-	$('.geo-portfolio-filter').each( function( i, buttonGroup ) {
-		var $buttonGroup = $( buttonGroup );
-		$buttonGroup.on( 'click', 'a', function() {
-			$buttonGroup.find('.is-checked').removeClass('is-checked');
-			$( this ).addClass('is-checked');
+		var filterFns = {
+		};
+		$('#filters').on( 'click', 'a', function() {
+			var filterValue = $( this ).attr('data-filter');
+			filterValue = filterFns[ filterValue ] || filterValue;
+			$container.isotope({ filter: filterValue });
+		});
+		$('.geo-portfolio-filter').each( function( i, buttonGroup ) {
+			var $buttonGroup = $( buttonGroup );
+			$buttonGroup.on( 'click', 'a', function() {
+				$buttonGroup.find('.is-checked').removeClass('is-checked');
+				$( this ).addClass('is-checked');
+			});
 		});
 	});
 });
-
-// Isotope Portfolio
-$( function() {
-	// init Isotope
-	var $container = $('.geo-portfolio-isotope').isotope({
-		itemSelector: 'article',
-	});
-	// filter functions
-	var filterFns = {
-	};
-	// bind filter button click
-	$('#filters').on( 'click', 'a', function() {
-		var filterValue = $( this ).attr('data-filter');
-		// use filterFn if matches value
-		filterValue = filterFns[ filterValue ] || filterValue;
-		$container.isotope({ filter: filterValue });
-	});
-	// change is-checked class on buttons
-	$('.geo-portfolio-filter').each( function( i, buttonGroup ) {
-		var $buttonGroup = $( buttonGroup );
-		$buttonGroup.on( 'click', 'a', function() {
-			$buttonGroup.find('.is-checked').removeClass('is-checked');
-			$( this ).addClass('is-checked');
-		});
-	});
-});
-
-// Flexslider at shop
-// $(window).load(function(){
-// 	$('.flexslider').flexslider({
-// 		animation: "slide",
-// 		controlNav: "thumbnails",
-// 		start: function(slider){}
-// 	});
-// });
 
 // Search
 $(document).ready(function() {
@@ -152,12 +94,8 @@ function buttonUp() {
 
 // Add review
 $(document).ready(function(){
-    $('.addreview>button').click(function(){
-        $('.addreview').toggleClass('addreview--add');
-    });
+		$('.addreview>button').click(function(){
+				$('.addreview').toggleClass('addreview--add');
+		});
 });
 
-// convert select
-// $(document).ready(function(){
-// 	$('#select').selectBox();
-// });
