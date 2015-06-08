@@ -1,5 +1,4 @@
 .DS_Store
-config.rb
-img/*
-sass/*
 .sass-cache/*
+_site/*
+assets/main.css

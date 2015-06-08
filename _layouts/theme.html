@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	{% include global/head.html %}
+
+</head>
+<body class="geo-body">
+
+	{% include global/header.html %}
+
+	<main class="geo-wrapper header-waypoint" data-animate-down="geo-header-small" data-animate-up="geo-header-large">
+		{{ content }}
+	</main>
+
+	{% include global/footer.html %}
+
+	{% include global/analytics.html %}
+
+</body>
+</html>
