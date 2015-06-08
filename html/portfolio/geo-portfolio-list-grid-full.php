@@ -22,39 +22,39 @@ include('../partials/geo-parallax.php');
 			<div class="clearfix">
 
 				<article class="art " data-category="art">
-					<img src="/img/portfolio-custom-1.png" alt="portfolio" />
+					<img src="/img/portfolio-grid-01.jpg" alt="portfolio" />
 					<div class="fx-layout">
 						<span>
 							<i>
+								<a href="#" class="geo-btn geo-btn-primary">Read More</a>
 								<h6>art</h6>
 								<h5>Venice Art Pavilion</h5>
-								<a href="#" class="geo-btn geo-btn-primary">Read More</a>
 							</i>
 						</span>
 					</div>
 				</article>
 
 				<article class="business " data-category="business">
-					<img src="/img/portfolio-custom-2.png" alt="portfolio" />
+					<img src="/img/portfolio-grid-02.jpg" alt="portfolio" />
 					<div class="fx-layout">
 						<span>
 							<i>
+								<a href="#" class="geo-btn geo-btn-primary">Read More</a>
 								<h6>business</h6>
 								<h5>Venice Art Pavilion</h5>
-								<a href="#" class="geo-btn geo-btn-primary">Read More</a>
 							</i>
 						</span>
 					</div>
 				</article>
 
 				<article class="fashion art photography " data-category="fashion">
-					<img src="/img/portfolio-custom-3.png" alt="portfolio" />
+					<img src="/img/portfolio-grid-03.jpg" alt="portfolio" />
 					<div class="fx-layout">
 						<span>
 							<i>
+								<a href="#" class="geo-btn geo-btn-primary">Read More</a>
 								<h6>fashion, art, photography</h6>
 								<h5>Venice Art Pavilion</h5>
-								<a href="#" class="geo-btn geo-btn-primary">Read More</a>
 							</i>
 						</span>
 					</div>

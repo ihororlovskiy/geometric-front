@@ -187,5 +187,4 @@ include('../partials/geo-parallax.php');
 	<a href="#" class="geo-btn geo-btn-primary geo-btn-lg">Show More</a>
 </div>
 
-
 <?include('../partials/geo-body-close.php');?>

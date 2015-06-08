@@ -45,13 +45,6 @@ $(document).ready(function() {
 			itemSelector: '.isotope-item',
 		});
 	});
-
-	// EXAMPLE FOR STAS AND ANTONY:
-
-	// $container.isotope({
-	// 		itemSelector: '.isotope-item',
-	// });
-
 });
 
 // Isotope Portfolio
@@ -108,13 +101,13 @@ $( function() {
 });
 
 // Flexslider at shop
-$(window).load(function(){
-	$('.flexslider').flexslider({
-		animation: "slide",
-		controlNav: "thumbnails",
-		start: function(slider){}
-	});
-});
+// $(window).load(function(){
+// 	$('.flexslider').flexslider({
+// 		animation: "slide",
+// 		controlNav: "thumbnails",
+// 		start: function(slider){}
+// 	});
+// });
 
 // Search
 $(document).ready(function() {
