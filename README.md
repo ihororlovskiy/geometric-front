@@ -2,6 +2,6 @@
 
 Front-end development of Geometric Theme - premium template for WordPress
 
-We use jekyll and sass here.
+In develop we use [jekyll](http://jekyllrb.com), [sass](http://sass-lang.com) with [bourbon](http://bourbon.io)
 
 Actual version here [geometric.sentimony.com](http://geometric.sentimony.com)

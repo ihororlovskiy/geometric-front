@@ -10,20 +10,22 @@ layout: index
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		}
-	div p {position:absolute;top:-10px;left:10px;display:inline-block;background-color:#ccc;margin:0;padding:0 4px;}
-	ul {float:left;list-style:none;padding:0;margin:0;width:20%;}
+	div p {position:absolute;top:-10px;left:10px;display:inline-block;background:#ccc;margin:0;padding:0 4px;}
+	ul {float:left;list-style:none;padding:10px;margin:0;width:20%;}
+	ul.item {background:#eee;position:relative;}
+	ul.item:after {position:absolute;top:0;right:0;content:'item';color:#fff;background:#ccc;padding:0 4px;font-size:8px;}
 	ul.here-show-more>li>a,
 	ul.here-pagination>li>a {position:relative;}
 	ul.here-show-more>li>a:after,
 	ul.here-pagination>li>a:after {
 		position: absolute;
-		font-size: 4px;
 		color: #fff;
 		top: 0;
 		right: 0%;
+		font-size: 4px;
 		line-height: 1;
-		padding: 1px 0;
 		font-weight: 400;
+		padding: 1px 0;
 		-webkit-transform: translate(40%, -70%);
 		-ms-transform: translate(40%, -70%);
 		transform: translate(40%, -70%);
@@ -38,8 +40,8 @@ layout: index
 <a href="/" class="logo"><img src="/assets/img/header1-logo-x2.png" alt="header-logo" /></a>
 
 <div class="clearfix">
-	<p>Blog Lists:</p>
-	<ul>
+	<p>Blog:</p>
+	<ul class="item">
 		<li><a href="/html/blog/item-image">Image</a> + <a href="/html/blog/item-image-sidebar">Sidebar</a></li>
 		<li><a href="/html/blog/item-slider">Slider</a> + <a href="/html/blog/item-slider-sidebar">Sidebar</a></li>
 		<li><a href="/html/blog/item-video">Video</a> + <a href="/html/blog/item-video-sidebar">Sidebar</a></li>
@@ -69,7 +71,7 @@ layout: index
 
 <div class="clearfix">
 	<p>Portfolio:</p>
-	<ul>
+	<ul class="item">
 		<li><a href="/html/portfolio/item">Portfolio Item</a></li>
 	</ul>
 	<ul class="here-show-more">
@@ -92,7 +94,7 @@ layout: index
 
 <div class="clearfix">
 	<p>Shop:</p>
-	<ul>
+	<ul class="item">
 		<li><a href="/html/shop/item"><del>Shop Item</del></a></li>
 	</ul>
 	<ul class="here-show-more">
