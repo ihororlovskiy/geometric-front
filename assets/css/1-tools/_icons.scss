@@ -1,5 +1,5 @@
 /* icomoon
-============================================================================ */
+---------------------------------------------------------------------------------------------------- */
 @font-face {
 	font-family:'icomoon';
 	src:url('/assets/fonts/icomoon.eot?-az7mve');
@@ -26,11 +26,20 @@
 .icon-star:before,
 .icon-uniE03F:before {content:'\e03f';}
 
+.icon-star-empty:before,
+.icon-uniE040:before {content:'\e040';}
+
 .icon-arrow-left:before,
 .icon-uniE5CC:before {content:'\e5cc';}
 
 .icon-arrow-right:before,
 .icon-uniE5CD:before {content:'\e5cd';}
+
+.icon-arrow-top:before,
+.icon-uniE5CA:before {content:'\e5ca';}
+
+.icon-arrow-bottom:before,
+.icon-uniE5CB:before {content:'\e5cb';}
 
 .icon-cart:before,
 .icon-uniE139:before {content:'\e139';}
@@ -50,13 +59,10 @@
 .icon-comment:before,
 .icon-uniE04A:before {content:'\e04a';}
 
+.icon-bag:before,
 .icon-uniE12F:before {content:'\e12f';}
 
+.icon-way-right:before,
 .icon-uniE4BA:before {content:'\e4ba';}
 
-.icon-uniE040:before {content:'\e040';}
-
-.icon-uniE5CA:before {content:'\e5ca';}
-
-.icon-uniE5CB:before {content:'\e5cb';}
 
