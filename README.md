@@ -2,6 +2,20 @@
 
 Front-end development of Geometric Theme - premium template for WordPress
 
-In develop we used [jekyll](http://jekyllrb.com), [sass](http://sass-lang.com) with [bourbon](http://bourbon.io)
+### Installation
 
-Actual version here [geometric.sentimony.com](http://geometric.sentimony.com)
+Comming Soon ;)
+
+In develop of front-end we used [jekyll](http://jekyllrb.com), [sass](http://sass-lang.com) with [bourbon](http://bourbon.io)
+
+### Run on local server
+
+```sh
+$ jekyll serve --watch --baseurl ""
+```
+
+### Demo
+
+Actual version [ihororlovskyi.github.io/geometric-front](http://ihororlovskyi.github.io/geometric-front)
+
+Miror [geometric.sentimony.com](http://geometric.sentimony.com)

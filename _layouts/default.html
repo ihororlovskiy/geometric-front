@@ -2,20 +2,153 @@
 <html lang="en-US">
 <head>
 
-	{% include global/head.html %}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Geometric Theme by Le Coq Studio</title>
+	<meta name="description" content="Geometric Theme for Wordpress by Name Of Our Brand">
+	<meta name="keywords" content="Geometric Theme, Name Of Our Brand, Wordpress">
+	<meta name="author" content="Name Of Our Brand">
+
+	<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/img/favicons/32x32.png">
+
+	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
 
 </head>
-<body class="geo-body">
+<body class="geo-body waypoint" data-animate-down="geo-header-small" data-animate-up="geo-header-large">
 
 	{% include global/header.html %}
 
-	<main class="geo-wrapper header-waypoint" data-animate-down="geo-header-small" data-animate-up="geo-header-large">
+	<main class="geo-wrapper">
 		{{ content }}
 	</main>
 
-	{% include global/footer.html %}
+	<div class="geo-pre-footer clearfix">
+		<table>
+			<tbody>
+				<tr>
+					<td class="geo-cl-fb"><a href="#"><i class="fa fa-facebook"></i></a></td>
+					<td class="geo-cl-in"><a href="#"><i class="fa fa-linkedin"></i></a></td>
+					<td class="geo-cl-tw"><a href="#"><i class="fa fa-twitter"></i></a></td>
+					<td class="geo-cl-gp"><a href="#"><i class="fa fa-google-plus"></i></a></td>
+					<td class="geo-cl-im"><a href="#"><i class="fa fa-instagram"></i></a></td>
+					<td class="geo-cl-vk"><a href="#"><i class="fa fa-vk"></i></a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
-	{% include global/analytics.html %}
+	<!--
+	<footer id="geo-footer" class="geo-footer geo-footer2">
+
+		<div id="geo-footer-area" class="geo-footer-area">
+
+			<div class="geo-row">
+				<div class="geo-column-1-4 geo-tablet-column-1-2">
+
+					<div class="geo-footer-area-logo">
+						<a href="#"><img src="http://geometric.sentimony.com/assets/img/footer2-logo-x2.png" alt="footer-logo"></a>
+					</div>
+					<div class="geo-footer-area-copyright">
+						Powered by <a href="#" target="_blank">Wordpress</a><br>
+						Designed by <a href="#" target="_blank">Le Coq Studio</a>
+					</div>
+					<nav class="geo-footer-area-social-menu">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+					</nav>
+
+				</div>
+				<div class="geo-column-1-4 geo-tablet-column-1-2">
+
+					<h5 class="geo-footer-area-title">Additional Links</h5>
+					<nav class="geo-footer-area-menu">
+						<a href="#">Retina Homepage</a>
+						<a href="#">New Page Examples</a>
+						<a href="#">Parallax Sections</a>
+						<a href="#">Shortcode Central</a>
+						<a href="#">Ultimate Font Collection</a>
+					</nav>
+
+				</div>
+				<div class="geo-column-1-4 geo-tablet-column-1-2">
+
+					<h5 class="geo-footer-area-title">Shortcodes</h5>
+					<nav class="geo-footer-area-menu">
+						<a href="#">Retina Homepage</a>
+						<a href="#">New Page Examples</a>
+						<a href="#">Parallax Sections</a>
+						<a href="#">Shortcode Central</a>
+						<a href="#">Ultimate Font Collection</a>
+						<a href="#">Retina Homepage</a>
+					</nav>
+
+				</div>
+				<div class="geo-column-1-4 geo-tablet-column-1-2">
+
+					<h5 class="geo-footer-area-title">Stay updated</h5>
+
+					<input type="text" class="form-control" placeholder="Search for...">
+					<button class="geo-btn geo-btn-primary geo-btn-sm" type="button">Go!</button>
+
+					<div class="geo-footer-area-twitter">
+						<a href="https://twitter.com/AntonPivniuk" class="twitter-follow-button" data-show-count="false">Follow @AntonPivniuk</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div id="geo-footer-bar" class="geo-footer-bar">
+
+			<div class="geo-row">
+				<div class="geo-column-1">
+					<div class="geo-footer-bar-copyright">Geometric Theme, Copyright 2014</div>
+				</div>
+			</div>
+
+		</div>
+
+	</footer>
+	 -->
+
+	<footer class="geo-footer geo-footer-default">
+		<img src="{{site.baseurl}}/assets/img/geo-footer-defult-logo.png" alt="" class="geo-footer-defult-logo">
+		<p>Copyright 2015 - All Rights Reserved</p>
+		<p>Powered by <a href="http://ihororlovskyi.github.io/">Name Of Our Brand</a></p>
+	</footer>
+
+	<script src="{{site.baseurl}}/assets/js/vendor/jquery-1.11.3.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/vendor/bootstrap.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/vendor/isotope.pkgd.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/vendor/waypoints.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/vendor/parallax.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/vendor/zoom.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="{{site.baseurl}}/assets/js/main.js"></script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-62753964-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+	<!-- End Google Analytics -->
 
 </body>
 </html>

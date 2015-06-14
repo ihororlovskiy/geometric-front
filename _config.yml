@@ -1,12 +1,5 @@
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-62753964-1
-
-
-
-
-
-
 # Build settings
+baseurl: /geometric-front
 markdown: kramdown
 permalink: pretty
 
@@ -17,5 +10,3 @@ exclude: ['README.md']
 sass:
   sass_dir: assets/css
   style: :expanded
-
-

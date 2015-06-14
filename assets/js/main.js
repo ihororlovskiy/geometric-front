@@ -1,6 +1,6 @@
 // Header menu FX
 var $head = $( '.geo-header' );
-$('.header-waypoint').each( function(i) {
+$('.waypoint').each( function(i) {
 	var $el = $( this ),
 		animClassDown = $el.data( 'animateDown' ),
 		animClassUp = $el.data( 'animateUp' );
