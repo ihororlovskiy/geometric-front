@@ -24,6 +24,7 @@
 	<span class="icon-quote"></span>
 	<span class="icon-bag"></span>
 	<span class="icon-way-right"></span>
+	<span class="icon-load"></span>
 </h1>
 
 <hr>
@@ -133,16 +134,72 @@
 <h4>Buttons <small>Actual</small></h4>
 
 <div>
-	<a href="#" class="gbtn">Show More</a>
+	<a class="gbtn gbtn-default" href="#" role="button">Link</a>
+	<button class="gbtn" type="submit">Button</button>
+	<input class="gbtn" type="button" value="Input">
+	<input class="gbtn" type="submit" value="Submit">
 </div>
+
+<hr>
+
+<div class="container-fluid">
+	<div class="row">
+
+		<div class="col-sm-6">
+
+			<h4>Primary</h4>
+
+			<div style="margin-bottom:10px;">
+				<a class="gbtn gbtn-lg" href="#">Large Button</a>
+			</div>
+
+			<div style="margin-bottom:10px;">
+				<a class="gbtn gbtn-sm" href="#">Small Button</a>
+			</div>
+
+			<div style="margin-bottom:10px;">
+				<a class="gbtn gbtn-lg" href="#"><span class="icon-load"></span> Show More</a>
+			</div>
+
+			<div style="margin-bottom:10px;">
+				<a class="gbtn gbtn-sm" href="#">Dropdown</a>
+			</div>
+
+		</div>
+		<div class="col-sm-6">
+
+			<h4>Ghost</h4>
+
+			<div style="margin-bottom:10px;">
+				<a class="gbtn gbtn-lg gbtn-ghost" href="#">Large Button</a>
+			</div>
+
+			<div style="margin-bottom:10px;">
+				<a class="gbtn gbtn-sm gbtn-ghost" href="#">Small Button</a>
+			</div>
+
+			<div style="margin-bottom:10px;">
+				<a class="gbtn gbtn-lg gbtn-ghost" href="#"><span class="icon-load"></span> Show More</a>
+			</div>
+
+			<div style="margin-bottom:10px;">
+				<a class="gbtn gbtn-sm gbtn-ghost" href="#">Dropdown</a>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<hr>
+<h4>Show More</h4>
+
+{% include global/show-more.html %}
 
 <hr>
 <h4>Pagination</h4>
 
-<div>
-	<a href="#" class="gbtn"><span class="icon-arrow-left"></span> Previous</a>
-	<a href="#" class="gbtn">Next <span class="icon-arrow-right"></span></a>
-</div>
+{% include global/pagination.html %}
 
 
 <hr>
