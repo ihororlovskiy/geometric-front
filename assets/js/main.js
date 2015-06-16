@@ -99,3 +99,9 @@ $(document).ready(function(){
 		});
 });
 
+// Show more
+$(document).ready(function(){
+		$('.gbtn-showmore').click(function(){
+				$('.gbtn-showmore').toggleClass('gbtn-loading active');
+		});
+});

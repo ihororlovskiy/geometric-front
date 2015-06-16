@@ -13,7 +13,7 @@ btns
 	padding: 10px 20px;
 	font-size: 16px;
 	// line-height: 1;
-	line-height:18px;
+	line-height: 1.5;
 	// text-transform:uppercase;
 	font-weight: 300;
 	cursor: pointer;
@@ -27,22 +27,23 @@ btns
 		font-size: 12px;
 	}
 	&.gbtn-lg {
-		padding: 20px 22px;
+		padding: 14px 22px;
 		font-size: 20px;
 	}
 
 	//gbtn
 	&,
 	&:focus {
-	background: $btn-primary-bg-normal;
-	color: $btn-primary-text-normal;
-	border-color: $btn-primary-border-normal;
+		background: $btn-primary-bg-normal;
+		color: $btn-primary-text-normal;
+		border-color: $btn-primary-border-normal;
 	}
 	&:hover {
 		background: $btn-primary-bg-hover;
 		color: $btn-primary-text-hover;
 		border-color: $btn-primary-border-hover;
 	}
+	&.active,
 	&:active {
 		background: $btn-primary-bg-active;
 		color: $btn-primary-text-active;
@@ -53,15 +54,16 @@ btns
 	&.gbtn-ghost {
 		&,
 		&:focus {
-		background: $btn-ghost-bg-normal;
-		color: $btn-ghost-text-normal;
-		border-color: $btn-ghost-border-normal;
+			background: $btn-ghost-bg-normal;
+			color: $btn-ghost-text-normal;
+			border-color: $btn-ghost-border-normal;
 		}
 		&:hover {
 			background: $btn-ghost-bg-hover;
 			color: $btn-ghost-text-hover;
 			border-color: $btn-ghost-border-hover;
 		}
+		&.active,
 		&:active {
 			background: $btn-ghost-bg-active;
 			color: $btn-ghost-text-active;
@@ -84,14 +86,46 @@ btns
 		text-transform: uppercase;
 	}
 
-
-	[class^="icon-load"] {
-		display: inline-block;
-		font-size: 36px;
-		line-height: 0;
-		margin-right: 10px;
-		position: relative;
-		top: 7px;
+	//showmore
+	&.gbtn-showmore {
+		[class^="icon-load"] {
+			position: relative;
+			// display: inline-block;
+			// top: 50%;
+			// line-height: 70%;
+			// font-size: 150%;
+			// @include transform(translateY(28%));
+			margin-right: 10px;
+		}
+		&.gbtn-loading {
+			[class^="icon-load"] {
+				@include animation(fx-rotate 0.75s linear infinite);
+			}
+		}
 	}
 }
 
+@include keyframes(fx-rotate) {
+	from {
+		@include transform(rotate(0deg));
+	}
+	to {
+		@include transform(rotate(-360deg));
+	}
+}
+
+
+/* ----------------------------------------------------------------------------------------------------
+btn-group
+---------------------------------------------------------------------------------------------------- */
+.gbtn-group {
+	@include clearfix;
+
+	.gbtn {
+		float: left;
+		margin-right: 1px;
+		&:last-child {
+			margin: 0; 
+		}
+	}
+}
