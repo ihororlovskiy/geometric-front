@@ -1,4 +1,5 @@
 # Build settings
+brand-name: Name Of Our Brand 1
 baseurl: /geometric-front
 markdown: kramdown
 permalink: pretty
