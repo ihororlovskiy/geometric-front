@@ -6,14 +6,15 @@ $land-team-title-color: #5d5d5d;
 $land-team-content-color: #656565;
 $land-team-soclink-color-normal: #e2e2e2;
 $land-team-soclink-color-hover: #397aa9;
-$land-team-side-plus: 4%;
-$land-team-side-minus: -4%;
+// $land-team-side-plus: 2%;
+// $land-team-side-minus: -2%;
 
 section.land-team {
 	position: relative;
 	width: 100%;
 	text-align: center;
-	@include padding(80px 2*$land-team-side-plus);
+	// @include padding(80px 2*$land-team-side-plus);
+	@include padding(80px 0);
 	.land-title {
 		color: $land-team-title-color;
 		font-size: 20px;
@@ -26,12 +27,14 @@ section.land-team {
 		font-weight: 300;
 	}
 	.team-container {
-		@include margin(80px $land-team-side-minus null);
+		// @include margin(80px $land-team-side-minus null);
+		@include margin(80px null null);
 		article.team-member {
 			float: left;
 			width: 33.33333333333%;
 			text-align: left;
-			@include padding(null $land-team-side-plus);
+			// @include padding(null $land-team-side-plus);
+			@include padding(null 2%);
 
 			.image-contour {
 				margin-bottom: 10px;
@@ -48,11 +51,11 @@ section.land-team {
 
 				.extra-content {
 					position: absolute;
-					bottom: 0;
+					bottom: -4px;
 					left: -5px;
 					right: -5px;
 					background: $color-white;
-					@include padding(12px 25px);
+					@include padding(12px 22px 16px);
 					@include transition(all 1.25s $ease-out-circ);
 					@include transform(translateY(100%));
 					overflow: hidden;
