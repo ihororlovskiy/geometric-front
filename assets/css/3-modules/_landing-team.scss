@@ -1,0 +1,111 @@
+/* ----------------------------------------------------------------------------------------------------
+landing team
+---------------------------------------------------------------------------------------------------- */
+
+$land-team-title-color: #5d5d5d;
+$land-team-content-color: #656565;
+$land-team-soclink-color-normal: #e2e2e2;
+$land-team-soclink-color-hover: #397aa9;
+$land-team-side-plus: 4%;
+$land-team-side-minus: -4%;
+
+section.land-team {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	@include padding(80px 2*$land-team-side-plus);
+	.land-title {
+		color: $land-team-title-color;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	.land-description {
+		color: $land-team-title-color;
+		font-size: 15px;
+		font-weight: 300;
+	}
+	.team-container {
+		@include margin(80px $land-team-side-minus null);
+		article.team-member {
+			float: left;
+			width: 33.33333333333%;
+			text-align: left;
+			@include padding(null $land-team-side-plus);
+
+			.image-contour {
+				margin-bottom: 10px;
+				overflow: hidden;
+				position: relative;
+				@include transition(all 3.75s $ease-out-circ);
+				@include filter(grayscale(100%));
+				img.member-photo {
+					width: 100%;
+					height: auto;
+					@include transition(all 3.75s $ease-out-circ);
+					@include transform(scale(1) translateY(0) translateZ(0));
+				}
+
+				.extra-content {
+					position: absolute;
+					bottom: 0;
+					left: -5px;
+					right: -5px;
+					background: $color-white;
+					@include padding(12px 25px);
+					@include transition(all 1.25s $ease-out-circ);
+					@include transform(translateY(100%));
+					overflow: hidden;
+					nav.memder-social {
+						width: 100%;
+						a {
+							font-size: 22px;
+							padding: 8px;
+							margin-right: 8px;
+							color: $land-team-soclink-color-normal;
+							display: inline-block;
+							@include transition(all 0.25s $ease-out-quint);
+							// [class^="icon-load"] {
+							// }
+							&:hover {
+								color: $land-team-soclink-color-hover;
+							}
+						}
+					}
+				}
+
+			}
+
+			.text-content {
+				color: $land-team-content-color;
+				.member-position {
+					font-size: 15px;
+					font-weight: 300;
+				}
+				.member-name {
+					font-size: 20px;
+					text-transform: uppercase;
+					font-weight: 500;
+					margin-bottom: 10px;
+				}
+				.member-description {
+					font-size: 15px;
+					font-weight: 300;
+				}
+			}
+
+			&:hover {
+				.image-contour {
+					@include filter(grayscale(0));
+				}
+					img.member-photo {
+						@include transform(scale(1.1) translateY(-5%) translateZ(0));
+					}
+				.extra-content {
+					@include transform(translateY(0));
+				}
+			}
+
+		}
+	}
+}
