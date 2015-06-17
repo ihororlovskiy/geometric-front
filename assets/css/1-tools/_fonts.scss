@@ -171,9 +171,6 @@ icomoon
 .icon-facebook:before {
 	content: "\f09a";
 }
-.icon-facebook-f:before {
-	content: "\f09a";
-}
 .icon-pinterest:before {
 	content: "\f0d2";
 }
@@ -213,7 +210,6 @@ icomoon
 
 /* for geometric-ui-kit page
 ---------------------------------------------------------------------------------------------------- */
-
 .geometric-ui-icons {
 	margin-bottom: 30px;
 	article {
@@ -233,7 +229,7 @@ icomoon
 			font-size: 30px;
 			margin-right: 0.5em;
 			color: #4a4a4a;
-			@include transition(margin-right 0.25s $ease-out-quint);
+			@include transition(margin-right 0.15s $ease-out-quint);
 			// @include transform(scale(3.0));
 		}
 		&:hover {
@@ -241,10 +237,11 @@ icomoon
 			// letter-spacing: 0.25em;
 			font-size: 14px;
 			color: #397aa9;
-			[class^="icon-"], [class*=" icon-"] {
+			font-weight: 400;
+			[class^="icon-"] {
 				color: #397aa9;
-				margin-right: 1.5em;
-				@include transform(scale(2.0) translateX(25%));
+				margin-right: 0.75em;
+				@include transform(scale(1.75));
 			}
 		}
 	}
