@@ -1,0 +1,45 @@
+/* ----------------------------------------------------------------------------------------------------
+landing basic
+---------------------------------------------------------------------------------------------------- */
+
+$land-accent-color: #5d5d5d;
+$land-text-color: #656565;
+$land-divider-color: #f5f5f5;
+
+section.land-item {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	@include padding(80px 0);
+
+	.land-icon {
+		
+	}
+
+	.land-title {
+		color: $land-accent-color;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+
+	.land-description {
+		color: $land-accent-color;
+		font-size: 15px;
+		font-weight: 300;
+	}
+
+	.land-header {
+
+	}
+
+	.land-body {
+
+	}
+
+
+}
+
+
+
+

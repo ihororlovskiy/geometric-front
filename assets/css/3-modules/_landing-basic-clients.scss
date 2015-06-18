@@ -1,0 +1,73 @@
+/* ----------------------------------------------------------------------------------------------------
+landing basic clients
+---------------------------------------------------------------------------------------------------- */
+
+section.land-clients {
+
+	.land-title {
+	}
+
+	.land-description {
+	}
+
+	.land-header {
+		@include margin(null null 80px);
+	}
+
+	.land-body {
+		.gallery {
+			// background:#eee;
+			// @include padding(null 54px 14px);
+			@include padding(null null 20px);
+
+			.gallery-cell {
+				width: 100%;
+				height: 200px;
+				margin-right: 10px;
+				// background: #8C8;
+				// background: $color-white;
+				// counter-increment: gallery-cell;
+
+				// &:before {
+				// 	display: block;
+				// 	text-align: center;
+				// 	content: counter(gallery-cell);
+				// 	line-height: 200px;
+				// 	font-size: 80px;
+				// 	color: white;
+				// }
+
+				a {
+					display: inline-block;
+					float: left;
+					width: 20%;
+					@include transition(all 3.75s $ease-out-circ);
+					@include filter(grayscale(100%));
+					
+					&:hover {
+						@include filter(grayscale(0));
+					}
+
+					img {
+					}
+				}
+
+			}
+			.flickity-page-dots {
+				bottom: 0;
+				left: 0;
+				.dot {
+					background: #488cc0;
+				}
+			}
+			.flickity-prev-next-button {
+				display: none;
+			}
+		}
+
+	}
+
+}
+
+
+

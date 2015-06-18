@@ -105,3 +105,15 @@ $(document).ready(function(){
 				$('.gbtn-showmore').toggleClass('gbtn-loading active');
 		});
 });
+
+// // flickity
+// $('.main-gallery').flickity({
+// 	// options
+// 	cellAlign: 'left',
+// 	contain: true
+// });
+
+
+
+
+
