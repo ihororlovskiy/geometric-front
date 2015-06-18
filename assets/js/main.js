@@ -29,10 +29,15 @@ $(function() {
 
 // Isotope
 var $container = $('.isotope-container');
+var $containerGrid = $('.isotope-container-grid');
 $(document).ready(function() {
 	$container.imagesLoaded( function() {
 		$container.isotope({
 			itemSelector: '.isotope-item',
+		});
+		$containerGrid.isotope({
+			itemSelector: '.isotope-item',
+			layoutMode: 'fitRows',
 		});
 		var filterFns = {
 		};
