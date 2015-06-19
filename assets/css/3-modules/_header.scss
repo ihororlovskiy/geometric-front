@@ -21,9 +21,11 @@ header
 	@include transition(all 0.5s $ease-in-out-quad);
 }
 
-nav.geo-main-logo {float:left;display:table;min-height:100px;}
-nav.geo-main-logo>a {padding:0 15px;display:table-cell;vertical-align:middle;}
-nav.geo-main-logo>a>img {max-height:70px;}
+nav.geo-main-logo {
+	float:left;display:table;min-height:100px;
+	>a {padding:0 15px;display:table-cell;vertical-align:middle;}
+	>a>img {max-height:70px;}
+}
 
 //main
 nav.geo-main-menu {float:right;
@@ -90,7 +92,7 @@ nav.geo-languages-menu {float:right;position:relative;top:29px;text-align:center
 		height: 50px;
 		float: right;
 		overflow: hidden;
-		transition:.5s;
+		@include transition(all 0.5s ease);
 
 		.geo-searchbox-input{
 			position: absolute;
@@ -108,21 +110,22 @@ nav.geo-languages-menu {float:right;position:relative;top:29px;text-align:center
 			font-size: 25px;
 			color: #646464;
 		}
-		.geo-searchbox-input::-webkit-input-placeholder {color:#646464;}
+		.geo-searchbox-input::-webkit-input-placeholder {color: #646464;}
 
 		.geo-searchbox-icon,
 		.geo-searchbox-submit {
-			width:50px;
-			height:50px;
-			display:block;
-			z-index:200;
-			position:absolute;
-			top:0;
-			font-size:24px;
-			font-weight:700;
-			right:0;
-			padding:0;
-			margin:0; border: 0;
+			width: 50px;
+			height: 50px;
+			display: block;
+			z-index: 200;
+			position: absolute;
+			top: 0;
+			font-size: 24px;
+			font-weight: 700;
+			right: 0;
+			padding: 0;
+			margin: 0;
+			border: 0;
 			outline: 0;
 			line-height: 50px;
 			text-align: center;
@@ -131,55 +134,56 @@ nav.geo-languages-menu {float:right;position:relative;top:29px;text-align:center
 			background: #fff;
 		}
 		.geo-searchbox-icon:hover,
-		.geo-searchbox-submit:hover {color:#4385b8;}
+		.geo-searchbox-submit:hover {color: #4385b8;}
 	}
-	.geo-searchbox.geo-searchbox-open {width:1100%;}
+	.geo-searchbox.geo-searchbox-open {width: 1100%;}
 }
 
 
 
 //geo-main-menu-cart
 .main-menu-cart {
-	float:right;
+	float: right;
 	position: relative;
 
 	ul {
-		margin:0;
-		padding:0;
-		list-style:none;
-		display:table;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: table;
 
 		li {
-			padding:0 15px;
-			position:relative;
-			display:table-cell;
-			vertical-align:middle;
-			line-height:100px;
+			padding: 0;
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+			line-height: 100px;
 
 			a {
-				text-transform:uppercase;
-				color:#6a6a6a;
-				font-weight:700;
-				float:left;
-				font-size:24px;
-				font-weight:700;
+				padding: 0 15px;
+				text-transform: uppercase;
+				color: #6a6a6a;
+				font-weight: 700;
+				float: left;
+				font-size: 24px;
+				font-weight: 700;
 
 				&:hover {
-					color:#4385b8;
+					color: #4385b8;
 				}
 
 				.geo-purchased-items {
-					background-color:#3679ab;
-					color:#fff;
-					border-radius:4px;
-					text-align:center;
-					font-weight:300;
-					font-size:12px;
-					position:absolute;
-					top:15px;
-					right:0px;
-					line-height:15px;
-					padding:3px 6px;
+					background-color: #3679ab;
+					color: #fff;
+					border-radius: 4px;
+					text-align: center;
+					font-weight: 300;
+					font-size: 12px;
+					position: absolute;
+					top: 15px;
+					right: 0;
+					line-height: 15px;
+					padding: 3px 6px;
 				}
 			}
 		}
@@ -210,6 +214,7 @@ nav.geo-languages-menu {float:right;position:relative;top:29px;text-align:center
 			width: 100%;
 			float: left;
 			border-bottom: 1px solid #cee1ef;
+			position: relative;
 
 			.cart-image {
 				width: 30%;
@@ -220,6 +225,7 @@ nav.geo-languages-menu {float:right;position:relative;top:29px;text-align:center
 					opacity: 0.85;
 				}
 			}
+
 			.cart-details {
 				width: 70%;
 				float: left;
@@ -250,7 +256,21 @@ nav.geo-languages-menu {float:right;position:relative;top:29px;text-align:center
 					span {
 						color: #fff;
 					}
+				}
+			}
 
+			a.cart-close {
+				position: absolute;
+				top: 18px;
+				right: 18px;
+				padding: 4px;
+				display: inline-block;
+				font-size: 15px; 
+				line-height: 1;
+				color: #cee1ef;
+				// @include transform(translateX(-100%) translateY(100%));
+				&:hover {
+					color: #fff;
 				}
 			}
 		}
@@ -294,24 +314,9 @@ nav.geo-languages-menu {float:right;position:relative;top:29px;text-align:center
 				}
 			}
 		}
-
-		a.cart-close {
-			position: absolute;
-			top: 18px;
-			right: 18px;
-			padding: 4px;
-			display: inline-block;
-			font-size: 15px; 
-			line-height: 1;
-			color: #cee1ef;
-			// @include transform(translateX(-100%) translateY(100%));
-			&:hover {
-				color: #fff;
-			}
-		}
 	}
-	// &:hover,
-	&.open {
+
+	&:hover {
 		.shoping-cart-box {
 			opacity: 1;
 			overflow: visible;

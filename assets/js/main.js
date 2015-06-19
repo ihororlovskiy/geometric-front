@@ -100,13 +100,13 @@ function buttonUp() {
 }
 
 $(document).ready(function(){
-		// Cart At Menu
-		$('.main-menu-cart>ul>li>a').click(function(){
-				$('.main-menu-cart').toggleClass('open');
-		});
-		$('.main-menu-cart a.cart-close').click(function(){
-				$('.main-menu-cart').toggleClass('open');
-		});
+		// // Cart At Menu
+		// $('.main-menu-cart>ul>li>a').click(function(){
+		// 		$('.main-menu-cart').toggleClass('open');
+		// });
+		// $('.main-menu-cart a.cart-close').click(function(){
+		// 		$('.main-menu-cart').toggleClass('open');
+		// });
 		// Add review
 		$('.addreview>button').click(function(){
 				$('.addreview').toggleClass('addreview--add');
