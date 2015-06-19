@@ -189,7 +189,7 @@ nav.geo-languages-menu {float:right;position:relative;top:29px;text-align:center
 		overflow: hidden;
 		top: 100%;
 		right: 0;
-		width: 300px;
+		width: 340px;
 		height: 0;
 		background: #5596c7;
 		color: #fff;
@@ -206,25 +206,108 @@ nav.geo-languages-menu {float:right;position:relative;top:29px;text-align:center
 			@include transform(translateY(-100%));
 		}
 
-		.cart-image {
-			width: 30%;
+		.cart-item {
+			width: 100%;
 			float: left;
+			border-bottom: 1px solid #cee1ef;
+
+			.cart-image {
+				width: 30%;
+				float: left;
+				@include transition(all 0.15s ease);
+
+				&:hover {
+					opacity: 0.85;
+				}
+			}
+			.cart-details {
+				width: 70%;
+				float: left;
+				@include padding(null 20px);
+
+				.cart-title {
+					@include padding(15px null 10px);
+
+					a {
+						display: inline-block;
+						font-size: 15px;
+						line-height: 20px;
+						font-weight: 300;
+						color: #fff;
+						@include transition(all 0.15s ease);
+
+						&:hover {
+							color: #cee1ef;
+						}
+					}
+				}
+				.cart-countprice {
+					font-size: 15px;
+					line-height: 20px;
+					font-weight: 400;
+					color: #cee1ef;
+
+					span {
+						color: #fff;
+					}
+
+				}
+			}
 		}
-		.cart-details {
-			width: 70%;
-			float: left;
-		}
-		.cart-total {
-			border: 1px solid #cee1ef;
+
+		.cart-footer {
 			width: 100%;
 			float: left;
 			padding: 10px;
+			padding: 16px;
+			text-align: center;
+
+			span.cart-subtotal {
+				float: left;
+				background: #488cc0;
+				font-size: 15px;
+				line-height: 50px;
+				font-weight: 300;
+				padding: 0 5px;
+				width: 50%;
+
+				span {
+					font-weight: 400;
+				}
+			}
+			a.cart-veiwcart {
+				float: left;
+				color: #488cc0;
+				background: #fff;
+				font-size: 13px;
+				line-height: 48px;
+				padding: 0 5px;
+				font-weight: 700;
+				text-transform: uppercase;
+				width: 50%;
+
+				[class^="icon-"] {
+					margin-right: 10px;
+					font-size: 20px;
+					position: relative;
+					top: 3px;
+				}
+			}
 		}
+
 		a.cart-close {
 			position: absolute;
-			top: 0;
-			right: 0;
-			// @include transform(translateX(-100%) translateY(-100%));
+			top: 18px;
+			right: 18px;
+			padding: 4px;
+			display: inline-block;
+			font-size: 15px; 
+			line-height: 1;
+			color: #cee1ef;
+			// @include transform(translateX(-100%) translateY(100%));
+			&:hover {
+				color: #fff;
+			}
 		}
 	}
 	// &:hover,

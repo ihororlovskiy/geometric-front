@@ -71,20 +71,20 @@ btns
 		}
 	}
 
-	//just for fun
-	&:after {
-		position: absolute;
-		top: 0;
-		right: 0;
-		content: '@';
-		font-size: 8px;
-		font-weight: 700;
-		line-height: 1;
-		padding: 4px;
-		color: $color-black;
-		display: block;
-		text-transform: uppercase;
-	}
+	// //just for fun
+	// &:after {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	right: 0;
+	// 	content: '@';
+	// 	font-size: 8px;
+	// 	font-weight: 700;
+	// 	line-height: 1;
+	// 	padding: 4px;
+	// 	color: $color-black;
+	// 	display: block;
+	// 	text-transform: uppercase;
+	// }
 
 	//showmore
 	&.gbtn-showmore {
