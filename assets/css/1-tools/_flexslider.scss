@@ -75,20 +75,11 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
-	// margin: 0 -9px 60px;
-	margin: 0;
+	margin-bottom: 30px;
 	background: #fff;
-	// border: 4px solid #ffffff;
 	position: relative;
 	zoom: 1;
 	overflow: hidden;
-	// -webkit-border-radius: 4px;
-	// -moz-border-radius: 4px;
-	// border-radius: 4px;
-	// -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-	// -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-	// -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-	// box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .flexslider .slides {
 	zoom: 1;
@@ -98,14 +89,8 @@ html[xmlns] .flexslider .slides {
 }
 .flex-viewport {
 	max-height: 2000px;
-	margin: 0 9px 18px;
-	margin: 0 0 18px;
-	// padding: 0 9px;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+	margin-bottom: 18px;
+	@include transition(all 1.0s ease);
 }
 .loading .flex-viewport {
 	max-height: 300px;
@@ -128,22 +113,16 @@ html[xmlns] .flexslider .slides {
 	overflow: hidden;
 	opacity: 0;
 	cursor: pointer;
-	color: rgba(0, 0, 0, 0.8);
-	// text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	// color: rgba(0, 0, 0, 0.8);
+	color: #4385b8;
+	@include transition(all 0.3s ease-in-out);
 }
 .flex-direction-nav a:before {
-	// font-family: "flexslider-icon";
 	font-family: "icomoon";
-	font-size: 20px;
+	font-size: 30px;
 	display: inline-block;
 	content: '\e5cc';
-	color: rgba(0, 0, 0, 0.8);
-	// text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+	// color: rgba(0, 0, 0, 0.8);
 }
 .flex-direction-nav a.flex-next:before {
 	content: '\e5cd';
@@ -170,7 +149,7 @@ html[xmlns] .flexslider .slides {
 	opacity: 1;
 }
 .flex-direction-nav .flex-disabled {
-	opacity: 0!important;
+	opacity: 0 !important;
 	filter: alpha(opacity=0);
 	cursor: default;
 }
@@ -188,7 +167,6 @@ html[xmlns] .flexslider .slides {
 	color: #000;
 }
 .flex-pauseplay a:before {
-	// font-family: "flexslider-icon";
 	font-family: "icomoon";
 	font-size: 20px;
 	display: inline-block;
@@ -220,13 +198,11 @@ html[xmlns] .flexslider .slides {
 	background: rgba(0, 0, 0, 0.5);
 	cursor: pointer;
 	text-indent: -9999px;
+	border-radius: 20px;
 	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 	-o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
 }
 .flex-control-paging li a:hover {
 	background: #333;
@@ -238,51 +214,51 @@ html[xmlns] .flexslider .slides {
 	cursor: default;
 }
 .flex-control-thumbs {
-	// padding-right: -18px;
-	position: static;
-	// left: -9px;
-	// right: -9px;
-	overflow: hidden;
+	margin: 0 -9px;
+	width: auto;
+	position: relative;
+	bottom: auto;
 }
 .flex-control-thumbs li {
 	width: 25%;
 	float: left;
 	margin: 0;
 	padding: 0 9px;
-	// @include box-sizing(border-box);
-
-	// &:first-child {padding-left: 0;}
-	// &:last-child {padding-right: 0;}
 }
 .flex-control-thumbs img {
 	width: 100%;
 	height: auto;
 	display: block;
-	opacity: .7;
+	opacity: 0.5;
 	cursor: pointer;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-.flex-control-thumbs img:hover {
-	opacity: 1;
-}
-.flex-control-thumbs .flex-active {
-	opacity: 1;
-	cursor: default;
+	border: 2px solid transparent;
+	@include transition(all 0.3s ease);
+	@include transform(translateZ(0));
+	@include filter(grayscale(100%));
+
+	&:hover,
+	&.flex-active {
+		opacity: 1.0;
+		border-color: #488cc0;
+		@include filter(grayscale(0));
+	}
+
+	&.flex-active {
+		cursor: default;
+	}
 }
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
 @media screen and (max-width: 860px) {
-	.flex-direction-nav .flex-prev {
-		opacity: 1;
-		left: 10px;
-	}
-	.flex-direction-nav .flex-next {
-		opacity: 1;
-		right: 10px;
+	.flex-direction-nav {
+		.flex-prev {
+			opacity: 1;
+			left: 10px;
+		}
+		.flex-next {
+			opacity: 1;
+			right: 10px;
+		}
 	}
 }
