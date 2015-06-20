@@ -6,12 +6,32 @@ permalink: html/shop/item/
 
 <article class="geo-shopitem shopitem">
 	<div class="container">
+
 		<div class="row">
 			<div class="col-sm-6">
 
 				<div class="shopitem-slider">
 
-					<main>
+					<section class="slider">
+						<div class="flexslider">
+							<ul class="slides">
+								<li data-thumb="{{site.baseurl}}/assets/img/shop/item-01-small.jpg">
+									<img src="{{site.baseurl}}/assets/img/shop/item-01-big.jpg">
+								</li>
+								<li data-thumb="{{site.baseurl}}/assets/img/shop/item-02-small.jpg">
+									<img src="{{site.baseurl}}/assets/img/shop/item-02-big.jpg">
+								</li>
+								<li data-thumb="{{site.baseurl}}/assets/img/shop/item-03-small.jpg">
+									<img src="{{site.baseurl}}/assets/img/shop/item-03-big.jpg">
+								</li>
+								<li data-thumb="{{site.baseurl}}/assets/img/shop/item-04-small.jpg">
+									<img src="{{site.baseurl}}/assets/img/shop/item-04-big.jpg">
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- <main>
 						<a href="#"><img src="{{site.baseurl}}/assets/img/shop/item-01-big.jpg"></a>
 					</main>
 
@@ -20,91 +40,141 @@ permalink: html/shop/item/
 						<a href="#"><img src="{{site.baseurl}}/assets/img/shop/item-02-small.jpg"></a>
 						<a href="#"><img src="{{site.baseurl}}/assets/img/shop/item-03-small.jpg"></a>
 						<a href="#"><img src="{{site.baseurl}}/assets/img/shop/item-04-small.jpg"></a>
-					</nav>
+					</nav> -->
 
 					<div class="status">New</div>
 
 				</div>
 
-				<!-- <link rel="stylesheet" href="http://praxis.sentimony.com/woothemes-FlexSlider-6df2881/flexslider.css" type="text/css" media="screen" />
-
-				<section class="slider">
-					<div class="flexslider">
-						<ul class="slides">
-							<li data-thumb="/img/shop/item-01-small.jpg">
-								<img src="{{site.baseurl}}/assets/img/shop/item-01-big.jpg" data-action="zoom">
-							</li>
-							<li data-thumb="/img/shop/item-02-small.jpg">
-								<img src="{{site.baseurl}}/assets/img/shop/item-02-big.jpg" data-action="zoom">
-							</li>
-							<li data-thumb="/img/shop/item-03-small.jpg">
-								<img src="{{site.baseurl}}/assets/img/shop/item-03-big.jpg" data-action="zoom">
-							</li>
-							<li data-thumb="/img/shop/item-04-small.jpg">
-								<img src="{{site.baseurl}}/assets/img/shop/item-04-big.jpg" data-action="zoom">
-							</li>
-						</ul>
-					</div>
-				</section> -->
-
 			</div>
 			<div class="col-sm-6">
 
-					<div class="shopitem__arrows arrows-a">
-						<a href="/html/shop/geo-shopitem.php" class="arrows-a__prev"><span class="icon-arrow-left"></span></a>
-						<a href="/html/shop/geo-shopitem.php" class="arrows-a__next"><span class="icon-arrow-right"></span></a>
-					</div>
+				<div class="shopitem__arrows arrows-a">
+					<a href="#" class="arrows-a__prev"><span class="icon-arrow-left"></span></a>
+					<a href="#" class="arrows-a__next"><span class="icon-arrow-right"></span></a>
+				</div>
 
-					<ol class="breadcrumb">
-						<li><a href="/">Home</a></li>
-						<li><a href="/html/shop/geo-shoplist-classic.php">Shop</a></li>
-						<li class="active">Coats & Jackets</li>
-					</ol>
+				<ol class="breadcrumb">
+					<li><a href="/">Home</a></li>
+					<li><a href="/html/shop/geo-shoplist-classic.php">Shop</a></li>
+					<li class="active">Coats & Jackets</li>
+				</ol>
 
-					<h1 class="shopitem__title">Black Leather Dress</h1>
+				<h1 class="shopitem__title">Black Leather Dress</h1>
 
-					<div class="shopitem__rating">
-						<span class="icon-star active"></span>
-						<span class="icon-star active"></span>
-						<span class="icon-star active"></span>
-						<span class="icon-star"></span>
-						<span class="icon-star"></span>
-					</div>
+				<div class="shopitem__rating">
+					<span class="icon-star active"></span>
+					<span class="icon-star active"></span>
+					<span class="icon-star active"></span>
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+				</div>
 
-						<form class="shopitem__form">
+				<form class="shopitem__form">
 
-							<div class="shopitem__form__price">£230.00 <del>£320.00</del></div>
-							<input class="shopitem__form__hidden" type="hidden" name="product" value="4994">
-							<input class="shopitem__form__quantity" type="number" step="1" min="1" name="quantity" value="1">
-							<button class="shopitem__form__submit" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					<div class="shopitem__form__price">£230.00 <del>£320.00</del></div>
+					<input class="shopitem__form__hidden" type="hidden" name="product" value="1234">
+					<input class="shopitem__form__quantity" type="number" step="1" min="1" name="quantity" value="1">
+					<button class="shopitem__form__submit" type="submit"><span class="icon-cart"></span> Add to cart</button>
 
-							<!-- <hr> -->
-
-							<nav class="geo-filter clearfix">
-								<ul class="filter-right">
-									<li class="dropdown">
-										<p>Color</p>
-										<a href="#" data-toggle="dropdown">Black <span class="icon-uniE5CA"></span></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">White</a></li>
-											<li><a href="#">Red</a></li>
-											<li><a href="#">Yellow</a></li>
-											<li><a href="#">Pink</a></li>
-										</ul>
-									</li>
-								</ul>
-							</nav>
-
-							<div class="shopitem__form__color">
-								<span>Color: </span>
-								<select name="color" required>
-									<option value="black">Black</option>
-									<option value="white">White</option>
-									<option value="red" selected>Red</option>
-									<option value="yellow">Yellow</option>
-									<option value="pink">Pink</option>
-								</select>
+					<div class="size-list">
+						<div class="title">Size:</div>
+						<div class="list">
+							<div class="item">
+								<input type="radio" id="size-xs" name="size" value="xs">
+								<label for="size-xs">XS</label>
 							</div>
+							<div class="item">
+								<input type="radio" id="size-s" name="size" value="s" checked>
+								<label for="size-s">S</label>
+							</div>
+							<div class="item">
+								<input type="radio" id="size-m" name="size" value="m">
+								<label for="size-m">M</label>
+							</div>
+							<div class="item">
+								<input type="radio" id="size-l" name="size" value="l">
+								<label for="size-l">L</label>
+							</div>
+							<div class="item">
+								<input type="radio" id="size-xl" name="size" value="xl">
+								<label for="size-xl">XL</label>
+							</div>
+							<div class="item">
+								<input type="radio" id="size-xll" name="size" value="xxl">
+								<label for="size-xll">XXL</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="color-list">
+						<div class="title">Color:</div>
+						<div class="list">
+							<div class="item">
+								<input type="radio" id="color-black" name="color" value="black">
+								<label for="color-black">Black</label>
+							</div>
+							<div class="item">
+								<input type="radio" id="color-white" name="color" value="white" checked>
+								<label for="color-white">White</label>
+							</div>
+							<div class="item">
+								<input type="radio" id="color-red" name="color" value="red">
+								<label for="color-red">Red</label>
+							</div>
+							<div class="item">
+								<input type="radio" id="color-yellow" name="color" value="yellow">
+								<label for="color-yellow">Yellow</label>
+							</div>
+							<div class="item">
+								<input type="radio" id="color-pink" name="color" value="pink">
+								<label for="color-pink">Pink</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="geo-radio">
+						<input type="radio" id="radio09" name="radio" checked>
+						<label for="radio09"><span></span>Dolce & Gabbana</label>
+					</div>
+
+					<div class="geo-radio">
+						<input type="radio" id="radio10" name="radio">
+						<label for="radio10"><span></span>Emporio Armani</label>
+					</div>
+
+					<div class="geo-radio">
+						<input type="radio" id="radio11" name="radio">
+						<label for="radio11"><span></span>Fendi</label>
+					</div>
+
+					<!-- <div class="shopitem__form__color">
+						<span>Color: </span>
+						<select name="color" required>
+							<option value="black">Black</option>
+							<option value="white">White</option>
+							<option value="red" selected>Red</option>
+							<option value="yellow">Yellow</option>
+							<option value="pink">Pink</option>
+						</select>
+					</div> -->
+
+					<!-- <hr> -->
+
+					<!-- <nav class="geo-filter clearfix">
+						<ul class="filter-right">
+							<li class="dropdown">
+								<p>Color</p>
+								<a href="#" data-toggle="dropdown">Black <span class="icon-uniE5CA"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">White</a></li>
+									<li><a href="#">Red</a></li>
+									<li><a href="#">Yellow</a></li>
+									<li><a href="#">Pink</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav> -->
 
 					<!-- <span>Size: </span>
 					<div class="btn-group" data-toggle="buttons">
@@ -154,33 +224,6 @@ permalink: html/shop/item/
 						</select>
 					</div> -->
 
-					<div class="geo-radio">
-						<input type="radio" id="radio09" name="size" value="x">
-						<label for="radio09">
-							<span></span>
-							XS
-						</label>
-					</div>
-
-					<div class="geo-radio">
-						<input type="radio" id="radio10" name="size" value="s" checked>
-						<label for="radio10">
-							<span></span>
-							S
-						</label>
-					</div>
-
-					<div class="geo-radio">
-						<input type="radio" id="radio11" name="size" value="m">
-						<label for="radio11">
-							<span></span>
-							M
-						</label>
-					</div>
-
-				</form>
-
-
 					<!-- <div class="size">
 						<span>Size: </span>
 						<form action="">
@@ -193,22 +236,24 @@ permalink: html/shop/item/
 						</form>
 					</div> -->
 
-					<div class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</div>
-					<div class="sku">SKU: 4324231546</div>
-					<div class="categories">Categories:
-						<a href="#">Coats & Jackets</a>,
-						<a href="#">Women's Clothing</a>.
-					</div>
-					<div class="tags">Tags: 
-						<a href="#">Responsive</a>,
-						<a href="#">Theme</a>.
-					</div>
+				</form>
 
-				
+				<div class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</div>
+				<div class="sku">SKU: 4324231546</div>
+				<div class="categories">Categories:
+					<a href="#">Coats & Jackets</a>,
+					<a href="#">Women's Clothing</a>.
+				</div>
+				<div class="tags">Tags: 
+					<a href="#">Responsive</a>,
+					<a href="#">Theme</a>.
+				</div>
+
 			</div>
 		</div>
 
-		<!-- Tabs -->
+
+
 		<div class="vtabs" role="tabpanel">
 
 			<ul class="vtabs__tablist" role="tablist">
@@ -317,28 +362,22 @@ permalink: html/shop/item/
 						</button>
 
 						<form class="addreview__form">
-
-								<div class="addreview__form__body">
-									<input class="addreview__form__author" name="author" type="text" value="" aria-required="true"  placeholder="Name *">
-									<input class="addreview__form__email" name="email" type="text" value="" aria-required="true" placeholder="Email *">
-								
-									<textarea class="addreview__form__textarea" name="comment" aria-required="true" placeholder="Comment *" cols="45" rows="5"></textarea>
-
+							<div class="addreview__form__body">
+								<input class="addreview__form__author" name="author" type="text" value="" aria-required="true"  placeholder="Name *">
+								<input class="addreview__form__email" name="email" type="text" value="" aria-required="true" placeholder="Email *">
+								<textarea class="addreview__form__textarea" name="comment" aria-required="true" placeholder="Comment *" cols="45" rows="5"></textarea>
+							</div>
+							<div class="addreview__form__footer">
+								<div class="addreview__form__rating">
+									<span class="addreview__form__rating__title">Vote:</span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
 								</div>
-								<div class="addreview__form__footer">
-
-									<div class="addreview__form__rating">
-										<span class="addreview__form__rating__title">Vote:</span>
-										<span class="icon-star"></span>
-										<span class="icon-star"></span>
-										<span class="icon-star"></span>
-										<span class="icon-star"></span>
-										<span class="icon-star"></span>
-									</div>
-
-									<input class="addreview__form__submit gbtn" name="submit" type="submit" value="Submit">
-								</div>
-
+								<input class="addreview__form__submit gbtn" name="submit" type="submit" value="Submit">
+							</div>
 						</form>
 
 					</div>
@@ -348,100 +387,104 @@ permalink: html/shop/item/
 
 		</div>
 
+
+
 		<div class="row">
 			<div class="col-sm-12">
 
-			<div class="geo-related-products">
+				<div class="geo-related-products">
 
-				<div class="geo-related-head">
-					<div class="related-title">Related Products</div>
-					<a href="/html/shop/geo-shopitem.php" class="prev"><span class="icon-uniE5CC"></span></i></a>
-					<a href="/html/shop/geo-shopitem.php" class="next"><span class="icon-uniE5CD"></span></a>
+					<div class="geo-related-head">
+						<div class="related-title">Related Products</div>
+						<a href="/html/shop/geo-shopitem.php" class="prev"><span class="icon-arrow-left"></span></i></a>
+						<a href="/html/shop/geo-shopitem.php" class="next"><span class="icon-arrow-right"></span></a>
+					</div>
+
+					<div class="geo-related-body clearfix">
+
+						<article>
+							<div class="visual">
+								<a href="/html/shop/geo-shopitem.php"><img src="{{site.baseurl}}/assets/img/shop/list-classic-01.jpg" alt="..." /></a>
+								<span class="status new">New</span>
+								<a href="#" class="add-to-cart"><span class="icon-cart"></span> Add to cart</a>
+							</div>
+							<div class="info">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Bicycle</a></div>
+								<div class="rating">
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+								</div>
+								<div class="price">£230.00</div>
+							</div>
+						</article>
+
+						<article>
+							<div class="visual">
+								<a href="/html/shop/geo-shopitem.php"><img src="{{site.baseurl}}/assets/img/shop/list-classic-02.jpg" alt="..." /></a>
+								<span class="status out">Out of stock</span>
+								<a href="#" class="add-to-cart"><span class="icon-cart"></span> Add to cart</a>
+							</div>
+							<div class="info">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
+								<div class="rating">
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+							</div>
+						</article>
+
+						<article>
+							<div class="visual">
+								<a href="/html/shop/geo-shopitem.php"><img src="{{site.baseurl}}/assets/img/shop/list-classic-03.jpg" alt="..." /></a>
+								<a href="#" class="add-to-cart"><span class="icon-cart"></span> Add to cart</a>
+							</div>
+							<div class="info">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Cinema 3D LED TV</a></div>
+								<div class="rating">
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+								</div>
+								<div class="price">£230.00</div>
+							</div>
+						</article>
+
+						<article>
+							<div class="visual">
+								<a href="/html/shop/geo-shopitem.php"><img src="{{site.baseurl}}/assets/img/shop/list-classic-04.jpg" alt="..." /></a>
+								<span class="status last">Last examples</span>
+								<a href="#" class="add-to-cart"><span class="icon-cart"></span> Add to cart</a>
+							</div>
+							<div class="info">
+								<div class="title"><a href="/html/shop/geo-shopitem.php">Dicta qui</a></div>
+								<div class="rating">
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star active"></span>
+									<span class="icon-star"></span>
+								</div>
+								<div class="price">£196.00 <del>£256.00</del></div>
+							</div>
+						</article>
+
+					</div>
+
 				</div>
 
-				<div class="geo-related-body clearfix">
-
-					<article>
-						<div class="visual">
-							<a href="/html/shop/geo-shopitem.php"><img src="{{site.baseurl}}/assets/img/shop/list-classic-01.jpg" alt="..." /></a>
-							<span class="status new">New</span>
-							<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
-						</div>
-						<div class="info">
-							<div class="title"><a href="/html/shop/geo-shopitem.php">Bicycle</a></div>
-							<div class="rating">
-								<span class="icon-star active"></span>
-								<span class="icon-star active"></span>
-								<span class="icon-star"></span>
-								<span class="icon-star"></span>
-								<span class="icon-star"></span>
-							</div>
-							<div class="price">£230.00</div>
-						</div>
-					</article>
-
-					<article>
-						<div class="visual">
-							<a href="/html/shop/geo-shopitem.php"><img src="{{site.baseurl}}/assets/img/shop/list-classic-02.jpg" alt="..." /></a>
-							<span class="status out">Out of stock</span>
-							<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
-						</div>
-						<div class="info">
-							<div class="title"><a href="/html/shop/geo-shopitem.php">Brass Saxophone</a></div>
-							<div class="rating">
-								<span class="icon-star active"></span>
-								<span class="icon-star active"></span>
-								<span class="icon-star active"></span>
-								<span class="icon-star active"></span>
-								<span class="icon-star"></span>
-							</div>
-							<div class="price">£196.00 <del>£256.00</del></div>
-						</div>
-					</article>
-
-					<article>
-						<div class="visual">
-							<a href="/html/shop/geo-shopitem.php"><img src="{{site.baseurl}}/assets/img/shop/list-classic-03.jpg" alt="..." /></a>
-							<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
-						</div>
-						<div class="info">
-							<div class="title"><a href="/html/shop/geo-shopitem.php">Cinema 3D LED TV</a></div>
-							<div class="rating">
-								<span class="icon-star active"></span>
-								<span class="icon-star active"></span>
-								<span class="icon-star active"></span>
-								<span class="icon-star"></span>
-								<span class="icon-star"></span>
-							</div>
-							<div class="price">£230.00</div>
-						</div>
-					</article>
-
-					<article>
-						<div class="visual">
-							<a href="/html/shop/geo-shopitem.php"><img src="{{site.baseurl}}/assets/img/shop/list-classic-04.jpg" alt="..." /></a>
-							<span class="status last">Last examples</span>
-							<a href="#" class="add-to-cart"><span class="icon-uniE139"></span> Add to cart</a>
-						</div>
-						<div class="info">
-							<div class="title"><a href="/html/shop/geo-shopitem.php">Dicta qui</a></div>
-							<div class="rating">
-								<span class="icon-star active"></span>
-								<span class="icon-star active"></span>
-								<span class="icon-star active"></span>
-								<span class="icon-star active"></span>
-								<span class="icon-star"></span>
-							</div>
-							<div class="price">£196.00 <del>£256.00</del></div>
-						</div>
-					</article>
-
-				</div>
 			</div>
-
 		</div>
-	</div>
-</div>
+
+
 
 	</div>
 </article>

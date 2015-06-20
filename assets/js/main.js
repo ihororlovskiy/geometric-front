@@ -102,10 +102,10 @@ function buttonUp() {
 $(document).ready(function(){
 		// // Cart At Menu
 		// $('.main-menu-cart>ul>li>a').click(function(){
-		// 		$('.main-menu-cart').toggleClass('open');
+		//    $('.main-menu-cart').toggleClass('open');
 		// });
 		// $('.main-menu-cart a.cart-close').click(function(){
-		// 		$('.main-menu-cart').toggleClass('open');
+		//    $('.main-menu-cart').toggleClass('open');
 		// });
 		// Add review
 		$('.addreview>button').click(function(){
@@ -119,12 +119,18 @@ $(document).ready(function(){
 
 // // flickity
 // $('.main-gallery').flickity({
-// 	// options
-// 	cellAlign: 'left',
-// 	contain: true
+//  // options
+//  cellAlign: 'left',
+//  contain: true
 // });
 
-
+// flexslider
+$(window).load(function() {
+	$('.flexslider').flexslider({
+		animation: "slide",
+		controlNav: "thumbnails"
+	});
+});
 
 
 
