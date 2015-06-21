@@ -1,0 +1,65 @@
+/* ----------------------------------------------------------------------------------------------------
+footer social
+---------------------------------------------------------------------------------------------------- */
+nav.footer-social {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+
+	a {
+		display: table-cell;
+		background: #ddd;
+		color: #fff;
+		font-size: 36px;
+		padding: 1em 0;
+		text-align: center;
+		@include transition(all 0.15s ease-in-out);
+		&:hover {background: #ccc;}
+
+		&.facebook {
+			background: #3b5997;
+			&:hover {background: #32508a;}
+		}
+		&.linkedin {
+			background: #0273b3;
+			&:hover {background: #0c6ba6;}
+		}
+		&.twitter {
+			background: #0fa7c8;
+			&:hover {background: #189bb9;}
+		}
+		&.google-plus {
+			background: #da5436;
+			&:hover {background: #cc472f;}
+		}
+		&.instagram {
+			background: #7c4e41;
+			&:hover {background: #6e4236;}
+		}
+		&.youtube {
+			background: #C62A2C;
+			&:hover {background: #B31F21;}
+		}
+		&.vk {
+			background: #44678d;
+			&:hover {background: #395b7e;}
+		}
+		&.tumblr {
+			// background: #ddd;
+			// &:hover {background: #ccc;}
+		}
+		&.dribbble {
+			// background: #ddd;
+			// &:hover {background: #ccc;}
+		}
+		&.foursquare {
+			// background: #ddd;
+			// &:hover {background: #ccc;}
+		}
+		&.behance {
+			// background: #ddd;
+			// &:hover {background: #ccc;}
+		}
+
+	}
+}
