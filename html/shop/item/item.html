@@ -70,18 +70,18 @@ permalink: html/shop/item/
 				</div>
 
 
-				<form class="shopitem__form">
+				<form class="shopitem-form">
 
 					<div class="shopitem-form-header">
-						<div class="shopitem__form__price">£230.00 <del>£320.00</del></div>
-						<input class="shopitem__form__hidden" type="hidden" name="product" value="1234">
-						<input class="shopitem__form__quantity" type="number" step="1" min="1" name="quantity" value="1">
-						<button class="shopitem__form__submit" type="submit"><span class="icon-cart"></span> Add to cart</button>
+						<div class="shopitem-form__price">£230.00 <del>£320.00</del></div>
+						<input class="shopitem-form__hidden" type="hidden" name="product" value="1234">
+						<input class="shopitem-form__quantity" type="number" step="1" min="1" name="quantity" value="1">
+						<button class="shopitem-form__submit" type="submit"><span class="icon-cart"></span> Add to cart</button>
 					</div>
 
 					<div class="size-list">
 						<div class="title">Size:</div>
-						<div class="list">
+						<!-- <div class="list">
 							<div class="item">
 								<input type="radio" id="size-xs" name="size" value="xs">
 								<label for="size-xs">XS</label>
@@ -106,12 +106,20 @@ permalink: html/shop/item/
 								<input type="radio" id="size-xll" name="size" value="xxl">
 								<label for="size-xll">XXL</label>
 							</div>
-						</div>
+						</div> -->
+						<select name="select-size" required>
+							<option value="xs">XS</option>
+							<option value="s">S</option>
+							<option value="m" selected>M</option>
+							<option value="l">L</option>
+							<option value="xl">XL</option>
+							<option value="xxl">XXL</option>
+						</select>
 					</div>
 
 					<div class="color-list">
 						<div class="title">Color:</div>
-						<div class="list">
+						<!-- <div class="list">
 							<div class="item">
 								<input type="radio" id="color-black" name="color" value="black">
 								<label for="color-black">Black</label>
@@ -132,111 +140,15 @@ permalink: html/shop/item/
 								<input type="radio" id="color-pink" name="color" value="pink">
 								<label for="color-pink">Pink</label>
 							</div>
-						</div>
-					</div>
-
-					<!-- <div class="geo-radio">
-						<input type="radio" id="radio09" name="radio" checked>
-						<label for="radio09"><span></span>Dolce & Gabbana</label>
-					</div>
-
-					<div class="geo-radio">
-						<input type="radio" id="radio10" name="radio">
-						<label for="radio10"><span></span>Emporio Armani</label>
-					</div>
-
-					<div class="geo-radio">
-						<input type="radio" id="radio11" name="radio">
-						<label for="radio11"><span></span>Fendi</label>
-					</div> -->
-
-					<!-- <div class="shopitem__form__color">
-						<span>Color: </span>
-						<select name="color" required>
+						</div> -->
+						<select name="select-color" required>
 							<option value="black">Black</option>
 							<option value="white">White</option>
 							<option value="red" selected>Red</option>
 							<option value="yellow">Yellow</option>
 							<option value="pink">Pink</option>
 						</select>
-					</div> -->
-
-					<!-- <hr> -->
-
-					<!-- <nav class="geo-filter clearfix">
-						<ul class="filter-right">
-							<li class="dropdown">
-								<p>Color</p>
-								<a href="#" data-toggle="dropdown">Black <span class="icon-uniE5CA"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">White</a></li>
-									<li><a href="#">Red</a></li>
-									<li><a href="#">Yellow</a></li>
-									<li><a href="#">Pink</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav> -->
-
-					<!-- <span>Size: </span>
-					<div class="btn-group" data-toggle="buttons">
-						<label class="btn btn-primary active">
-							<input type="radio" name="options" id="option1" autocomplete="off"> XS
-						</label>
-						<label class="btn btn-primary">
-							<input type="radio" name="options" id="option2" autocomplete="off"> S
-						</label>
-						<label class="btn btn-primary">
-							<input type="radio" name="options" id="option3" autocomplete="off" checked> M
-						</label>
-						<label class="btn btn-primary">
-							<input type="radio" name="options" id="option3" autocomplete="off"> L
-						</label>
-						<label class="btn btn-primary">
-							<input type="radio" name="options" id="option3" autocomplete="off"> XL
-						</label>
-						<label class="btn btn-primary">
-							<input type="radio" name="options" id="option3" autocomplete="off"> XXL
-						</label>
-					</div> -->
-
-					<!-- <div class="color">
-						<div class="dropdown">
-							<span>Color: </span>
-							<a href="#" data-toggle="dropdown">Black <span class="icon-uniE5CA"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Jewelry & Watches</a></li>
-								<li><a href="#">Handbags & Accessories</a></li>
-								<li><a href="#">Health & Beauty</a></li>
-								<li><a href="#">Shoes</a></li>
-								<li><a href="#">Sales & Events</a></li>
-							</ul>
-						</div>
-					</div> -->
-
-					<!-- <div class="shopitem__form__size">
-						<span>Size: </span>
-						<select name="size" required>
-							<option value="xs">XS</option>
-							<option value="s">S</option>
-							<option value="m" selected>M</option>
-							<option value="l">L</option>
-							<option value="xl">XL</option>
-							<option value="xxl">XXL</option>
-						</select>
-					</div> -->
-
-					<!-- <div class="size">
-						<span>Size: </span>
-						<form action="">
-							<input type="radio" name="sex" value="XS"><span>XS</span>
-							<input type="radio" name="sex" value="S"><span>S</span>
-							<input type="radio" name="sex" value="M"><span>M</span>
-							<input type="radio" name="sex" value="L"><span>L</span>
-							<input type="radio" name="sex" value="XL"><span>XL</span>
-							<input type="radio" name="sex" value="XXL"><span>XXL</span>
-						</form>
-					</div> -->
+					</div>
 
 				</form>
 

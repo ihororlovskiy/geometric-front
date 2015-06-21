@@ -310,8 +310,8 @@ ul.bestsales {}
 }
 
 
-.shopitem__form {
-	margin-bottom: 40px;
+.shopitem-form {
+	margin-bottom: 20px;
 	// padding-top:10px;
 	// border: 1px solid #f2f2f2;
 	background: rgba(0, 0, 0, 0.0125);
@@ -439,7 +439,7 @@ ul.bestsales {}
 
 
 
-.shopitem__form__price {
+.shopitem-form__price {
 	// float: left;
 	// width: 40%;
 	line-height: 50px;
@@ -452,7 +452,7 @@ ul.bestsales {}
 		font-size: 14px;
 	}
 }
-.shopitem__form__quantity {
+.shopitem-form__quantity {
 	// float: right;
 	width: 100px;
 	border: none;
@@ -462,14 +462,14 @@ ul.bestsales {}
 	font-size: 20px;
 	padding: 11px 15px 11px 25px;
 }
-.shopitem__form__quantity:hover,
-.shopitem__form__quantity:focus {
+.shopitem-form__quantity:hover,
+.shopitem-form__quantity:focus {
 	background: #eee;
 	color: $firm-btn;
 	border: none;
 }
-.shopitem__form__hidden {}
-.shopitem__form__submit {
+.shopitem-form__hidden {}
+.shopitem-form__submit {
 	float: right;
 	outline: none;
 	border: none;
@@ -491,12 +491,8 @@ ul.bestsales {}
 		font-weight: 400;
 	}
 }
-.shopitem__form__submit:hover {background: $firm-btn-h;}
-.shopitem__form__submit:active {background: $firm-btn-a;}
-
-.shopitem__form__size {}
-.shopitem__form__color {}
-
+.shopitem-form__submit:hover {background: $firm-btn-h;}
+.shopitem-form__submit:active {background: $firm-btn-a;}
 
 
 // related products
