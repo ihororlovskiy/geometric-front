@@ -46,33 +46,38 @@ permalink: html/shop/item/
 			</div>
 			<div class="col-sm-6">
 
-				<div class="shopitem__arrows arrows-a">
-					<a href="#" class="arrows-a__prev"><span class="icon-arrow-left"></span></a>
-					<a href="#" class="arrows-a__next"><span class="icon-arrow-right"></span></a>
+				<div class="shopitem-header">
+					<div class="shopitem__arrows arrows-a">
+						<a href="#" class="arrows-a__prev"><span class="icon-arrow-left"></span></a>
+						<a href="#" class="arrows-a__next"><span class="icon-arrow-right"></span></a>
+					</div>
+
+					<ol class="breadcrumb">
+						<li><a href="/">Home</a></li>
+						<li><a href="/html/shop/geo-shoplist-classic.php">Shop</a></li>
+						<li class="active">Coats & Jackets</li>
+					</ol>
+
+					<h1 class="shopitem__title">Black Leather Dress</h1>
+
+					<div class="shopitem__rating">
+						<span class="icon-star active"></span>
+						<span class="icon-star active"></span>
+						<span class="icon-star active"></span>
+						<span class="icon-star"></span>
+						<span class="icon-star"></span>
+					</div>
 				</div>
 
-				<ol class="breadcrumb">
-					<li><a href="/">Home</a></li>
-					<li><a href="/html/shop/geo-shoplist-classic.php">Shop</a></li>
-					<li class="active">Coats & Jackets</li>
-				</ol>
-
-				<h1 class="shopitem__title">Black Leather Dress</h1>
-
-				<div class="shopitem__rating">
-					<span class="icon-star active"></span>
-					<span class="icon-star active"></span>
-					<span class="icon-star active"></span>
-					<span class="icon-star"></span>
-					<span class="icon-star"></span>
-				</div>
 
 				<form class="shopitem__form">
 
-					<div class="shopitem__form__price">£230.00 <del>£320.00</del></div>
-					<input class="shopitem__form__hidden" type="hidden" name="product" value="1234">
-					<input class="shopitem__form__quantity" type="number" step="1" min="1" name="quantity" value="1">
-					<button class="shopitem__form__submit" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					<div class="shopitem-form-header">
+						<div class="shopitem__form__price">£230.00 <del>£320.00</del></div>
+						<input class="shopitem__form__hidden" type="hidden" name="product" value="1234">
+						<input class="shopitem__form__quantity" type="number" step="1" min="1" name="quantity" value="1">
+						<button class="shopitem__form__submit" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					</div>
 
 					<div class="size-list">
 						<div class="title">Size:</div>
@@ -130,7 +135,7 @@ permalink: html/shop/item/
 						</div>
 					</div>
 
-					<div class="geo-radio">
+					<!-- <div class="geo-radio">
 						<input type="radio" id="radio09" name="radio" checked>
 						<label for="radio09"><span></span>Dolce & Gabbana</label>
 					</div>
@@ -143,7 +148,7 @@ permalink: html/shop/item/
 					<div class="geo-radio">
 						<input type="radio" id="radio11" name="radio">
 						<label for="radio11"><span></span>Fendi</label>
-					</div>
+					</div> -->
 
 					<!-- <div class="shopitem__form__color">
 						<span>Color: </span>
