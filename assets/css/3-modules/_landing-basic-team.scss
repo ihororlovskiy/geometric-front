@@ -48,24 +48,25 @@ section.land-team {
 					left: -5px;
 					right: -5px;
 					background: $color-white;
-					@include padding(12px 22px 16px);
+					@include padding(12px 5px);
 					@include transition(all 1.25s $ease-out-circ);
 					@include transform(translateY(100%));
 					overflow: hidden;
-					nav.memder-social {
+					nav.member-social {
 						width: 100%;
 						a {
 							font-size: 22px;
-							padding: 8px;
-							margin-right: 8px;
+							padding: 10px 0;
+							text-align: center;
+							width: 16.66666666666666666666%;
+							float: left;
+							// margin-right: 8px;
 							color: $land-team-soclink-color-normal;
 							display: inline-block;
 							@include transition(all 0.25s $ease-out-quint);
 							// [class^="icon-load"] {
 							// }
-							&:hover {
-								color: $land-team-soclink-color-hover;
-							}
+							&:hover {color: $land-team-soclink-color-hover;}
 						}
 					}
 				}
