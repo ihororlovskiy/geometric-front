@@ -1,3 +1,27 @@
 /* ----------------------------------------------------------------------------------------------------
 footer simple
 ---------------------------------------------------------------------------------------------------- */
+.footer-simple {
+	text-align: center;
+	background: $footer-area-bg;
+	padding: 70px 0;
+
+	a.footer-logo {
+		display: inline-block;
+		margin-bottom: 45px;
+		max-width: 200px;
+		max-height: 85px;
+	}
+
+	p {
+		font-size: 10px;
+		line-height: 1.5;
+		font-weight: 400;
+		margin-bottom: 0;
+
+		a {
+			color: #aaa;
+			&:hover {color: #ddd;}
+		}
+	}
+}
