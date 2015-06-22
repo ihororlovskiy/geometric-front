@@ -44,37 +44,41 @@ nav.footer-social {
 			background: #44678d;
 			&:hover {background: #395b7e;}
 		}
+		&.pinterest {
+			background: #cd2129;
+			&:hover {background: #c41a22;}
+		}
 		&.tumblr {
-			// background: #ddd;
-			// &:hover {background: #ccc;}
+			background: #35506b;
+			&:hover {background: #2d4761;}
 		}
 		&.dribbble {
-			// background: #ddd;
-			// &:hover {background: #ccc;}
+			background: #e04d84;
+			&:hover {background: #d13f76;}
 		}
 		&.foursquare {
-			// background: #ddd;
-			// &:hover {background: #ccc;}
+			background: #0732a2;
+			&:hover {background: #042a8e;}
 		}
 		&.behance {
-			// background: #ddd;
-			// &:hover {background: #ccc;}
+			background: #005cff;
+			&:hover {background: #0050de;}
 		}
 		&.soundcloud {
-			// background: #ddd;
-			// &:hover {background: #ccc;}
+			background: #ff5419;
+			&:hover {background: #ed460c;}
 		}
 		&.lastfm {
-			// background: #ddd;
-			// &:hover {background: #ccc;}
+			background: #cd1d23;
+			&:hover {background: #bf1218;}
 		}
 		&.github {
-			// background: #ddd;
-			// &:hover {background: #ccc;}
+			background: #202021;
+			&:hover {background: #18181b;}
 		}
 		&.flickr {
-			// background: #ddd;
-			// &:hover {background: #ccc;}
+			background: #0063db;
+			&:hover {background: #005bc9;}
 		}
 
 	}
