@@ -1,9 +1,9 @@
 /* ----------------------------------------------------------------------------------------------------
 footer simple
 ---------------------------------------------------------------------------------------------------- */
-.footer-simple {
+footer.footer-simple {
 	text-align: center;
-	background: $footer-area-bg;
+	background: #3D3D3D;
 	padding: 70px 0;
 
 	a.footer-logo {
@@ -14,14 +14,15 @@ footer simple
 	}
 
 	p {
+		color: #9E9E9E;
 		font-size: 10px;
 		line-height: 1.5;
 		font-weight: 400;
 		margin-bottom: 0;
 
 		a {
-			color: #aaa;
-			&:hover {color: #ddd;}
+			color: #ddd;
+			&:hover {color: #fff;}
 		}
 	}
 }
