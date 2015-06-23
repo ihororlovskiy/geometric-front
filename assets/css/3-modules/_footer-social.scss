@@ -97,26 +97,26 @@ nav.footer-social-colorized {
 footer social clean
 ---------------------------------------------------------------------------------------------------- */
 nav.footer-social-clean {
-	@include border-color(#E4E4E4);
-	@include border-style(solid);
-	@include border-width(1px);
+	// @include border-color(#E4E4E4);
+	// @include border-style(solid);
+	// @include border-width(1px);
 
 	a {
 		color: #ddd;
 		background: #fff;
-		@include border-width(null 1px);
-		@include border-style(solid);
-		@include border-color(null #E4E4E4 null transparent);
-		&:last-child {@include border-color(transparent);}
+		// @include border-width(null 1px);
+		// @include border-style(solid);
+		// @include border-color(null #E4E4E4 null transparent);
+		// &:last-child {@include border-color(transparent);}
 		&:hover {
 			color: #ccc;
-			background: #eee;
+			background: #f0f0f0;
 		}
 
-		// &.facebook {
-		// 	color: #3b5997;
-		// 	&:hover {color: #32508a;}
-		// }
+		&.facebook {
+			color: #3b5997;
+			&:hover {color: #32508a;}
+		}
 		&.linkedin {
 			color: #0273b3;
 			&:hover {color: #0c6ba6;}
