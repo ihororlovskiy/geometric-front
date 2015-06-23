@@ -1,7 +1,7 @@
-<div class="sidebar">
+<aside class="sidebar">
 
-	<div class="sidebar__item categories">
-		<div class="sidebar__item__title">Product Categories</div>
+	<div class="sidebar-item">
+		<div class="sidebar-item-title">Product Categories</div>
 		<ul>
 			<li><a href="#">Activewear & Sports</a></li>
 			<li><a href="#">Beautifull Dresses</a></li>
@@ -14,171 +14,102 @@
 		</ul>
 	</div>
 
-	<div class="sidebar__item filter">
-		<div class="sidebar__item__title">Filter</div>
-		<div class="sidebar__item__subtitle">Price</div>
-		<form action="" class="filter__form">
-				<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-				<input type="text" id="amount">
-				<div id="slider-range"></div>
-				<!--
-				210.00
-				- 
-				1.560.00
-				£100
-				£3.650.00
-				Filtered
-				-->
-				<button class="btn btn-primary" type="submit">Filtered</button>
-		</form>
-
-		<div class="sidebar__item__subtitle">Brands</div>
-
-		<form>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox01" name="check" />
-				<label for="checkbox01">
-						<span></span>
-						Bvlgari
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox02" name="check" />
-				<label for="checkbox02">
-					<span></span>
-					Calvin Klein Collection
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox03" name="check" />
-				<label for="checkbox03">
-					<span></span>
-					Bvlgari
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox04" name="check" />
-				<label for="checkbox04">
-					<span></span>
-					Calvin Klein Collection
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox05" name="check" />
-				<label for="checkbox05">
-					<span></span>
-					Carrera
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox06" name="check" />
-				<label for="checkbox06">
-					<span></span>
-					Celine
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox07" name="check" />
-				<label for="checkbox07">
-					<span></span>
-					Chloe
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox08" name="check" />
-				<label for="checkbox08">
-					<span></span>
-					Dior
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox09" name="check" />
-				<label for="checkbox09">
-					<span></span>
-					Dolce & Gabbana
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox10" name="check" />
-				<label for="checkbox10">
-					<span></span>
-					Emporio Armani
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox11" name="check" />
-				<label for="checkbox11">
-					<span></span>
-					Fendi
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox12" name="check" />
-				<label for="checkbox12">
-					<span></span>
-					Giorgio Armani
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox13" name="check" />
-				<label for="checkbox13">
-					<span></span>
-					Gucci
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox14" name="check" />
-				<label for="checkbox14">
-					<span></span>
-					Marc By Marc Jacobs
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox15" name="check" />
-				<label for="checkbox15">
-					<span></span>
-					Michael Kors
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox16" name="check" />
-				<label for="checkbox16">
-					<span></span>
-					Oakley
-				</label>
-			</div>
-
-			<div class="geo-checkbox">
-				<input type="checkbox" id="checkbox17" name="check" />
-				<label for="checkbox17">
-					<span></span>
-					Oliver Peoples
-				</label>
-			</div>
-
-		</form>
-
-		<a href="#" class="clear-all">Clear all</a>
+	<div class="sidebar-item">
+		<div class="sidebar-item-title">Price</div>
+		{% include shop/filter-price-range.html %}
 	</div>
 
-	<div class="sidebar__item search">
-		<div class="sidebar__item__title">Search</div>
+	<div class="sidebar-item">
+		<div class="sidebar-item-title">Brands</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox01" name="check" />
+			<label for="checkbox01"><span></span>Bvlgari</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox02" name="check" />
+			<label for="checkbox02"><span></span>Calvin Klein Collection</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox03" name="check" />
+			<label for="checkbox03"><span></span>Bvlgari</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox04" name="check" />
+			<label for="checkbox04"><span></span>Calvin Klein Collection</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox05" name="check" />
+			<label for="checkbox05"><span></span>Carrera</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox06" name="check" />
+			<label for="checkbox06"><span></span>Celine</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox07" name="check" />
+			<label for="checkbox07"><span></span>Chloe</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox08" name="check" />
+			<label for="checkbox08"><span></span>Dior</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox09" name="check" />
+			<label for="checkbox09"><span></span>Dolce & Gabbana</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox10" name="check" />
+			<label for="checkbox10"><span></span>Emporio Armani</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox11" name="check" />
+			<label for="checkbox11"><span></span>Fendi</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox12" name="check" />
+			<label for="checkbox12"><span></span>Giorgio Armani</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox13" name="check" />
+			<label for="checkbox13"><span></span>Gucci</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox14" name="check" />
+			<label for="checkbox14"><span></span>Marc By Marc Jacobs</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox15" name="check" />
+			<label for="checkbox15"><span></span>Michael Kors</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox16" name="check" />
+			<label for="checkbox16"><span></span>Oakley</label>
+		</div>
+
+		<div class="geo-checkbox">
+			<input type="checkbox" id="checkbox17" name="check" />
+			<label for="checkbox17"><span></span>Oliver Peoples</label>
+		</div>
+	</div>
+
+	<div class="sidebar-item search">
+		<div class="sidebar-item-title">Search</div>
 		<form class="search">
 			<label class="search__icon" for="search">
 				<span class="icon-loupe"></span>
@@ -187,8 +118,8 @@
 		</form>
 	</div>
 
-	<div class="sidebar__item">
-		<div class="sidebar__item__title">The Best Sellers</div>
+	<div class="sidebar-item">
+		<div class="sidebar-item-title">The Best Sellers</div>
 		<ul class="bestsales">
 			<li class="bestsales__item">
 				<a href="/html/shop/geo-shopitem.php">
@@ -214,4 +145,4 @@
 		</ul>
 	</div>
 
-</div>
+</aside>

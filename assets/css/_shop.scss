@@ -86,10 +86,12 @@ nav.geo-filter {
 
 // classic shop list
 .geo-shoplist-classic {
-	.geo-content-area {width:100%;}
+	.geo-content-area {width: 100%;}
 
 	article {
-		padding:15px;
+		padding: 0 15px;
+		margin-bottom: 20px;
+
 		.visual {
 			position:relative;overflow:hidden;
 			a>img {opacity:1;transition:.2s, transform 1s;transform:translateZ(0);}
@@ -177,24 +179,53 @@ nav.geo-filter {
 	article:nth-child(8) {width:66.6666666666666%;}
 }
 
-// shop list with sidebar
+/* SHOP sidebar
+============================================================================ */
 .geo-shoplist-withsidebar {
 	.geo-content-area {width:75%;float:right;}
 }
 
 .sidebar {width:25%;float:left;text-align:left;padding-right:30px;}
-.sidebar__item {margin-bottom:40px;}
-.sidebar__item__title {font-size:20px;font-weight:500;text-transform:uppercase;color:#6a6a6a;margin-bottom:20px;}
-.sidebar__item__subtitle {font-size:18px;font-weight:500;color:#6a6a6a;margin-bottom:20px;}
-
-// categories
-.categories {}
+.sidebar-item {margin-bottom:40px;}
+.sidebar-item-title {font-size:20px;font-weight:500;text-transform:uppercase;color:#6a6a6a;margin-bottom:20px;}
 
 // filter
-.filter {
-	position:relative;
-	form.filter__form {margin-bottom:20px;}
-	a.clear-all {position:absolute;top:0;right:0;}
+// .filter {
+// 	position:relative;
+// 	form.filter__form {margin-bottom:20px;}
+// 	a.clear-all {position:absolute;top:0;right:0;}
+// }
+
+// filter price range
+form.filter-price-range {
+	input.active-min {
+		font-size: 13px;
+		color: #488cc0;
+		margin-bottom: 15px;
+	}
+	input.active-max {
+		font-size: 13px;
+		color: #488cc0;
+		margin-bottom: 15px;
+	}
+	input.disabled-min {
+		font-size: 10px;
+		font-weight: 700;
+		color: #9e9e9e;
+		border: 0;
+		padding: 0;
+		margin-bottom: 30px;
+		text-align: left;
+	}
+	input.disabled-max {
+		font-size: 10px;
+		font-weight: 700;
+		color: #9e9e9e;
+		border: 0;
+		padding: 0;
+		margin-bottom: 30px;
+		text-align: right;
+	}
 }
 
 // search

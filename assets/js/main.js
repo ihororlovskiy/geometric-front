@@ -132,5 +132,31 @@ $(window).load(function() {
 	});
 });
 
+// input price range
+$(function() {
+	$( "#input-price-range" ).slider({
+		range: true,
+		min: 0,
+		max: 1000,
+		step: 50,
+		values: [ 0, 1000 ],
+		slide: function( event, ui ) {
+			$( ".active-min" ).val( ui.values[ 0 ] );
+			$( ".disabled-min" ).val( "€" + ui.values[ 0 ] );
+			$( ".active-max" ).val( ui.values[ 1 ] );
+			$( ".disabled-max" ).val( "€" + ui.values[ 1 ] );
+		}
+	});
+	$( ".active-min" ).val( $( "#input-price-range" ).slider( "values", 0 ) );
+	$( ".disabled-min" ).val( "€" + $( "#input-price-range" ).slider( "values", 0 ) );
+	$( ".active-max" ).val( $( "#input-price-range" ).slider( "values", 1 ) );
+	$( ".disabled-max" ).val( "€" + $( "#input-price-range" ).slider( "values", 1 ) );
+});
+
+// clear
+// $("#clear").click(function(){
+// 	$("input[type='text']").val("0"); 
+// });
+
 
 
