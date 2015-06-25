@@ -721,10 +721,10 @@ form.search {
 
 // bestsales
 ul.bestsales {}
-.bestsales__item {@include clearfix;line-height:1.4;margin-bottom:20px;}
-.bestsales__item__img {float:left;width:80px;margin-right:10px;}
-.bestsales__item__title {color:#488cc0;font-size:13px;font-weight:500;text-transform:uppercase;}
-.bestsales__item__price {color:#898989;font-size:15px;font-weight:700;}
+.bestsales-item {@include clearfix;line-height:1.4;margin-bottom:20px;}
+.bestsales-item-img {float:left;width:80px;margin-right:10px;}
+.bestsales-item-title {color:#488cc0;font-size:13px;font-weight:500;text-transform:uppercase;}
+.bestsales-item-price {color:#898989;font-size:15px;font-weight:700;}
 
 
 

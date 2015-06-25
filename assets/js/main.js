@@ -159,4 +159,5 @@ $(function() {
 // });
 
 
-
+// selectBox
+$('select').selectBox();
