@@ -73,15 +73,15 @@ permalink: html/shop/item/
 				<form class="shopitem-form">
 
 					<div class="shopitem-form-header">
-						<div class="shopitem-form__price">£230.00 <del>£320.00</del></div>
-						<input class="shopitem-form__hidden" type="hidden" name="product" value="1234">
-						<input class="shopitem-form__quantity" type="number" step="1" min="1" name="quantity" value="1">
-						<button class="shopitem-form__submit" type="submit"><span class="icon-cart"></span> Add to cart</button>
+						<div class="shopitem-form-price">£230.00 <del>£320.00</del></div>
+						<input class="shopitem-form-hidden" type="hidden" name="product" value="1234">
+						<button class="gbtn gbtn-lg shopitem-form-submit" type="submit"><span class="icon-cart"></span> Add to cart</button>
+						<input class="shopitem-form-quantity" type="number" step="1" min="1" name="quantity" value="1">
 					</div>
 
 					<div class="size-list">
 						<div class="title">Size:</div>
-						<!-- <div class="list">
+						<div class="list">
 							<div class="item">
 								<input type="radio" id="size-xs" name="size" value="xs">
 								<label for="size-xs">XS</label>
@@ -106,15 +106,15 @@ permalink: html/shop/item/
 								<input type="radio" id="size-xll" name="size" value="xxl">
 								<label for="size-xll">XXL</label>
 							</div>
-						</div> -->
-						<select name="select-size" required>
+						</div>
+						<!-- <select name="select-size" required>
 							<option value="xs">XS</option>
 							<option value="s">S</option>
 							<option value="m" selected>M</option>
 							<option value="l">L</option>
 							<option value="xl">XL</option>
 							<option value="xxl">XXL</option>
-						</select>
+						</select> -->
 					</div>
 
 					<div class="color-list">
@@ -141,7 +141,7 @@ permalink: html/shop/item/
 								<label for="color-pink">Pink</label>
 							</div>
 						</div> -->
-						<select name="select-color" required>
+						<select name="color" required>
 							<option value="black">Black</option>
 							<option value="white">White</option>
 							<option value="red" selected>Red</option>
@@ -293,7 +293,7 @@ permalink: html/shop/item/
 									<span class="icon-star-filled"></span>
 									<span class="icon-star-filled"></span>
 								</div>
-								<input class="addreview__form__submit gbtn" name="submit" type="submit" value="Submit">
+								<input class="addreview__form__submit gbtn" type="submit" value="Submit">
 							</div>
 						</form>
 
