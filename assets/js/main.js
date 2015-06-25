@@ -134,12 +134,12 @@ $(window).load(function() {
 
 // input price range
 $(function() {
-	$( "#input-price-range" ).slider({
+	$( ".input-price-range" ).slider({
 		range: true,
 		min: 0,
 		max: 1000,
 		step: 50,
-		values: [ 0, 1000 ],
+		values: [ 150, 850 ],
 		slide: function( event, ui ) {
 			$( ".active-min" ).val( ui.values[ 0 ] );
 			$( ".disabled-min" ).val( "€" + ui.values[ 0 ] );
@@ -147,10 +147,10 @@ $(function() {
 			$( ".disabled-max" ).val( "€" + ui.values[ 1 ] );
 		}
 	});
-	$( ".active-min" ).val( $( "#input-price-range" ).slider( "values", 0 ) );
-	$( ".disabled-min" ).val( "€" + $( "#input-price-range" ).slider( "values", 0 ) );
-	$( ".active-max" ).val( $( "#input-price-range" ).slider( "values", 1 ) );
-	$( ".disabled-max" ).val( "€" + $( "#input-price-range" ).slider( "values", 1 ) );
+	$( ".active-min" ).val( $( ".input-price-range" ).slider( "values", 0 ) );
+	$( ".disabled-min" ).val( "€" + $( ".input-price-range" ).slider( "values", 0 ) );
+	$( ".active-max" ).val( $( ".input-price-range" ).slider( "values", 1 ) );
+	$( ".disabled-max" ).val( "€" + $( ".input-price-range" ).slider( "values", 1 ) );
 });
 
 // clear
