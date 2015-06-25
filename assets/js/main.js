@@ -160,4 +160,4 @@ $(function() {
 
 
 // selectBox
-// $('select').selectBox();
+$('select').selectBox();
