@@ -20,8 +20,36 @@
 	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
 	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
 
+	<script>
+		window.addEventListener("load", function(){
+			var load_screen = document.getElementById("load_screen");
+			document.body.removeChild(load_screen);
+		});
+	</script>
+	<style>
+		div#load_screen{
+			background: #fff;
+			opacity: 1;
+			position: fixed;
+			z-index: 99999999999999999999999999999999999999999;
+			top: 0px;
+			width: 100%;
+			height: 1600px;
+		}
+		div#load_screen > div#loading{
+			color: #000;
+			width: 120px;
+			height: 24px;
+			margin: 300px auto;
+		}
+	</style>
+
 </head>
 <body>
+
+	<div id="load_screen">
+		<div id="loading">loading document</div>
+	</div>
 
 	{% include global/header.html %}
 
