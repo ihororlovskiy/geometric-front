@@ -295,10 +295,6 @@
 * Team
 * ----------------------------------------------------------------------------
 */
-$land-team-text-color: #656565;
-$land-team-soclink-color-normal: #e2e2e2;
-$land-team-soclink-color-hover: #397aa9;
-
 .land-team {
 	padding: 0 0 80px;
 	border-bottom: 1px solid #f5f5f5;
@@ -311,7 +307,6 @@ $land-team-soclink-color-hover: #397aa9;
 			color: #5d5d5d;
 		}
 	}
-
 	.isotope-item {
 		float: left;
 		width: 33.33333333333%;
@@ -347,20 +342,18 @@ $land-team-soclink-color-hover: #397aa9;
 						text-align: center;
 						width: 16.66666666666666666666%;
 						float: left;
-						// margin-right: 8px;
-						color: $land-team-soclink-color-normal;
+						color: #e2e2e2;
 						display: inline-block;
 						@include transition(all 0.25s $ease-out-quint);
-						// [class^="icon-load"] {
-						// }
-						&:hover {color: $land-team-soclink-color-hover;}
+						&:hover {
+							color: #397aa9;
+						}
 					}
 				}
 			}
-
 		}
 		.text-content {
-			color: $land-team-text-color;
+			color: #656565;
 			p.position {
 				color: #656565;
 				margin-bottom: 0;
@@ -372,7 +365,6 @@ $land-team-soclink-color-hover: #397aa9;
 				color: #656565;
 			}
 		}
-
 		&:hover {
 			.image-contour {
 				@include filter(grayscale(0));
@@ -384,7 +376,6 @@ $land-team-soclink-color-hover: #397aa9;
 				@include transform(translateY(0));
 			}
 		}
-
 	}
 }
 
@@ -415,13 +406,10 @@ $land-team-soclink-color-hover: #397aa9;
 				width: 20%;
 				@include transition(all 3.75s $ease-out-circ);
 				@include filter(grayscale(100%));
-				
 				&:hover {
 					@include filter(grayscale(0));
 				}
-
 				img {
-
 				}
 			}
 		}
