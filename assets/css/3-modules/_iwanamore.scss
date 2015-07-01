@@ -8,11 +8,12 @@ iwanamore
 	.gbtn-group {
 		margin: 0 auto;
 		display: inline-block;
+
+		.gbtn {
+			min-width: 190px; 
+		}
 	}
 
-	.gbtn {
-		min-width: 160px; 
-	}
 
 	[class^="icon-"] {
 		position: relative;

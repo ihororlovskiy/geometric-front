@@ -1,13 +1,19 @@
 /* ----------------------------------------------------------------------------------------------------
-landing basic 07
+landing basic shop
 ---------------------------------------------------------------------------------------------------- */
 
-section.land-07 {
+section.land-shop {
+	padding-bottom: 0;
+
+	.land-header {
+		background: #fff;
+		padding: 40px 0;
+	}
 
 	.land-icon {
 		font-size: 100px;
 		color: #d9d9d9;
-		margin-bottom: 40px;
+		// margin-bottom: 40px;
 	}
 
 	.land-title {
@@ -16,10 +22,9 @@ section.land-07 {
 	.land-description {
 	}
 
-	.land-header {
-	}
-
 	.land-body {
+		background: #f7f7f7;
+		padding: 40px 0;
 	}
 
 }

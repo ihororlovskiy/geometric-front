@@ -37,7 +37,7 @@ $posts-nav-bg: #397db1;
 
 $body-bg: #fff;
 body {
-	font: 400 14px/30px 'Roboto', Arial, sans-serif;
+	// font: 400 14px/30px 'Roboto', Arial, sans-serif;
 	background: $body-bg;
 	max-width: 100%;
 	-webkit-font-smoothing: antialiased;
@@ -51,23 +51,22 @@ body {
 * ----------------------------------------------------------------------------
 */
 
-h1, h2, h3, h4, h5, h6, p {
-	margin-bottom: 0.40em;
-	margin-bottom: 30px;
-}
+// h1, h2, h3, h4, h5, h6, p {
+// 	margin-bottom: 0.40em;
+// 	margin-bottom: 30px;
+// }
 
-h1, h2, h3, h4, h5, h6 {
-	line-height: 1.4em;
-	font-weight: 500;
-	color: $black;
-	text-transform: uppercase;
-}
-p {
-	color: $blacky;
-	line-height: 1.75em;
-	line-height: 2em;
-	font-weight: 300;
-}
+// h1, h2, h3, h4, h5, h6 {
+// 	line-height: 1.4em;
+// 	font-weight: 500;
+// 	color: $black;
+// 	text-transform: uppercase;
+// }
+// p {
+// 	color: $blacky;
+// 	line-height: 2em;
+// 	font-weight: 300;
+// }
 
 h1 {font-size: 48px;}
 h2 {font-size: 36px;}
@@ -227,7 +226,7 @@ margin-bottom: 2.8em;
 
 /* geo-wrapper
 ============================================================================ */
-.geo-wrapper {padding-top:100px;}
+.geo-wrapper {padding-top: 100px;}
 
 /* geo-media
 ============================================================================ */
@@ -364,8 +363,13 @@ article.item-quote {
 .geo-post {}
 .geo-post .geo-media {}
 
-.geo-post p a {font-weight:700;}
-.geo-post p a:hover {font-weight:700;text-decoration:underline;}
+.geo-post p a {
+	font-weight:700;
+}
+.geo-post p a:hover {
+	font-weight:700;
+	// text-decoration:underline;
+}
 
 .geo-post blockquote {background:$quote-bg;padding:70px 40px 40px;margin-bottom:50px;}
 .geo-post blockquote p {color:$quote-cl;font-weight:300;font-size:20px;line-height:1.4em}
