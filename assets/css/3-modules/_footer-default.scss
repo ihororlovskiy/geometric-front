@@ -1,0 +1,37 @@
+/* ----------------------------------------------------------------------------------------------------
+footer default
+---------------------------------------------------------------------------------------------------- */
+$footer-area-bg: #272727;
+$footer-area-title: #4c4c4c;
+$footer-area-text: #505050;
+$footer-area-a: #fff;
+$footer-area-social-menu-a: #4c4c4c;
+$footer-bar-bg: #fff;
+$footer-bar-copyright: #acacac;
+
+.geo-footer {}
+	.geo-footer.geo-pfooter2 {}
+		.geo-footer-area {background:$footer-area-bg;padding:4.1em 4.1%;color:$footer-area-text;}
+		.geo-footer-area a {color:$footer-area-a;}
+			.geo-footer-area-logo {margin-bottom:3.0em;width:75%;}
+			.geo-footer-area-copyright {margin-bottom:3.0em;}
+			.geo-footer-area-social-menu {}
+			.geo-footer-area-social-menu a {color:$footer-area-social-menu-a;font-size:2em;padding:0 0.25em;}
+			.geo-footer-area-social-menu a:first-child {padding-left:0;}
+			.geo-footer-area-social-menu a:last-child {padding-right:0;}
+			.geo-footer-area-title {color:$footer-area-title;margin-bottom:0.800em;}
+			.geo-footer-area-menu {}
+			.geo-footer-area-menu a {display:block;}
+			.geo-footer-area-twitter {}
+
+		.geo-footer-bar {background:$footer-bar-bg;text-align:center;padding:2.1em 4.1%;}
+			.geo-footer-bar-copyright {color:$footer-bar-copyright;}
+
+
+
+footer.footer-default {
+	// text-align: center;
+	background: #3D3D3D;
+	padding: 70px 0;
+
+}

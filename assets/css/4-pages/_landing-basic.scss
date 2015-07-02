@@ -1,0 +1,440 @@
+/*-------------------------------------------------------------------------*/
+/*	# LANDING BASIC
+/*-------------------------------------------------------------------------*/
+.land-item {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	@include clearfix;
+	.flexslider {
+		margin-bottom: 0;
+	}
+}
+
+/**
+* Headslider
+* ----------------------------------------------------------------------------
+*/
+.land-headslider {
+	background: #fff;
+	padding: 0;
+	.left-part {
+		position: absolute;
+		top: 35%;
+		left: 0;
+		width: 66.6666666666%;
+		text-align: left;
+		padding: 0 50px;
+		@include transform(translateY(-50%));
+		h6 {
+			color: #8c8c8c;
+		}
+		h1 {
+			color: #488cc0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+/**
+* Feachers
+* ----------------------------------------------------------------------------
+*/
+.land-feachers {
+	background: #3374a6;
+	padding: 50px 0;
+	.isotope-item {
+		float: left;
+		width: 33.333333333333%;
+		padding: 50px 10px;
+		[class^="icon-"] {
+			font-size: 80px;
+			color: #77b0db;
+			display: block;
+			margin-bottom: 20px;
+		}
+		h5 {
+			color: #fff;
+			margin-bottom: 0;
+		}
+	}
+}
+
+/**
+* Portfolio
+* ----------------------------------------------------------------------------
+*/
+.land-portfolio {
+	text-align: left;
+	padding: 100px 0 0;
+	.right-part {
+		padding: 0 40px;
+		.top-part {
+			margin-bottom: 150px;
+			[class^="icon-"] {
+				font-size: 100px;
+				color: #d9d9d9;
+				display: block;
+				margin-bottom: 60px;
+			}
+			h3 {
+				color: #656565;
+			}
+			p {
+				color: #656565;
+			}
+			.gbtn {
+				margin-top: 40px;
+			}
+		}
+		.isotope-item {
+			float: left;
+			width: 100%;
+			margin-bottom: 80px;
+			[class^="icon-"] {
+				font-size: 60px;
+				color: #d9d9d9;
+				display: block;
+				margin-bottom: 30px;
+			}
+			h4 {
+				color: #656565;
+				margin-bottom: 20px;
+			}
+			p {
+				color: #656565;
+			}
+		}
+	}
+}
+
+/**
+* Skills
+* ----------------------------------------------------------------------------
+*/
+.land-skills {
+	background: #fff url("../img/landings/basic/skills/skills-01.jpg");
+	background-size: cover;
+	padding: 0;
+	.left-part {
+		float: left;
+		width: 33.33333333%;
+		text-align: left;
+		padding: 60px 40px;
+		&:before {
+			position: absolute;
+			// z-index: 1;
+			content: '';
+			width: 33.33333333%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.25);
+		}
+		* {
+			position: relative;
+		}
+		svg {
+			margin-bottom: 50px;
+			width: auto;
+			.style0 {
+				fill: #fff;
+			}
+		}
+		h4 {
+			color: #fff;
+		}
+		p {
+			color: #fff;
+		}
+	}
+	.right-part {
+		float: left;
+		width: 66.66666666%;
+		padding: 40px 40px;
+		.isotope-item {
+			float: left;
+			width: 50%;
+			padding: 30px 10px;
+			.count {
+				display: block;
+				color: #fff;
+				font-size: 75px;
+				font-weight: 100;
+				// margin-bottom: 20px;
+			}
+			h5 {
+				color: #729ec1;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+/**
+* Blog
+* ----------------------------------------------------------------------------
+*/
+.land-blog {
+	background: #fff;
+	padding: 0;
+	.top-part {
+		padding: 100px 20px 80px;
+		[class^="icon-"] {
+			font-size: 100px;
+			color: #d9d9d9;
+			display: block;
+			margin-bottom: 80px;
+		}
+		h3 {
+			color: #656565;
+			margin-bottom: 30px;
+		}
+		p {
+			color: #656565;
+		}
+		.gbtn {
+			margin-top: 40px;
+		}
+	}
+}
+
+/**
+* Slider
+* ----------------------------------------------------------------------------
+*/
+.land-slider {
+	background: #fff;
+	padding: 0;
+	.flex-control-nav {
+		width: 100%;
+		position: absolute;
+		bottom: 40px;
+		text-align: center;
+	}
+	.flex-caption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(72, 140, 192, 0.8);
+	}
+	.central-part {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 50%;
+		@include transform(translate(-50%, -50%));
+		// * {
+		// 	position: relative;
+		// }
+		[class^="icon-"] {
+			font-size: 80px;
+			color: #fff;
+			display: block;
+			margin-bottom: 80px;
+		}
+		h3 {
+			color: #fff;
+			margin-bottom: 30px;
+		}
+		p {
+			color: #fff;
+		}
+	}
+}
+
+/**
+* Shop
+* ----------------------------------------------------------------------------
+*/
+.land-shop {
+	padding: 0;
+	.top-part {
+		background: #fff;
+		padding: 100px 20px 80px;
+		[class^="icon-"] {
+			font-size: 100px;
+			color: #d9d9d9;
+			display: block;
+			margin-bottom: 80px;
+		}
+		h3 {
+			color: #656565;
+			margin-bottom: 30px;
+		}
+		p {
+			color: #656565;
+		}
+		.gbtn {
+			margin-top: 40px;
+		}
+	}
+	.bottom-part {
+		background: #f7f7f7;
+		padding: 40px 0;
+		.right-part {
+			text-align: left;
+			padding: 60px 30% 0 20px;
+		}
+		.left-part {
+			text-align: right;
+			padding: 60px 20px 0 30%;
+		}
+		[class^="icon-"] {
+			font-size: 60px;
+			color: #d9d9d9;
+			display: block;
+			margin-bottom: 40px;
+		}
+		h4 {
+			color: #656565;
+			margin-bottom: 30px;
+		}
+		p {
+			color: #656565;
+		}
+	}
+}
+
+
+/**
+* Team
+* ----------------------------------------------------------------------------
+*/
+.land-team {
+	padding: 0 0 80px;
+	border-bottom: 1px solid #f5f5f5;
+	.top-part {
+		padding: 100px 0 80px;
+		h4 {
+			color: #5d5d5d;
+		}
+		p {
+			color: #5d5d5d;
+		}
+	}
+	.isotope-item {
+		float: left;
+		width: 33.33333333333%;
+		text-align: left;
+		padding: 0 2%;
+		.image-contour {
+			margin-bottom: 20px;
+			overflow: hidden;
+			position: relative;
+			@include transition(all 3.75s $ease-out-circ);
+			@include filter(grayscale(100%));
+			img {
+				width: 100%;
+				height: auto;
+				@include transition(all 3.75s $ease-out-circ);
+				@include transform(scale(1) translateY(0) translateZ(0));
+			}
+			.extra-content {
+				position: absolute;
+				bottom: -4px;
+				left: -4px;
+				right: -4px;
+				background: $color-white;
+				@include padding(12px 5px);
+				@include transition(all 1.25s $ease-out-circ);
+				@include transform(translateY(100%));
+				overflow: hidden;
+				nav.member-social {
+					width: 100%;
+					a {
+						font-size: 22px;
+						padding: 10px 0;
+						text-align: center;
+						width: 16.66666666666666666666%;
+						float: left;
+						color: #e2e2e2;
+						display: inline-block;
+						@include transition(all 0.25s $ease-out-quint);
+						&:hover {
+							color: #397aa9;
+						}
+					}
+				}
+			}
+		}
+		.text-content {
+			color: #656565;
+			p.position {
+				color: #656565;
+				margin-bottom: 0;
+			}
+			h4 {
+				color: #656565;
+			}
+			p {
+				color: #656565;
+			}
+		}
+		&:hover {
+			.image-contour {
+				@include filter(grayscale(0));
+			}
+				img {
+					@include transform(scale(1.1) translateY(-5%) translateZ(0));
+				}
+			.extra-content {
+				@include transform(translateY(0));
+			}
+		}
+	}
+}
+
+/**
+* Clients
+* ----------------------------------------------------------------------------
+*/
+.land-clients {
+	padding: 0 0 80px;
+	.top-part {
+		padding: 80px 0 60px;
+		h4 {
+			color: #5d5d5d;
+		}
+		p {
+			color: #5d5d5d;
+		}
+	}
+	.gallery {
+		padding: 0 0 20px;
+		.gallery-cell {
+			width: 100%;
+			height: 200px;
+			margin-right: 10px;
+			a {
+				display: inline-block;
+				float: left;
+				width: 20%;
+				@include transition(all 3.75s $ease-out-circ);
+				@include filter(grayscale(100%));
+				&:hover {
+					@include filter(grayscale(0));
+				}
+				img {
+				}
+			}
+		}
+		.flickity-page-dots {
+			bottom: 0;
+			left: 0;
+			.dot {
+				background: #488cc0;
+			}
+		}
+		.flickity-prev-next-button {
+			display: none;
+		}
+	}
+}
+
+
+
+
+

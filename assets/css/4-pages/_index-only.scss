@@ -1,0 +1,53 @@
+/* ----------------------------------------------------------------------------------------------------
+index only (this will be deleted at final)
+---------------------------------------------------------------------------------------------------- */
+.index-only {
+	a.logo {margin:40px auto;width:120px;display:block;}
+	a.logo img {width:100%;height:auto;}
+	div {margin:30px auto;width:1200px;text-align:left;border:1px solid #ccc;padding:20px 10px 10px;position:relative;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		}
+	div p {position:absolute;top:-10px;left:10px;display:inline-block;background:#ccc;margin:0;padding:0 4px;}
+	ul {float:left;list-style:none;padding:10px;margin:0;width:20%;}
+	ul.item {background:#eee;position:relative;}
+	ul.item:after {
+		position:absolute;
+		top:0;
+		right:0;
+		content:'item';
+		color:#fff;
+		background:#ccc;
+		padding:0 4px;
+		font-size:8px;
+		line-height: 2;
+	}
+	ul.here-show-more>li>a,
+	ul.here-pagination>li>a {position:relative;}
+	ul.here-show-more>li>a:after,
+	ul.here-pagination>li>a:after {
+		position: absolute;
+		color: #fff;
+		top: 0;
+		right: 0%;
+		font-size: 4px;
+		line-height: 1;
+		font-weight: 400;
+		padding: 1px 0;
+		-webkit-transform: translate(40%, -70%);
+		-ms-transform: translate(40%, -70%);
+		transform: translate(40%, -70%);
+		text-transform: uppercase;
+		width: 30px;
+		text-align: center;
+	}
+	ul.here-show-more>li>a:after {
+		content:'show more';
+		background:#e74c3c;
+	}
+	ul.here-pagination>li>a:after {
+		content:'pagination';
+		background:#1abc9c;
+	}
+}

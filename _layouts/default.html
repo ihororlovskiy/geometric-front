@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US" class="waypoint" data-animate-down="geo-header-small" data-animate-up="geo-header-large">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Geometric Theme by {{ site.brand-name }}</title>
+	<meta name="description" content="Geometric Theme for Wordpress by {{ site.brand-name }}">
+	<meta name="keywords" content="Geometric Theme, {{ site.brand-name }}, Wordpress">
+	<meta name="author" content="{{ site.brand-name }}">
+
+	<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&subset=cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+
+</head>
+<body>
+
+	{% include global/preloader.html %}
+	{% include global/header.html %}
+
+	<main class="geo-wrapper">
+		{{ content }}
+	</main>
+
+	{% include global/footer-social-colorized.html %}
+	<!-- {% include global/footer-social-clean.html %} -->
+	{% include global/footer-simple.html %}
+	<!-- {% include global/footer-default.html %} -->
+
+	<script src="{{ site.baseurl }}/assets/js/vendor/jquery-1.11.3.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/isotope.pkgd.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/flickity.pkgd.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/jquery.flexslider.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/waypoints.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/parallax.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/zoom.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/jquery.selectBox.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/jquery-ui.js"></script>
+	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script> -->
+	<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-62753964-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

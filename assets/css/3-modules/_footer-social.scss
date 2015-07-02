@@ -1,0 +1,182 @@
+/* ----------------------------------------------------------------------------------------------------
+footer social
+---------------------------------------------------------------------------------------------------- */
+nav.footer-social {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+
+	a {
+		display: table-cell;
+		font-size: 30px;
+		padding: 1.4em 0;
+		text-align: center;
+		@include transition(all 0.15s ease-in-out);
+	}
+}
+
+/* ----------------------------------------------------------------------------------------------------
+footer social colorized
+---------------------------------------------------------------------------------------------------- */
+nav.footer-social-colorized {
+
+	a {
+		color: #fff;
+		background: #ddd;
+		&:hover {background: #ccc;}
+
+		&.facebook {
+			background: #3b5997;
+			&:hover {background: #32508a;}
+		}
+		&.linkedin {
+			background: #0273b3;
+			&:hover {background: #0c6ba6;}
+		}
+		&.twitter {
+			background: #0fa7c8;
+			&:hover {background: #189bb9;}
+		}
+		&.google-plus {
+			background: #da5436;
+			&:hover {background: #cc472f;}
+		}
+		&.instagram {
+			background: #7c4e41;
+			&:hover {background: #6e4236;}
+		}
+		&.youtube {
+			background: #C62A2C;
+			&:hover {background: #B31F21;}
+		}
+		&.vk {
+			background: #44678d;
+			&:hover {background: #395b7e;}
+		}
+		&.pinterest {
+			background: #DA2A32;
+			&:hover {background: #cb2128;}
+		}
+		&.tumblr {
+			background: #35506b;
+			&:hover {background: #2d4761;}
+		}
+		&.dribbble {
+			background: #e04d84;
+			&:hover {background: #d13f76;}
+		}
+		&.foursquare {
+			background: #0732a2;
+			&:hover {background: #042a8e;}
+		}
+		&.behance {
+			background: #005cff;
+			&:hover {background: #0050de;}
+		}
+		&.soundcloud {
+			background: #ff5419;
+			&:hover {background: #ed460c;}
+		}
+		&.lastfm {
+			background: #D52B25;
+			&:hover {background: #C8221C;}
+		}
+		&.github {
+			background: #202021;
+			&:hover {background: #18181b;}
+		}
+		&.flickr {
+			background: #0063db;
+			&:hover {background: #005bc9;}
+		}
+
+	}
+}
+
+/* ----------------------------------------------------------------------------------------------------
+footer social clean
+---------------------------------------------------------------------------------------------------- */
+nav.footer-social-clean {
+	// @include border-color(#E4E4E4);
+	// @include border-style(solid);
+	// @include border-width(1px);
+
+	a {
+		color: #ddd;
+		background: #fff;
+		// @include border-width(null 1px);
+		// @include border-style(solid);
+		// @include border-color(null #E4E4E4 null transparent);
+		// &:last-child {@include border-color(transparent);}
+		&:hover {
+			color: #ccc;
+			background: #f0f0f0;
+		}
+
+		&.facebook {
+			color: #3b5997;
+			&:hover {color: #32508a;}
+		}
+		&.linkedin {
+			color: #0273b3;
+			&:hover {color: #0c6ba6;}
+		}
+		&.twitter {
+			color: #0fa7c8;
+			&:hover {color: #189bb9;}
+		}
+		&.google-plus {
+			color: #da5436;
+			&:hover {color: #cc472f;}
+		}
+		&.instagram {
+			color: #7c4e41;
+			&:hover {color: #6e4236;}
+		}
+		&.youtube {
+			color: #C62A2C;
+			&:hover {color: #B31F21;}
+		}
+		&.vk {
+			color: #44678d;
+			&:hover {color: #395b7e;}
+		}
+		&.pinterest {
+			color: #DA2A32;
+			&:hover {color: #cb2128;}
+		}
+		&.tumblr {
+			color: #35506b;
+			&:hover {color: #2d4761;}
+		}
+		&.dribbble {
+			color: #e04d84;
+			&:hover {color: #d13f76;}
+		}
+		&.foursquare {
+			color: #0732a2;
+			&:hover {color: #042a8e;}
+		}
+		&.behance {
+			color: #005cff;
+			&:hover {color: #0050de;}
+		}
+		&.soundcloud {
+			color: #ff5419;
+			&:hover {color: #ed460c;}
+		}
+		&.lastfm {
+			color: #D52B25;
+			&:hover {color: #C8221C;}
+		}
+		&.github {
+			color: #202021;
+			&:hover {color: #18181b;}
+		}
+		&.flickr {
+			color: #0063db;
+			&:hover {color: #005bc9;}
+		}
+
+	}
+}
