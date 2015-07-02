@@ -1,0 +1,13 @@
+# Build settings
+brand-name: Name Of Our Brand
+baseurl: /geometric-front
+markdown: kramdown
+permalink: pretty
+
+port: 9999
+
+exclude: ['README.md']
+
+sass:
+  sass_dir: assets/css
+  style: :expanded
