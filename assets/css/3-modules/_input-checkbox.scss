@@ -1,0 +1,46 @@
+/* ----------------------------------------------------------------------------------------------------
+radio-btns
+---------------------------------------------------------------------------------------------------- */
+.geo-checkbox {
+	margin: 0 0 0.75em 0;
+
+	label {
+		cursor: pointer;
+	}
+	input[type="checkbox"] {
+		display: none;
+	}
+	input[type="checkbox"] + label {
+		color: #292321;
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+	}
+	input[type="checkbox"] + label span {
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		margin: -1px 12px 0 0;
+		vertical-align: middle;
+		cursor: pointer;
+		border: 2px solid #f5f5f5;
+		border-radius: 3px;
+	}
+	input[type="checkbox"] + label span {
+		background-color: #f5f5f5;
+	}
+	input[type="checkbox"] + label:hover span,
+	input[type="checkbox"]:checked + label span {
+		background-color: #488cc0;
+	}
+	label:hover {
+
+	}
+	input[type="checkbox"] + label span,
+	input[type="checkbox"]:checked + label span {
+		// -webkit-transition: background-color 0.4s linear;
+		// -o-transition: background-color 0.4s linear;
+		// -moz-transition: background-color 0.4s linear;
+		// transition: background-color 0.4s linear;
+		@include transition(background-color 0.15s $ease-out-quart);
+	}
+}
