@@ -6,6 +6,9 @@
 	text-align: center;
 	overflow: hidden;
 	@include clearfix;
+	.flexslider {
+		margin-bottom: 0;
+	}
 }
 
 /**
@@ -197,21 +200,26 @@
 }
 
 /**
-* Headslider
+* Slider
 * ----------------------------------------------------------------------------
 */
 .land-slider {
 	background: #fff;
 	padding: 0;
-		&:before {
-			position: absolute;
-			content: '';
-			width: 100%;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			background: rgba(72, 140, 192, 0.8);
-		}
+	.flex-control-nav {
+		width: 100%;
+		position: absolute;
+		bottom: 40px;
+		text-align: center;
+	}
+	.flex-caption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(72, 140, 192, 0.8);
+	}
 	.central-part {
 		position: absolute;
 		top: 50%;

@@ -124,13 +124,44 @@ $(document).ready(function(){
 //  contain: true
 // });
 
-// flexslider
+
+/**
+ * FlexSlider
+ * https://github.com/woothemes/FlexSlider
+ */
 $(window).load(function() {
-	$('.flexslider').flexslider({
+
+	// Slider without anything
+	$('#slider').flexslider({
 		animation: "slide",
-		controlNav: "thumbnails"
 	});
+
+	// Slider without anything
+	$('#slider-2').flexslider({
+		animation: "slide",
+		controlNav: true,
+	});
+
+	// Slider with Carousel Slider as Navigation
+	$('#carousel-nav').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: false,
+		itemWidth: 150,
+		itemMargin: 0,
+		asNavFor: '#slider-with-carousel'
+	});
+	$('#slider-with-carousel').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: false,
+		sync: "#carousel-nav"
+	});
+
 });
+
 
 // input price range
 $(function() {
