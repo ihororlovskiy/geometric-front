@@ -3102,13 +3102,14 @@ http://flickity.metafizzy.co
   width: 44px;
   height: 44px;
   border: none;
-  border-radius: 50%;
   background: white;
-  background: rgba(255, 255, 255, 0.75);
+  background: #4489C4;
   cursor: pointer;
   /* vertically center */
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -3189,10 +3190,10 @@ http://flickity.metafizzy.co
 
 .flickity-page-dots .dot {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   margin: 0 8px;
-  background: #333;
+  background: #488cc0;
   border-radius: 50%;
   filter: alpha(opacity=25);
   /* IE8 */
@@ -5631,10 +5632,6 @@ ul.geo-relative-posts > li > a > h6 {
 }
 .land-clients .gallery .flickity-page-dots {
   bottom: 0;
-  left: 0;
-}
-.land-clients .gallery .flickity-page-dots .dot {
-  background: #488cc0;
 }
 .land-clients .gallery .flickity-prev-next-button {
   display: none;
