@@ -279,12 +279,6 @@ textarea:focus::-webkit-input-placeholder {
   clear: both;
 }
 
-/* geo-wrapper
-============================================================================ */
-.geo-wrapper {
-  padding-top: 100px;
-}
-
 /* geo-media
 ============================================================================ */
 .geo-media {

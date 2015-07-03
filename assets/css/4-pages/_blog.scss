@@ -1,5 +1,6 @@
-/* geo-blog
-============================================================================ */
+/*-------------------------------------------------------------------------*/
+/*	# BLOG LISTS
+/*-------------------------------------------------------------------------*/
 .geo-blog {
 	margin-bottom:60px;
 
@@ -8,12 +9,22 @@
 	&.geo-col-4 article {width:25%;}
 }
 
-.geo-content-area {width:75%;margin:0 auto;}
+.geo-content-area {
+	width: 75%;
+	margin:0 auto;
+}
+
 .geo-blog-large-sidebar .geo-content-area,
-.geo-blog-small-sidebar .geo-content-area {width:70%;margin-right:5%;float:left;}
+.geo-blog-small-sidebar .geo-content-area {
+	width: 70%;
+	margin-right: 5%;
+	float:left;
+}
 @media (max-width:767px) {.geo-post-area {width:100%;}}
 
-.geo-blog article {position:relative;float:left;
+.geo-blog article {
+	position: relative;
+	float: left;
 	.geo-media {}
 	.geo-content {}
 
@@ -23,7 +34,10 @@
 	.geo-content .geo-blog-meta-bottom {margin-bottom:0;}
 }
 
-// item quote
+/**
+* Item Quote
+* ----------------------------------------------------------------------------
+*/
 .geo-blog article.item-quote {
 	.geo-content {background-color:#5596c7;position:relative;padding:40px 30px 20px;
 		a.quote-link {position:relative;padding-left:50px;text-align:center;display:inline-block;
@@ -39,21 +53,46 @@
 	}
 }
 
-// small blog
+/**
+* Classic Small Blog List
+* ----------------------------------------------------------------------------
+*/
 .geo-blog-small {
-	article {margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid $divider;
-		.geo-media {width:40%;float:left;}
-		.geo-content {width:60%;float:right;padding-left:50px;}
-		&.item-quote .geo-content {width:100%;}
+	article {
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid $divider;
+		.geo-media {
+			width: 40%;
+			float: left;
+		}
+		.geo-content {
+			width: 60%;
+			float: right;
+			padding-left: 50px;
+		}
+		&.item-quote .geo-content {
+			width: 100%;
+		}
 	}
 }
 
-// large blog
+/**
+* Classic Large Blog List
+* ----------------------------------------------------------------------------
+*/
 .geo-blog-large {
-	article {padding-bottom:30px;border-bottom: 1px solid $divider;margin-bottom:30px;}
+	article {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid $divider;
+	}
 }
 
-// masonry blog
+/**
+* Masonry Blog List
+* ----------------------------------------------------------------------------
+*/
 .geo-blog-masonry {
 	.geo-content-area {width:100%;}
 	article {padding:20px 20px 40px;}
@@ -77,34 +116,33 @@
 	}
 }
 
-// grid blog
+/**
+* Grid Blog List
+* ----------------------------------------------------------------------------
+*/
 .geo-blog-grid {
-	.geo-content-area {width:100%;}
-	article {padding:10px 10px 30px;margin-bottom:20px;position:relative;
-	&:after {position:absolute;bottom:0;left:10px;right:10px;content:'';
-		border-bottom: 1px solid $divider;}
-		// p {overflow:hidden;min-height:56px;max-height:56px;}
-		// .geo-blog-meta-bottom {padding-bottom:20px;border-bottom:1px solid $divider;}
+	.geo-content-area {
+		width:100%;
 	}
-
-	// &.geo-blog-grid-2-cols article {width:50.0%;}
-	// &.geo-blog-grid-3-cols article {width:33.3%;}
-	// &.geo-blog-grid-4-cols article {width:25.0%;}
-
-	// &.geo-blog-grid-2-cols article:nth-last-child(1):after,
-	// &.geo-blog-grid-2-cols article:nth-last-child(2):after,
-
-	// &.geo-blog-grid-3-cols article:nth-last-child(1):after,
-	// &.geo-blog-grid-3-cols article:nth-last-child(2):after,
-	// &.geo-blog-grid-3-cols article:nth-last-child(3):after,
-
-	// &.geo-blog-grid-4-cols article:nth-last-child(1):after,
-	// &.geo-blog-grid-4-cols article:nth-last-child(2):after,
-	// &.geo-blog-grid-4-cols article:nth-last-child(3):after,
-	// &.geo-blog-grid-4-cols article:nth-last-child(4):after {border:none;}
+	article {
+		position: relative;
+		padding: 10px 10px 30px;
+		margin-bottom: 20px;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 10px;
+			bottom: 0;
+			right: 10px;
+			border-bottom: 1px solid $divider;
+		}
+	}
 }
 
-// custom blog
+/**
+* Custom Blog
+* ----------------------------------------------------------------------------
+*/
 .geo-blog-custom {padding-bottom:0;border-bottom:none;
 	.geo-content-area {width:100%;margin:0 auto;}
 	article {border-bottom: 1px solid $divider;width:100%;

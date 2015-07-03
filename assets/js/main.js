@@ -136,10 +136,16 @@ $(window).load(function() {
 		animation: "slide",
 	});
 
-	// Slider without anything
+	// Slider without anything (used at basic-landing)
 	$('#slider-2').flexslider({
 		animation: "slide",
 		controlNav: true,
+	});
+
+	// Slider without anything (used at basic-landing)
+	$('#slider-blogs').flexslider({
+		animation: "slide",
+		slideshow: false,
 	});
 
 	// Slider with Carousel Slider as Navigation
