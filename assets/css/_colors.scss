@@ -1,0 +1,17 @@
+$white:#fff;
+$black:#000;
+
+$firm:#3787c4; // blue
+$firm2:lighten($firm,8);
+
+$firm-btn:lighten($firm,4);
+$firm-btn-h:lighten($firm,7);
+$firm-btn-a:darken($firm,2);
+
+
+$main:#333; // dark gray
+$main2:lighten($main,22); // gray = status "out of stock" |
+$main3:lighten($main,33); // light gray = price |
+$main4:lighten($main,70); // very light gray = not active stars |
+
+$last:#de7846; // orange ??? = status "last examle" |

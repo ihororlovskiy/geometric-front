@@ -1,0 +1,328 @@
+/* ----------------------------------------------------------------------------------------------------
+header
+---------------------------------------------------------------------------------------------------- */
+.geo-header {
+	position: fixed;
+	top: 0;
+	left :0;
+	z-index: 999;
+	width: 100%;
+	background: #fff;
+	z-index: 10000;
+	max-height: 100px;
+	padding:0;
+}
+@media (max-width:767px) {.geo-header {display:none;}}
+
+.geo-header.geo-header-large .container {}
+.geo-header.geo-header-small .container {width:100%;}
+
+.geo-header .container {
+	@include transition(all 0.5s $ease-in-out-quad);
+}
+
+nav.geo-main-logo {
+	float:left;display:table;min-height:100px;
+	>a {padding:0 15px;display:table-cell;vertical-align:middle;}
+	>a>img {max-height:70px;}
+}
+
+//main
+nav.geo-main-menu {float:right;
+	>ul {margin:0;padding:0;list-style:none;display:table;
+		>li {padding:0 15px;position:relative;display:table-cell;vertical-align:middle;line-height:100px;}
+		>li>a {text-transform:uppercase;color:#6a6a6a;font-weight:700;float:left;}
+		>li:hover>a {color:#4385b8;}
+		>li>ul{display:none;position:absolute;top:100%;left:0;background-color:#4385b8;}
+		>li:hover>ul{display:block;}
+		>li.geo-megamenu>ul{overflow:hidden;}
+		>li.geo-megamenu>ul>li {position:relative;}
+		>li.geo-megamenu>ul>li:before {content:'';position:absolute;left:-1px;top:0;height:1000%;background-color:#5992bd;width:1px;}
+		>li>ul>li h6 {color:rgba(255,255,255,.2);padding:12px 15px;margin:0;}
+		>li>ul>li a {color:#fff;padding:12px 15px;display:block;line-height:1.2;}
+		>li>ul>li a:hover {background-color:#3d79a8;}
+		>li>ul>li {float:left;width:200px;}
+		>li.geo-megamenu.geo-megamenu-col-1 ul.geo-submenu {width:200px;left:0;}
+		>li.geo-megamenu.geo-megamenu-col-2 ul.geo-submenu {width:400px;left:-250px;}
+		>li.geo-megamenu.geo-megamenu-col-3 ul.geo-submenu {width:600px;left:-300px;}
+		>li.geo-megamenu.geo-megamenu-col-4 ul.geo-submenu {width:800px;left:-350px;}
+		>li.geo-megamenu.geo-megamenu-col-5 ul.geo-submenu {width:1000px;left:-400px;}
+		>li.geo-classicmenu>ul>li {position:relative;}
+		>li.geo-classicmenu>ul>li>a {position:relative;}
+		>li.geo-classicmenu>ul>li>a>[class^="icon-"] {position:absolute;top:50%;margin-top:-4px;font-size:8px;right:8px;font-weight:700;}
+		>li.geo-classicmenu>ul>li>ul.geo-subsubmenu {position:absolute;top:0;left:100%;width:200px;background-color:#4180b1;display:none;}
+		>li.geo-classicmenu>ul>li:hover>ul.geo-subsubmenu {display:block;}
+	}
+}
+
+//languages
+nav.geo-languages-menu {float:right;position:relative;top:29px;text-align:center;
+	>ul {margin:0;padding:0;list-style:none;}
+	>ul>li {margin:0 15px;}
+	>ul>li a {text-transform:uppercase;color:#6a6a6a;font-weight:700;
+		display:block;
+		width:42px;line-height:42px;
+		}
+	>ul>li a:hover {background-color:#3d79a8;color:#fff;}
+	>ul>li:hover {background-color:#4986b6;background-color:#3d79a8;}
+	>ul>li:hover a {color:#fff;}
+
+	>ul>li>ul {display:none;}
+	>ul>li:hover>ul {display:block;}
+	>ul>li>ul>li>a {background-color:#4986b6;color:#fff;}
+}
+
+
+
+//search
+.geo-searchbox-menu {
+	position: relative;
+	top: 26px;
+	z-index: 100;
+	width: 50px;
+	height: 50px;
+	float: right;
+
+	.geo-searchbox {
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-width: 50px;
+		width: 0;
+		height: 50px;
+		float: right;
+		overflow: hidden;
+		@include transition(all 0.5s ease);
+
+		.geo-searchbox-input{
+			position: absolute;
+			z-index: 100;
+			top: 0;
+			right: 0;
+			border: 0;
+			outline: 0;
+			background: #fff;
+			width: 100%;
+			height: 50px;
+			margin: 0;
+			border: none;
+			padding: 0 50px 0 0;
+			font-size: 25px;
+			color: #646464;
+		}
+		.geo-searchbox-input::-webkit-input-placeholder {color: #646464;}
+
+		.geo-searchbox-icon,
+		.geo-searchbox-submit {
+			width: 50px;
+			height: 50px;
+			display: block;
+			z-index: 200;
+			position: absolute;
+			top: 0;
+			font-size: 24px;
+			font-weight: 700;
+			right: 0;
+			padding: 0;
+			margin: 0;
+			border: 0;
+			outline: 0;
+			line-height: 50px;
+			text-align: center;
+			cursor: pointer;
+			color: #6a6a6a;
+			background: #fff;
+		}
+		.geo-searchbox-icon:hover,
+		.geo-searchbox-submit:hover {color: #4385b8;}
+	}
+	.geo-searchbox.geo-searchbox-open {width: 1100%;}
+}
+
+
+
+//geo-main-menu-cart
+.main-menu-cart {
+	float: right;
+	position: relative;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: table;
+
+		li {
+			padding: 0;
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+			line-height: 100px;
+
+			a {
+				padding: 0 15px;
+				text-transform: uppercase;
+				color: #6a6a6a;
+				font-weight: 700;
+				float: left;
+				font-size: 24px;
+				font-weight: 700;
+
+				&:hover {
+					color: #4385b8;
+				}
+
+				.geo-purchased-items {
+					background-color: #3679ab;
+					color: #fff;
+					border-radius: 4px;
+					text-align: center;
+					font-weight: 300;
+					font-size: 12px;
+					position: absolute;
+					top: 15px;
+					right: 0;
+					line-height: 15px;
+					padding: 3px 6px;
+				}
+			}
+		}
+	}
+	.shoping-cart-box {
+		position: absolute;
+		overflow: hidden;
+		top: 100%;
+		right: 0;
+		width: 340px;
+		height: 0;
+		background: #5596c7;
+		color: #fff;
+		opacity: 0;
+		@include transition(opacity 0.25s $ease-in-out-quad 0.01s);
+		// @include transform(translateY(-100%));
+
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 21px;
+			content: '';
+			@include triangle(16px, #5596c7, up);
+			@include transform(translateY(-100%));
+		}
+
+		.cart-item {
+			width: 100%;
+			float: left;
+			border-bottom: 1px solid #cee1ef;
+			position: relative;
+
+			.cart-image {
+				width: 30%;
+				float: left;
+				@include transition(all 0.15s ease);
+
+				&:hover {
+					opacity: 0.85;
+				}
+			}
+
+			.cart-details {
+				width: 70%;
+				float: left;
+				@include padding(null 20px);
+
+				.cart-title {
+					@include padding(15px null 10px);
+
+					a {
+						display: inline-block;
+						font-size: 15px;
+						line-height: 20px;
+						font-weight: 300;
+						color: #fff;
+						@include transition(all 0.15s ease);
+
+						&:hover {
+							color: #cee1ef;
+						}
+					}
+				}
+				.cart-countprice {
+					font-size: 15px;
+					line-height: 20px;
+					font-weight: 400;
+					color: #cee1ef;
+
+					span {
+						color: #fff;
+					}
+				}
+			}
+
+			a.cart-close {
+				position: absolute;
+				top: 18px;
+				right: 18px;
+				padding: 4px;
+				display: inline-block;
+				font-size: 15px; 
+				line-height: 1;
+				color: #cee1ef;
+				// @include transform(translateX(-100%) translateY(100%));
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+
+		.cart-footer {
+			width: 100%;
+			float: left;
+			padding: 10px;
+			padding: 16px;
+			text-align: center;
+
+			span.cart-subtotal {
+				float: left;
+				background: #488cc0;
+				font-size: 15px;
+				line-height: 50px;
+				font-weight: 300;
+				padding: 0 5px;
+				width: 50%;
+
+				span {
+					font-weight: 400;
+				}
+			}
+			a.cart-veiwcart {
+				float: left;
+				color: #488cc0;
+				background: #fff;
+				font-size: 13px;
+				line-height: 48px;
+				padding: 0 5px;
+				font-weight: 700;
+				text-transform: uppercase;
+				width: 50%;
+
+				[class^="icon-"] {
+					margin-right: 10px;
+					font-size: 20px;
+					position: relative;
+					top: 3px;
+				}
+			}
+		}
+	}
+
+	&:hover {
+		.shoping-cart-box {
+			opacity: 1;
+			overflow: visible;
+			height: auto;
+			// @include transform(translateY(0));
+		}
+	}
+}
+

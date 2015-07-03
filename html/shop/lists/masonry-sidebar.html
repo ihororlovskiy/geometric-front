@@ -1,0 +1,21 @@
+---
+layout: default
+permalink: /html/shop/lists/masonry-sidebar/
+taxonomy: Your Shop
+title: Masonry + Sidebar
+
+---
+
+{% include global/parallax.html %}
+
+<div class="geo-shoplist geo-shoplist-masonry geo-shoplist-withsidebar">
+	<div class="container">
+
+		{% include shop/sidebar.html %}
+
+		<div class="geo-content-area">
+			{% include shop/list/masonry.html %}
+		</div>
+
+	</div>
+</div>
