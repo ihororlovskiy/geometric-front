@@ -3881,60 +3881,6 @@ iwanamore
   margin-left: 16px;
 }
 
-.geo-blog-pagination {
-  text-align: center;
-  margin: 0 auto 60px;
-  width: 401px;
-}
-
-.geo-blog-pagination a {
-  width: 200px;
-}
-
-.geo-blog-pagination a:first-child {
-  float: left;
-}
-
-.geo-blog-pagination a:last-child {
-  float: right;
-  position: relative;
-}
-
-.geo-blog-pagination a:last-child:before {
-  position: absolute;
-  background-color: #5c9dcd;
-  content: '';
-  left: -2px;
-  top: -1px;
-  bottom: -1px;
-  width: 1px;
-}
-
-.geo-blog-pagination a span {
-  margin: 0 20px;
-  font-size: 24px;
-  position: relative;
-  top: 4px;
-}
-
-.geo-blog-pagination a:first-child span {
-  margin-left: 0;
-}
-
-.geo-blog-pagination a:last-child span {
-  margin-right: 0;
-}
-
-.geo-blog-pagination.geo-blog-show-more {
-  width: 200px;
-}
-
-.geo-blog-pagination.geo-blog-show-more a {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 /* ----------------------------------------------------------------------------------------------------
 footer social
 ---------------------------------------------------------------------------------------------------- */
@@ -4299,6 +4245,11 @@ main.wrapper {
 .geo-blog article {
   position: relative;
   float: left;
+}
+.geo-blog article:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .geo-blog article .geo-content h4 {
   color: #4385b8;

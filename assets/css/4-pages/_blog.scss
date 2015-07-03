@@ -25,6 +25,8 @@
 .geo-blog article {
 	position: relative;
 	float: left;
+	@include clearfix;
+
 	.geo-media {}
 	.geo-content {}
 

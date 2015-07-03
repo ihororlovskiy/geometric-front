@@ -145,6 +145,7 @@ $(window).load(function() {
 	// Slider without anything (used at basic-landing)
 	$('#slider-blogs').flexslider({
 		animation: "slide",
+		controlNav: false,
 		slideshow: false,
 	});
 
