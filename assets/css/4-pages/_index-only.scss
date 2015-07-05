@@ -5,9 +5,38 @@ index only (this will be deleted at final)
 	font-size: 14px;
 	line-height: 2;
 	padding: 40px 0 120px;
-
+	a {
+		position: relative;
+		// &:after {
+		// 	position: absolute;
+		// 	top: -1px;
+		// 	left: 108%;
+		// 	width: auto;
+		// 	text-align: center;
+		// 	color: #fff;
+		// 	padding: 0 4px;
+		// 	font-size: 7px;
+		// 	line-height: 1.5;
+		// }
+	}
+	a.work-in-progress {
+		border: 1px solid #e74c3c;
+		// display: inline-block;
+		// &:after {
+		// 	content: 'work in progress';
+		// 	background: #e74c3c;
+		// }
+	}
+	a.need-review {
+		border: 1px solid #1abc9c;
+		// display: inline-block;
+		// &:after {
+		// 	content: 'need review';
+		// 	background: #1abc9c;
+		// }
+	}
 	.isotope-item {
-		padding: 10px 12px;
+		padding: 10px 10px;
 		float: left;
 		width: 20%;
 		&.item {
@@ -20,44 +49,6 @@ index only (this will be deleted at final)
 				content: 'item';
 				color: #fff;
 				background: #ccc;
-				padding: 0 4px;
-				font-size: 7px;
-				line-height: 1.5;
-			}
-		}
-		a.work-in-progress {
-			background: #eee;
-			position: relative;
-			border: 1px solid $color-primary;
-			padding: 0px 8px;
-			&:after {
-				position: absolute;
-				top: -1px;
-				left: 108%;
-				width: 70px;
-				text-align: center;
-				content: 'work in progress';
-				color: #fff;
-				background: #e74c3c;
-				padding: 0 4px;
-				font-size: 7px;
-				line-height: 1.5;
-			}
-		}
-		a.need-review {
-			background: #eee;
-			position: relative;
-			border: 1px solid $color-primary;
-			padding: 0px 8px;
-			&:after {
-				position: absolute;
-				top: -1px;
-				left: 108%;
-				width: 70px;
-				text-align: center;
-				content: 'need review';
-				color: #fff;
-				background: #1abc9c;
 				padding: 0 4px;
 				font-size: 7px;
 				line-height: 1.5;
