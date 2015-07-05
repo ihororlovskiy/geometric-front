@@ -6246,9 +6246,9 @@ radio-btns
   transition: background-color 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* ----------------------------------------------------------------------------------------------------
-header
----------------------------------------------------------------------------------------------------- */
+/*-------------------------------------------------------------------------*/
+/*	# HEADER
+/*-------------------------------------------------------------------------*/
 .geo-header {
   position: fixed;
   top: 0;
@@ -6258,23 +6258,26 @@ header
   z-index: 10000;
   max-height: 100px;
   padding: 0;
+  font-size: 14px;
 }
-
-@media (max-width: 1100px) {
-  .geo-header {
-    display: none;
-  }
-}
-.geo-header.geo-header-small .container {
-  width: 100%;
-}
-
 .geo-header .container {
   -webkit-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   -moz-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
+.geo-header.geo-header-small .container {
+  width: 100%;
+}
 
+@media (max-width: 1000px) {
+  .geo-header {
+    display: none;
+  }
+}
+/**
+* Logo
+* ----------------------------------------------------------------------------
+*/
 nav.geo-main-logo {
   float: left;
   display: table;
@@ -6289,6 +6292,10 @@ nav.geo-main-logo > a > img {
   max-height: 70px;
 }
 
+/**
+* Main
+* ----------------------------------------------------------------------------
+*/
 nav.geo-main-menu {
   float: right;
 }
@@ -6403,6 +6410,10 @@ nav.geo-main-menu > ul > li.geo-classicmenu > ul > li:hover > ul.geo-subsubmenu 
   display: block;
 }
 
+/**
+* Languages
+* ----------------------------------------------------------------------------
+*/
 nav.geo-languages-menu {
   float: right;
   position: relative;
@@ -6430,7 +6441,6 @@ nav.geo-languages-menu > ul > li a:hover {
   color: #fff;
 }
 nav.geo-languages-menu > ul > li:hover {
-  background-color: #4986b6;
   background-color: #3d79a8;
 }
 nav.geo-languages-menu > ul > li:hover a {
@@ -6447,6 +6457,10 @@ nav.geo-languages-menu > ul > li > ul > li > a {
   color: #fff;
 }
 
+/**
+* Search
+* ----------------------------------------------------------------------------
+*/
 .geo-searchbox-menu {
   position: relative;
   top: 26px;
@@ -6512,10 +6526,11 @@ nav.geo-languages-menu > ul > li > ul > li > a {
 .geo-searchbox-menu .geo-searchbox .geo-searchbox-submit:hover {
   color: #4385b8;
 }
-.geo-searchbox-menu .geo-searchbox.geo-searchbox-open {
-  width: 1100%;
-}
 
+/**
+* Cart
+* ----------------------------------------------------------------------------
+*/
 .main-menu-cart {
   float: right;
   position: relative;
@@ -8483,16 +8498,16 @@ index only (this will be deleted at final)
   line-height: 2;
   padding: 40px 0 120px;
 }
-.index-only article.isotope-item {
+.index-only .isotope-item {
   padding: 10px 12px;
   float: left;
   width: 20%;
 }
-.index-only article.isotope-item.item {
+.index-only .isotope-item.item {
   background: #eee;
   position: relative;
 }
-.index-only article.isotope-item.item:after {
+.index-only .isotope-item.item:after {
   position: absolute;
   top: 0;
   right: 0;
@@ -8500,6 +8515,44 @@ index only (this will be deleted at final)
   color: #fff;
   background: #ccc;
   padding: 0 4px;
-  font-size: 8px;
-  line-height: 2;
+  font-size: 7px;
+  line-height: 1.5;
+}
+.index-only .isotope-item a.work-in-progress {
+  background: #eee;
+  position: relative;
+  border: 1px solid #4489C4;
+  padding: 0px 8px;
+}
+.index-only .isotope-item a.work-in-progress:after {
+  position: absolute;
+  top: -1px;
+  left: 108%;
+  width: 70px;
+  text-align: center;
+  content: 'work in progress';
+  color: #fff;
+  background: #e74c3c;
+  padding: 0 4px;
+  font-size: 7px;
+  line-height: 1.5;
+}
+.index-only .isotope-item a.need-review {
+  background: #eee;
+  position: relative;
+  border: 1px solid #4489C4;
+  padding: 0px 8px;
+}
+.index-only .isotope-item a.need-review:after {
+  position: absolute;
+  top: -1px;
+  left: 108%;
+  width: 70px;
+  text-align: center;
+  content: 'need review';
+  color: #fff;
+  background: #1abc9c;
+  padding: 0 4px;
+  font-size: 7px;
+  line-height: 1.5;
 }
