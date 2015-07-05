@@ -6,10 +6,8 @@
 	text-align: center;
 	overflow: hidden;
 	@include clearfix;
-	.flexslider {
-		margin-bottom: 0;
-	}
 }
+
 
 /**
 * Headslider
@@ -18,14 +16,17 @@
 .land-headslider {
 	background: #fff;
 	padding: 0;
+	.flexslider {
+		margin-bottom: 0;
+	}
 	.left-part {
 		position: absolute;
-		top: 35%;
+		top: 50%;
 		left: 0;
-		width: 66.6666666666%;
+		width: 50%;
 		text-align: left;
 		padding: 0 50px;
-		@include transform(translateY(-50%));
+		@include transform(translateY(-100%));
 		h6 {
 			color: #8c8c8c;
 		}
@@ -35,6 +36,7 @@
 		}
 	}
 }
+
 
 /**
 * Feachers
@@ -59,6 +61,7 @@
 		}
 	}
 }
+
 
 /**
 * Portfolio
@@ -108,6 +111,7 @@
 	}
 }
 
+
 /**
 * Skills
 * ----------------------------------------------------------------------------
@@ -156,12 +160,16 @@
 			float: left;
 			width: 50%;
 			padding: 30px 10px;
-			.count {
+			.number-counter {
 				display: block;
 				color: #fff;
 				font-size: 75px;
 				font-weight: 100;
-				// margin-bottom: 20px;
+				// opacity: 0;
+				// @include transition(all 3.75s $ease-out-circ);
+				// &.show {
+				// 	opacity: 1;
+				// }
 			}
 			h5 {
 				color: #729ec1;
@@ -170,6 +178,7 @@
 		}
 	}
 }
+
 
 /**
 * Blog
@@ -199,6 +208,7 @@
 	}
 }
 
+
 /**
 * Slider
 * ----------------------------------------------------------------------------
@@ -206,19 +216,22 @@
 .land-slider {
 	background: #fff;
 	padding: 0;
-	.flex-control-nav {
-		width: 100%;
-		position: absolute;
-		bottom: 40px;
-		text-align: center;
-	}
-	.flex-caption {
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		background: rgba(72, 140, 192, 0.8);
+	.flexslider {
+		margin-bottom: 0;
+		.flex-control-nav {
+			width: 100%;
+			position: absolute;
+			bottom: 40px;
+			text-align: center;
+		}
+		.flex-caption {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: rgba(72, 140, 192, 0.8);
+		}
 	}
 	.central-part {
 		position: absolute;
@@ -226,9 +239,6 @@
 		left: 50%;
 		width: 50%;
 		@include transform(translate(-50%, -50%));
-		// * {
-		// 	position: relative;
-		// }
 		[class^="icon-"] {
 			font-size: 80px;
 			color: #fff;
@@ -244,6 +254,7 @@
 		}
 	}
 }
+
 
 /**
 * Shop
@@ -387,6 +398,7 @@
 	}
 }
 
+
 /**
 * Clients
 * ----------------------------------------------------------------------------
@@ -432,8 +444,4 @@
 		}
 	}
 }
-
-
-
-
 

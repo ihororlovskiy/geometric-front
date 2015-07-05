@@ -134,6 +134,7 @@ $(window).load(function() {
 	// Slider without anything
 	$('#slider').flexslider({
 		animation: "slide",
+		controlNav: false,
 	});
 
 	// Slider without anything (used at basic-landing)
@@ -191,11 +192,31 @@ $(function() {
 	$( ".disabled-max" ).val( "€" + $( ".input-price-range" ).slider( "values", 1 ) );
 });
 
-// clear
-// $("#clear").click(function(){
-// 	$("input[type='text']").val("0"); 
-// });
 
-
-// selectBox
+/**
+ * selectBox
+ * https://github.com/marcj/jquery-selectBox
+ */
 $('select').selectBox();
+
+
+/**
+ * Wow
+ * https://github.com/matthieua/WOW
+ */
+new WOW().init();
+
+
+/**
+ * Counter Up
+ * https://github.com/bfintal/Counter-Up
+ */
+$(document).ready(function() {
+	$('.number-counter').counterUp({
+			delay: 10,
+			time: 1200
+	});
+});
+
+
+
