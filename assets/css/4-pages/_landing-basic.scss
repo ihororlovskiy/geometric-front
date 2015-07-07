@@ -1,11 +1,13 @@
 /*-------------------------------------------------------------------------*/
 /*	# LANDING BASIC
 /*-------------------------------------------------------------------------*/
-.land-item {
-	position: relative;
-	text-align: center;
-	overflow: hidden;
-	@include clearfix;
+.land-basic {
+	.land-item {
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+		@include clearfix;
+	}
 }
 
 
@@ -13,7 +15,7 @@
 * Headslider
 * ----------------------------------------------------------------------------
 */
-.land-headslider {
+.land-basic .land-headslider {
 	background: #fff;
 	padding: 0;
 	.flexslider {
@@ -42,7 +44,7 @@
 * Feachers
 * ----------------------------------------------------------------------------
 */
-.land-feachers {
+.land-basic .land-feachers {
 	background: #3374a6;
 	padding: 50px 0;
 	.isotope-item {
@@ -67,7 +69,7 @@
 * Portfolio
 * ----------------------------------------------------------------------------
 */
-.land-portfolio {
+.land-basic .land-portfolio {
 	text-align: left;
 	padding: 100px 0 0;
 	.right-part {
@@ -116,7 +118,7 @@
 * Skills
 * ----------------------------------------------------------------------------
 */
-.land-skills {
+.land-basic .land-skills {
 	background: #fff url("../img/landings/basic/skills/skills-01.jpg");
 	background-size: cover;
 	padding: 0;
@@ -184,7 +186,7 @@
 * Blog
 * ----------------------------------------------------------------------------
 */
-.land-blog {
+.land-basic .land-blog {
 	background: #fff;
 	padding: 0;
 	.top-part {
@@ -213,7 +215,7 @@
 * Slider
 * ----------------------------------------------------------------------------
 */
-.land-slider {
+.land-basic .land-slider {
 	background: #fff;
 	padding: 0;
 	.flexslider {
@@ -260,7 +262,7 @@
 * Shop
 * ----------------------------------------------------------------------------
 */
-.land-shop {
+.land-basic .land-shop {
 	padding: 0;
 	.top-part {
 		background: #fff;
@@ -314,7 +316,7 @@
 * Team
 * ----------------------------------------------------------------------------
 */
-.land-team {
+.land-basic .land-team {
 	padding: 0 0 80px;
 	border-bottom: 1px solid #f5f5f5;
 	.top-part {
@@ -403,7 +405,7 @@
 * Clients
 * ----------------------------------------------------------------------------
 */
-.land-clients {
+.land-basic .land-clients {
 	padding: 0 0 80px;
 	.top-part {
 		padding: 80px 0 60px;

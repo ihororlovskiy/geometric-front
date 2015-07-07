@@ -7982,12 +7982,12 @@ ul.geo-relative-posts > li > a > h6 {
 /*-------------------------------------------------------------------------*/
 /*	# LANDING BASIC
 /*-------------------------------------------------------------------------*/
-.land-item {
+.land-basic .land-item {
   position: relative;
   text-align: center;
   overflow: hidden;
 }
-.land-item:after {
+.land-basic .land-item:after {
   content: "";
   display: table;
   clear: both;
@@ -7997,14 +7997,14 @@ ul.geo-relative-posts > li > a > h6 {
 * Headslider
 * ----------------------------------------------------------------------------
 */
-.land-headslider {
+.land-basic .land-headslider {
   background: #fff;
   padding: 0;
 }
-.land-headslider .flexslider {
+.land-basic .land-headslider .flexslider {
   margin-bottom: 0;
 }
-.land-headslider .left-part {
+.land-basic .land-headslider .left-part {
   position: absolute;
   top: 50%;
   left: 0;
@@ -8017,10 +8017,10 @@ ul.geo-relative-posts > li > a > h6 {
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-.land-headslider .left-part h6 {
+.land-basic .land-headslider .left-part h6 {
   color: #8c8c8c;
 }
-.land-headslider .left-part h1 {
+.land-basic .land-headslider .left-part h1 {
   color: #488cc0;
   margin-bottom: 0;
 }
@@ -8029,22 +8029,22 @@ ul.geo-relative-posts > li > a > h6 {
 * Feachers
 * ----------------------------------------------------------------------------
 */
-.land-feachers {
+.land-basic .land-feachers {
   background: #3374a6;
   padding: 50px 0;
 }
-.land-feachers .isotope-item {
+.land-basic .land-feachers .isotope-item {
   float: left;
   width: 33.333333333333%;
   padding: 50px 10px;
 }
-.land-feachers .isotope-item [class^="icon-"] {
+.land-basic .land-feachers .isotope-item [class^="icon-"] {
   font-size: 80px;
   color: #77b0db;
   display: block;
   margin-bottom: 20px;
 }
-.land-feachers .isotope-item h5 {
+.land-basic .land-feachers .isotope-item h5 {
   color: #fff;
   margin-bottom: 0;
 }
@@ -8053,47 +8053,47 @@ ul.geo-relative-posts > li > a > h6 {
 * Portfolio
 * ----------------------------------------------------------------------------
 */
-.land-portfolio {
+.land-basic .land-portfolio {
   text-align: left;
   padding: 100px 0 0;
 }
-.land-portfolio .right-part {
+.land-basic .land-portfolio .right-part {
   padding: 0 40px;
 }
-.land-portfolio .right-part .top-part {
+.land-basic .land-portfolio .right-part .top-part {
   margin-bottom: 150px;
 }
-.land-portfolio .right-part .top-part [class^="icon-"] {
+.land-basic .land-portfolio .right-part .top-part [class^="icon-"] {
   font-size: 100px;
   color: #d9d9d9;
   display: block;
   margin-bottom: 60px;
 }
-.land-portfolio .right-part .top-part h3 {
+.land-basic .land-portfolio .right-part .top-part h3 {
   color: #656565;
 }
-.land-portfolio .right-part .top-part p {
+.land-basic .land-portfolio .right-part .top-part p {
   color: #656565;
 }
-.land-portfolio .right-part .top-part .gbtn {
+.land-basic .land-portfolio .right-part .top-part .gbtn {
   margin-top: 40px;
 }
-.land-portfolio .right-part .isotope-item {
+.land-basic .land-portfolio .right-part .isotope-item {
   float: left;
   width: 100%;
   margin-bottom: 80px;
 }
-.land-portfolio .right-part .isotope-item [class^="icon-"] {
+.land-basic .land-portfolio .right-part .isotope-item [class^="icon-"] {
   font-size: 60px;
   color: #d9d9d9;
   display: block;
   margin-bottom: 30px;
 }
-.land-portfolio .right-part .isotope-item h4 {
+.land-basic .land-portfolio .right-part .isotope-item h4 {
   color: #656565;
   margin-bottom: 20px;
 }
-.land-portfolio .right-part .isotope-item p {
+.land-basic .land-portfolio .right-part .isotope-item p {
   color: #656565;
 }
 
@@ -8101,18 +8101,18 @@ ul.geo-relative-posts > li > a > h6 {
 * Skills
 * ----------------------------------------------------------------------------
 */
-.land-skills {
+.land-basic .land-skills {
   background: #fff url("../img/landings/basic/skills/skills-01.jpg");
   background-size: cover;
   padding: 0;
 }
-.land-skills .left-part {
+.land-basic .land-skills .left-part {
   float: left;
   width: 33.33333333%;
   text-align: left;
   padding: 60px 40px;
 }
-.land-skills .left-part:before {
+.land-basic .land-skills .left-part:before {
   position: absolute;
   content: '';
   width: 33.33333333%;
@@ -8121,39 +8121,39 @@ ul.geo-relative-posts > li > a > h6 {
   bottom: 0;
   background: rgba(0, 0, 0, 0.25);
 }
-.land-skills .left-part * {
+.land-basic .land-skills .left-part * {
   position: relative;
 }
-.land-skills .left-part svg {
+.land-basic .land-skills .left-part svg {
   margin-bottom: 50px;
   width: auto;
 }
-.land-skills .left-part svg .style0 {
+.land-basic .land-skills .left-part svg .style0 {
   fill: #fff;
 }
-.land-skills .left-part h4 {
+.land-basic .land-skills .left-part h4 {
   color: #fff;
 }
-.land-skills .left-part p {
+.land-basic .land-skills .left-part p {
   color: #fff;
 }
-.land-skills .right-part {
+.land-basic .land-skills .right-part {
   float: left;
   width: 66.66666666%;
   padding: 40px 40px;
 }
-.land-skills .right-part .isotope-item {
+.land-basic .land-skills .right-part .isotope-item {
   float: left;
   width: 50%;
   padding: 30px 10px;
 }
-.land-skills .right-part .isotope-item .number-counter {
+.land-basic .land-skills .right-part .isotope-item .number-counter {
   display: block;
   color: #fff;
   font-size: 75px;
   font-weight: 100;
 }
-.land-skills .right-part .isotope-item h5 {
+.land-basic .land-skills .right-part .isotope-item h5 {
   color: #729ec1;
   margin-bottom: 0;
 }
@@ -8162,27 +8162,27 @@ ul.geo-relative-posts > li > a > h6 {
 * Blog
 * ----------------------------------------------------------------------------
 */
-.land-blog {
+.land-basic .land-blog {
   background: #fff;
   padding: 0;
 }
-.land-blog .top-part {
+.land-basic .land-blog .top-part {
   padding: 100px 20px 80px;
 }
-.land-blog .top-part [class^="icon-"] {
+.land-basic .land-blog .top-part [class^="icon-"] {
   font-size: 100px;
   color: #d9d9d9;
   display: block;
   margin-bottom: 80px;
 }
-.land-blog .top-part h3 {
+.land-basic .land-blog .top-part h3 {
   color: #656565;
   margin-bottom: 30px;
 }
-.land-blog .top-part p {
+.land-basic .land-blog .top-part p {
   color: #656565;
 }
-.land-blog .top-part .gbtn {
+.land-basic .land-blog .top-part .gbtn {
   margin-top: 40px;
 }
 
@@ -8190,20 +8190,20 @@ ul.geo-relative-posts > li > a > h6 {
 * Slider
 * ----------------------------------------------------------------------------
 */
-.land-slider {
+.land-basic .land-slider {
   background: #fff;
   padding: 0;
 }
-.land-slider .flexslider {
+.land-basic .land-slider .flexslider {
   margin-bottom: 0;
 }
-.land-slider .flexslider .flex-control-nav {
+.land-basic .land-slider .flexslider .flex-control-nav {
   width: 100%;
   position: absolute;
   bottom: 40px;
   text-align: center;
 }
-.land-slider .flexslider .flex-caption {
+.land-basic .land-slider .flexslider .flex-caption {
   position: absolute;
   top: 0;
   left: 0;
@@ -8211,7 +8211,7 @@ ul.geo-relative-posts > li > a > h6 {
   right: 0;
   background: rgba(72, 140, 192, 0.8);
 }
-.land-slider .central-part {
+.land-basic .land-slider .central-part {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8222,17 +8222,17 @@ ul.geo-relative-posts > li > a > h6 {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.land-slider .central-part [class^="icon-"] {
+.land-basic .land-slider .central-part [class^="icon-"] {
   font-size: 80px;
   color: #fff;
   display: block;
   margin-bottom: 80px;
 }
-.land-slider .central-part h3 {
+.land-basic .land-slider .central-part h3 {
   color: #fff;
   margin-bottom: 30px;
 }
-.land-slider .central-part p {
+.land-basic .land-slider .central-part p {
   color: #fff;
 }
 
@@ -8240,52 +8240,52 @@ ul.geo-relative-posts > li > a > h6 {
 * Shop
 * ----------------------------------------------------------------------------
 */
-.land-shop {
+.land-basic .land-shop {
   padding: 0;
 }
-.land-shop .top-part {
+.land-basic .land-shop .top-part {
   background: #fff;
   padding: 100px 20px 80px;
 }
-.land-shop .top-part [class^="icon-"] {
+.land-basic .land-shop .top-part [class^="icon-"] {
   font-size: 100px;
   color: #d9d9d9;
   display: block;
   margin-bottom: 80px;
 }
-.land-shop .top-part h3 {
+.land-basic .land-shop .top-part h3 {
   color: #656565;
   margin-bottom: 30px;
 }
-.land-shop .top-part p {
+.land-basic .land-shop .top-part p {
   color: #656565;
 }
-.land-shop .top-part .gbtn {
+.land-basic .land-shop .top-part .gbtn {
   margin-top: 40px;
 }
-.land-shop .bottom-part {
+.land-basic .land-shop .bottom-part {
   background: #f7f7f7;
   padding: 40px 0;
 }
-.land-shop .bottom-part .right-part {
+.land-basic .land-shop .bottom-part .right-part {
   text-align: left;
   padding: 60px 30% 0 20px;
 }
-.land-shop .bottom-part .left-part {
+.land-basic .land-shop .bottom-part .left-part {
   text-align: right;
   padding: 60px 20px 0 30%;
 }
-.land-shop .bottom-part [class^="icon-"] {
+.land-basic .land-shop .bottom-part [class^="icon-"] {
   font-size: 60px;
   color: #d9d9d9;
   display: block;
   margin-bottom: 40px;
 }
-.land-shop .bottom-part h4 {
+.land-basic .land-shop .bottom-part h4 {
   color: #656565;
   margin-bottom: 30px;
 }
-.land-shop .bottom-part p {
+.land-basic .land-shop .bottom-part p {
   color: #656565;
 }
 
@@ -8293,26 +8293,26 @@ ul.geo-relative-posts > li > a > h6 {
 * Team
 * ----------------------------------------------------------------------------
 */
-.land-team {
+.land-basic .land-team {
   padding: 0 0 80px;
   border-bottom: 1px solid #f5f5f5;
 }
-.land-team .top-part {
+.land-basic .land-team .top-part {
   padding: 100px 0 80px;
 }
-.land-team .top-part h4 {
+.land-basic .land-team .top-part h4 {
   color: #5d5d5d;
 }
-.land-team .top-part p {
+.land-basic .land-team .top-part p {
   color: #5d5d5d;
 }
-.land-team .isotope-item {
+.land-basic .land-team .isotope-item {
   float: left;
   width: 33.33333333333%;
   text-align: left;
   padding: 0 2%;
 }
-.land-team .isotope-item .image-contour {
+.land-basic .land-team .isotope-item .image-contour {
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
@@ -8322,7 +8322,7 @@ ul.geo-relative-posts > li > a > h6 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-.land-team .isotope-item .image-contour img {
+.land-basic .land-team .isotope-item .image-contour img {
   width: 100%;
   height: auto;
   -webkit-transition: all 3.75s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -8334,7 +8334,7 @@ ul.geo-relative-posts > li > a > h6 {
   -o-transform: scale(1) translateY(0) translateZ(0);
   transform: scale(1) translateY(0) translateZ(0);
 }
-.land-team .isotope-item .image-contour .extra-content {
+.land-basic .land-team .isotope-item .image-contour .extra-content {
   position: absolute;
   bottom: -4px;
   left: -4px;
@@ -8351,10 +8351,10 @@ ul.geo-relative-posts > li > a > h6 {
   transform: translateY(100%);
   overflow: hidden;
 }
-.land-team .isotope-item .image-contour .extra-content nav.member-social {
+.land-basic .land-team .isotope-item .image-contour .extra-content nav.member-social {
   width: 100%;
 }
-.land-team .isotope-item .image-contour .extra-content nav.member-social a {
+.land-basic .land-team .isotope-item .image-contour .extra-content nav.member-social a {
   font-size: 22px;
   padding: 10px 0;
   text-align: center;
@@ -8366,34 +8366,34 @@ ul.geo-relative-posts > li > a > h6 {
   -moz-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.land-team .isotope-item .image-contour .extra-content nav.member-social a:hover {
+.land-basic .land-team .isotope-item .image-contour .extra-content nav.member-social a:hover {
   color: #397aa9;
 }
-.land-team .isotope-item .text-content {
+.land-basic .land-team .isotope-item .text-content {
   color: #656565;
 }
-.land-team .isotope-item .text-content p.position {
+.land-basic .land-team .isotope-item .text-content p.position {
   color: #656565;
   margin-bottom: 0;
 }
-.land-team .isotope-item .text-content h4 {
+.land-basic .land-team .isotope-item .text-content h4 {
   color: #656565;
 }
-.land-team .isotope-item .text-content p {
+.land-basic .land-team .isotope-item .text-content p {
   color: #656565;
 }
-.land-team .isotope-item:hover .image-contour {
+.land-basic .land-team .isotope-item:hover .image-contour {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
-.land-team .isotope-item:hover img {
+.land-basic .land-team .isotope-item:hover img {
   -webkit-transform: scale(1.1) translateY(-5%) translateZ(0);
   -moz-transform: scale(1.1) translateY(-5%) translateZ(0);
   -ms-transform: scale(1.1) translateY(-5%) translateZ(0);
   -o-transform: scale(1.1) translateY(-5%) translateZ(0);
   transform: scale(1.1) translateY(-5%) translateZ(0);
 }
-.land-team .isotope-item:hover .extra-content {
+.land-basic .land-team .isotope-item:hover .extra-content {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -8405,27 +8405,27 @@ ul.geo-relative-posts > li > a > h6 {
 * Clients
 * ----------------------------------------------------------------------------
 */
-.land-clients {
+.land-basic .land-clients {
   padding: 0 0 80px;
 }
-.land-clients .top-part {
+.land-basic .land-clients .top-part {
   padding: 80px 0 60px;
 }
-.land-clients .top-part h4 {
+.land-basic .land-clients .top-part h4 {
   color: #5d5d5d;
 }
-.land-clients .top-part p {
+.land-basic .land-clients .top-part p {
   color: #5d5d5d;
 }
-.land-clients .gallery {
+.land-basic .land-clients .gallery {
   padding: 0 0 20px;
 }
-.land-clients .gallery .gallery-cell {
+.land-basic .land-clients .gallery .gallery-cell {
   width: 100%;
   height: 200px;
   margin-right: 10px;
 }
-.land-clients .gallery .gallery-cell a {
+.land-basic .land-clients .gallery .gallery-cell a {
   display: inline-block;
   float: left;
   width: 20%;
@@ -8435,17 +8435,106 @@ ul.geo-relative-posts > li > a > h6 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-.land-clients .gallery .gallery-cell a:hover {
+.land-basic .land-clients .gallery .gallery-cell a:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
-.land-clients .gallery .flickity-page-dots {
+.land-basic .land-clients .gallery .flickity-page-dots {
   bottom: 0;
 }
-.land-clients .gallery .flickity-prev-next-button {
+.land-basic .land-clients .gallery .flickity-prev-next-button {
   display: none;
 }
 
+/*-------------------------------------------------------------------------*/
+/*	# LANDING SHOP
+/*-------------------------------------------------------------------------*/
+.land-shop .land-item {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.land-shop .land-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**
+* Headslider
+* ----------------------------------------------------------------------------
+*/
+/**
+* Categories
+* ----------------------------------------------------------------------------
+*/
+.land-shop .land-categories .isotope-item {
+  float: left;
+  width: 25%;
+}
+.land-shop .land-categories .isotope-item .image-contur {
+  position: relative;
+  overflow: hidden;
+}
+.land-shop .land-categories .isotope-item .image-contur img {
+  width: 100%;
+  -webkit-transition: all 3.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 3.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 3.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: scale(1) translateZ(0);
+  -moz-transform: scale(1) translateZ(0);
+  -ms-transform: scale(1) translateZ(0);
+  -o-transform: scale(1) translateZ(0);
+  transform: scale(1) translateZ(0);
+}
+.land-shop .land-categories .isotope-item .vertical-centring {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all 1.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 1.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.land-shop .land-categories .isotope-item .vertical-centring h3 {
+  color: #fff;
+}
+.land-shop .land-categories .isotope-item:hover .image-contur img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.land-shop .land-categories .isotope-item:hover .vertical-centring {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/**
+* Featured Products
+* ----------------------------------------------------------------------------
+*/
+/**
+* skills
+* ----------------------------------------------------------------------------
+*/
+/**
+* Blog
+* ----------------------------------------------------------------------------
+*/
+/**
+* Products
+* ----------------------------------------------------------------------------
+*/
 /* ----------------------------------------------------------------------------------------------------
 geometric-ui-kit page
 ---------------------------------------------------------------------------------------------------- */
