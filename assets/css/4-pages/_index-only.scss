@@ -5,36 +5,15 @@ index only (this will be deleted at final)
 	font-size: 14px;
 	line-height: 2;
 	padding: 40px 0 120px;
-	a {
-		position: relative;
-		// &:after {
-		// 	position: absolute;
-		// 	top: -1px;
-		// 	left: 108%;
-		// 	width: auto;
-		// 	text-align: center;
-		// 	color: #fff;
-		// 	padding: 0 4px;
-		// 	font-size: 7px;
-		// 	line-height: 1.5;
-		// }
-	}
-	a.work-in-progress {
-		border: 1px solid #e74c3c;
-		// display: inline-block;
-		// &:after {
-		// 	content: 'work in progress';
-		// 	background: #e74c3c;
-		// }
-	}
-	a.need-review {
-		border: 1px solid #1abc9c;
-		// display: inline-block;
-		// &:after {
-		// 	content: 'need review';
-		// 	background: #1abc9c;
-		// }
-	}
+	// a {
+	// 	position: relative;
+	// }
+	// a.work-in-progress {
+	// 	border: 1px solid #e74c3c;
+	// }
+	// a.need-review {
+	// 	border: 1px solid #1abc9c;
+	// }
 	.isotope-item {
 		padding: 10px 10px;
 		float: left;
