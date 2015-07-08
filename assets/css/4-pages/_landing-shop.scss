@@ -1,22 +1,75 @@
 /*-------------------------------------------------------------------------*/
 /*	# LANDING SHOP
 /*-------------------------------------------------------------------------*/
-.land-shop {
-	.land-item {
+.land-item {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	@include clearfix;
+}
+
+// title-iconed
+.title-iconed {
+	color: #545454;
+	margin-bottom: 0;
+	[class^="icon-"] {
+		margin-right: 0.5em;
+		font-size: 3em;
+		color: #D2D2D2;
 		position: relative;
-		text-align: center;
-		overflow: hidden;
-		@include clearfix;
+		top: 0.25em;
 	}
 }
 
+// nav.arrows
+nav.arrows {
+	position: absolute;
+	right: 0;
+	top: 0;
+	// a.prev {
+	// 	float: left;
+	// }
+	// a.next {
+	// 	float: left;
+	// }
+	a {
+		float: left;
+		width: 60px;
+		text-align: center;
+		[class^="icon-"] {
+			color: #4A90E2;
+			font-size: 30px;
+			font-weight: 500;
+			line-height: 60px;
+		}
+	}
+}
 
 /**
 * Headslider
 * ----------------------------------------------------------------------------
 */
-.land-shop .land-headslider {
-
+.land-headslider {
+	background: #fff;
+	padding: 0;
+	.image-contur {
+		img {
+			width: 100%;
+		}
+	}
+	.right-part {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 70%;
+		text-align: right;
+		padding: 0 100px;
+		@include transform(translateY(-100%));
+		h1 {
+			color: #fff;
+			margin-bottom: 40px;
+		}
+	}
 }
 
 
@@ -24,7 +77,9 @@
 * Categories
 * ----------------------------------------------------------------------------
 */
-.land-shop .land-categories {
+.land-categories {
+	padding: 0;
+	border-bottom: 1px solid #EBEBEB;
 	.isotope-item {
 		float: left;
 		width: 25%;
@@ -40,7 +95,7 @@
 			img {
 				width: 100%;
 				@include transition(all 3.75s $ease-out-circ);
-				@include transform(scale(1.0) translateZ(0));
+				@include transform(scale(1.01) translateZ(0));
 			}
 		}
 		.vertical-centring {
@@ -71,21 +126,246 @@
 * Featured Products
 * ----------------------------------------------------------------------------
 */
+.land-featured-products {
+	padding: 0 20px 30px;
+	text-align: left;
+	.caption {
+		margin: 30px 20px;
+		position: relative;
+	}
+	.isotope-item {
+		float: left;
+		width: 25%;
+		padding: 0 20px;
+		.image-contur {
+			position: relative;
+			margin-bottom: 20px;
+			img {
+				width: 100%;
+			}
+		.status {
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: #fff;
+				display: block;
+				font-size: 14px;
+				padding: 10px 16px;
+				background: #CA3F3F;
+			}
+		}
+		.text-content {
+			h5 {
+				color: #4489C4;
+				margin-bottom: 20px;
+			}
+			.rating {
+				font-size: 10px;
+				>[class^="icon-"] {
+					color: #e6e6e6;
+					cursor: pointer;
+					transition: .2s;
+					margin-right: 2px;
+					&.active {color:#4489C4;}
+					&:hover {color:#4489C4;}
+				}
+			}
+			.price {
+				font-weight: 700;
+				color: #4A4A4A;
+				font-size: 24px;
+				del {
+					font-size: 18px;
+					color: #BABABA;
+					margin-right: 10px;
+					position: relative;
+					top: -0.25em;
+				}
+			}
+		}
+	}
+}
 
 
 /**
-* skills
+* Skills
 * ----------------------------------------------------------------------------
 */
+.land-shop-skills {
+	background: #397DB6;
+	padding: 40px 0;
+	.left-part {
+		float: left;
+		width: 33.33333333%;
+		text-align: left;
+		padding: 60px 40px;
+			background: #4489C4;
+		&:before {
+			position: absolute;
+			z-index: 1;
+			content: '';
+			width: 33.33333333%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			background: #4489C4;
+		}
+		[class^="icon-"] {
+			position: relative;
+			z-index: 2;
+			font-size: 50px;
+			display: block;
+			margin-bottom: 50px;
+			color: #fff;
+		}
+		h4 {
+			position: relative;
+			z-index: 2;
+			color: #fff;
+		}
+		p {
+			position: relative;
+			z-index: 2;
+			color: #fff;
+		}
+	}
+	.right-part {
+		float: left;
+		width: 66.66666666%;
+		padding: 40px 40px;
+		.isotope-item {
+			float: left;
+			width: 33.33333333%;
+			padding: 30px 10px;
+			span {
+				display: block;
+				color: #5896CA;
+				font-size: 75px;
+				font-weight: 100;
+			}
+			[class^="icon-"] {
+				margin-bottom: 20px;
+				// display: block;
+			}
+			h6 {
+				color: #fff;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
 
 
 /**
 * Blog
 * ----------------------------------------------------------------------------
 */
+.land-shop-blog {
+	padding: 0 20px 30px;
+	border-bottom: 1px solid #EBEBEB;
+	text-align: left;
+	.caption {
+		margin: 30px 20px;
+		position: relative;
+		// h4 {
+		// 	color: #545454;
+		// 	margin-bottom: 0;
+		// 	[class^="icon-"] {
+		// 		margin-right: 0.25em;
+		// 		font-size: 2em;
+		// 		color: #D2D2D2;
+		// 		position: relative;
+		// 		top: 0.25em;
+		// 	}
+		// }
+	}
+	.isotope-item {
+		float: left;
+		width: 50%;
+		padding: 20px;
+		.image-contur {
+			float: left;
+			width: 45%;
+			position: relative;
+			img {
+				width: 100%;
+			}
+			.date {
+				position: absolute;
+				top: 0;
+				right: 0;
+				color: #fff;
+				display: block;
+				font-size: 14px;
+				padding: 10px 16px;
+				background: #4489C4;
+			}
+		}
+		.text-content {
+			float: left;
+			width: 55%;
+			padding-left: 30px;
+			h3 {
+				color: #4489C4;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+
+}
 
 
 /**
 * Products
 * ----------------------------------------------------------------------------
 */
+.land-products {
+	padding: 0 0 20px;
+	text-align: left;
+	.caption {
+		padding: 30px 20px 50px;
+		margin: 0 0 30px;
+		border-bottom: 1px solid #EBEBEB;
+	}
+	.isotope-item {
+		float: left;
+		width: 100%;
+		padding: 0 0 30px;
+		margin: 0 0 30px;
+		border-bottom: 1px solid #EBEBEB;
+		.image-contur {
+			float: left;
+			width: 20%;
+			position: relative;
+			img {
+				width: 100%;
+			}
+		}
+		.text-content {
+			float: left;
+			width: 80%;
+			padding-left: 20px;
+			h5 {
+				color: #4489C4;
+			}
+			.price {
+				font-weight: 700;
+				color: #4A4A4A;
+				font-size: 24px;
+				del {
+					font-size: 18px;
+					color: #BABABA;
+					margin-right: 10px;
+					position: relative;
+					top: -0.25em;
+				}
+			}
+		}
+	}
+}
+
+
+
+
