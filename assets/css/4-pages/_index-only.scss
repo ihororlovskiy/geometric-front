@@ -56,3 +56,41 @@ index only (this will be deleted at final)
 		}
 	}
 }
+
+/* ----------------------------------------------------------------------------------------------------
+js-elements
+---------------------------------------------------------------------------------------------------- */
+section.js-elements {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	a.js-empty-cart {
+		padding: 0.75em 1.25em;
+		background: #000;
+		color: #fff;
+		text-transform: uppercase;
+		display: block;
+		font-size: 0.45em;
+		&:after {
+			content: 'full';
+		}
+	}
+}
+body {
+	.shoping-cart-box {
+		.cart-empty {display: none;}
+	}
+	&.emptyCart {
+		a.js-empty-cart {
+			background: #1abc9c;
+			&:after {
+				content: 'emty';
+			}
+		}
+		.shoping-cart-box {
+			.cart-item,
+			.cart-footer {display: none;}
+			.cart-empty {display: block;}
+		}
+	}
+}

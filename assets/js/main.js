@@ -1,4 +1,7 @@
-// Header menu FX
+/**
+* waypoint
+* https://github.com/imakewebthings/waypoints
+*/
 var $head = $( '.geo-header' );
 $('.waypoint').each( function(i) {
 	var $el = $( this ),
@@ -14,7 +17,11 @@ $('.waypoint').each( function(i) {
 	}, { offset: '-1px' } );
 });
 
-// Parallax
+
+/**
+* parallax.js
+* https://github.com/pixelcog/parallax.js
+*/
 $(document).ready(function() {
 	if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
 		$('#ios-notice').removeClass('hidden');
@@ -27,7 +34,12 @@ $(document).ready(function() {
 	}
 });
 
-// Isotope
+
+/**
+* isotope with imagesloaded 
+* https://github.com/metafizzy/isotope
+* https://github.com/desandro/imagesloaded
+*/
 var $container = $('.isotope-container');
 var $containerGrid = $('.isotope-container-grid');
 $(document).ready(function() {
@@ -57,6 +69,7 @@ $(document).ready(function() {
 		});
 	});
 });
+
 
 // Search
 $(document).ready(function() {
@@ -99,36 +112,45 @@ function buttonUp() {
 	}
 }
 
+/**
+* jquery
+* https://jquery.com
+*/
 $(document).ready(function(){
-		// // Cart At Menu
-		// $('.main-menu-cart>ul>li>a').click(function(){
-		//    $('.main-menu-cart').toggleClass('open');
-		// });
-		// $('.main-menu-cart a.cart-close').click(function(){
-		//    $('.main-menu-cart').toggleClass('open');
-		// });
+
 		// Add review
 		$('.addreview>button').click(function(){
 				$('.addreview').toggleClass('addreview--add');
 		});
+
 		// Show more
 		$('.gbtn-showmore').click(function(){
 				$('.gbtn-showmore').toggleClass('gbtn-loading active');
 		});
+
+		// Cart Full/Empty
+		$('a.js-empty-cart').click(function(){
+			 $('body').toggleClass('emptyCart');
+		});
+
 });
 
+
+// /**
+// * flickity
+// * http://flickity.metafizzy.co/
+// */
 // // flickity
 // $('.main-gallery').flickity({
-//  // options
 //  cellAlign: 'left',
 //  contain: true
 // });
 
 
 /**
- * FlexSlider
- * https://github.com/woothemes/FlexSlider
- */
+* FlexSlider
+* https://github.com/woothemes/FlexSlider
+*/
 $(window).load(function() {
 
 	// Slider without anything
@@ -171,7 +193,10 @@ $(window).load(function() {
 });
 
 
-// input price range
+/**
+* input price range
+* 
+*/
 $(function() {
 	$( ".input-price-range" ).slider({
 		range: true,
@@ -194,23 +219,23 @@ $(function() {
 
 
 /**
- * selectBox
- * https://github.com/marcj/jquery-selectBox
- */
+* selectBox
+* https://github.com/marcj/jquery-selectBox
+*/
 $('select').selectBox();
 
 
 /**
- * Wow
- * https://github.com/matthieua/WOW
- */
+* Wow
+* https://github.com/matthieua/WOW
+*/
 new WOW().init();
 
 
 /**
- * Counter Up
- * https://github.com/bfintal/Counter-Up
- */
+* Counter Up
+* https://github.com/bfintal/Counter-Up
+*/
 $(document).ready(function() {
 	$('.number-counter').counterUp({
 			delay: 10,

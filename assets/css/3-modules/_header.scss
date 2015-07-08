@@ -229,18 +229,18 @@ nav.geo-languages-menu {
 					color: #4385b8;
 				}
 
-				.geo-purchased-items {
+				.purchased-items {
 					background-color: #3679ab;
 					color: #fff;
 					border-radius: 4px;
 					text-align: center;
 					font-weight: 300;
-					font-size: 12px;
+					font-size: 10px;
 					position: absolute;
-					top: 15px;
+					top: 22px;
 					right: 0;
 					line-height: 15px;
-					padding: 3px 6px;
+					padding: 2px 5px;
 				}
 			}
 		}
@@ -251,7 +251,8 @@ nav.geo-languages-menu {
 		overflow: hidden;
 		top: 100%;
 		right: 0;
-		width: 340px;
+		// width: 340px;
+		// width: 100%;
 		height: 0;
 		background: #5596c7;
 		color: #fff;
@@ -268,13 +269,15 @@ nav.geo-languages-menu {
 		}
 
 		.cart-item {
+			// width: 340px;
 			width: 100%;
 			float: left;
 			border-bottom: 1px solid #cee1ef;
 			position: relative;
 
 			.cart-image {
-				width: 30%;
+				// width: 30%;
+				width: 100px;
 				float: left;
 				@include transition(all 0.15s ease);
 
@@ -284,7 +287,8 @@ nav.geo-languages-menu {
 			}
 
 			.cart-details {
-				width: 70%;
+				// width: 70%;
+				width: 240px;
 				float: left;
 				@include padding(null 20px);
 
@@ -334,7 +338,8 @@ nav.geo-languages-menu {
 		}
 
 		.cart-footer {
-			width: 100%;
+			// width: 100%;
+			width: 340px;
 			float: left;
 			padding: 10px;
 			padding: 16px;
@@ -372,6 +377,14 @@ nav.geo-languages-menu {
 					top: 3px;
 				}
 			}
+		}
+		.cart-empty {
+			// width: 100%;
+			width: 180px;
+			float: left;
+			padding: 10px;
+			padding: 16px;
+			text-align: center;
 		}
 	}
 
