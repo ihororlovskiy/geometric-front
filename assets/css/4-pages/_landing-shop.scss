@@ -193,23 +193,24 @@ nav.arrows {
 */
 .land-shop-skills {
 	background: #397DB6;
-	padding: 40px 0;
+	// padding: 40px 0;
+	padding: 0;
 	.left-part {
 		float: left;
 		width: 33.33333333%;
 		text-align: left;
 		padding: 60px 40px;
-			background: #4489C4;
-		&:before {
-			position: absolute;
-			z-index: 1;
-			content: '';
-			width: 33.33333333%;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			background: #4489C4;
-		}
+		background: #4489C4;
+		// &:before {
+		// 	position: absolute;
+		// 	z-index: 1;
+		// 	content: '';
+		// 	width: 33.33333333%;
+		// 	top: 0;
+		// 	left: 0;
+		// 	bottom: 0;
+		// 	background: #4489C4;
+		// }
 		[class^="icon-"] {
 			position: relative;
 			z-index: 2;
