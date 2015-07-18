@@ -4,9 +4,9 @@ permalink: /html/ui-kit/
 
 ---
 
-<div class="container-fluid">
+<div class="container">
 	<div class="row">
-		<div class="col-sm-8 col-sm-offset-2">
+		<div class="col-sm-12">
 
 			{% include svg/geometric-logo.svg %}
 
@@ -232,7 +232,7 @@ permalink: /html/ui-kit/
 			<h4>Buttons <small>Actual</small></h4>
 
 			<div>
-				<a class="gbtn" href="#">A (Link)</a>
+				<a class="gbtn" href="#">A href</a>
 				<button class="gbtn" type="submit">Button</button>
 				<input class="gbtn" type="button" value="Input (Type Button)">
 				<input class="gbtn" type="submit" value="Input (Type Submit)">
@@ -244,17 +244,37 @@ permalink: /html/ui-kit/
 				<div class="col-sm-6">
 
 					<h4>Primary</h4>
-					<p><a class="gbtn gbtn-lg" href="#">14px/60px Large Button</a></p>
-					<p><a class="gbtn" href="#">12px/50px Normal</a></p>
-					<p><a class="gbtn gbtn-sm" href="#">10px/40px Small</a></p>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<p><a class="gbtn gbtn-lg" href="#">Large (14x60)</a></p>
+							<p><a class="gbtn" href="#">Normal (12x50)</a></p>
+							<p><a class="gbtn gbtn-sm" href="#">Small (10x40)</a></p>
+						</div>
+						<div class="col-sm-6">
+							<p><a class="gbtn gbtn-lg" href="#"><span class="icon-cart"></span> Large with icon</a></p>
+							<p><a class="gbtn" href="#"><span class="icon-cart"></span> Normal with icon</a></p>
+							<p><a class="gbtn gbtn-sm" href="#"><span class="icon-cart"></span> Small with icon</a></p>
+						</div>
+					</div>
 
 				</div>
 				<div class="col-sm-6">
 
 					<h4>Ghost</h4>
-					<p><a class="gbtn gbtn-lg gbtn-ghost" href="#">14px/60px Large</a></p>
-					<p><a class="gbtn gbtn-ghost" href="#">12px/50px Normal</a></p>
-					<p><a class="gbtn gbtn-sm gbtn-ghost" href="#">10px/40px Small</a></p>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<p><a class="gbtn gbtn-lg gbtn-ghost" href="#">Large (14x60)</a></p>
+							<p><a class="gbtn gbtn-ghost" href="#">Normal (12x50)</a></p>
+							<p><a class="gbtn gbtn-sm gbtn-ghost" href="#">Small (10x40)</a></p>
+						</div>
+						<div class="col-sm-6">
+							<p><a class="gbtn gbtn-lg gbtn-ghost" href="#"><span class="icon-cart"></span> Large with icon</a></p>
+							<p><a class="gbtn gbtn-ghost" href="#"><span class="icon-cart"></span> Normal with icon</a></p>
+							<p><a class="gbtn gbtn-sm gbtn-ghost" href="#"><span class="icon-cart"></span> Small with icon</a></p>
+						</div>
+					</div>
 
 				</div>
 			</div>

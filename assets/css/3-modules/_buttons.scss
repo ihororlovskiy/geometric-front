@@ -17,11 +17,21 @@
 	font-size: 12px;
 	padding: 13px 30px;
 
-	//size
+	[class^="icon-"] {
+		padding-right: 0.5em;
+		font-size: 2em;
+		line-height: 0;
+		position: relative;
+		top: 0.2em;
+	}
+
+	//small
 	&.gbtn-sm {
 		font-size: 10px;
 		padding: 8px 20px;
 	}
+
+	//large
 	&.gbtn-lg {
 		font-size: 14px;
 		padding: 18px 40px;

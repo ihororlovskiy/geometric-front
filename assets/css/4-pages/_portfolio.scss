@@ -1,24 +1,31 @@
-/* geo-portfolio-list
-============================================================================ */
-.geo-portfolio-list {text-align:center;margin-bottom: 60px;
-
-.isotope-container {
+/*-------------------------------------------------------------------------*/
+/* # PORTFOLIO LISTS
+/*-------------------------------------------------------------------------*/
+.geo-portfolio-list {
+	text-align: center;
 	margin-bottom: 60px;
-}
-}
-.geo-portfolio-list .geo-content-area {width:75%;margin:0 auto;}
 
-ul.geo-portfolio-filter {margin:0 auto 60px;}
-ul.geo-portfolio-filter li {display:inline-block;margin:0 10px;}
-ul.geo-portfolio-filter li a {display:block;text-transform:uppercase;font-weight:700;color:#7c7c7c;cursor:pointer;}
-ul.geo-portfolio-filter li a:hover,
-ul.geo-portfolio-filter li a.is-checked {color:#5596c7;}
+	.geo-content-area {
+		width: 75%;
+		margin: 0 auto;
+	}
 
-.geo-portfolio-isotope {overflow:hidden;
--webkit-transition: all .5s ease-in-out;
--moz-transition: all .5s ease-in-out;
--o-transition: all .5s ease-in-out;
-transition: all .5s ease-in-out;
+	.isotope-container {
+		margin-bottom: 60px;
+	}
+}
+
+ul.geo-portfolio-filter {
+	margin: 0 auto 60px;
+	li {display:inline-block;margin:0 10px;}
+	li a {display:block;text-transform:uppercase;font-weight:700;color:#7c7c7c;cursor:pointer;}
+	li a:hover,
+	li a.is-checked {color:#5596c7;}
+}
+
+.geo-portfolio-isotope {
+	overflow: hidden;
+	@include transition(all 0.5s ease-in-out);
 }
 
 .geo-portfolio-list article {position:relative;overflow:hidden;}
@@ -38,11 +45,10 @@ transition: all .5s ease-in-out;
 .geo-portfolio-list-custom article:nth-child(2n) .fx-layout {left:50%;}
 
 .geo-portfolio-list-custom article .fx-layout>span {display:table;width:100%;height:100%;text-align:center;}
-.geo-portfolio-list-custom article .fx-layout>span>i {display:table-cell;vertical-align:middle;
--webkit-transition: all .25s ease-in-out;
--moz-transition: all .25s ease-in-out;
--o-transition: all .25s ease-in-out;
-transition: all .25s ease-in-out;
+.geo-portfolio-list-custom article .fx-layout>span>i {
+	display: table-cell;
+	vertical-align: middle;
+	@include transition(all 0.25s ease-in-out);
 }
 
 .geo-portfolio-list-custom article a {margin:40px 0 0;text-transform:uppercase;font-weight:700;font-size:10px;padding:8px 20px;}
@@ -80,13 +86,13 @@ transition: all .25s ease-in-out;
 .geo-portfolio-list-classic article {}
 .geo-portfolio-list-classic article .fx-layout {position:absolute;top:0;left:0;bottom:0;right:0;}
 .geo-portfolio-list-classic article .fx-layout>span {display:table;width:100%;height:100%;text-align:center;}
-.geo-portfolio-list-classic article .fx-layout>span>i {display:table-cell;vertical-align:middle;
-background:rgba(67,133,184,.7);
-opacity:0;padding-top:100px;
--webkit-transition: all .25s ease-in-out;
--moz-transition: all .25s ease-in-out;
--o-transition: all .25s ease-in-out;
-transition: all .25s ease-in-out;
+.geo-portfolio-list-classic article .fx-layout>span>i {
+	display: table-cell;
+	vertical-align: middle;
+	background: rgba(67,133,184,.7);
+	opacity: 0;
+	padding-top: 100px;
+	@include transition(all 0.25s ease-in-out);
 }
 .geo-portfolio-list-classic article:hover .fx-layout>span>i {opacity:1;padding-top:0;}
 .geo-portfolio-list-classic article a {margin:40px 0 30px;text-transform:uppercase;font-weight:700;font-size:10px;padding:8px 20px;}
@@ -114,13 +120,13 @@ transition: all .25s ease-in-out;
 .geo-portfolio-list-grid article {float:left;}
 .geo-portfolio-list-grid article .fx-layout {position:absolute;top:0;left:0;bottom:0;right:0;}
 .geo-portfolio-list-grid article .fx-layout>span {display:table;width:100%;height:100%;text-align:center;}
-.geo-portfolio-list-grid article .fx-layout>span>i {display:table-cell;vertical-align:middle;
-background:rgba(67,133,184,.7);
-opacity:0;padding-top:100px;
--webkit-transition: all .25s ease-in-out;
--moz-transition: all .25s ease-in-out;
--o-transition: all .25s ease-in-out;
-transition: all .25s ease-in-out;
+.geo-portfolio-list-grid article .fx-layout>span>i {
+	display: table-cell;
+	vertical-align: middle;
+	background: rgba(67,133,184,.7);
+	opacity: 0;
+	padding-top: 100px;
+	@include transition(all 0.25s ease-in-out);
 }
 .geo-portfolio-list-grid article:hover .fx-layout>span>i {opacity:1;padding-top:0;}
 .geo-portfolio-list-grid article a {margin:40px 0 30px;text-transform:uppercase;font-weight:700;font-size:10px;padding:8px 20px;}
@@ -139,44 +145,37 @@ transition: all .25s ease-in-out;
 .geo-portfolio-list-mansory article {}
 .geo-portfolio-list-mansory article .fx-layout {position:absolute;top:0;left:0;bottom:0;right:0;}
 .geo-portfolio-list-mansory article .fx-layout>span {display:table;width:100%;height:100%;text-align:center;}
-.geo-portfolio-list-mansory article .fx-layout>span>i {display:table-cell;vertical-align:middle;
-background:rgba(255,255,255,.85);
-opacity:0;padding-top:100px;
--webkit-transition: all .25s ease-in-out;
--moz-transition: all .25s ease-in-out;
--o-transition: all .25s ease-in-out;
-transition: all .25s ease-in-out;
+.geo-portfolio-list-mansory article .fx-layout>span>i {
+	display: table-cell;
+	vertical-align: middle;
+	background: rgba(255,255,255,.85);
+	opacity: 0;
+	padding-top: 100px;
+	@include transition(all 0.25s ease-in-out);
 }
 .geo-portfolio-list-mansory article:hover .fx-layout>span>i {opacity:1;padding-top:0;}
 .geo-portfolio-list-mansory article a {margin:0 0 0;text-transform:uppercase;font-weight:700;font-size:10px;padding:8px 20px;}
 .geo-portfolio-list-mansory article h6 {margin:0;color:#979797;font-size:10px;}
 .geo-portfolio-list-mansory article h5 {margin:0;color:#4385b8;}
 
-.geo-portfolio-list-mansory article b {position:absolute;left:0;bottom:30%;width:100%;text-align:center;
--webkit-transition: all .25s ease-in-out;
--moz-transition: all .25s ease-in-out;
--o-transition: all .25s ease-in-out;
-transition: all .25s ease-in-out;
+.geo-portfolio-list-mansory article b {
+	position: absolute;
+	left: 0;
+	bottom: 30%;
+	width: 100%;
+	text-align: center;
+	@include transition(all 0.25s ease-in-out);
 }
-.geo-portfolio-list-mansory article:hover b {bottom:10%;}
-
-
-
-
-
-
-// portfolio list show more
-.geo-portfolio-show-more {
-	width:100%;
-
-	a {
-		font-size: 14px;
-		text-transform: uppercase;
-		font-weight: 700;
-		display: block;
-		padding:30px 0;
-	}
+.geo-portfolio-list-mansory article:hover b {
+	bottom: 10%;
 }
+
+
+
+
+
+
+
 
 
 

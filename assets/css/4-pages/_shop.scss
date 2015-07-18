@@ -5,58 +5,27 @@
 	text-align: center;
 	margin-bottom: 80px;
 
-	&.col-2 article {
-		width: 50%;
-	}
-	&.col-3 article {
-		width: 33.3333333333333333333%;
-	}
-	&.col-4 article {
-		width: 25.0%;
-	}
+	&.col-2 article {width: 50%;}
+	&.col-3 article {width: 33.3333333333333333333%;}
+	&.col-4 article {width: 25.0%;}
 
 	.geo-content-area {
 		width: 75%;
 		margin:0 auto;
 	}
-
 	.isotope-container {
 		margin-bottom: 40px;
 		overflow: hidden;
-
 		article {
 			position: relative;
 			overflow: hidden;
-		}
-	}
-
-	// show more button
-	a.show-more {
-		color: #fff;
-		background: #4591cb;
-		margin:0 auto;
-		font-size: 13px;
-		font-weight: 700;
-		line-height: 1;
-		text-transform: uppercase;
-		padding: 25px 30px;
-		display: inline-block;
-		@include transition(all 0.2s ease);
-		&:hover {
-			background: #5198ce;
-		}
-		&:active {
-			background: #3582bc;
-		}
-		span {
-			color: rgba(#fff,.6);
 		}
 	}
 }
 
 
 /**
-* SHOP CLASSIC LIST
+* shop classic list
 * ----------------------------------------------------------------------------
 */
 .geo-shoplist-classic {
@@ -86,10 +55,10 @@
 				line-height: 1.1;
 				padding: 10px 20px;
 				@include transition(all 0.2s ease);
+				&.new {background: #559acf;}
+				&.out {background: #6b6b6b;}
+				&.last {background: #de7846;}
 			}
-			.status.new {background: #559acf;}
-			.status.out {background: #6b6b6b;}
-			.status.last {background: #de7846;}
 
 			// add-to-cart button
 			a.add-to-cart {
@@ -187,7 +156,7 @@
 	}
 
 	article {
-		width:33.3333333333333%;
+		width: 33.3333333333333%;
 
 		a>img {
 			opacity: 1;
@@ -206,10 +175,10 @@
 			line-height: 1.1;
 			padding: 10px 20px;
 			@include transition(all 0.2s ease);
+			&.new {background: #559acf;}
+			&.out {background: #6b6b6b;}
+			&.last {background: #de7846;}
 		}
-		.status.new {background: #559acf;}
-		.status.out {background: #6b6b6b;}
-		.status.last {background: #de7846;}
 
 		.info {
 			position: absolute;
@@ -219,37 +188,47 @@
 			height: 100%;
 			background: rgba(#fff,.95);
 			@include transition(all 0.2s ease);
-			.title {
-				color: #3787c4;
-				text-transform: uppercase;
-				font-size: 13px;
-				font-weight: 500;
-				a {
-					@include transition(all 0.2s ease);
-				}
-			}
-			.rating {
-				font-size:10px;
-				[class^="icon-"] {
-					color: #e6e6e6;
-					cursor: pointer;
-					margin-right: 2px;
-					@include transition(all 0.2s ease);
-				}
-				[class^="icon-"].active,
-				[class^="icon-"]:hover {
+
+			.vertical-centering {
+				position: absolute;
+				top: 50%;
+				left:0;
+				right:0;
+				@include transform(translateY(-50%));
+
+				.title {
 					color: #3787c4;
+					text-transform: uppercase;
+					font-size: 13px;
+					font-weight: 500;
+					a {
+						@include transition(all 0.2s ease);
+					}
+				}
+				.rating {
+					font-size:10px;
+					[class^="icon-"] {
+						color: #e6e6e6;
+						cursor: pointer;
+						margin-right: 2px;
+						@include transition(all 0.2s ease);
+					}
+					[class^="icon-"].active,
+					[class^="icon-"]:hover {
+						color: #3787c4;
+					}
+				}
+				.price {
+					color: #878787;
+					font-size: 15px;
+					font-weight: 700;
+					del {
+						color: #e6e6e6;
+						padding-left: 15px;
+					}
 				}
 			}
-			.price {
-				color: #878787;
-				font-size: 15px;
-				font-weight: 700;
-				del {
-					color: #e6e6e6;
-					padding-left: 15px;
-				}
-			}
+
 			a.add-to-cart {
 				position: absolute;
 				left: 10%;
@@ -293,7 +272,7 @@
 * ----------------------------------------------------------------------------
 */
 nav.geo-filter {
-	@extend %clearfix;
+	@include clearfix;
 	margin:20px 0 50px;
 
 	>ul {
@@ -606,35 +585,7 @@ ul.bestsales {}
 
 	.shopitem-slider {
 		position: relative;
-		main {
-			margin-bottom: 20px;
-			img {
 
-			}
-		}
-		nav {
-			@extend %clearfix;
-			margin: 0 -10px 20px;
-			a {
-				display: block;
-				float: left;
-				width: 25%;
-				padding: 0 10px;
-				img {
-					width: 100%;
-					height: auto;
-					opacity: .5;
-					@include transition(all 0.15s ease-in-out);
-					@include transform(translateZ(0));
-				}
-			}
-			a:hover img,
-			a:active img,
-			a.active img {
-				border: 2px solid #488cc0;
-				opacity: 1;
-			}
-		}
 		.status {
 			position: absolute;
 			top: 0;
@@ -761,7 +712,7 @@ ul.bestsales {}
 	}
 
 	.size-list {
-		@extend %clearfix;
+		@include clearfix;
 		color: #515151;
 		line-height: 44px;
 		margin-bottom: 20px;
@@ -881,60 +832,46 @@ ul.bestsales {}
 
 	}
 
-}
-
-
-
-.shopitem-form-price {
-	float: left;
-	line-height: 60px;
-	color: #5a9ed2;
-	font-size: 20px;
-	font-weight: 700;
-	del {
-		color: #e6e6e6;
-		padding-left: 15px;
-		font-size: 14px;
-	}
-}
-.shopitem-form-quantity {
-	width: 100px;
-	border: none;
-	text-align: center;
-	color: #909090;
-	font-weight: 700;
-	font-size: 20px;
-	padding: 16px 15px 16px 25px;
-	border: 1px solid transparent;
-	display: block;
-	float: left;
-	float: right;
-
-	&:hover,
-	&:focus {
-		color: #4591cb;
-		border-color: #eee;
-	}
-}
-.shopitem-form-hidden {}
-
-.shopitem-form-submit {
-	float: right;
-	&:hover {
-		background: #5198ce;
-	}
-	&:active {
-		background: #3582bc;
+	button.gbtn {
+		float: right;
 	}
 
-	[class^="icon-"] {
-		padding-right: 15px;
+	.shopitem-form-price {
+		float: left;
+		line-height: 60px;
+		color: #5a9ed2;
 		font-size: 20px;
-		position: relative;
-		top: 2px;
-		font-weight: 400;
+		font-weight: 700;
+		del {
+			color: #e6e6e6;
+			padding-left: 15px;
+			font-size: 14px;
+		}
 	}
+	.shopitem-form-quantity {
+		width: 100px;
+		border: none;
+		text-align: center;
+		color: #909090;
+		font-weight: 700;
+		font-size: 20px;
+		padding: 16px 15px 16px 25px;
+		border: 1px solid transparent;
+		display: block;
+		float: left;
+		float: right;
+
+		&:hover,
+		&:focus {
+			color: #4591cb;
+			border-color: #eee;
+		}
+	}
+
 }
+
+
+
 
 
 /**
@@ -1091,6 +1028,7 @@ ol.breadcrumb {
 .geo-related-products {
 	.geo-related-head {
 		position: relative;
+
 		.related-title {
 			line-height: 40px;
 			text-transform: uppercase;
@@ -1116,7 +1054,7 @@ ol.breadcrumb {
 	}
 	.geo-related-body {
 		text-align: center;
-		margin:0  -15px;
+		margin: 0 -15px;
 
 		article {
 			width: 25.0%;
@@ -1142,42 +1080,18 @@ ol.breadcrumb {
 					line-height: 1.1;
 					padding: 10px 20px;
 					@include transition(all 0.2s ease);
+					&.new {background: #559acf;}
+					&.out {background: #6b6b6b;}
+					&.last {background: #de7846;}
 				}
-				.status.new {background: #559acf;}
-				.status.out {background: #6b6b6b;}
-				.status.last {background: #de7846;}
 
-				a.add-to-cart {
+				.gbtn {
 					position: absolute;
-					left: 10%;
 					top: 100%;
-					right: 10%;
+					left: 50%;
 					opacity: 0;
-					margin: 0 auto;
-					display: inline-block;
-					color: #fff;
-					background: #4591cb;
-					padding: 12px 0;
-					max-width: 210px;
-					font-size: 13px;
-					font-weight: 700;
-					text-transform: uppercase;
-					@include transition(all 0.2s ease);
-
-					[class^="icon-"] {
-						padding-right: 15px;
-						font-size: 20px;
-						position: relative;
-						top: 3px;
-						font-weight: 400;
-					}
-
-					&:hover {
-						background: #5198ce;
-					}
-					&:active {
-						background: #3582bc;
-					}
+					white-space: nowrap;
+					@include transform(translateX(-50%));
 				}
 
 				&:hover {
@@ -1187,9 +1101,10 @@ ol.breadcrumb {
 					.status {
 						opacity: 0.25;
 					}
-					a.add-to-cart {
-						top: 42%;
+					.gbtn {
+						top: 50%;
 						opacity: 1;
+						@include transform(translateX(-50%) translateY(-50%));
 					}
 				}
 			}
@@ -1253,32 +1168,14 @@ ol.breadcrumb {
 
 
 
-/* clearfix
-============================================================================ */
-%clearfix {
-	*zoom: 1;
-	&:before,
-	&:after {
-		content: '';
-		display: table;
-	}
-	&:after {clear: both;}
-}
 
 
-/* vertical centering module
-============================================================================ */
-div.vertical-centering {
-	position: absolute;
-	top: 50%;
-	left:0;
-	right:0;
-	@include transform(translateY(-50%));
-}
 
 
-/* review
-============================================================================ */
+/**
+* review (global)
+* ----------------------------------------------------------------------------
+*/
 .review {
 	position: relative;
 	margin-bottom: 30px;
@@ -1330,29 +1227,31 @@ div.vertical-centering {
 }
 
 
-/* add review
-============================================================================ */
+/**
+* add review (global)
+* ----------------------------------------------------------------------------
+*/
 .addreview {
-	margin: 60px 0 30px;
+	margin: 60px 0 40px;
 	text-align: center;
 	border-top: 1px solid #f2f2f2;
 
-	.addreview__button {
-		margin: 0 auto 20px;
+	button.gbtn {
 		@include transform(translateY(-50%));
-	}
-	.addreview__button__add {
-		display: block;
-		opacity: 1;
-		@include transition(all 0.75s ease);
-	}
-	.addreview__button__close {
-		display: none;
-		opacity: 0;
-		@include transition(all 0.75s ease);
+		.putin {
+			display: block;
+			opacity: 1;
+			@include transition(all 0.75s ease);
+		}
+		.putaway {
+			display: none;
+			opacity: 0;
+			@include transition(all 0.75s ease);
+		}
 	}
 
 	.addreview__form {
+		margin-top: 30px;
 		height: 0;
 		opacity: 0;
 		overflow: hidden;
@@ -1360,11 +1259,12 @@ div.vertical-centering {
 		@include transition(all 0.75s ease);
 	}
 	.addreview__form__body {
-		height: 112px;
+		min-height: 112px;
 		position: relative;
-		margin-bottom: 16px;
+		margin-bottom: 20px;
 	}
-	.addreview__form__footer {}
+	.addreview__form__footer {
+	}
 
 	.addreview__form__author {
 		width: 28%;
@@ -1398,7 +1298,7 @@ div.vertical-centering {
 			color: #e6e6e6;
 			cursor: pointer;
 			margin-right: 2px;
-			font-size:10px;
+			font-size: 10px;
 			@include transition(all 0.75s ease);
 			&.active {
 				color: #3787c4;
@@ -1408,22 +1308,27 @@ div.vertical-centering {
 			}
 		}
 	}
-	.addreview__form__submit {
-		width: auto;
+	input.gbtn {
 		float: right;
 	}
 }
 
-.addreview--add .addreview__button__add {
-	display: none;
-	opacity: 0;
+.addreview--add {
+	button.gbtn {
+		.putin {
+			display: none;
+			opacity: 0;
+		}
+		.putaway {
+			display: block;
+			opacity: 1;
+		}
+	}
+	.addreview__form {
+		height: auto;
+		opacity: 1;
+	}
 }
-.addreview--add .addreview__button__close {
-	display: block;
-	opacity: 1;
-}
-.addreview--add .addreview__form {
-	height: auto;
-	opacity: 1;
-}
+
+
 

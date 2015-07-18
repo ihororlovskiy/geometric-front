@@ -35,19 +35,6 @@ permalink: html/shop/item/
 						</ul>
 					</div>
 
-					<!-- 
-					<main>
-						<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/item-01-big.jpg" alt="..."></a>
-					</main>
-
-					<nav>
-						<a href="#" class="active"><img src="{{ site.baseurl }}/assets/img/shop/item-01-small.jpg" alt="..."></a>
-						<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/item-02-small.jpg" alt="..."></a>
-						<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/item-03-small.jpg" alt="..."></a>
-						<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/item-04-small.jpg" alt="..."></a>
-					</nav>
-					 -->
-
 					<div class="status">New</div>
 				</section>
 
@@ -82,8 +69,8 @@ permalink: html/shop/item/
 
 					<div class="shopitem-form-header">
 						<div class="shopitem-form-price">£230.00 <del>£320.00</del></div>
-						<input class="shopitem-form-hidden" type="hidden" name="product" value="1234">
-						<button class="gbtn gbtn-lg shopitem-form-submit" type="submit"><span class="icon-cart"></span> Add to cart</button>
+						<input type="hidden" name="product" value="1234">
+						<button class="gbtn gbtn-lg" type="submit"><span class="icon-cart"></span> Add to cart</button>
 						<input class="shopitem-form-quantity" type="number" step="1" min="1" name="quantity" value="1">
 					</div>
 
@@ -115,40 +102,12 @@ permalink: html/shop/item/
 								<label for="size-xll">XXL</label>
 							</div>
 						</div>
-						<!-- <select name="select-size" required>
-							<option value="xs">XS</option>
-							<option value="s">S</option>
-							<option value="m" selected>M</option>
-							<option value="l">L</option>
-							<option value="xl">XL</option>
-							<option value="xxl">XXL</option>
-						</select> -->
+
 					</div>
 
 					<div class="color-list">
 						<div class="title">Color:</div>
-						<!-- <div class="list">
-							<div class="item">
-								<input type="radio" id="color-black" name="color" value="black">
-								<label for="color-black">Black</label>
-							</div>
-							<div class="item">
-								<input type="radio" id="color-white" name="color" value="white" checked>
-								<label for="color-white">White</label>
-							</div>
-							<div class="item">
-								<input type="radio" id="color-red" name="color" value="red">
-								<label for="color-red">Red</label>
-							</div>
-							<div class="item">
-								<input type="radio" id="color-yellow" name="color" value="yellow">
-								<label for="color-yellow">Yellow</label>
-							</div>
-							<div class="item">
-								<input type="radio" id="color-pink" name="color" value="pink">
-								<label for="color-pink">Pink</label>
-							</div>
-						</div> -->
+
 						<select name="color" required>
 							<option value="black">Black</option>
 							<option value="white">White</option>
@@ -279,13 +238,12 @@ permalink: html/shop/item/
 						</div>
 					</div>
 
+
 					<div class="addreview">
-
-						<button class="gbtn gbtn--bordered addreview__button">
-							<span class="addreview__button__add">Add Review</span>
-							<span class="addreview__button__close">Close</span>
+						<button class="gbtn gbtn--bordered">
+							<span class="putin">Add Review</span>
+							<span class="putaway">Close</span>
 						</button>
-
 						<form class="addreview__form">
 							<div class="addreview__form__body">
 								<input class="addreview__form__author" name="author" type="text" value="" aria-required="true"  placeholder="Name *">
@@ -301,11 +259,11 @@ permalink: html/shop/item/
 									<span class="icon-star-filled"></span>
 									<span class="icon-star-filled"></span>
 								</div>
-								<input class="addreview__form__submit gbtn" type="submit" value="Submit">
+								<input class="gbtn" type="submit" value="Submit">
 							</div>
 						</form>
-
 					</div>
+
 
 				</div>
 			</div>
@@ -325,13 +283,13 @@ permalink: html/shop/item/
 						<a href="#" class="next"><span class="icon-arrow-right"></span></a>
 					</div>
 
-					<div class="geo-related-body clearfix">
+					<div class="geo-related-body">
 
 						<article>
 							<div class="visual">
 								<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-01.jpg" alt="..."></a>
 								<span class="status new">New</span>
-								<a href="#" class="add-to-cart"><span class="icon-cart"></span> Add to cart</a>
+								<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
 							</div>
 							<div class="info">
 								<div class="title"><a href="#">Bicycle</a></div>
@@ -350,7 +308,7 @@ permalink: html/shop/item/
 							<div class="visual">
 								<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-02.jpg" alt="..."></a>
 								<span class="status out">Out of stock</span>
-								<a href="#" class="add-to-cart"><span class="icon-cart"></span> Add to cart</a>
+								<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
 							</div>
 							<div class="info">
 								<div class="title"><a href="#">Brass Saxophone</a></div>
@@ -368,7 +326,7 @@ permalink: html/shop/item/
 						<article>
 							<div class="visual">
 								<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-03.jpg" alt="..."></a>
-								<a href="#" class="add-to-cart"><span class="icon-cart"></span> Add to cart</a>
+								<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
 							</div>
 							<div class="info">
 								<div class="title"><a href="#">Cinema 3D LED TV</a></div>
@@ -387,7 +345,7 @@ permalink: html/shop/item/
 							<div class="visual">
 								<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-04.jpg" alt="..."></a>
 								<span class="status last">Last examples</span>
-								<a href="#" class="add-to-cart"><span class="icon-cart"></span> Add to cart</a>
+								<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
 							</div>
 							<div class="info">
 								<div class="title"><a href="#">Dicta qui</a></div>
