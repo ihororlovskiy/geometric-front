@@ -1,7 +1,6 @@
 /*-------------------------------------------------------------------------*/
 /* # BASIC
 /*-------------------------------------------------------------------------*/
-// Basic Styles
 html {
 	position: relative;
 	height: 100%;
@@ -22,7 +21,11 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
-//	Typography
+
+/**
+* typography
+* ----------------------------------------------------------------------------
+*/
 h1 {
 	font-size: 48px;
 	font-weight: 700;
@@ -90,7 +93,10 @@ p {
 
 
 
-// Links
+/**
+* links
+* ----------------------------------------------------------------------------
+*/
 a {
 	text-decoration: none;
 	outline: none;
@@ -116,24 +122,25 @@ a {
 // }
 
 
-
-
-// // Selection colors
-// ::selection {
-// 	background: $selection-color;
-// }
-// ::-moz-selection {
-// 	background: $selection-color;
-// }
-// img::selection {
-// 	background: transparent;
-// }
-// img::-moz-selection {
-// 	background: transparent;
-// }
-// body {
-// 	-webkit-tap-highlight-color: $selection-color;
-// }
+/**
+* selection colors
+* ----------------------------------------------------------------------------
+*/
+::selection {
+	background: $selection-color;
+}
+::-moz-selection {
+	background: $selection-color;
+}
+img::selection {
+	background: transparent;
+}
+img::-moz-selection {
+	background: transparent;
+}
+body {
+	-webkit-tap-highlight-color: $selection-color;
+}
 
 
 

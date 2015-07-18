@@ -24,6 +24,25 @@
 }
 
 
+
+
+/**
+* status
+* ----------------------------------------------------------------------------
+*/
+.status {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 10px;
+	padding: 1.25em 2em;
+	&.new {background: #559acf;}
+	&.out {background: #6b6b6b;}
+	&.last {background: #de7846;}
+	&.sale {background: #CA3F3F;}
+}
+
+
+
 /**
 * shop classic list
 * ----------------------------------------------------------------------------
@@ -45,19 +64,12 @@
 				@include transition(all 0.2s ease, transform 1s ease);
 				@include transform(scale(1.0) translateZ(0));
 			}
+
 			.status {
-				opacity: 1;
 				position: absolute;
 				top: 0;
 				left: 0;
-				color: #fff;
-				font-weight: 700;
-				line-height: 1.1;
-				padding: 10px 20px;
 				@include transition(all 0.2s ease);
-				&.new {background: #559acf;}
-				&.out {background: #6b6b6b;}
-				&.last {background: #de7846;}
 			}
 
 			.gbtn {
@@ -68,13 +80,10 @@
 				white-space: nowrap;
 				@include transform(translateX(-50%));
 			}
+
 			&:hover {
-				a>img {
-					opacity: 0.25;
-				}
-				.status {
-					opacity: 0.25;
-				}
+				a>img,
+				.status {opacity: 0.25;}
 				.gbtn {
 					top: 50%;
 					opacity: 1;
@@ -130,11 +139,12 @@
 */
 .geo-shoplist-masonry {
 	.geo-content-area {
-		width:100%;
+		width: 100%;
 	}
 
 	article {
 		width: 33.3333333333333%;
+		&:nth-child(8) {width: 66.6666666666666%;}
 
 		a>img {
 			opacity: 1;
@@ -143,28 +153,18 @@
 		}
 
 		.status {
-			opacity: 1;
 			position: absolute;
 			top: 0;
 			left: 0;
-			background: #559acf;
-			color: #fff;
-			font-weight: 700;
-			line-height: 1.1;
-			padding: 10px 20px;
-			@include transition(all 0.2s ease);
-			&.new {background: #559acf;}
-			&.out {background: #6b6b6b;}
-			&.last {background: #de7846;}
 		}
 
 		.info {
 			position: absolute;
 			top: 100%;
-			padding: 20% 15px 15px;
+			padding-top: 15%;
 			width: 100%;
 			height: 100%;
-			background: rgba(#fff,.95);
+			background: rgba(#fff, 0.95);
 			@include transition(all 0.2s ease);
 
 			.vertical-centering {
@@ -172,7 +172,7 @@
 				top: 50%;
 				left:0;
 				right:0;
-				@include transform(translateY(-50%));
+				@include transform(translateY(-75%));
 
 				.title {
 					color: #3787c4;
@@ -183,19 +183,23 @@
 						@include transition(all 0.2s ease);
 					}
 				}
+
 				.rating {
-					font-size:10px;
+					font-size: 10px;
+
 					[class^="icon-"] {
 						color: #e6e6e6;
 						cursor: pointer;
 						margin-right: 2px;
 						@include transition(all 0.2s ease);
+						&.active,
+						&:hover {
+							color: #3787c4;
+						}
 					}
-					[class^="icon-"].active,
-					[class^="icon-"]:hover {
-						color: #3787c4;
-					}
+
 				}
+
 				.price {
 					color: #878787;
 					font-size: 15px;
@@ -207,40 +211,19 @@
 				}
 			}
 
-			a.add-to-cart {
+			.gbtn {
 				position: absolute;
-				left: 10%;
-				bottom: 20px;
-				right: 10%;
-				margin: 0 auto;
-				max-width: 210px;
-				display: inline-block;
-				padding: 0;
-				font-size: 13px;
-				font-weight: 700;
-				text-transform: uppercase;
-				@include transition(all 0.2s ease);
-
-				[class^="icon-"] {
-					padding-right: 15px;
-					font-size: 20px;
-					position: relative;
-					top: 3px;
-					font-weight: 400;
-				}
+				bottom: 0;
+				left: 50%;
+				white-space: nowrap;
+				@include transform(translateX(-50%) translateY(-50%));
 			}
-			a.add-to-cart:hover {}
-			a.add-to-cart:active {}
+
 		}
-	}
-	article:hover a>img {
-		@include transform(scale(1.2) translateZ(0));
-	}
-	article:hover .info {
-		top:0;
-	}
-	article:nth-child(8) {
-		width:66.6666666666666%;
+		&:hover {
+			a>img {@include transform(scale(1.2));}
+			.info {top: 0;}
+		}
 	}
 }
 
@@ -554,6 +537,7 @@ ul.bestsales {}
 	font-weight: 700;
 }
 
+
 /*-------------------------------------------------------------------------*/
 /* # SHOP ITEM
 /*-------------------------------------------------------------------------*/
@@ -568,13 +552,6 @@ ul.bestsales {}
 			position: absolute;
 			top: 0;
 			right: 0;
-			background: #5a9ed2;
-			padding: 10px 20px;
-			font-size: 10px;
-			line-height: 1.4;
-			font-weight: 700;
-			text-transform: uppercase;
-			color: #fff;
 		}
 	}
 
