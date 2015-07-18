@@ -1026,19 +1026,12 @@ ol.breadcrumb {
 					@include transition(all 0.2s ease, transform 1s ease);
 					@include transform(scale(1.0) translateZ(0));
 				}
+
 				.status {
-					opacity: 1;
 					position: absolute;
 					top: 0;
 					left: 0;
-					color: #fff;
-					font-weight: 700;
-					line-height: 1.1;
-					padding: 10px 20px;
 					@include transition(all 0.2s ease);
-					&.new {background: #559acf;}
-					&.out {background: #6b6b6b;}
-					&.last {background: #de7846;}
 				}
 
 				.gbtn {
