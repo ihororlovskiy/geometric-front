@@ -404,6 +404,10 @@ ul.product-categories {
 		margin-bottom: 10px;
 		a {
 			font-size: 14px;
+			color: #3787c4;
+			&:hover {
+				color: #757575;
+			}
 		}
 	}
 }

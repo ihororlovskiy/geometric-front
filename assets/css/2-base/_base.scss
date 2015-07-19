@@ -102,6 +102,7 @@ a {
 	outline: none;
 	color: #397db1;
 	cursor: pointer;
+	@include transition(all 0.2s ease);
 
 	&:hover,
 	&:focus,
