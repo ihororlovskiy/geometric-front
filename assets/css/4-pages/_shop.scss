@@ -383,19 +383,35 @@ nav.geo-filter {
 	float: left;
 	text-align: left;
 	padding-right: 30px;
-}
-.sidebar-item {
-	margin-bottom:40px;
-}
-.sidebar-item-title {
-	font-size: 20px;
-	font-weight: 500;
-	text-transform: uppercase;
-	color: #6a6a6a;
-	margin-bottom: 20px;
+
+	.sidebar-item {
+		margin-bottom: 40px;
+
+		h4 {
+			line-height: 1.5;
+			color: #6a6a6a;
+		}
+	}
 }
 
-// filter price range
+
+/**
+* shop sidebar product categories
+* ----------------------------------------------------------------------------
+*/
+ul.product-categories {
+	li {
+		margin-bottom: 10px;
+		a {
+			font-size: 14px;
+		}
+	}
+}
+
+/**
+* shop sidebar filter price range
+* ----------------------------------------------------------------------------
+*/
 form.filter-price-range {
 	@include clearfix;
 
@@ -431,7 +447,6 @@ form.filter-price-range {
 		line-height: 50px;
 	}
 
-	// input price range
 	div.input-price-range {
 		position: relative;
 
@@ -472,7 +487,6 @@ form.filter-price-range {
 		&.ui-widget-header {
 			height: 6px;
 		}
-
 		&.ui-slider .ui-slider-handle {
 			width: 20px;
 			height: 20px;
@@ -495,9 +509,12 @@ form.filter-price-range {
 }
 
 
-// search
+/**
+* shop sidebar search
+* ----------------------------------------------------------------------------
+*/
 form.search {
-	position:relative;
+	position: relative;
 
 	label.search-icon {
 		position: absolute;
@@ -513,28 +530,33 @@ form.search {
 	}
 }
 
-// bestsales
-ul.bestsales {}
-.bestsales-item {
-	@include clearfix;
-	line-height: 1.4;
-	margin-bottom:20px;
-}
-.bestsales-item-img {
-	float: left;
-	width: 80px;
-	margin-right: 10px;
-}
-.bestsales-item-title {
-	color: #488cc0;
-	font-size: 13px;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-.bestsales-item-price {
-	color: #898989;
-	font-size: 15px;
-	font-weight: 700;
+
+/**
+* shop sidebar bestsales
+* ----------------------------------------------------------------------------
+*/
+ul.bestsales {
+	.bestsales-item {
+		@include clearfix;
+		line-height: 1.4;
+		margin-bottom: 20px;
+	}
+	.bestsales-item-img {
+		float: left;
+		width: 80px;
+		margin-right: 10px;
+	}
+	.bestsales-item-title {
+		color: #488cc0;
+		font-size: 13px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	.bestsales-item-price {
+		color: #898989;
+		font-size: 15px;
+		font-weight: 700;
+	}
 }
 
 
