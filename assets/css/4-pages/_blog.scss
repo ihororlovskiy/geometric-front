@@ -404,66 +404,6 @@ font-weight: bold;
 
 
 
-
-/* sidebar
-============================================================================ */
-aside {
-	width: 25%;
-	float: right;
-
-	a {
-		color: #6a6a6a;
-		&:hover {
-			color:#488cc0;
-		}
-	}
-	h6 {
-		margin-bottom: 8px;
-		color: #6a6a6a;
-	}
-}
-
-@media (max-width:767px) {
-	aside {
-		display: none;
-	}
-}
-
-
-.geo-sidebar-widget {
-	margin-bottom:30px;
-}
-
-.geo-sidebar-widget-categories {
-	ul {
-		li {}
-		li.active a {
-			color:#488cc0;
-		}
-	}
-}
-
-.geo-sidebar-widget-tags {
-	ul {
-		li {
-			float: left;
-
-			a {
-				font-size: 10px;
-				text-transform: uppercase;
-				margin-right: 10px;
-				font-weight: 700;
-				display: block;
-			}
-		}
-	}
-}
-
-.geo-sidebar-widget-search {}
-
-
-
-
 /* geo-header-section
 ============================================================================ */
 .geo-header-section {

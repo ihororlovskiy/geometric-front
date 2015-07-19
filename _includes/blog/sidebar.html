@@ -1,10 +1,20 @@
-<aside>
+<aside class="sidebar">
 
-	<div class="geo-sidebar-widget geo-sidebar-widget-categories">
-		<h6>Product Categories</h6>
-		<ul>
+	<div class="sidebar-item">
+		<h4>Search</h4>
+		<form class="search">
+			<label class="search-icon" for="search">
+				<span class="icon-loupe"></span>
+			</label>
+			<input class="search-input" type="search" name="search" placeholder="Type and hit En" id="search">
+		</form>
+	</div>
+
+	<div class="sidebar-item">
+		<h4>Categories</h4>
+		<ul class="sidebar-categories">
 			<li><a href="#">Activewear & Sports</a></li>
-			<li class="active"><a href="#">Beautifull Dresses</a></li>
+			<li><a href="#">Beautifull Dresses</a></li>
 			<li><a href="#">Coats & Sweaters</a></li>
 			<li><a href="#">Denim Wear</a></li>
 			<li><a href="#">Elegant Shoes</a></li>
@@ -14,21 +24,51 @@
 		</ul>
 	</div>
 
-	<div class="geo-sidebar-widget geo-sidebar-widget-tags">
-		<h6>Tags</h6>
-		<ul class="clearfix">
-			<li><a href="#">Analysis</a></li>
-			<li><a href="#">Art</a></li>
-			<li><a href="#">Audio</a></li>
-			<li><a href="#">Articles</a></li>
+	<div class="sidebar-item">
+		<h4>Recent Posts</h4>
+		<ul class="bestsales">
+			<li class="bestsales-item">
+				<a href="#">
+					<img class="bestsales-item-img" src="{{ site.baseurl }}/assets/img/blog/item-1.jpg" alt="...">
+					<span class="bestsales-item-title">Ipsum dolor sit amet</span>
+				</a>
+			</li>
+			<li class="bestsales-item">
+				<a href="#">
+					<img class="bestsales-item-img" src="{{ site.baseurl }}/assets/img/blog/item-2.jpg" alt="...">
+					<span class="bestsales-item-title">Lorem atque accusamus</span>
+				</a>
+			</li>
+			<li class="bestsales-item">
+				<a href="#">
+					<img class="bestsales-item-img" src="{{ site.baseurl }}/assets/img/blog/item-3.jpg" alt="...">
+					<span class="bestsales-item-title">Architecto saepe repudi</span>
+				</a>
+			</li>
 		</ul>
 	</div>
 
-	<div class="geo-sidebar-widget geo-sidebar-widget-search">
-		<h6>Search</h6>
-		<form>
-			<input type="text" class="" placeholder="Type and hit Enter">
-		</form>
+	<div class="sidebar-item">
+		<h4>Tags</h4>
+		<ul class="sidebar-tags">
+			<li><a href="#">Analysis</a></li>
+			<li><a href="#">Chess</a></li>
+			<li><a href="#">Minifigures</a></li>
+			<li><a href="#">Eco</a></li>
+			<li><a href="#">Art</a></li>
+			<li><a href="#">Audio</a></li>
+			<li><a href="#">Articles</a></li>
+			<li><a href="#">Psychedelic</a></li>
+			<li><a href="#">Life Is Good</a></li>
+			<li><a href="#">Pull requests</a></li>
+			<li><a href="#">Issues</a></li>
+			<li><a href="#">Gist</a></li>
+			<li><a href="#">Lorem</a></li>
+			<li><a href="#">ipsum</a></li>
+			<li><a href="#">dolor</a></li>
+			<li><a href="#">sit amet</a></li>
+			<li><a href="#">consectetur</a></li>
+		</ul>
 	</div>
 
 </aside>
