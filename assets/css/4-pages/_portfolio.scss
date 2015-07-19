@@ -12,25 +12,44 @@
 
 	.isotope-container {
 		margin-bottom: 60px;
+
+		article {
+			position: relative;
+			overflow: hidden;
+		}
 	}
 }
 
+
+/**
+* portfolio filter
+* ----------------------------------------------------------------------------
+*/
 ul.geo-portfolio-filter {
 	margin: 0 auto 60px;
-	li {display:inline-block;margin:0 10px;}
-	li a {display:block;text-transform:uppercase;font-weight:700;color:#7c7c7c;cursor:pointer;}
-	li a:hover,
-	li a.is-checked {color:#5596c7;}
+
+	li {
+		display: inline-block;
+		margin: 0 10px;
+
+		a {
+			display: block;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #7c7c7c;
+			cursor: pointer;
+
+			&:hover,
+			&.is-checked {color: #5596c7;}
+		}
+	}
 }
 
-.geo-portfolio-isotope {
-	overflow: hidden;
-	@include transition(all 0.5s ease-in-out);
-}
 
-.geo-portfolio-list article {position:relative;overflow:hidden;}
-
-// portfolio list custom
+/**
+* portfolio list custom
+* ----------------------------------------------------------------------------
+*/
 .geo-portfolio-list-custom {}
 .geo-portfolio-list-custom .geo-content-area {width:100%;}
 .geo-portfolio-list-custom article {width:100%;}
@@ -76,12 +95,16 @@ ul.geo-portfolio-filter {
 .geo-portfolio-list-custom article:nth-child(3n+3) h5 {color:#fff;}
 
 
-// portfolio list classic
-.geo-portfolio-list-classic {}
-.geo-portfolio-list-classic .geo-content-area {width:100%;}
-.geo-portfolio-list-classic.geo-portfolio-list-classic-2-col article {width:50.0%;}
-.geo-portfolio-list-classic.geo-portfolio-list-classic-3-col article {width:33.3333333333333333333%;}
-.geo-portfolio-list-classic.geo-portfolio-list-classic-4-col article {width:25.0%;}
+/**
+* portfolio list classic
+* ----------------------------------------------------------------------------
+*/
+.geo-portfolio-list-classic {
+	.geo-content-area {width: 100%;}
+	&.geo-portfolio-list-classic-2-col article {width: 50%;}
+	&.geo-portfolio-list-classic-3-col article {width: 33.3333333333333333333%;}
+	&.geo-portfolio-list-classic-4-col article {width: 25%;}
+}
 
 .geo-portfolio-list-classic article {}
 .geo-portfolio-list-classic article .fx-layout {position:absolute;top:0;left:0;bottom:0;right:0;}
@@ -99,43 +122,79 @@ ul.geo-portfolio-filter {
 .geo-portfolio-list-classic article h6 {margin:0;color:#b9d5eb;font-size:10px;}
 .geo-portfolio-list-classic article h5 {margin:0;color:#fff;}
 
-// portfolio list grid
-.geo-portfolio-list-grid {}
-.geo-portfolio-list-grid .geo-content-area {width:100%;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article {width:33.3333333333333333333%;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article:nth-child(11n+1) {width:66.6666666666666666666%;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article:nth-child(11n+2) {width:33.3333333333333333333%;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article:nth-child(11n+3) {width:33.3333333333333333333%;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article:nth-child(11n+4) {width:33.3333333333333333333%;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article:nth-child(11n+5) {width:33.3333333333333333333%;float:right;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article:nth-child(11n+6) {width:66.6666666666666666666%;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article:nth-child(11n+7) {width:33.3333333333333333333%;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article:nth-child(11n+8) {width:33.3333333333333333333%;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article:nth-child(11n+9) {width:66.6666666666666666666%;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article:nth-child(11n+10) {width:33.3333333333333333333%;}
-.geo-portfolio-list-grid.geo-portfolio-list-grid-2-col article:nth-child(11n+11) {width:33.3333333333333333333%;}
-// .geo-portfolio-list-grid.geo-portfolio-list-grid-3-col article {width:33.3333333333333333333%;}
-// .geo-portfolio-list-grid.geo-portfolio-list-grid-4-col article {width:25.0%;}
 
-.geo-portfolio-list-grid article {float:left;}
-.geo-portfolio-list-grid article .fx-layout {position:absolute;top:0;left:0;bottom:0;right:0;}
-.geo-portfolio-list-grid article .fx-layout>span {display:table;width:100%;height:100%;text-align:center;}
-.geo-portfolio-list-grid article .fx-layout>span>i {
-	display: table-cell;
-	vertical-align: middle;
-	background: rgba(67,133,184,.7);
-	opacity: 0;
-	padding-top: 100px;
-	@include transition(all 0.25s ease-in-out);
+/**
+* portfolio list grid
+* ----------------------------------------------------------------------------
+*/
+.geo-portfolio-list-grid {
+	.geo-content-area {width: 100%;}
+
+	&.geo-portfolio-list-grid-2-col article {width: 33.3333333333333333333%;}
+	&.geo-portfolio-list-grid-2-col article:nth-child(11n+1) {width: 66.6666666666666666666%;}
+	&.geo-portfolio-list-grid-2-col article:nth-child(11n+2) {width: 33.3333333333333333333%;}
+	&.geo-portfolio-list-grid-2-col article:nth-child(11n+3) {width: 33.3333333333333333333%;}
+	&.geo-portfolio-list-grid-2-col article:nth-child(11n+4) {width: 33.3333333333333333333%;}
+	&.geo-portfolio-list-grid-2-col article:nth-child(11n+5) {width: 33.3333333333333333333%;float:right;}
+	&.geo-portfolio-list-grid-2-col article:nth-child(11n+6) {width: 66.6666666666666666666%;}
+	&.geo-portfolio-list-grid-2-col article:nth-child(11n+7) {width: 33.3333333333333333333%;}
+	&.geo-portfolio-list-grid-2-col article:nth-child(11n+8) {width: 33.3333333333333333333%;}
+	&.geo-portfolio-list-grid-2-col article:nth-child(11n+9) {width: 66.6666666666666666666%;}
+	&.geo-portfolio-list-grid-2-col article:nth-child(11n+10) {width: 33.3333333333333333333%;}
+	&.geo-portfolio-list-grid-2-col article:nth-child(11n+11) {width: 33.3333333333333333333%;}
+
+	article {
+		float: left;
+
+		.fx-layout {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right:0;
+		}
+		.fx-layout>span {
+			display: table;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+		.fx-layout>span>i {
+			display: table-cell;
+			vertical-align: middle;
+			background: rgba(67,133,184,.7);
+			opacity: 0;
+			padding-top: 100px;
+			@include transition(all 0.25s ease-in-out);
+		}
+		&:hover .fx-layout>span>i {
+			opacity: 1;
+			padding-top: 0;
+		}
+		a {
+			margin: 40px 0 30px;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 10px;
+			padding: 8px 20px;
+		}
+		h6 {
+			margin: 0;
+			color: #b9d5eb;
+			font-size: 10px;
+		}
+		h5 {
+			margin: 0;
+			color: #fff;
+		}
+	}
 }
-.geo-portfolio-list-grid article:hover .fx-layout>span>i {opacity:1;padding-top:0;}
-.geo-portfolio-list-grid article a {margin:40px 0 30px;text-transform:uppercase;font-weight:700;font-size:10px;padding:8px 20px;}
-.geo-portfolio-list-grid article h6 {margin:0;color:#b9d5eb;font-size:10px;}
-.geo-portfolio-list-grid article h5 {margin:0;color:#fff;}
 
 
-
-// portfolio list mansory
+/**
+* portfolio list mansory
+* ----------------------------------------------------------------------------
+*/
 .geo-portfolio-list-mansory {}
 .geo-portfolio-list-mansory .geo-content-area {width:100%;}
 .geo-portfolio-list-mansory.geo-portfolio-list-mansory-2-col article {width:50.0%;}
@@ -171,74 +230,136 @@ ul.geo-portfolio-filter {
 }
 
 
+/*-------------------------------------------------------------------------*/
+/* # PORTFOLIO ITEM
+/*-------------------------------------------------------------------------*/
+.geo-portfolio-item {
+	padding-bottom: 60px;
+	border-bottom: 1px solid $divider;
+
+	.container {
+		position: relative;
+	}
+	.geo-portfolio-item-left {
+		float: left;
+		width: 70%;
+		padding-right: 4%;
+	}
+	.geo-portfolio-item-right {
+		float: right;
+		width: 30%;
+		position: relative;
+	}
+
+	.geo-portfolio-item-img {
+		margin-bottom: 20px;
+	}
+	div.geo-portfolio-date {
+		font-size: 10px;
+		color: #9e9e9e;
+		line-height: 1.3;
+	}
+	h1 {
+		font-size: 36px;
+		color: #3a3a3a;
+		line-height: 1.3;
+		margin-bottom: 40px;
+	}
+	div.geo-portfolio-status {
+		font-size: 15px;
+		color: #6a6a6a;
+		line-height: 1.3;
+		font-weight: 300;
+		margin-bottom: 30px;
+		b {
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+	h5 {
+		font-weight: 700;
+		font-size: 15px;
+		color: #6a6a6a;
+		line-height: 1.3;
+		margin-bottom: 10px;
+	}
+	p {
+		color: #6a6a6a;
+		margin-bottom: 10px;
+	}
+	div.geo-recomended {
+		margin-top:60px;
+	}
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// relative posts
+/**
+* portfolio relative posts
+* ----------------------------------------------------------------------------
+*/
 ul.geo-relative-posts {
 	width: 100%;
 	margin-bottom: 60px;
-}
-ul.geo-relative-posts>li {
-	width: 25%;
-	float: left;
-}
-ul.geo-relative-posts>li>a {
-	position: relative;
-	display: block;
-	padding-bottom: 3px;
+	@include clearfix;
 
-	&:after {
-		position: absolute;
-		content: '';
-		bottom: 0;
-		height: 3px;
-		background: #3c7eaf;
-		margin: 0 30%;
-		width: 40%;
-		@include transition(all 0.15s ease);
+	li {
+		width: 25%;
+		float: left;
+
+		a {
+			position: relative;
+			display: block;
+			padding-bottom: 3px;
+
+			&:after {
+				position: absolute;
+				content: '';
+				bottom: 0;
+				height: 3px;
+				background: #3c7eaf;
+				margin: 0 30%;
+				width: 40%;
+				@include transition(all 3.75s $ease-out-circ);
+			}
+
+			&:hover:after {
+				margin: 0 20%;
+				width:60%;
+			}
+
+			.image-contur {
+				overflow: hidden;
+				width: 100%;
+				margin-bottom: 30px;
+
+				img {
+					@include transition(all 3.75s $ease-out-circ);
+					@include transform(scale(1) translateZ(0));
+				}
+			}
+
+			&:hover .image-contur img {
+				@include transform(scale(1.2));
+			}
+
+			h5 {
+				text-align: center;
+				margin: 0 0 10px;
+				font-weight: 700;
+				font-size: 15px;
+				color: #3c7eaf;
+			}
+
+			h6 {
+				text-align: center;
+				margin: 0 0 20px;
+				text-transform: none;
+				font-weight: 300;
+				font-size:14px;
+			}
+		}
 	}
 }
-ul.geo-relative-posts>li>a:hover:after {margin:0 20%;width:60%;}
-ul.geo-relative-posts>li>a>div.geo-relative-img {overflow:hidden;width:100%;margin-bottom:30px;}
-ul.geo-relative-posts>li>a>div.geo-relative-img>img {
-	@include transition(all 0.15s ease);
-	@include transform(scale(1.02));
-}
-ul.geo-relative-posts>li>a:hover>div.geo-relative-img>img {
-	@include transform(scale(1.12));
-}
-ul.geo-relative-posts>li>a>h5 {text-align:center;margin:0 0 10px;font-weight:700;font-size:15px;color:#3c7eaf;}
-ul.geo-relative-posts>li>a>h6 {text-align:center;margin:0 0 20px;text-transform:none;font-weight:300;font-size:14px;}
 
 
-// portfolio item
-.geo-portfolio-item {padding-bottom:60px;border-bottom:1px solid #f5f5f5;}
-.geo-portfolio-item .container {position:relative;}
-.geo-portfolio-item .geo-portfolio-item-left {float:left;width:70%;padding-right:4%;}
-.geo-portfolio-item .geo-portfolio-item-right {float:right;width:30%;position:relative;}
-
-// .geo-portfolio-item .geo-portfolio-item-normal {position:inherit;}
-// .geo-portfolio-item .geo-portfolio-item-fixed {position:fixed;}
-
-.geo-portfolio-item .geo-portfolio-item-img {margin-bottom:20px;}
-.geo-portfolio-item div.geo-portfolio-date {font-size:10px;color:#9e9e9e;line-height:1.3;}
-.geo-portfolio-item h1 {font-size:36px;color:#3a3a3a;line-height:1.3;margin-bottom:40px;}
-.geo-portfolio-item div.geo-portfolio-status {font-size:15px;color:#6a6a6a;line-height:1.3;font-weight:300;margin-bottom:30px;}
-.geo-portfolio-item div.geo-portfolio-status b {font-weight:700;text-transform:uppercase;}
-.geo-portfolio-item h5 {font-weight:700;font-size:15px;color:#6a6a6a;line-height:1.3;margin-bottom:10px;}
-.geo-portfolio-item p {color:#6a6a6a;margin-bottom:10px;}
-.geo-portfolio-item div.geo-recomended {margin-top:60px;}
 

@@ -95,7 +95,7 @@ nav.arrows {
 			img {
 				width: 100%;
 				@include transition(all 3.75s $ease-out-circ);
-				@include transform(scale(1.01) translateZ(0));
+				@include transform(scale(1) translateZ(0));
 			}
 		}
 		.vertical-centring {
