@@ -5,6 +5,10 @@
 	text-align: center;
 	margin-bottom: 60px;
 
+	&.col-2 article {width: 50%;}
+	&.col-3 article {width: 33.3333333333333333333%;}
+	&.col-4 article {width: 25%;}
+
 	.geo-content-area {
 		width: 75%;
 		margin: 0 auto;
@@ -52,9 +56,6 @@ ul.geo-portfolio-filter {
 */
 .geo-portfolio-list-classic {
 	.geo-content-area {width: 100%;}
-	&.geo-portfolio-list-classic-2-col article {width: 50%;}
-	&.geo-portfolio-list-classic-3-col article {width: 33.3333333333333333333%;}
-	&.geo-portfolio-list-classic-4-col article {width: 25%;}
 
 	article {
 		.fx-layout {
@@ -97,6 +98,114 @@ ul.geo-portfolio-filter {
 		h4 {
 			color: #fff;
 			margin: 0;
+		}
+	}
+}
+
+
+/**
+* portfolio list mansory
+* ----------------------------------------------------------------------------
+*/
+.geo-portfolio-list-mansory {
+	.geo-content-area {width: 100%;}
+
+	article {
+		.fx-layout {
+			position:absolute;top:0;left:0;bottom:0;right:0;
+			>span {display:table;width:100%;height:100%;text-align:center;}
+			>span>i {
+				display: table-cell;
+				vertical-align: middle;
+				background: rgba(#fff,.85);
+				opacity: 0;
+				padding-top: 100px;
+				@include transition(all 0.25s ease-in-out);
+			}
+		}
+		&:hover .fx-layout>span>i {opacity:1;padding-top:0;}
+		a {margin:0 0 0;text-transform:uppercase;font-weight:700;font-size:10px;padding:8px 20px;}
+		h6 {margin:0;color:#979797;font-size:10px;}
+		h5 {margin:0;color:#4385b8;}
+
+		b {
+			position: absolute;
+			left: 0;
+			bottom: 30%;
+			width: 100%;
+			text-align: center;
+			@include transition(all 0.25s ease-in-out);
+		}
+		&:hover b {
+			bottom: 10%;
+		}
+	}
+}
+
+
+/**
+* portfolio list grid
+* ----------------------------------------------------------------------------
+*/
+.geo-portfolio-list-grid {
+	.geo-content-area {width: 100%;}
+
+	article {width: 33.3333333333333333333%;}
+	article:nth-child(11n+1) {width: 66.6666666666666666666%;}
+	article:nth-child(11n+2) {width: 33.3333333333333333333%;}
+	article:nth-child(11n+3) {width: 33.3333333333333333333%;}
+	article:nth-child(11n+4) {width: 33.3333333333333333333%;}
+	article:nth-child(11n+5) {width: 33.3333333333333333333%;float:right;}
+	article:nth-child(11n+6) {width: 66.6666666666666666666%;}
+	article:nth-child(11n+7) {width: 33.3333333333333333333%;}
+	article:nth-child(11n+8) {width: 33.3333333333333333333%;}
+	article:nth-child(11n+9) {width: 66.6666666666666666666%;}
+	article:nth-child(11n+10) {width: 33.3333333333333333333%;}
+	article:nth-child(11n+11) {width: 33.3333333333333333333%;}
+
+	article {
+		float: left;
+
+		.fx-layout {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right:0;
+		}
+		.fx-layout>span {
+			display: table;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+		.fx-layout>span>i {
+			display: table-cell;
+			vertical-align: middle;
+			background: rgba(67,133,184,.7);
+			opacity: 0;
+			padding-top: 100px;
+			@include transition(all 0.25s ease-in-out);
+		}
+		&:hover .fx-layout>span>i {
+			opacity: 1;
+			padding-top: 0;
+		}
+		a {
+			margin: 40px 0 30px;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 10px;
+			padding: 8px 20px;
+		}
+		h6 {
+			margin: 0;
+			color: #b9d5eb;
+			font-size: 10px;
+		}
+		h5 {
+			margin: 0;
+			color: #fff;
 		}
 	}
 }
@@ -149,113 +258,6 @@ ul.geo-portfolio-filter {
 .geo-portfolio-list-custom article:nth-child(3n+1) h5 {color:#fff;}
 .geo-portfolio-list-custom article:nth-child(3n+2) h5 {color:#4385b8;}
 .geo-portfolio-list-custom article:nth-child(3n+3) h5 {color:#fff;}
-
-
-/**
-* portfolio list grid
-* ----------------------------------------------------------------------------
-*/
-.geo-portfolio-list-grid {
-	.geo-content-area {width: 100%;}
-
-	&.geo-portfolio-list-grid-2-col article {width: 33.3333333333333333333%;}
-	&.geo-portfolio-list-grid-2-col article:nth-child(11n+1) {width: 66.6666666666666666666%;}
-	&.geo-portfolio-list-grid-2-col article:nth-child(11n+2) {width: 33.3333333333333333333%;}
-	&.geo-portfolio-list-grid-2-col article:nth-child(11n+3) {width: 33.3333333333333333333%;}
-	&.geo-portfolio-list-grid-2-col article:nth-child(11n+4) {width: 33.3333333333333333333%;}
-	&.geo-portfolio-list-grid-2-col article:nth-child(11n+5) {width: 33.3333333333333333333%;float:right;}
-	&.geo-portfolio-list-grid-2-col article:nth-child(11n+6) {width: 66.6666666666666666666%;}
-	&.geo-portfolio-list-grid-2-col article:nth-child(11n+7) {width: 33.3333333333333333333%;}
-	&.geo-portfolio-list-grid-2-col article:nth-child(11n+8) {width: 33.3333333333333333333%;}
-	&.geo-portfolio-list-grid-2-col article:nth-child(11n+9) {width: 66.6666666666666666666%;}
-	&.geo-portfolio-list-grid-2-col article:nth-child(11n+10) {width: 33.3333333333333333333%;}
-	&.geo-portfolio-list-grid-2-col article:nth-child(11n+11) {width: 33.3333333333333333333%;}
-
-	article {
-		float: left;
-
-		.fx-layout {
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right:0;
-		}
-		.fx-layout>span {
-			display: table;
-			width: 100%;
-			height: 100%;
-			text-align: center;
-		}
-		.fx-layout>span>i {
-			display: table-cell;
-			vertical-align: middle;
-			background: rgba(67,133,184,.7);
-			opacity: 0;
-			padding-top: 100px;
-			@include transition(all 0.25s ease-in-out);
-		}
-		&:hover .fx-layout>span>i {
-			opacity: 1;
-			padding-top: 0;
-		}
-		a {
-			margin: 40px 0 30px;
-			text-transform: uppercase;
-			font-weight: 700;
-			font-size: 10px;
-			padding: 8px 20px;
-		}
-		h6 {
-			margin: 0;
-			color: #b9d5eb;
-			font-size: 10px;
-		}
-		h5 {
-			margin: 0;
-			color: #fff;
-		}
-	}
-}
-
-
-/**
-* portfolio list mansory
-* ----------------------------------------------------------------------------
-*/
-.geo-portfolio-list-mansory {}
-.geo-portfolio-list-mansory .geo-content-area {width:100%;}
-.geo-portfolio-list-mansory.geo-portfolio-list-mansory-2-col article {width:50.0%;}
-.geo-portfolio-list-mansory.geo-portfolio-list-mansory-3-col article {width:33.3333333333333333333%;}
-.geo-portfolio-list-mansory.geo-portfolio-list-mansory-4-col article {width:25.0%;}
-
-.geo-portfolio-list-mansory article {}
-.geo-portfolio-list-mansory article .fx-layout {position:absolute;top:0;left:0;bottom:0;right:0;}
-.geo-portfolio-list-mansory article .fx-layout>span {display:table;width:100%;height:100%;text-align:center;}
-.geo-portfolio-list-mansory article .fx-layout>span>i {
-	display: table-cell;
-	vertical-align: middle;
-	background: rgba(255,255,255,.85);
-	opacity: 0;
-	padding-top: 100px;
-	@include transition(all 0.25s ease-in-out);
-}
-.geo-portfolio-list-mansory article:hover .fx-layout>span>i {opacity:1;padding-top:0;}
-.geo-portfolio-list-mansory article a {margin:0 0 0;text-transform:uppercase;font-weight:700;font-size:10px;padding:8px 20px;}
-.geo-portfolio-list-mansory article h6 {margin:0;color:#979797;font-size:10px;}
-.geo-portfolio-list-mansory article h5 {margin:0;color:#4385b8;}
-
-.geo-portfolio-list-mansory article b {
-	position: absolute;
-	left: 0;
-	bottom: 30%;
-	width: 100%;
-	text-align: center;
-	@include transition(all 0.25s ease-in-out);
-}
-.geo-portfolio-list-mansory article:hover b {
-	bottom: 10%;
-}
 
 
 /*-------------------------------------------------------------------------*/
