@@ -1,25 +1,30 @@
-/* ----------------------------------------------------------------------------------------------------
-iwanamore
----------------------------------------------------------------------------------------------------- */
+/*-------------------------------------------------------------------------*/
+/* # IWANAMORE
+/*-------------------------------------------------------------------------*/
 .iwanamore {
 	text-align: center;
 	width: 100%;
+
 	.gbtn-group {
 		margin: 0 auto;
 		display: inline-block;
+
 		.gbtn {
 			min-width: 190px; 
 		}
 	}
+
 	[class^="icon-"] {
 		position: relative;
 		font-size: 80%;
 		display: inline-block;
 		@include transform(scale(1.6));
 	}
+
 	[class^="icon-arrow-left"] {
 		margin-right: 16px;
 	}
+
 	[class^="icon-arrow-right"] {
 		margin-left: 16px;
 	}

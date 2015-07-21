@@ -1,5 +1,5 @@
 /*-------------------------------------------------------------------------*/
-/*	# HEADER
+/* # HEADER
 /*-------------------------------------------------------------------------*/
 .geo-header {
 	position: fixed;
@@ -17,9 +17,9 @@
 	}
 
 	&.geo-header-large .container {}
-	&.geo-header-small .container {width:100%;}
+	&.geo-header-small .container {width: 100%;}
 }
-@media (max-width:1000px) {.geo-header {display:none;}}
+@media (max-width:1000px) {.geo-header {display: none;}}
 
 
 /**
@@ -47,18 +47,45 @@ nav.geo-main-logo {
 */
 nav.geo-main-menu {
 	float: right;
-	>ul {margin:0;padding:0;list-style:none;display:table;
-		>li {padding:0 15px;position:relative;display:table-cell;vertical-align:middle;line-height:100px;}
-		>li>a {text-transform:uppercase;color:#6a6a6a;font-weight:700;float:left;}
-		>li:hover>a {color:#4385b8;}
-		>li>ul{display:none;position:absolute;top:100%;left:0;background-color:#4385b8;}
-		>li:hover>ul{display:block;}
+	>ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: table;
+
+		>li {
+			padding: 0 15px;
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+			line-height: 100px;
+
+			>a {
+				text-transform: uppercase;
+				color: #6a6a6a;
+				font-weight: 500;
+				float: left;
+			}
+
+			&:hover>a {color: #4385b8;}
+
+			>ul{
+				display: none;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				background: #4385b8;
+			}
+
+			&:hover>ul {display: block;}
+		}
+
 		>li.geo-megamenu>ul{overflow:hidden;}
 		>li.geo-megamenu>ul>li {position:relative;}
-		>li.geo-megamenu>ul>li:before {content:'';position:absolute;left:-1px;top:0;height:1000%;background-color:#5992bd;width:1px;}
+		>li.geo-megamenu>ul>li:before {content:'';position:absolute;left:-1px;top:0;height:1000%;background:#5992bd;width:1px;}
 		>li>ul>li h6 {color:rgba(255,255,255,.2);padding:12px 15px;margin:0;}
 		>li>ul>li a {color:#fff;padding:12px 15px;display:block;line-height:1.2;}
-		>li>ul>li a:hover {background-color:#3d79a8;}
+		>li>ul>li a:hover {background:#3d79a8;}
 		>li>ul>li {float:left;width:200px;}
 		>li.geo-megamenu.geo-megamenu-col-1 ul.geo-submenu {width:200px;left:0;}
 		>li.geo-megamenu.geo-megamenu-col-2 ul.geo-submenu {width:400px;left:-250px;}
@@ -68,7 +95,7 @@ nav.geo-main-menu {
 		>li.geo-classicmenu>ul>li {position:relative;}
 		>li.geo-classicmenu>ul>li>a {position:relative;}
 		>li.geo-classicmenu>ul>li>a>[class^="icon-"] {position:absolute;top:50%;margin-top:-4px;font-size:8px;right:8px;font-weight:700;}
-		>li.geo-classicmenu>ul>li>ul.geo-subsubmenu {position:absolute;top:0;left:100%;width:200px;background-color:#4180b1;display:none;}
+		>li.geo-classicmenu>ul>li>ul.geo-subsubmenu {position:absolute;top:0;left:100%;width:200px;background:#4180b1;display:none;}
 		>li.geo-classicmenu>ul>li:hover>ul.geo-subsubmenu {display:block;}
 	}
 }
@@ -83,39 +110,42 @@ nav.geo-languages-menu {
 	position: relative;
 	top: 29px;
 	text-align: center;
+
 	>ul {
 		margin: 0;
 		padding: 0;
-		list-style: none;}
-	>ul>li {
-		margin: 0 15px;
-	}
-	>ul>li a {
-		text-transform: uppercase;
-		color: #6a6a6a;
-		font-weight: 700;
-		display: block;
-		width: 42px;
-		line-height: 42px;
-	}
-	>ul>li a:hover {
-		background-color: #3d79a8; color: #fff;
-	}
-	>ul>li:hover {
-		background-color: #3d79a8;
-	}
-	>ul>li:hover a {
-		color:#fff;
-	}
-	>ul>li>ul {
-		display: none;
-	}
-	>ul>li:hover>ul {
-		display: block;
-	}
-	>ul>li>ul>li>a {
-		background-color: #4986b6;
-		color: #fff;
+		list-style: none;
+
+		>li {
+			margin: 0 15px;
+
+			a {
+				text-transform: uppercase;
+				color: #6a6a6a;
+				font-weight: 500;
+				display: block;
+				width: 42px;
+				line-height: 42px;
+
+				&:hover {background: #3d79a8;}
+			}
+
+			>ul {
+				display: none;
+				>li {
+					>a {
+						background: #4986b6;
+						color: #fff;
+					}
+				}
+			}
+
+			&:hover {
+				background: #3d79a8;
+				a {color: #fff;}
+				>ul {display: block;}
+			}
+		}
 	}
 }
 
@@ -220,17 +250,14 @@ nav.geo-languages-menu {
 				padding: 0 15px;
 				text-transform: uppercase;
 				color: #6a6a6a;
-				font-weight: 700;
 				float: left;
 				font-size: 24px;
 				font-weight: 700;
 
-				&:hover {
-					color: #4385b8;
-				}
+				&:hover {color: #4385b8;}
 
 				.purchased-items {
-					background-color: #3679ab;
+					background: #3679ab;
 					color: #fff;
 					border-radius: 4px;
 					text-align: center;
@@ -251,8 +278,6 @@ nav.geo-languages-menu {
 		overflow: hidden;
 		top: 100%;
 		right: 0;
-		// width: 340px;
-		// width: 100%;
 		height: 0;
 		background: #5596c7;
 		color: #fff;
@@ -269,14 +294,12 @@ nav.geo-languages-menu {
 		}
 
 		.cart-item {
-			// width: 340px;
 			width: 100%;
 			float: left;
 			border-bottom: 1px solid #cee1ef;
 			position: relative;
 
 			.cart-image {
-				// width: 30%;
 				width: 100px;
 				float: left;
 				@include transition(all 0.15s ease);
@@ -287,7 +310,6 @@ nav.geo-languages-menu {
 			}
 
 			.cart-details {
-				// width: 70%;
 				width: 240px;
 				float: left;
 				@include padding(null 20px);
@@ -338,7 +360,6 @@ nav.geo-languages-menu {
 		}
 
 		.cart-footer {
-			// width: 100%;
 			width: 340px;
 			float: left;
 			padding: 10px;
@@ -379,7 +400,6 @@ nav.geo-languages-menu {
 			}
 		}
 		.cart-empty {
-			// width: 100%;
 			width: 180px;
 			float: left;
 			padding: 10px;
