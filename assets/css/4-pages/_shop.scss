@@ -49,9 +49,7 @@
 * ----------------------------------------------------------------------------
 */
 .geo-shoplist-classic {
-	.geo-content-area {
-		width: 100%;
-	}
+	.geo-content-area {width: 100%;}
 
 	article {
 		padding: 0 15px;
@@ -139,9 +137,7 @@
 * ----------------------------------------------------------------------------
 */
 .geo-shoplist-masonry {
-	.geo-content-area {
-		width: 100%;
-	}
+	.geo-content-area {width: 100%;}
 
 	article {
 		width: 33.3333333333333%;
@@ -234,8 +230,8 @@
 * ----------------------------------------------------------------------------
 */
 nav.geo-filter {
+	margin: 20px 0 50px;
 	@include clearfix;
-	margin:20px 0 50px;
 
 	>ul {
 		>li {
@@ -267,7 +263,7 @@ nav.geo-filter {
 		}
 
 		>li.dropdown {
-			position:relative;
+			position: relative;
 
 			>a[class^="icon-"] {
 				font-size: 10px;
