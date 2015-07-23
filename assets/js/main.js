@@ -244,4 +244,17 @@ $(document).ready(function() {
 });
 
 
+/**
+* Slider Revolution
+* http://themes.themepunch.com/
+*/
+$(document).ready(function() {
+	$('.blog-item-slider').revolution({
+		delay:3000,
+		startwidth:1200,
+		startheight:675,
+		hideThumbs:10,
+		hideTimerBar:"on"
+	});
+});
 
