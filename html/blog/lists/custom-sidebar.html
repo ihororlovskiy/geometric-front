@@ -1,21 +1,23 @@
 ---
 layout: default
 permalink: /html/blog/lists/custom-sidebar/
-taxonomy: Your Blog
-title: Custom + Sidebar
+microtitle: List
+title: Blog
+subtitle: Custom + Sidebar
 
 ---
 
-{% include global/parallax.html %}
+{% include global/parallax-window.html %}
 
-<div class="geo-blog geo-blog-custom geo-blog-custom-sidebar">
+<div class="bloglist bloglist-custom">
 	<div class="container">
-
-		<div class="geo-content-area">
-			{% include blog/list/custom.html %}
+		<div class="row">
+			<div class="col-sm-9">
+				{% include blog/list/custom.html %}
+			</div>
+			<div class="col-sm-3">
+				{% include blog/sidebar.html %}
+			</div>
 		</div>
-
-		{% include blog/sidebar.html %}
-
 	</div>
 </div>

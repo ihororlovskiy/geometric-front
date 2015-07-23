@@ -1,19 +1,20 @@
 ---
 layout: default
 permalink: /html/portfolio/lists/masonry-2col/
-taxonomy: Your Portfolio
-title: Masonry 2 Columns
+microtitle: List
+title: Portfolio
+subtitle: Masonry 2 Columns
 
 ---
 
-{% include global/parallax.html %}
+{% include global/parallax-window.html %}
 
-<div class="geo-portfolio-list geo-portfolio-list-mansory col-2">
+<div class="portfoliolist portfoliolist-mansory col-2">
 	<div class="container">
-		<div class="geo-content-area">
-
-			{% include portfolio/list/masonry.html %}
-
+		<div class="row">
+			<div class="col-sm-12">
+				{% include portfolio/list/masonry.html %}
+			</div>
 		</div>
 	</div>
 </div>

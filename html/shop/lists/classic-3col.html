@@ -1,20 +1,21 @@
 ---
 layout: default
 permalink: /html/shop/lists/classic-3col/
-taxonomy: Your Shop
-title: Classic 3 Columns
+microtitle: List
+title: Shop
+subtitle: Classic 3 Columns
 
 ---
 
-{% include global/parallax.html %}
+{% include global/parallax-window.html %}
 
-<div class="geo-shoplist geo-shoplist-classic col-3">
+<div class="shoplist shoplist-classic col-3">
 	<div class="container">
-
-		<div class="geo-content-area">
-			{% include shop/filters-dropdown.html %}
-			{% include shop/list/classic.html %}
+		<div class="row">
+			<div class="col-sm-12">
+				{% include shop/filters-dropdown.html %}
+				{% include shop/list/classic.html %}
+			</div>
 		</div>
-
 	</div>
 </div>

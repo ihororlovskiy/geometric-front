@@ -1,0 +1,55 @@
+/*-------------------------------------------------------------------------*/
+/* # COMMENTS
+/*-------------------------------------------------------------------------*/
+
+/**
+* comments
+* ----------------------------------------------------------------------------
+*/
+.comments {
+	margin-bottom: 60px;
+
+	h5 {
+		span.comments-count {
+		}
+	}
+
+	.geo-comment {
+		margin-bottom: 2.0em;
+	}
+	img.geo-avatar {
+		width: 60px;
+	}
+	h6.geo-comment-author {
+		margin-bottom: 4px;
+		font-weight: 700;
+	}
+	h6.geo-comment-author a {
+		color: #6a6a6a;
+	}
+	div.geo-comment-date {
+		font-size: 10px;
+		line-height: 1.4;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #9a9a9a;
+		margin-bottom: 20px;
+	}
+	.geo-comment p {
+		line-height: 1.4;
+	}
+}
+
+
+/**
+* add comment
+* ----------------------------------------------------------------------------
+*/
+.addcomment {
+	margin-bottom: 60px;
+
+	h5 {}
+
+}
+
+

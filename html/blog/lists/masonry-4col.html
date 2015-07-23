@@ -1,19 +1,20 @@
 ---
 layout: default
 permalink: /html/blog/lists/masonry-4col/
-taxonomy: Your Blog
-title: Masonry 4 Columns
+microtitle: List
+title: Blog
+subtitle: Masonry 4 Columns
 
 ---
 
-{% include global/parallax.html %}
+{% include global/parallax-window.html %}
 
-<div class="geo-blog geo-blog-masonry col-4">
+<div class="bloglist bloglist-masonry col-4">
 	<div class="container">
-
-		<div class="geo-content-area">
-			{% include blog/list/masonry.html %}
+		<div class="row">
+			<div class="col-sm-12">
+				{% include blog/list/masonry.html %}
+			</div>
 		</div>
-
 	</div>
 </div>

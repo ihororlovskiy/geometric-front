@@ -1,18 +1,8 @@
 /*-------------------------------------------------------------------------*/
 /* # SIDEBAR
 /*-------------------------------------------------------------------------*/
-.withsidebar {
-	.geo-content-area {
-		width: 75% !important;
-		float: right !important;
-	}
-}
-
 aside.sidebar {
-	width: 25%;
-	float: left;
 	text-align: left;
-	padding-right: 30px;
 
 	.sidebar-item {
 		margin-bottom: 40px;
@@ -51,7 +41,7 @@ ul.sidebar-categories {
 
 
 /**
-* sidebar categories
+* sidebar tags
 * ----------------------------------------------------------------------------
 */
 ul.sidebar-tags {

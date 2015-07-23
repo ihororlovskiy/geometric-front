@@ -1,20 +1,21 @@
 ---
 layout: default
 permalink: /html/shop/lists/masonry/
-taxonomy: Your Shop
-title: Masonry
+microtitle: List
+title: Shop
+subtitle: Masonry
 
 ---
 
-{% include global/parallax.html %}
+{% include global/parallax-window.html %}
 
-<div class="geo-shoplist geo-shoplist-masonry">
+<div class="shoplist shoplist-masonry">
 	<div class="container">
-
-		<div class="geo-content-area">
-			{% include shop/filters-dropdown.html %}
-			{% include shop/list/masonry.html %}
+		<div class="row">
+			<div class="col-sm-12">
+				{% include shop/filters-dropdown.html %}
+				{% include shop/list/masonry.html %}
+			</div>
 		</div>
-
 	</div>
 </div>

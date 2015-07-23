@@ -1,0 +1,39 @@
+/*-------------------------------------------------------------------------*/
+/* # PARALLAX WINDOW
+/*-------------------------------------------------------------------------*/
+.parallax-window {
+	position: relative;
+	text-align: center;
+	height: 360px;
+	margin-bottom: 60px;
+
+	.header {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+
+		h5 {
+			color: #fff;
+			margin: 0;
+		}
+
+		h1 {
+			color: #fff;
+			margin: 0;
+		}
+	}
+
+	h4 {
+		color: #fff;
+		margin: 0;
+		font-weight: 300;
+		text-transform: capitalize;
+
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		@include transform(translate(-50%, -100%));
+	}
+}
+

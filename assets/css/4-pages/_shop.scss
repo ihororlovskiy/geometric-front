@@ -1,21 +1,16 @@
 /*-------------------------------------------------------------------------*/
 /* # SHOP LISTS
 /*-------------------------------------------------------------------------*/
-.geo-shoplist {
-	margin-bottom: 80px;
+.shoplist {
+	margin-bottom: 60px;
 
 	&.col-2 article {width: 50%;}
 	&.col-3 article {width: 33.3333333333333333333%;}
 	&.col-4 article {width: 25%;}
 
-	.geo-content-area {
-		width: 75%;
-		margin: 0 auto;
-	}
-
 	.isotope-container {
 		margin-bottom: 40px;
-		overflow: hidden;
+
 		article {
 			text-align: center;
 			position: relative;
@@ -48,8 +43,7 @@
 * shop classic list
 * ----------------------------------------------------------------------------
 */
-.geo-shoplist-classic {
-	.geo-content-area {width: 100%;}
+.shoplist-classic {
 
 	article {
 		padding: 0 15px;
@@ -136,8 +130,7 @@
 * shop masonry list
 * ----------------------------------------------------------------------------
 */
-.geo-shoplist-masonry {
-	.geo-content-area {width: 100%;}
+.withsidebar-masonry {
 
 	article {
 		width: 33.3333333333333%;
@@ -268,9 +261,12 @@
 /*-------------------------------------------------------------------------*/
 /* # SHOP ITEM
 /*-------------------------------------------------------------------------*/
-.geo-shopitem {
-	margin-top: 40px;
-	margin-bottom: 80px;
+.shopitem {
+	color: #515151;
+	font-size: 14px;
+	// line-height: 1.5;
+	margin-top: 30px;
+	margin-bottom: 60px;
 
 	.shopitem-slider {
 		position: relative;
@@ -282,107 +278,44 @@
 		}
 	}
 
-	.geo-shopitem-info {
-		position: relative;
-
-		.size {
-			color: #515151;
-			margin-bottom: 20px;
-			line-height: 1.4;
-			font-size: 14px;
-			input {
-				width:20px;
-			}
-			span {
-				margin-right: 10px;
-			}
-		}
-
-		.color {
-			color: #515151;
-			margin-bottom: 20px;
-			line-height: 1.4;
-			font-size: 14px;
-		}
-
-		.description {
-			color: #515151;
-			margin-bottom: 20px;
-			line-height: 1.4;
-			font-size: 14px;
-		}
-
-		.sku {
-			color: #515151;
-			margin-bottom: 20px;
-			line-height: 1.4;
-			font-size: 14px;
-		}
-
-		.categories {
-			color: #515151;
-			line-height: 1.4;
-			font-size: 14px;
-		}
-
-		.tags {
-			color: #515151;
-			margin-bottom: 20px;
-			line-height: 1.4;
-			font-size: 14px;
-		}
-	}
-}
-
-// shopitem
-.shopitem {
-	color: #515151;
-	font-size: 14px;
-	// line-height: 1.5;
-
 	.shopitem-header {
 		position: relative;
-		padding-bottom: 20px;
 		border-bottom: 1px solid #f2f2f2;
-		margin-bottom: 22px;
+		margin-bottom: 30px;
 	}
 
 	p {
-		margin-bottom:20px;
+		margin-bottom: 20px;
 	}
 
-	.description {}
-	.sku {}
-	.categories {}
-	.tags {}
-}
+	.shopitem__arrows {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
 
+	h1 {
+		font-weight: 300;
+		color: #6a6a6a;
+	}
 
-.shopitem__arrows {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-.shopitem__title {
-	font-weight: 300;
-	font-size: 40px;
-	color: #6a6a6a;
-}
-.shopitem__rating {
-	font-size: 12px;
+	.shopitem__rating {
+		font-size: 12px;
+		margin-bottom: 30px;
 
-	[class^="icon-"] {
-		color: #e6e6e6;
-		cursor: pointer;
-		margin-right: 2px;
-		@include transition(all 0.2s ease);
-		&.active,
-		&:hover {
-			color: #3787c4;
+		[class^="icon-"] {
+			color: #e6e6e6;
+			cursor: pointer;
+			margin-right: 2px;
+			@include transition(all 0.2s ease);
+			&.active,
+			&:hover {
+				color: #3787c4;
+			}
 		}
 	}
-}
 
+}
 
 .shopitem-form {
 
@@ -552,16 +485,13 @@
 }
 
 
-
-
-
 /**
 * shop item breadcrumb
 * ----------------------------------------------------------------------------
 */
 ol.breadcrumb {
 	padding: 0;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	list-style: none;
 	background-color: transparent;
 	border-radius: 0;

@@ -22,17 +22,17 @@ $('.waypoint').each( function(i) {
 * parallax.js
 * https://github.com/pixelcog/parallax.js
 */
-$(document).ready(function() {
-	if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-		$('#ios-notice').removeClass('hidden');
-		$('.parallax-container').height( $(window).height() * 0.5 | 0 );
-	} else {
-		$(window).resize(function(){
-			var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
-			$('.parallax-container').height(parallaxHeight);
-		}).trigger('resize');
-	}
-});
+// $(document).ready(function() {
+// 	if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+// 		$('#ios-notice').removeClass('hidden');
+// 		$('.parallax-container').height( $(window).height() * 0.5 | 0 );
+// 	} else {
+// 		$(window).resize(function(){
+// 			var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+// 			$('.parallax-container').height(parallaxHeight);
+// 		}).trigger('resize');
+// 	}
+// });
 
 
 /**
@@ -250,7 +250,7 @@ $(document).ready(function() {
 */
 $(document).ready(function() {
 	$('.blog-item-slider').revolution({
-		delay:3000,
+		delay:2000,
 		startwidth:1200,
 		startheight:675,
 		hideThumbs:10,

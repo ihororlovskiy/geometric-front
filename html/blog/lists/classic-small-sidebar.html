@@ -1,21 +1,23 @@
 ---
 layout: default
 permalink: /html/blog/lists/classic-small-sidebar/
-taxonomy: Your Blog
-title: Classic Small + Sidebar
+microtitle: List
+title: Blog
+subtitle: Classic Small + Sidebar
 
 ---
 
-{% include global/parallax.html %}
+{% include global/parallax-window.html %}
 
-<div class="geo-blog geo-blog-small geo-blog-small-sidebar">
+<div class="bloglist bloglist-small">
 	<div class="container">
-
-		<div class="geo-content-area">
-			{% include blog/list/classic.html %}
+		<div class="row">
+			<div class="col-sm-9">
+				{% include blog/list/classic.html %}
+			</div>
+			<div class="col-sm-3">
+				{% include blog/sidebar.html %}
+			</div>
 		</div>
-
-		{% include blog/sidebar.html %}
-
 	</div>
 </div>

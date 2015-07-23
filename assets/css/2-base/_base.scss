@@ -9,7 +9,7 @@ html {
 body {
 	background: $bg-color;
 	color: $text-color;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.5;
 	font-family: 'Roboto', Arial, sans-serif;
 	// position: relative;
@@ -28,17 +28,17 @@ body {
 */
 h1 {
 	font-size: 48px;
-	font-weight: 700;
+	font-weight: 400;
 	line-height: 1.2;
 	text-transform: uppercase;
-	margin: 0 0 20px;
+	margin: 0 0 30px;
 }
 h2 {
 	font-size: 36px;
 	font-weight: 500;
 	line-height: 1.2;
 	text-transform: uppercase;
-	margin: 0 0 20px;
+	margin: 0 0 25px;
 }
 h3 {
 	font-size: 30px;
@@ -128,10 +128,12 @@ a {
 * ----------------------------------------------------------------------------
 */
 ::selection {
-	background: $selection-color;
+	color: $selection-color;
+	background: $selection-bg-color;
 }
 ::-moz-selection {
-	background: $selection-color;
+	color: $selection-color;
+	background: $selection-bg-color;
 }
 img::selection {
 	background: transparent;
@@ -140,7 +142,7 @@ img::-moz-selection {
 	background: transparent;
 }
 body {
-	-webkit-tap-highlight-color: $selection-color;
+	-webkit-tap-highlight-color: $selection-bg-color;
 }
 
 
@@ -201,6 +203,15 @@ textarea::-webkit-input-placeholder {
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
 	opacity: 0.5;
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+/* # wrapper
+/*-------------------------------------------------------------------------*/
+main.wrapper {
+	padding-top: 100px;
 }
 
 

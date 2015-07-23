@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------*/
 /* # PORTFOLIO LISTS
 /*-------------------------------------------------------------------------*/
-.geo-portfolio-list {
+.portfoliolist {
 	text-align: center;
 	margin-bottom: 60px;
 
@@ -9,15 +9,11 @@
 	&.col-3 article {width: 33.3333333333333333333%;}
 	&.col-4 article {width: 25%;}
 
-	.geo-content-area {
-		width: 100%;
-		margin: 0 auto;
-	}
-
 	.isotope-container {
 		margin-bottom: 60px;
 
 		article {
+			position: relative;
 			overflow: hidden;
 		}
 	}
@@ -28,23 +24,20 @@
 * portfolio filter
 * ----------------------------------------------------------------------------
 */
-ul.geo-portfolio-filter {
-	margin: 10px auto 60px;
+.portfoliofilter {
+	margin-bottom: 60px;
 
-	li {
+	a {
 		display: inline-block;
 		margin: 0 25px;
+		text-transform: uppercase;
+		font-weight: 500;
+		color: #7c7c7c;
+		cursor: pointer;
+		font-size: 13px;
 
-		a {
-			text-transform: uppercase;
-			font-weight: 500;
-			color: #7c7c7c;
-			cursor: pointer;
-			font-size: 13px;
-
-			&:hover,
-			&.is-checked {color: #5596c7;}
-		}
+		&:hover,
+		&.is-checked {color: #5596c7;}
 	}
 }
 
@@ -53,7 +46,7 @@ ul.geo-portfolio-filter {
 * portfolio list classic
 * ----------------------------------------------------------------------------
 */
-.geo-portfolio-list-classic {
+.portfoliolist-classic {
 	article {
 		.fx-layout {
 			position: absolute;
@@ -105,7 +98,7 @@ ul.geo-portfolio-filter {
 * portfolio list mansory
 * ----------------------------------------------------------------------------
 */
-.geo-portfolio-list-mansory {
+.portfoliolist-mansory {
 	article {
 		.fx-layout {
 			position: absolute;
@@ -172,7 +165,7 @@ ul.geo-portfolio-filter {
 * portfolio list grid
 * ----------------------------------------------------------------------------
 */
-.geo-portfolio-list-grid {
+.portfoliolist-grid {
 	article {
 		width: 33.3333333333333%;
 		&:nth-child(2),
@@ -229,7 +222,7 @@ ul.geo-portfolio-filter {
 * portfolio list custom
 * ----------------------------------------------------------------------------
 */
-.geo-portfolio-list-custom {
+.portfoliolist-custom {
 	article {
 		width: 100%;
 
@@ -323,25 +316,12 @@ ul.geo-portfolio-filter {
 /*-------------------------------------------------------------------------*/
 /* # PORTFOLIO ITEM
 /*-------------------------------------------------------------------------*/
-.geo-portfolio-item {
+.portfolioitem {
+	margin: 30px 0 0;
 	padding-bottom: 60px;
 	border-bottom: 1px solid $divider;
 
-	.container {
-		position: relative;
-	}
-	.geo-portfolio-item-left {
-		float: left;
-		width: 70%;
-		padding-right: 4%;
-	}
-	.geo-portfolio-item-right {
-		float: right;
-		width: 30%;
-		position: relative;
-	}
-
-	.geo-portfolio-item-img {
+	.portfolioitem-img {
 		margin-bottom: 20px;
 	}
 	div.geo-portfolio-date {
