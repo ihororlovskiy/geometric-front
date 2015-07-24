@@ -14,19 +14,23 @@
 		}
 	}
 
-	.geo-comment {
-		margin-bottom: 2.0em;
+	.commentitem {
+		margin-bottom: 30px;
 	}
+
 	img.geo-avatar {
 		width: 60px;
 	}
+
 	h6.geo-comment-author {
 		margin-bottom: 4px;
 		font-weight: 700;
 	}
+
 	h6.geo-comment-author a {
 		color: #6a6a6a;
 	}
+
 	div.geo-comment-date {
 		font-size: 10px;
 		line-height: 1.4;
@@ -35,9 +39,7 @@
 		color: #9a9a9a;
 		margin-bottom: 20px;
 	}
-	.geo-comment p {
-		line-height: 1.4;
-	}
+
 }
 
 

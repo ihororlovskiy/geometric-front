@@ -9,7 +9,7 @@
 	&.col-4 article {width: 25%;}
 
 	.isotope-container {
-		margin-bottom: 40px;
+		margin-bottom: 60px;
 
 		article {
 			text-align: center;
@@ -45,83 +45,88 @@
 */
 .shoplist-classic {
 
-	article {
-		padding: 0 15px;
-		margin-bottom: 20px;
+	.isotope-container {
+		margin: 0 -15px 20px;
 
-		.visual {
-			position: relative;
-			overflow: hidden;
-			a>img {
-				opacity: 1;
-				@include transition(all 0.2s ease, transform 1s ease);
-				@include transform(scale(1.0) translateZ(0));
-			}
+		article {
+			padding: 0 15px 40px;
 
-			.status {
-				position: absolute;
-				top: 0;
-				left: 0;
-				@include transition(all 0.2s ease);
-			}
-
-			.gbtn {
-				position: absolute;
-				top: 100%;
-				left: 50%;
-				opacity: 0;
-				white-space: nowrap;
-				@include transform(translateX(-50%));
-			}
-
-			&:hover {
-				a>img,
-				.status {opacity: 0.25;}
-				.gbtn {
-					top: 50%;
+			.visual {
+				position: relative;
+				overflow: hidden;
+				a>img {
 					opacity: 1;
-					@include transform(translateX(-50%) translateY(-50%));
+					@include transition(all 0.2s ease, transform 1s ease);
+					@include transform(scale(1.0) translateZ(0));
 				}
-			}
-		}
-		.info {
-			padding: 15px;
-			text-align: left;
-			.title {
-				color: #3787c4;
-				text-transform: uppercase;
-				font-size: 13px;
-				font-weight: 500;
-				a {
+
+				.status {
+					position: absolute;
+					top: 0;
+					left: 0;
 					@include transition(all 0.2s ease);
 				}
-			}
-			.rating {
-				font-size:10px;
-				[class^="icon-"] {
-					color: #e6e6e6;
-					cursor: pointer;
-					margin-right: 2px;
-					@include transition(all 0.2s ease);
+
+				.gbtn {
+					position: absolute;
+					top: 100%;
+					left: 50%;
+					opacity: 0;
+					white-space: nowrap;
+					@include transform(translateX(-50%));
 				}
-				[class^="icon-"].active,
-				[class^="icon-"]:hover {
+
+				&:hover {
+					a>img,
+					.status {opacity: 0.25;}
+					.gbtn {
+						top: 50%;
+						opacity: 1;
+						@include transform(translateX(-50%) translateY(-50%));
+					}
+				}
+			}
+
+			.info {
+				padding: 15px 15px 0;
+				text-align: left;
+
+				.title {
 					color: #3787c4;
+					text-transform: uppercase;
+					font-size: 13px;
+					font-weight: 500;
+					a {
+						@include transition(all 0.2s ease);
+					}
 				}
-			}
-			.price {
-				color: #878787;
-				font-size: 15px;
-				font-weight: 700;
-				del {
-					color: #e6e6e6;
-					padding-left: 15px;
+				.rating {
+					font-size:10px;
+					[class^="icon-"] {
+						color: #e6e6e6;
+						cursor: pointer;
+						margin-right: 2px;
+						@include transition(all 0.2s ease);
+					}
+					[class^="icon-"].active,
+					[class^="icon-"]:hover {
+						color: #3787c4;
+					}
+				}
+				.price {
+					color: #878787;
+					font-size: 15px;
+					font-weight: 700;
+					del {
+						color: #e6e6e6;
+						padding-left: 15px;
+					}
 				}
 			}
 		}
-	}
-	article:hover .visual a>img {
-		@include transform(scale(1.2));
+		article:hover .visual a>img {
+			@include transform(scale(1.2));
+		}
 	}
 }
 
@@ -130,7 +135,7 @@
 * shop masonry list
 * ----------------------------------------------------------------------------
 */
-.withsidebar-masonry {
+.shoplist-masonry {
 
 	article {
 		width: 33.3333333333333%;
@@ -223,7 +228,7 @@
 * ----------------------------------------------------------------------------
 */
 .filter-dropdown {
-	margin: 20px 0 50px;
+	margin-bottom: 60px;
 	@include clearfix;
 
 	form.dropdown-form {
@@ -480,6 +485,18 @@
 			color: #4591cb;
 			border-color: #eee;
 		}
+	}
+
+
+
+	input[type="number"].qty,
+	input[type="number"].qty::-webkit-inner-spin-button,
+	input[type="number"].qty::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	input[type="number"] {
+		-moz-appearance: textfield;
 	}
 
 }

@@ -249,7 +249,21 @@ $(document).ready(function() {
 * http://themes.themepunch.com/
 */
 $(document).ready(function() {
-	$('.blog-item-slider').revolution({
+	$('#bloglist-slider1').revolution({
+		delay:2000,
+		startwidth:1200,
+		startheight:675,
+		hideThumbs:10,
+		hideTimerBar:"on"
+	});
+	$('#bloglist-slider2').revolution({
+		delay:2000,
+		startwidth:1200,
+		startheight:675,
+		hideThumbs:10,
+		hideTimerBar:"on"
+	});
+	$('#blogitem-slider').revolution({
 		delay:2000,
 		startwidth:1200,
 		startheight:675,
@@ -258,3 +272,34 @@ $(document).ready(function() {
 	});
 });
 
+
+/**
+* Increment/Decrement Input Number
+* http://codepen.io/ihororlovskyi/pen/PqyPyB
+*/
+$(document).ready(function() {
+	$('.qtyplus').click(function(e) {
+		e.preventDefault();
+		fieldName = $(this).attr('field');
+		var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+		if (!isNaN(currentVal)) {
+			$('input[name=' + fieldName + ']').val(currentVal + 1);
+		} else {
+			$('input[name=' + fieldName + ']').val(0);
+		}
+	});
+	$(".qtyminus").click(function(e) {
+		e.preventDefault();
+		fieldName = $(this).attr('field');
+		var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+		if (!isNaN(currentVal) && currentVal > 1) {
+			$('input[name=' + fieldName + ']').val(currentVal - 1);
+		} else {
+			$('input[name=' + fieldName + ']').val(1);
+		}
+	});
+});
+
+$(':input[type=number]').on('mousewheel', function(e) {
+	e.preventDefault();
+});

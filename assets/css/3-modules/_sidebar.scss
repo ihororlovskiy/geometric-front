@@ -7,8 +7,12 @@ aside.sidebar {
 	.sidebar-item {
 		margin-bottom: 40px;
 
+		// &:last-child {
+		// 	margin: 0;
+		// }
+
 		h4 {
-			line-height: 1.5;
+			// line-height: 1.5;
 			color: #6a6a6a;
 		}
 	}
