@@ -1,6 +1,6 @@
-/* ----------------------------------------------------------------------------------------------------
-index only (this will be deleted at final)
----------------------------------------------------------------------------------------------------- */
+/*-------------------------------------------------------------------------*/
+/* # DEVELOP ONLY (this will be deleted at final)
+/*-------------------------------------------------------------------------*/
 .index-only {
 	font-size: 14px;
 	line-height: 2;
@@ -36,23 +36,69 @@ index only (this will be deleted at final)
 	}
 }
 
-/* ----------------------------------------------------------------------------------------------------
-js-elements
----------------------------------------------------------------------------------------------------- */
+
+/**
+* theme settings
+* ----------------------------------------------------------------------------
+*/
 section.js-elements {
 	position: fixed;
 	z-index: 100000000000000;
-	right: 0;
-	top: 0;
-	a.js-empty-cart {
-		padding: 0.5em 1em;
+	left: 0;
+	top: 50%;
+	background: #488cc0;
+	padding: 8px;
+	font-size: 8px;
+	text-transform: uppercase;
+	min-width: 100px;
+	@include transition(all 0.75s $ease-out-circ);
+	@include transform(translate(-100%,-50%));
+
+	&:before {
+		position: absolute;
+		content: 'Theme Settings';
+		top: 0;
+		left: 0;
+		padding: 4px;
+		color: #488cc0;
+		width: 100%;
+		text-align: center;
+		@include transition(all 0.75s $ease-out-circ);
+		@include transform(translateY(0));
+	}
+
+	&:after {
+		position: absolute;
+		content: '';
+		top: 50%;
+		right: 1px;
+		@include transform(translate(100%,-50%));
+		@include triangle(30px, #488cc0, right);
+	}
+
+	&:hover {
+		@include transform(translate(0,-50%));
+
+		&:before {
+			@include transform(translateY(-100%));
+		}
+
+		&:after {
+		}
+
+	}
+
+
+	a {
+		padding: 4px;
 		background: #000;
 		color: #fff;
-		text-transform: uppercase;
 		display: block;
-		font-size: 0.4em;
-		&:after {
-			content: 'full';
+
+		&.js-empty-cart {
+			&:after {
+				content: 'full';
+			}
 		}
 	}
 }

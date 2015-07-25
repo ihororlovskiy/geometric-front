@@ -303,3 +303,9 @@ $(document).ready(function() {
 $(':input[type=number]').on('mousewheel', function(e) {
 	e.preventDefault();
 });
+
+
+/**
+* Fresco Lightbox
+* http://www.frescojs.com
+*/

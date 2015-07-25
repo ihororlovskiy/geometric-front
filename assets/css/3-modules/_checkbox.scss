@@ -7,16 +7,6 @@
 	label {
 		cursor: pointer;
 		margin: 0;
-	}
-
-	input[type="checkbox"] {
-		display: none;
-		&:checked + label span {
-			background: #488cc0;
-		}
-	}
-
-	input[type="checkbox"] + label {
 		color: #6a6a6a;
 		font-size: 14px;
 		font-weight: 300;
@@ -31,9 +21,17 @@
 			border: 2px solid $divider;
 			border-radius: 3px;
 			background: $divider;
-			@include transition(all 0.2s $ease-out-quart);
+			@include transition(all 0.75s $ease-out-quart);
 		}
 
-		&:hover span {background: #488cc0;}
+		&:hover span {background: #999;}
+	}
+
+	input[type="checkbox"] {
+		display: none;
+
+		&:checked + label span {
+			background: #488cc0;
+		}
 	}
 }
