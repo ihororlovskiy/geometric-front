@@ -273,6 +273,30 @@
 	.shopitem-slider {
 		position: relative;
 
+		a.fresco {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 60px;
+			height: 60px;
+			font-size: 30px;
+			line-height: 2;
+			text-align: center;
+			color: #4385b8;
+			background: rgba(#fff, 0.8);
+			border-radius: 50%;
+			opacity: 0;
+			@include transition(all 0.5s $ease-out-quart);
+			@include transform(translate(-50%,-50%));
+		}
+
+		.flexslider:hover {
+			a.fresco {
+				opacity: 0.75;
+				&:hover {opacity: 1;}
+			}
+		}
+
 		.status {
 			position: absolute;
 			top: 0;
@@ -748,6 +772,4 @@ ol.breadcrumb {
 		opacity: 1;
 	}
 }
-
-
 

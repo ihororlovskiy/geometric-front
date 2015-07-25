@@ -63,6 +63,9 @@ ul.js-elements {
 		color: #488cc0;
 		width: 100%;
 		text-align: center;
+		@include border-width(1px 1px null);
+		@include border-style(solid);
+		@include border-color(#488cc0);
 		@include transform(translateY(-100%));
 	}
 
@@ -120,3 +123,4 @@ body {
 		}
 	}
 }
+
