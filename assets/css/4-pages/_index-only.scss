@@ -41,17 +41,17 @@
 * theme settings
 * ----------------------------------------------------------------------------
 */
-section.js-elements {
+ul.js-elements {
 	position: fixed;
 	z-index: 100000000000000;
 	left: 0;
 	top: 50%;
 	background: #488cc0;
 	padding: 8px;
-	font-size: 8px;
+	font-size: 10px;
 	text-transform: uppercase;
-	min-width: 100px;
-	@include transition(all 0.75s $ease-out-circ);
+	min-width: 180px;
+	@include transition(all 0.5s $ease-out-circ);
 	@include transform(translate(-100%,-50%));
 
 	&:before {
@@ -63,8 +63,7 @@ section.js-elements {
 		color: #488cc0;
 		width: 100%;
 		text-align: center;
-		@include transition(all 0.75s $ease-out-circ);
-		@include transform(translateY(0));
+		@include transform(translateY(-100%));
 	}
 
 	&:after {
@@ -74,34 +73,35 @@ section.js-elements {
 		right: 1px;
 		@include transform(translate(100%,-50%));
 		@include triangle(30px, #488cc0, right);
+		border-right: 15px solid transparent;
 	}
 
 	&:hover {
 		@include transform(translate(0,-50%));
-
-		&:before {
-			@include transform(translateY(-100%));
-		}
-
-		&:after {
-		}
-
 	}
 
+	li {
+		margin-bottom: 8px;
 
-	a {
-		padding: 4px;
-		background: #000;
-		color: #fff;
-		display: block;
+		&:last-child {
+			margin-bottom: 0;
+		}
 
-		&.js-empty-cart {
-			&:after {
-				content: 'full';
+		a {
+			padding: 4px;
+			background: #000;
+			color: #fff;
+			display: inline-block;
+
+			&.js-empty-cart {
+				&:after {
+					content: 'full';
+				}
 			}
 		}
 	}
 }
+
 body {
 	.shoping-cart-box {
 		.cart-empty {display: none;}

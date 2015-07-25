@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------*/
 /* # CHECKBOX
 /*-------------------------------------------------------------------------*/
-.geo-checkbox {
+.checkbox {
 	margin-bottom: 10px;
 
 	label {
@@ -10,18 +10,19 @@
 		color: #6a6a6a;
 		font-size: 14px;
 		font-weight: 300;
+		padding: 0;
 
 		span {
 			display: inline-block;
 			width: 12px;
 			height: 12px;
-			margin-right: 12px;
+			margin-right: 18px;
 			vertical-align: middle;
 			cursor: pointer;
 			border: 2px solid $divider;
 			border-radius: 3px;
 			background: $divider;
-			@include transition(all 0.75s $ease-out-quart);
+			@include transition(all 0.5s $ease-out-quart);
 		}
 
 		&:hover span {background: #999;}

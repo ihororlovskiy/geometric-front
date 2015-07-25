@@ -282,13 +282,13 @@
 
 	.shopitem-header {
 		position: relative;
-		border-bottom: 1px solid #f2f2f2;
+		border-bottom: 1px solid $divider;
 		margin-bottom: 30px;
 	}
 
-	p {
-		margin-bottom: 20px;
-	}
+	// p {
+	// 	margin-bottom: 20px;
+	// }
 
 	.shopitem__arrows {
 		position: absolute;
@@ -319,20 +319,16 @@
 }
 
 .shopitem-form {
+	position: relative;
+	margin-bottom: 30px;
+	border-bottom: 1px solid $divider;
+	@include clearfix;
 
-	.shopitem-form-header {
-		@include clearfix;
-		position: relative;
-		padding-bottom: 20px;
-		border-bottom: 1px solid #f2f2f2;
-		margin-bottom: 40px;
-	}
-
-	.size-list {
-		@include clearfix;
+	.size-row {
 		color: #515151;
 		line-height: 44px;
 		margin-bottom: 20px;
+		@include clearfix;
 
 		.title {
 			float: left;
@@ -342,161 +338,111 @@
 
 		.list {
 			float: left;
-		}
 
-		.item {
-			float: left;
+			.item {
+				float: left;
 
-			label {
-				min-width: 44px;
-				cursor: pointer;
-				position: relative;
-				text-align: center;
-				margin-left: 10px;
-
-				&:before {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
+				label {
+					min-width: 44px;
+					cursor: pointer;
+					position: relative;
+					text-align: center;
+					margin-right: 10px;
 					border: 2px solid transparent;
+					@include transition(all 0.75s $ease-out-circ);
+
+					&:hover {
+						font-weight: 500;
+						border-color: $divider;
+					}
 				}
-			}
 
-			&:first-child label {margin-left: 0;}
-
-			input[type="radio"] {display: none;}
-			input[type="radio"]:checked + label,
-			input[type="radio"]:checked + label:before {
-				color: #488cc0;
-				border-color: #488cc0;
+				input[type="radio"] {display: none;}
+				input[type="radio"]:checked + label {
+					font-weight: 500;
+					color: #488cc0;
+					border-color: #488cc0;
+				}
 			}
 		}
 	}
 
-	.color-list {
+	.color-row {
 		color: #515151;
-		// line-height: 44px;
 		margin-bottom: 20px;
-		display: inline-block;
 		position: relative;
+		@include clearfix;
 
 		.title {
 			display: inline-block;
 			margin-right: 10px;
 			min-width: 77px;
 		}
+	}
 
-		.list {
+	.add-row {
+		margin-bottom: 20px;
+		@include clearfix;
+
+		.shopitem-form-price {
 			float: left;
-			background: #ff0;
+			line-height: 60px;
+			color: #5a9ed2;
+			font-size: 20px;
+			font-weight: 700;
+			del {
+				color: #e6e6e6;
+				padding-left: 15px;
+				font-size: 14px;
+			}
 		}
 
-		.item {
+		button.gbtn {
+			float: right;
+		}
 
-			label {
-				cursor: pointer;
-				position: relative;
+		.shopitem-quantity {
+			position: relative;
+			float: right;
+			border: 1px solid transparent;
+			@include transition(all 0.25s $ease-out-circ);
+			&:hover {border-color: $divider;}
+			input.quantity {
+				width: 140px;
 				text-align: center;
-				display: none;
-				padding: 0 12px;
-
-				&:before {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					border: 2px solid transparent;
-				}
-				&:hover label {
-					display: block;
-				}
+				color: #909090;
+				font-weight: 700;
+				font-size: 22px;
+				padding: 14px 44px;
+				border: none;
 			}
-
-			&:first-child label {
-				margin-left: 0;
-			}
-
-			input[type="radio"] {
-				display: none;
-			}
-			input[type="radio"]:checked + label,
-			input[type="radio"]:checked + label:before {
-				display: inline-block;
-				color: #488cc0;
-				border-color: #e9e9e9;
-			}
-
-		}
-
-		&:hover {
-			.list {
+			button[class^="quantity-"] {
 				position: absolute;
-				top: 0;
-				right: 0;
-
-				label {
-					display: inline-block;
+				top: 50%;
+				border: none;
+				outline: none;
+				line-height: 1;
+				padding: 0;
+				background: none;
+				@include transform(translateY(-50%));
+				&.quantity-minus {left: 28px;}
+				&.quantity-plus {right: 28px;}
+				[class^="icon-"] {
+					color: $btn-primary-bg-normal;
+					&:hover {color: $btn-primary-bg-hover;}
+					&:active {color: $btn-primary-bg-active;}
 				}
 			}
-		}
-
-	}
-
-	button.gbtn {
-		float: right;
-	}
-
-	.shopitem-form-price {
-		float: left;
-		line-height: 60px;
-		color: #5a9ed2;
-		font-size: 20px;
-		font-weight: 700;
-		del {
-			color: #e6e6e6;
-			padding-left: 15px;
-			font-size: 14px;
+			input[type="number"].quantity,
+			input[type="number"].quantity::-webkit-inner-spin-button,
+			input[type="number"].quantity::-webkit-outer-spin-button {
+				-moz-appearance: textfield;
+				-webkit-appearance: none;
+				margin: 0;
+			}
 		}
 	}
-	.shopitem-form-quantity {
-		width: 100px;
-		border: none;
-		text-align: center;
-		color: #909090;
-		font-weight: 700;
-		font-size: 20px;
-		padding: 16px 15px 16px 25px;
-		border: 1px solid transparent;
-		display: block;
-		float: left;
-		float: right;
-
-		&:hover,
-		&:focus {
-			color: #4591cb;
-			border-color: #eee;
-		}
-	}
-
-
-
-	input[type="number"].qty,
-	input[type="number"].qty::-webkit-inner-spin-button,
-	input[type="number"].qty::-webkit-outer-spin-button {
-		-webkit-appearance: none;
-		margin: 0;
-	}
-	input[type="number"] {
-		-moz-appearance: textfield;
-	}
-
 }
-
 
 /**
 * shop item breadcrumb
@@ -558,7 +504,7 @@ ol.breadcrumb {
 * ----------------------------------------------------------------------------
 */
 .vtabs {
-	border: 0 solid #f2f2f2;
+	border: 0 solid $divider;
 	border-width: 1px 0;
 	margin-bottom: 40px;
 	padding: 30px 0;
@@ -567,7 +513,7 @@ ol.breadcrumb {
 .vtabs__tablist {
 	width: 25%;
 	float: left;
-	border-right: 1px solid #f2f2f2;
+	border-right: 1px solid $divider;
 	padding-bottom: 60px;
 }
 .vtabs__tablist__item {
@@ -622,7 +568,7 @@ ol.breadcrumb {
 
 	tbody {}
 	tr {
-		border-bottom: 1px dotted #cdcdcd;
+		border-bottom: 1px dotted $divider;
 		&:last-child {
 			border-bottom: none;
 		}

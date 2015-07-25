@@ -278,7 +278,7 @@ $(document).ready(function() {
 * http://codepen.io/ihororlovskyi/pen/PqyPyB
 */
 $(document).ready(function() {
-	$('.qtyplus').click(function(e) {
+	$('.quantity-plus').click(function(e) {
 		e.preventDefault();
 		fieldName = $(this).attr('field');
 		var currentVal = parseInt($('input[name=' + fieldName + ']').val());
@@ -288,7 +288,7 @@ $(document).ready(function() {
 			$('input[name=' + fieldName + ']').val(0);
 		}
 	});
-	$(".qtyminus").click(function(e) {
+	$(".quantity-minus").click(function(e) {
 		e.preventDefault();
 		fieldName = $(this).attr('field');
 		var currentVal = parseInt($('input[name=' + fieldName + ']').val());
