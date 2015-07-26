@@ -2,7 +2,7 @@
 /* # BLOG LISTS
 /*-------------------------------------------------------------------------*/
 .bloglist {
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 
 	&.col-2 article {width: 50%;}
 	&.col-3 article {width: 33.3333333333333333333%;}
@@ -96,7 +96,7 @@
 .bloglist-small {
 
 	.isotope-container {
-		margin-bottom: 0;
+		margin-bottom: 20px;
 
 		article {
 			margin-bottom: 40px;
@@ -130,7 +130,7 @@
 .bloglist-large {
 
 	.isotope-container {
-		margin-bottom: 0;
+		margin-bottom: 20px;
 
 		article {
 			margin-bottom: 40px;
@@ -155,7 +155,7 @@
 .bloglist-masonry {
 
 	.isotope-container {
-		margin: 0 -15px;
+		margin: 0 -15px 20px;
 
 		article {
 			padding: 0 15px 40px;
@@ -212,7 +212,7 @@
 .bloglist-grid {
 
 	.isotope-container-grid {
-		margin: 0 -15px;
+		margin: 0 -15px 20px;
 
 		article {
 			position: relative;
@@ -243,7 +243,6 @@
 * ----------------------------------------------------------------------------
 */
 .bloglist-custom {
-	margin-bottom: 60px;
 
 	.isotope-container {
 		margin-bottom: 60px;

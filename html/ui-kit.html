@@ -227,75 +227,75 @@ subtitle: By Stezhenko, Pivniuk & Orlovskyi
 				</section>
 				<section>
 
+					<h3>Input Range</h3>
+
 					<div class="row">
-						<div class="col-sm-6">
-
-							<h3>Radio Buttons</h3>
-
-							<form>
-								<div class="radio">
-									<input type="radio" id="radio01" name="radio" checked>
-									<label for="radio01"><span></span>Infected</label>
-								</div>
-
-								<div class="radio">
-									<input type="radio" id="radio02" name="radio">
-									<label for="radio02"><span></span>Mushroom</label>
-								</div>
-
-								<div class="radio">
-									<input type="radio" id="radio03" name="radio">
-									<label for="radio03"><span></span>Nuclear</label>
-								</div>
-
-								<div class="radio">
-									<input type="radio" id="radio04" name="radio">
-									<label for="radio04"><span></span>Rumjet</label>
-								</div>
-
-								<input class="gbtn gbtn-sm" type="submit" value="Submit">
-							</form>
-
-						</div>
-						<div class="col-sm-6">
-
-							<h3>Checkboxes</h3>
-
-							<form>
-								<div class="checkbox">
-									<input type="checkbox" id="checkbox01" name="infected" checked>
-									<label for="checkbox01"><span></span>Infected</label>
-								</div>
-
-								<div class="checkbox">
-									<input type="checkbox" id="checkbox02" name="mushroom">
-									<label for="checkbox02"><span></span>Mushroom</label>
-								</div>
-
-								<div class="checkbox">
-									<input type="checkbox" id="checkbox03" name="nuclear">
-									<label for="checkbox03"><span></span>Nuclear</label>
-								</div>
-
-								<div class="checkbox">
-									<input type="checkbox" id="checkbox04" name="rumjet">
-									<label for="checkbox04"><span></span>Rumjet</label>
-								</div>
-
-								<input class="gbtn gbtn-sm" type="submit" value="Submit">
-							</form>
-
+						<div class="col-sm-4">
+							{% include shop/filter-price-range.html %}
 						</div>
 					</div>
 
 				</section>
 				<section>
 
-					<h3>Input Range</h3>
-
 					<div class="row">
-						<div class="col-sm-4">
-							{% include shop/filter-price-range.html %}
+						<div class="col-sm-3">
+
+							<h3>Radio Buttons</h3>
+
+							<form class="radio-choice">
+								<div class="radio">
+									<input type="radio" id="infected-radio" name="radio-choice" checked>
+									<label for="infected-radio"><span></span>Infected</label>
+								</div>
+
+								<div class="radio">
+									<input type="radio" id="mushroom-radio" name="radio-choice">
+									<label for="mushroom-radio"><span></span>Mushroom</label>
+								</div>
+
+								<div class="radio">
+									<input type="radio" id="nuclear-radio" name="radio-choice">
+									<label for="nuclear-radio"><span></span>Nuclear</label>
+								</div>
+
+								<div class="radio">
+									<input type="radio" id="rumjet-radio" name="radio-choice">
+									<label for="rumjet-radio"><span></span>Rumjet</label>
+								</div>
+
+								<button class="gbtn gbtn-sm" type="submit"><span class="icon-filter"></span> Filter</button>
+							</form>
+
+						</div>
+						<div class="col-sm-3">
+
+							<h3>Checkboxes</h3>
+
+							<form class="check-choice">
+								<div class="checkbox">
+									<input type="checkbox" id="infected-check" name="infected" checked>
+									<label for="infected-check"><span></span>Infected</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox" id="mushroom-check" name="mushroom">
+									<label for="mushroom-check"><span></span>Mushroom</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox" id="nuclear-check" name="nuclear">
+									<label for="nuclear-check"><span></span>Nuclear</label>
+								</div>
+
+								<div class="checkbox">
+									<input type="checkbox" id="rumjet-check" name="rumjet">
+									<label for="rumjet-check"><span></span>Rumjet</label>
+								</div>
+
+								<button class="gbtn gbtn-sm" type="submit"><span class="icon-filter"></span> Filter</button>
+							</form>
+
 						</div>
 					</div>
 

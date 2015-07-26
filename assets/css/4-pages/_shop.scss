@@ -446,11 +446,11 @@
 				border: none;
 				outline: none;
 				line-height: 1;
-				padding: 0;
+				padding: 6px;
 				background: none;
 				@include transform(translateY(-50%));
-				&.quantity-minus {left: 28px;}
-				&.quantity-plus {right: 28px;}
+				&.quantity-minus {left: 24px;}
+				&.quantity-plus {right: 24px;}
 				[class^="icon-"] {
 					color: $btn-primary-bg-normal;
 					&:hover {color: $btn-primary-bg-hover;}

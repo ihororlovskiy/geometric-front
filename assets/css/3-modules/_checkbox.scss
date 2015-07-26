@@ -2,7 +2,11 @@
 /* # CHECKBOX
 /*-------------------------------------------------------------------------*/
 .checkbox {
-	margin-bottom: 10px;
+	margin: 0 0 10px;
+
+	+ .checkbox {
+		margin-top: 0;
+	}
 
 	label {
 		cursor: pointer;
