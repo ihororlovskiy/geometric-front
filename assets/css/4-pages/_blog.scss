@@ -212,10 +212,6 @@
 
 				h2 {margin: 30px 0;}
 			}
-
-			&.item-quote .text-content {
-				width: 100%;
-			}
 		}
 	}
 }
@@ -233,14 +229,49 @@
 		article {
 			padding: 0 15px 40px;
 
-			.geo-media {
+			.media-contur {
 				margin-bottom: 20px;
+				position: relative;
+				overflow: hidden;
+
+				>img {
+					@include transition(all 5.25s $ease-out-circ);
+					@include transform(scale(1.0) translateZ(0));
+				}
+
+				.vertical-centering {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background: rgba(#fff, 0.75);
+					@include transition(all 0.25s $ease-out-circ);
+					@include transform(translateY(100%));
+
+					.gbtn {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						@include transform(translate(-50%,-50%));
+					}
+				}
+
+				&:hover {
+					>img {
+						@include transform(scale(1.25));
+					}
+					.vertical-centering {
+						@include transform(translateY(0));
+					}
+				}
 			}
 
-			.geo-blog-meta-bottom {
-				margin-bottom: 0;
+			.text-content {
 				padding-bottom: 40px;
 				border-bottom: 1px solid $divider;
+
+				h4 {margin: 20px 0;}
 			}
 
 			&.item-quote .geo-blog-meta-bottom {
@@ -305,6 +336,31 @@
 				margin-bottom: 0;
 				padding-bottom: 0;
 				border-bottom: none;
+			}
+		}
+	}
+
+	&.col-2 article {
+		&.item-quote .geo-content {
+			padding: 40px 30px 20px;
+			p.p-quote {
+				font-size: 20px;
+			}
+		}
+	}
+	&.col-3 article {
+		&.item-quote .geo-content {
+			padding: 35px 25px 20px;
+			p.p-quote {
+				font-size: 18px;
+			}
+		}
+	}
+	&.col-4 article {
+		&.item-quote .geo-content {
+			padding: 30px 20px 20px;
+			p.p-quote {
+				font-size: 14px;
 			}
 		}
 	}
