@@ -16,6 +16,8 @@
 		.media-contur {
 			position: relative;
 			overflow: hidden;
+			text-align: center;
+			margin: 0 auto;
 
 			>img {
 				@include transition(all 5.25s $ease-out-circ);
@@ -44,61 +46,73 @@
 
 		.text-content {
 		}
+	}
+}
 
-		&.quote-item {
 
-			.text-content {
+/**
+* quote item
+* ----------------------------------------------------------------------------
+*/
+.bloglist {
+	article.quote-item {
+
+		.text-content {
+			blockquote {
 				background: #5596c7;
-				padding: 60px 30px 30px;
+				padding: 30px 20px 30px;
+				color: #fff;
+				text-align: center;
+				padding-bottom: 30px;
 
-				blockquote {
-					color: #fff;
-					text-align: center;
+				img {
+					max-width: 150px;
+					margin: 0 auto 30px;
+					border-radius: 100%;
+				}
 
-					[class^="icon-"] {
-						margin-bottom: 40px;
-						font-size: 44px;
-						display: block;
+				q {
+					display: block;
+					font-size: 20px;
+					margin-bottom: 30px;
+					text-transform: uppercase;
+					font-weight: 500;
+					quotes: "«" "»";
+
+					&:before {
+						content: open-quote;
+						padding-right: 0.5em;
 					}
 
-					p {
-						font-size: 20px;
-						margin-bottom: 30px;
-						text-transform: uppercase;
-						font-weight: 500;
+					&:after {
+						content: close-quote;
+						padding-left: 0.5em;
+					}
 
-						a {
-							color: #fff;
-							&:hover {color: #ddd;}
-						}
+					a {
+						color: #fff;
+						&:hover {color: #ddd;}
+					}
+				}
 
-						q {
-							quotes: "«" "»";
+				cite {
+					display: block;
+					font-size: 14px;
+					margin-bottom: 30px;
+					text-transform: uppercase;
+					font-weight: 500;
+					quotes: "—" "";
+					padding-bottom: 30px;
+					border-bottom: 1px solid rgba($divider,0.2);
 
-							&:before {
-								content: open-quote;
-								padding-right: 0.5em;
-							}
-
-							&:after {
-								content: close-quote;
-								padding-left: 0.5em;
-							}
-						}
-
-						cite {
-							font-size: 14px;
-							quotes: "—" "";
-
-							&:before {
-								content: open-quote;
-								padding-right: 0.5em;
-							}
-						}
+					&:before {
+						content: open-quote;
+						padding-right: 0.5em;
 					}
 				}
 
 				nav.meta {
+					text-align: left;
 					a {
 						color: #fff;
 						&:hover {color: #ddd;}
@@ -116,58 +130,28 @@
 			}
 		}
 	}
-}
 
-
-/**
-* Item Quote
-* ----------------------------------------------------------------------------
-*/
-.bloglist article.item-quote {
-
-	.geo-content {
-		background: #5596c7;
-		position: relative;
-		padding: 40px 30px 20px;
-
-		a.quote-link {
-			position: relative;
-			padding-left: 50px;
-			text-align: center;
-			display: inline-block;
-
-			span.icon-quote {
-				position: absolute;
-				top: 8px;
-				left: 0;
-				color: #fff;
-				font-size: 40px;
-				font-weight: 400;
+	&.col-2 article.quote-item {
+		.text-content {
+			blockquote {
+				q {font-size: 20px;}
+				cite {font-size: 14px;}
 			}
 		}
-
-		p {
-			color: #fff;
-			line-height: 1.4;
-			font-weight: 400;
-			margin-bottom: 40px;
-
-			&.p-quote {
-				font-size: 20px;
-
-				&:before {
-					content: '«';
-					padding-right: 10px;
-				} 
-
-				&:after {
-					content: '»';
-					padding-left: 10px;
-				}
+	}
+	&.col-3 article {
+		.text-content {
+			blockquote {
+				q {font-size: 17px;}
+				cite {font-size: 12px;}
 			}
-
-			&.quote-autor {
-				font-size: 14px;
+		}
+	}
+	&.col-4 article {
+		.text-content {
+			blockquote {
+				q {font-size: 14px;}
+				cite {font-size: 10px;}
 			}
 		}
 	}
@@ -213,7 +197,6 @@ nav.meta {
 * ----------------------------------------------------------------------------
 */
 .bloglist-small {
-
 	.isotope-container {
 		margin-bottom: 20px;
 
@@ -222,7 +205,8 @@ nav.meta {
 			border-bottom: 1px solid $divider;
 
 			.media-contur {
-				width: 40%;
+				width: 45%;
+				padding-right: 30px;
 				margin-bottom: 40px;
 				float: left;
 
@@ -236,28 +220,14 @@ nav.meta {
 						@include transform(translate(-50%,-50%));
 					}
 				}
-
-				&:hover {
-					>img {
-						@include transform(scale(1.25));
-					}
-					.vertical-centering {
-						@include transform(translateY(0));
-					}
-				}
 			}
 
 			.text-content {
-				width: 60%;
+				width: 55%;
 				float: right;
-				padding-left: 30px;
 				margin-bottom: 40px;
 
 				h3 {margin: 20px 0;}
-			}
-
-			&.item-quote .text-content {
-				width: 100%;
 			}
 
 			&.quote-item {
@@ -275,7 +245,6 @@ nav.meta {
 * ----------------------------------------------------------------------------
 */
 .bloglist-large {
-
 	.isotope-container {
 		margin-bottom: 20px;
 
@@ -294,15 +263,6 @@ nav.meta {
 						top: 50%;
 						left: 50%;
 						@include transform(translate(-50%,-50%));
-					}
-				}
-
-				&:hover {
-					>img {
-						@include transform(scale(1.25));
-					}
-					.vertical-centering {
-						@include transform(translateY(0));
 					}
 				}
 			}
@@ -322,7 +282,6 @@ nav.meta {
 * ----------------------------------------------------------------------------
 */
 .bloglist-masonry {
-
 	.isotope-container {
 		margin: 0 -15px 20px;
 
@@ -342,15 +301,6 @@ nav.meta {
 						@include transform(translate(-50%,-50%));
 					}
 				}
-
-				&:hover {
-					>img {
-						@include transform(scale(1.25));
-					}
-					.vertical-centering {
-						@include transform(translateY(0));
-					}
-				}
 			}
 
 			.text-content {
@@ -358,37 +308,6 @@ nav.meta {
 				border-bottom: 1px solid $divider;
 
 				h4 {margin: 20px 0;}
-			}
-
-			&.item-quote .geo-blog-meta-bottom {
-				margin-bottom: 0;
-				padding-bottom: 0;
-				border-bottom: none;
-			}
-		}
-	}
-
-	&.col-2 article {
-		&.item-quote .geo-content {
-			padding: 40px 30px 20px;
-			p.p-quote {
-				font-size: 20px;
-			}
-		}
-	}
-	&.col-3 article {
-		&.item-quote .geo-content {
-			padding: 35px 25px 20px;
-			p.p-quote {
-				font-size: 18px;
-			}
-		}
-	}
-	&.col-4 article {
-		&.item-quote .geo-content {
-			padding: 30px 20px 20px;
-			p.p-quote {
-				font-size: 14px;
 			}
 		}
 	}
@@ -400,7 +319,6 @@ nav.meta {
 * ----------------------------------------------------------------------------
 */
 .bloglist-grid {
-
 	.isotope-container-grid {
 		margin: 0 -15px 20px;
 
@@ -421,15 +339,6 @@ nav.meta {
 						@include transform(translate(-50%,-50%));
 					}
 				}
-
-				&:hover {
-					>img {
-						@include transform(scale(1.25));
-					}
-					.vertical-centering {
-						@include transform(translateY(0));
-					}
-				}
 			}
 
 			.text-content {
@@ -437,43 +346,6 @@ nav.meta {
 				border-bottom: 1px solid $divider;
 
 				h4 {margin: 20px 0;}
-			}
-
-			.geo-blog-meta-bottom {
-				margin-bottom: 0;
-				padding-bottom: 40px;
-				border-bottom: 1px solid $divider;
-			}
-
-			&.item-quote .geo-blog-meta-bottom {
-				margin-bottom: 0;
-				padding-bottom: 0;
-				border-bottom: none;
-			}
-		}
-	}
-
-	&.col-2 article {
-		&.item-quote .geo-content {
-			padding: 40px 30px 20px;
-			p.p-quote {
-				font-size: 20px;
-			}
-		}
-	}
-	&.col-3 article {
-		&.item-quote .geo-content {
-			padding: 35px 25px 20px;
-			p.p-quote {
-				font-size: 18px;
-			}
-		}
-	}
-	&.col-4 article {
-		&.item-quote .geo-content {
-			padding: 30px 20px 20px;
-			p.p-quote {
-				font-size: 14px;
 			}
 		}
 	}
@@ -485,7 +357,6 @@ nav.meta {
 * ----------------------------------------------------------------------------
 */
 .bloglist-custom {
-
 	.isotope-container {
 		margin-bottom: 60px;
 
@@ -547,14 +418,6 @@ nav.meta {
 			}
 
 			&:hover {
-				.media-contur {
-					>img {
-						@include transform(scale(1.25));
-					}
-					.vertical-centering {
-						@include transform(translateY(0));
-					}
-				}
 				.text-content {
 					padding-left: 6%;
 
