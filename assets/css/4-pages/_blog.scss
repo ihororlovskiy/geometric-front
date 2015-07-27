@@ -139,7 +139,7 @@
 			}
 		}
 	}
-	&.col-3 article {
+	&.col-3 article.quote-item {
 		.text-content {
 			blockquote {
 				q {font-size: 17px;}
@@ -147,7 +147,7 @@
 			}
 		}
 	}
-	&.col-4 article {
+	&.col-4 article.quote-item {
 		.text-content {
 			blockquote {
 				q {font-size: 14px;}

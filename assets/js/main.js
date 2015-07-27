@@ -254,21 +254,33 @@ $(document).ready(function() {
 		startwidth:1200,
 		startheight:675,
 		hideThumbs:10,
-		hideTimerBar:"on"
+		hideTimerBar:"on",
+		touchenabled:"on",
+		navigationType:"none",
+		soloArrowLeftHOffset:0,
+		soloArrowRightHOffset:0,
 	});
 	$('#bloglist-slider2').revolution({
 		delay:2000,
 		startwidth:1200,
 		startheight:675,
 		hideThumbs:10,
-		hideTimerBar:"on"
+		hideTimerBar:"on",
+		touchenabled:"on",
+		navigationType:"none",
+		soloArrowLeftHOffset:0,
+		soloArrowRightHOffset:0,
 	});
 	$('#blogitem-slider').revolution({
 		delay:2000,
 		startwidth:1200,
 		startheight:675,
 		hideThumbs:10,
-		hideTimerBar:"on"
+		hideTimerBar:"on",
+		touchenabled:"on",
+		navigationType:"none",
+		soloArrowLeftHOffset:0,
+		soloArrowRightHOffset:0,
 	});
 });
 

@@ -40,3 +40,66 @@ website:   	http://www.themepunch.com
 	padding: 0;
 }
 
+
+/*-------------------------------------------------------------------------*/
+/* # REVOLUTION SLIDER CUSTOMIZE
+/*-------------------------------------------------------------------------*/
+.tparrows {
+	opacity: 0.75;
+	@include transition(all 0.2s ease-out);
+	@include transform(translateX(0));
+	&:hover {opacity: 1;}
+}
+.tp-leftarrow.hidearrows {
+	@include transform(translateX(-100%));
+}
+.tp-rightarrow.hidearrows {
+	@include transform(translateX(100%));
+}
+
+.tp-leftarrow.default,
+.tp-rightarrow.default {
+	background: #fff;
+	width: 60px;
+	height: 60px;
+	font-size: 30px;
+	line-height: 2;
+	font-family: 'icomoon';
+	color: #397db1;
+	text-align: center;
+}
+.tp-leftarrow.default {
+	&:before {content: "\e5cc";}
+}
+.tp-rightarrow.default {
+	&:before {content: "\e5cd";}
+}
+
+.bloglist {
+	&.col-2 {
+		.tp-leftarrow.default,
+		.tp-rightarrow.default {
+			// width: 60px;
+			// height: 60px;
+			// font-size: 30px;
+		}
+	}
+	&.col-3 {
+		.tp-leftarrow.default,
+		.tp-rightarrow.default {
+			width: 45px;
+			height: 45px;
+			font-size: 22.5px;
+		}
+	}
+	&.col-4 {
+		.tp-leftarrow.default,
+		.tp-rightarrow.default {
+			width: 30px;
+			height: 30px;
+			font-size: 15px;
+		}
+	}
+}
+
+
