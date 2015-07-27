@@ -434,138 +434,6 @@ nav.meta {
 }
 
 
-/**
-* bloglist media
-* ----------------------------------------------------------------------------
-*/
-.geo-media {
-	margin: 0 0 30px;
-	overflow: hidden;
-	position: relative;
-	width: 100%;
-
-	.geo-media-fxlayout {
-		position: absolute;
-		top: -1px;
-		left: -1px;
-		bottom: -1px;
-		right: -1px;
-	}
-
-	&.geo-media-single a .geo-media-fxlayout>span {
-		display: table;
-		width: 100%;
-		height: 100%;
-		text-align: center;
-
-		>i {
-			display: table-cell;
-			vertical-align: middle;
-			text-transform: uppercase;
-			font-weight: 700;
-			color: #4385b8;
-			background: rgba(255, 255, 255, 0.8);
-			opacity: 0;
-			padding-top: 100px;
-			@include transition(all 0.75s $ease-out-circ);
-		}
-	}
-
-	&.geo-media-single a:hover .geo-media-fxlayout>span>i {
-		opacity: 1;
-		padding-top: 0;
-	}
-
-	&.geo-media-slider .geo-media-fxlayout {
-		>a {
-			position: absolute;
-			top: 50%;
-			width: 60px;
-			font-size: 30px;
-			line-height: 2;
-			text-align: center;
-			color: #4385b8;
-			background: rgba(#fff, 0.8);
-			@include transition(all 0.75s $ease-out-circ);
-			
-			[class^="icon-"] {
-				position: relative;
-				top: 2px;
-			}
-			&:first-child {
-				left: 0;
-				@include transform(translateX(-100%) translateY(-50%));
-			}
-			&:last-child {
-				right: 0;
-				@include transform(translateX(100%) translateY(-50%));
-			}
-		}
-		&:hover>a:first-child {
-			@include transform(translateX(0) translateY(-50%));
-		}
-		&:hover>a:last-child {
-			@include transform(translateX(0) translateY(-50%));
-		}
-	}
-}
-
-.col-2 .geo-media-slider .geo-media-fxlayout>a {
-	width: 60px;
-	font-size: 30px;
-}
-.col-3 .geo-media-slider .geo-media-fxlayout>a,
-.col-4 .geo-media-slider .geo-media-fxlayout>a {
-	width: 40px;
-	font-size: 20px;
-}
-
-
-/**
-* bloglist meta
-* ----------------------------------------------------------------------------
-*/
-.geo-blog-meta-top {
-	ul {margin:0;list-style:none;}
-	ul li {display:inline-block;margin-left:15px;}
-	ul li:first-child,
-	ul li a {display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;}
-	ul li:first-child {color:#9e9e9e;margin-left:0;}
-	ul li a {color:#6a6a6a;}
-	ul li a:hover {color:#3679ab;}
-	ul li a span {margin:0 5px;font-size:12px;position:relative;top:1px;}
-}
-
-.geo-blog-meta-bottom {
-	ul {margin:0;list-style:none;}
-	ul li {display:inline-block;margin-left:15px;}
-	ul li:first-child,
-	ul li a {display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;}
-	ul li:first-child {margin-left:0;}
-	ul li a {color:#6a6a6a;}
-	ul li a:hover {color:#3679ab;}
-	ul li a span {margin:0 5px;font-size:12px;position:relative;top:1px;}
-	ul li:first-child a span {}
-}
-
-article.item-quote {
-	.geo-blog-meta-top {
-		ul {
-			li:first-child {color:#fff;}
-			li a {color:#fff;}
-			li a:hover {color:#ddd;}
-		}
-	}
-	.geo-blog-meta-bottom {
-		ul {
-			li:first-child {color:#fff;}
-			li a {color:#fff;}
-			li a:hover {color:#ddd;}
-		}
-	}
-}
-
-
 /*-------------------------------------------------------------------------*/
 /* # BLOG ITEM
 /*-------------------------------------------------------------------------*/
@@ -574,6 +442,10 @@ article.item-quote {
 	padding-bottom: 60px;
 	border-bottom: 1px solid $divider;
 	margin-bottom: 60px;
+
+	.blogitem-media {
+		margin-bottom: 30px;
+	}
 
 	.blogitem-header {
 		@include clearfix;
@@ -639,6 +511,52 @@ article.item-quote {
 				}
 			}
 		}
+
+		blockquote {
+			background: #5596c7;
+			padding: 40px 40px 40px;
+			color: #fff;
+			padding-bottom: 30px;
+
+			[class^="icon-"] {
+				font-size: 40px;
+				display: block;
+				margin-bottom: 30px;
+			}
+
+			q {
+				display: block;
+				font-size: 20px;
+				margin-bottom: 30px;
+				text-transform: uppercase;
+				font-weight: 500;
+				quotes: "«" "»";
+
+				&:before {
+					content: open-quote;
+					padding-right: 0.5em;
+				}
+
+				&:after {
+					content: close-quote;
+					padding-left: 0.5em;
+				}
+			}
+
+			cite {
+				display: block;
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: 500;
+				quotes: "—" "";
+
+				&:before {
+					content: open-quote;
+					padding-right: 0.5em;
+				}
+			}
+		}
+
 	}
 }
 
@@ -704,251 +622,6 @@ nav.share {
 		&:hover {
 			color: #3679ab;
 			[class^="icon-"] {color: #3679ab;}
-		}
-	}
-}
-
-
-/**
-* blogitem meta
-* ----------------------------------------------------------------------------
-*/
-.geo-post-meta {
-	margin-bottom: 40px;
-}
-.geo-post-meta ul {
-	margin: 0;
-	list-style: none;
-}
-.geo-post-meta ul li {
-	display: inline-block;
-	margin-left: 15px;
-}
-.geo-post-meta ul li:first-child,
-.geo-post-meta ul li a {
-	display: inline-block;
-	font-size: 10px;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-.geo-post-meta ul li:first-child {margin-left: 0;}
-.geo-post-meta ul li a {color: #6a6a6a;}
-.geo-post-meta ul li a:hover {color: #3679ab;}
-.geo-post-meta ul li a span {
-	margin: 0 5px;
-	font-size: 12px;
-	position: relative;
-	top: 1px;
-}
-
-.geo-post-meta-date {
-	color: #9e9e9e;
-	font-size: 10px;
-	line-height: 1;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-.geo-tags {
-	text-align: center;
-	margin-bottom: 0;
-}
-.geo-categories {
-	text-align: center;
-}
-
-
-/**
-* blogitem share
-* ----------------------------------------------------------------------------
-*/
-.geo-recomended {
-	margin-bottom: 20px;
-	ul {
-		margin: 0;
-		list-style: none;
-	}
-	ul li {
-		display: inline-block;
-		margin-left: 5px;
-	}
-	ul li:first-child,
-	ul li a {
-		display: inline-block;
-		font-size: 10px;
-		font-weight: 700;
-		text-transform: uppercase;
-	}
-	ul li:first-child {
-		color: #9e9e9e;
-		margin-left: 0;
-	}
-	ul li a {
-		color: #e2e2e2;
-	}
-	ul li a:hover {
-		color: #3679ab;
-	}
-	ul li a [class^="icon-"] {
-		margin-left: 7px;
-		font-size: 20px;
-		position: relative;
-		top: 3px;
-	}
-}
-
-.geo-share-count {
-	color: #c5c5c5;
-}
-.geo-recomended ul li a:hover .geo-share-count {
-	color: #3679ab;
-}
-
-.geo-recomended-top {
-	float:right;
-}
-
-.geo-recomended-bottom {
-	text-align: center;
-	margin: 0 0 40px;
-
-	ul li:first-child {
-		display: block;
-	}
-	ul li:nth-child(2) {
-		margin: 0;
-	}
-	ul li:nth-child(2) a [class^="icon-"] {
-		margin: 0;
-	}
-	ul li a [class^="icon-"] {
-		margin-left: 20px;
-		font-size: 24px;
-		top: 5px;
-	}
-}
-
-
-/**
-* blogitem navigation
-* ----------------------------------------------------------------------------
-*/
-.geo-post-gloabal-meta-box {
-	padding-bottom: 60px;
-	border-bottom: 1px solid $divider;
-	margin-bottom: 60px;
-}
-
-.geo-posts-nav {
-	padding-left: 0;
-	padding-right: 0;
-	overflow: hidden;
-	position: relative;
-	text-align: center;
-
-	a {
-		display: block;
-		@include transition(all 0.15s ease-in-out);
-
-		>div {
-			position: relative;
-			padding: 20px 20px 30px;
-			background: #397db1;
-			position: relative;
-			z-index: 2;
-			min-height: 150px;
-			width: 300px;
-
-			>h5 {
-				color: #fff;
-				margin-bottom: 10px;
-				line-height: 1.2;
-				font-size: 16px;
-				font-weight: 300;
-				text-transform: none;
-			}
-
-			>h6 {
-				color: #fff;
-				border-top: 1px solid #fff;
-				margin-bottom: 0;
-				font-weight: 700;
-				padding-top: 10px;
-				display: inline-block;
-				font-size: 12px;
-			}
-
-			>div {
-				color: #fff;
-				text-transform: uppercase;
-				margin-bottom: 0;
-				position: absolute;
-				bottom: 10px;
-				opacity: 0.5;
-				font-weight: 700;
-				font-size: 10px;
-			}
-		}
-
-		>img {
-			position: absolute;
-			top: 0;
-			z-index: 1;
-			height: 100%;
-			width: auto;
-			@include transition(all 0.15s ease-in-out);
-		}
-
-		&.geo-post-prev {
-			float: left;
-			position: relative;
-			text-align: right;
-			left: -40px;
-			>div {
-				padding-left: 90px;
-				>div {
-					left: 60px;
-					>span {
-						margin-right: 10px;
-						font-size: 0.8em;
-					}
-				}
-			}
-			>img {
-				left: 0;
-			}
-			&:hover {
-				left: 0;
-				img {
-					left: 100%;
-				}
-			}
-		}
-
-		&.geo-post-next {
-			float: right;
-			position: relative;
-			text-align: left;
-			right: -40px;
-			>div {
-				padding-right: 90px;
-				>div {
-					right: 60px;
-					>span {
-						margin-left: 10px;
-						font-size: 0.8em;
-					}
-				}
-			}
-			>img {
-				right: 0;
-			}
-			&:hover {
-				right: 0;
-				img {
-					right: 100%;
-				}
-			}
 		}
 	}
 }
