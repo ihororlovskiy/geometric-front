@@ -55,12 +55,12 @@ $(document).ready(function() {
 		});
 		var filterFns = {
 		};
-		$('#filters').on( 'click', 'a', function() {
+		$('.portfoliofilter').on( 'click', 'a', function() {
 			var filterValue = $( this ).attr('data-filter');
 			filterValue = filterFns[ filterValue ] || filterValue;
 			$container.isotope({ filter: filterValue });
 		});
-		$('.geo-portfolio-filter').each( function( i, buttonGroup ) {
+		$('.portfoliofilter').each( function( i, buttonGroup ) {
 			var $buttonGroup = $( buttonGroup );
 			$buttonGroup.on( 'click', 'a', function() {
 				$buttonGroup.find('.is-checked').removeClass('is-checked');

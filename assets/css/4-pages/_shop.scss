@@ -635,10 +635,7 @@ ol.breadcrumb {
 	margin-left: 80px;
 	min-height: 80px;
 	padding-left: 20px;
-	font-size: 12px;
-	font-weight: 400;
-	color: #afafaf;
-	line-height:1.4;
+	// color: #afafaf;
 }
 .review__text__name {}
 .review__text__date {}
@@ -661,10 +658,7 @@ ol.breadcrumb {
 	}
 }
 .review__text__message {
-	>p {margin-bottom: 10px;
-		line-height: 1.4;
-		font-size: 15px;
-		font-weight: 300;
+	>p {
 		color: #515151;
 	}
 }
