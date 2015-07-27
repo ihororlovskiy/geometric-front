@@ -41,43 +41,80 @@
 				}
 			}
 		}
-	}
-}
 
+		.text-content {
+		}
 
-/**
-* blogitem meta
-* ----------------------------------------------------------------------------
-*/
-nav.meta {
-	a {
-		text-transform: uppercase;
-		display: inline-block;
-		font-size: 10px;
-		font-weight: 700;
-		color: #6a6a6a;
-		margin-right: 20px;
-		&:last-child {margin-right: 0;}
-		.meta-count {margin-right: 6px;}
-		[class^="icon-"] {
-			margin-right: 4px;
-			font-size: 16px;
-			line-height: 10px;
-			position: relative;
-			top: 3px;
+		&.quote-item {
+
+			.text-content {
+				background: #5596c7;
+				padding: 60px 30px 30px;
+
+				blockquote {
+					color: #fff;
+					text-align: center;
+
+					[class^="icon-"] {
+						margin-bottom: 40px;
+						font-size: 44px;
+						display: block;
+					}
+
+					p {
+						font-size: 20px;
+						margin-bottom: 30px;
+						text-transform: uppercase;
+						font-weight: 500;
+
+						a {
+							color: #fff;
+							&:hover {color: #ddd;}
+						}
+
+						q {
+							quotes: "«" "»";
+
+							&:before {
+								content: open-quote;
+								padding-right: 0.5em;
+							}
+
+							&:after {
+								content: close-quote;
+								padding-left: 0.5em;
+							}
+						}
+
+						cite {
+							font-size: 14px;
+							quotes: "—" "";
+
+							&:before {
+								content: open-quote;
+								padding-right: 0.5em;
+							}
+						}
+					}
+				}
+
+				nav.meta {
+					a {
+						color: #fff;
+						&:hover {color: #ddd;}
+					}
+					time {color: #fff;}
+
+					[class^="icon-"] {
+						margin-right: 4px;
+						font-size: 16px;
+						line-height: 10px;
+						position: relative;
+						top: 3px;
+					}
+				}
+			}
 		}
-		&:hover {
-			color: #3679ab;
-			[class^="icon-"] {color: #3679ab;}
-		}
-	}
-	time {
-		color: #9e9e9e;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 10px;
-		margin-right: 20px;
-		&:last-child {margin-right: 0;}
 	}
 }
 
@@ -138,6 +175,40 @@ nav.meta {
 
 
 /**
+* blogitem meta
+* ----------------------------------------------------------------------------
+*/
+nav.meta {
+	a {
+		text-transform: uppercase;
+		display: inline-block;
+		font-size: 10px;
+		font-weight: 700;
+		color: #6a6a6a;
+		margin-right: 20px;
+		&:last-child {margin-right: 0;}
+		.meta-count {margin-right: 6px;}
+		[class^="icon-"] {
+			margin-right: 4px;
+			font-size: 16px;
+			line-height: 10px;
+			position: relative;
+			top: 3px;
+		}
+		&:hover {color: #3679ab;}
+	}
+	time {
+		color: #9e9e9e;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 10px;
+		margin-right: 20px;
+		&:last-child {margin-right: 0;}
+	}
+}
+
+
+/**
 * Classic Small Blog List
 * ----------------------------------------------------------------------------
 */
@@ -187,6 +258,12 @@ nav.meta {
 
 			&.item-quote .text-content {
 				width: 100%;
+			}
+
+			&.quote-item {
+				.text-content {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -425,26 +502,20 @@ nav.meta {
 				.vertical-centering {
 					background: rgba(#5596c7, 0.75);
 
-					.meta {
+					nav.meta {
 						position: absolute;
 						top: 50%;
 						left: 50%;
 						@include transform(translate(-50%,-50%));
 						a {
-							span {
 							color: #fff;
 							font-size: 14px;
-							&:hover {
-								color: #fff;
-							}
-								&.meta-count {
-									margin-right: 0;
-								}
-								&[class^="icon-"] {
-									font-size: 24px;
-									position: relative;
-									top: 5px;
-								}
+							&:hover {color: #ddd;}
+							.meta-count {margin-right: 0;}
+							[class^="icon-"] {
+								font-size: 24px;
+								position: relative;
+								top: 5px;
 							}
 						}
 					}
