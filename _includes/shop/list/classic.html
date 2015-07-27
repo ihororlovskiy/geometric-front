@@ -2,150 +2,350 @@
 <div class="isotope-container">
 
 	<article class="isotope-item">
-		<div class="visual">
-			<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-01.jpg" alt="..."></a>
+		<div class="media-contur">
+			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-01.jpg" alt="...">
 			<span class="status new">New</span>
-			<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
-		</div>
-		<div class="info">
-			<div class="title"><a href="#">Bicycle</a></div>
-			<div class="rating">
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
+			<div class="vertical-centering">
+				<a href="#product-url" class="item-url"></a>
+				<form class="shoplist-form">
+					<input type="hidden" name="product" value="7777">
+					{% if page.columns == 2 %}
+					<button class="gbtn gbtn-lg" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 3 %}
+					<button class="gbtn" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 4 %}
+					<button class="gbtn gbtn-sm" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+				</form>
 			</div>
-			<div class="price">£230.00</div>
+		</div>
+		<div class="text-content">
+			{% if page.columns == 2 %}
+			<h3><a href="#">Bicycle</a></h3>
+			{% endif %}
+			{% if page.columns == 3 %}
+			<h4><a href="#">Bicycle</a></h4>
+			{% endif %}
+			{% if page.columns == 4 %}
+			<h5><a href="#">Bicycle</a></h5>
+			{% endif %}
+			<nav class="item-rating">
+				<span class="icon-star-filled active"></span>
+				<span class="icon-star-filled active"></span>
+				<span class="icon-star-filled active"></span>
+				<span class="icon-star-filled"></span>
+				<span class="icon-star-filled"></span>
+			</nav>
+			<nav class="price">
+				<b>£230.00</b>
+				<s>£256.00</s>
+			</nav>
 		</div>
 	</article>
 
 	<article class="isotope-item">
-		<div class="visual">
-			<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-02.jpg" alt="..."></a>
+		<div class="media-contur">
+			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-02.jpg" alt="...">
 			<span class="status sale">Sale</span>
-			<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
-		</div>
-		<div class="info">
-			<div class="title"><a href="#">Brass Saxophone</a></div>
-			<div class="rating">
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
+			<div class="vertical-centering">
+				<a href="#product-url" class="item-url"></a>
+				<form class="shoplist-form">
+					<input type="hidden" name="product" value="7777">
+					{% if page.columns == 2 %}
+					<button class="gbtn gbtn-lg" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 3 %}
+					<button class="gbtn" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 4 %}
+					<button class="gbtn gbtn-sm" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+				</form>
 			</div>
-			<div class="price">£196.00 <del>£256.00</del></div>
+		</div>
+		<div class="text-content">
+			{% if page.columns == 2 %}
+			<h3><a href="#">Brass Saxophone</a></h3>
+			{% endif %}
+			{% if page.columns == 3 %}
+			<h4><a href="#">Brass Saxophone</a></h4>
+			{% endif %}
+			{% if page.columns == 4 %}
+			<h5><a href="#">Brass Saxophone</a></h5>
+			{% endif %}
+			<nav class="item-rating">
+				<span class="icon-star-filled active"></span>
+				<span class="icon-star-filled active"></span>
+				<span class="icon-star-filled active"></span>
+				<span class="icon-star-filled"></span>
+				<span class="icon-star-filled"></span>
+			</nav>
+			<nav class="price">
+				<b>£196.00</b>
+				<s>£256.00</s>
+			</nav>
 		</div>
 	</article>
 
 	<article class="isotope-item">
-		<div class="visual">
-			<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-03.jpg" alt="..."></a>
+		<div class="media-contur">
+			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-03.jpg" alt="...">
 			<span class="status out">Out of stock</span>
-			<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
+			<div class="vertical-centering">
+				<a href="#product-url" class="item-url"></a>
+				<form class="shoplist-form">
+					<input type="hidden" name="product" value="7777">
+					{% if page.columns == 2 %}
+					<button class="gbtn gbtn-lg" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 3 %}
+					<button class="gbtn" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 4 %}
+					<button class="gbtn gbtn-sm" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+				</form>
+			</div>
 		</div>
-		<div class="info">
-			<div class="title"><a href="#">Cinema 3D LED TV</a></div>
-			<div class="rating">
-				<span class="icon-star-filled active"></span>
+		<div class="text-content">
+			{% if page.columns == 2 %}
+			<h3><a href="#">Cinema 3D LED TV</a></h3>
+			{% endif %}
+			{% if page.columns == 3 %}
+			<h4><a href="#">Cinema 3D LED TV</a></h4>
+			{% endif %}
+			{% if page.columns == 4 %}
+			<h5><a href="#">Cinema 3D LED TV</a></h5>
+			{% endif %}
+			<nav class="item-rating">
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled"></span>
-			</div>
-			<div class="price">£230.00</div>
+				<span class="icon-star-filled"></span>
+			</nav>
+			<nav class="price">
+				<b>£230.00</b>
+				<s>£256.00</s>
+			</nav>
 		</div>
 	</article>
 
 	<article class="isotope-item">
-		<div class="visual">
-			<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-04.jpg" alt="..."></a>
+		<div class="media-contur">
+			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-04.jpg" alt="...">
 			<span class="status last">Last examples</span>
-			<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
-		</div>
-		<div class="info">
-			<div class="title"><a href="#">Dicta qui</a></div>
-			<div class="rating">
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
+			<div class="vertical-centering">
+				<a href="#product-url" class="item-url"></a>
+				<form class="shoplist-form">
+					<input type="hidden" name="product" value="7777">
+					{% if page.columns == 2 %}
+					<button class="gbtn gbtn-lg" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 3 %}
+					<button class="gbtn" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 4 %}
+					<button class="gbtn gbtn-sm" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+				</form>
 			</div>
-			<div class="price">£196.00 <del>£256.00</del></div>
+		</div>
+		<div class="text-content">
+			{% if page.columns == 2 %}
+			<h3><a href="#">Dicta Qui</a></h3>
+			{% endif %}
+			{% if page.columns == 3 %}
+			<h4><a href="#">Dicta Qui</a></h4>
+			{% endif %}
+			{% if page.columns == 4 %}
+			<h5><a href="#">Dicta Qui</a></h5>
+			{% endif %}
+			<nav class="item-rating">
+				<span class="icon-star-filled active"></span>
+				<span class="icon-star-filled active"></span>
+				<span class="icon-star-filled active"></span>
+				<span class="icon-star-filled"></span>
+				<span class="icon-star-filled"></span>
+			</nav>
+			<nav class="price">
+				<b>£196.00</b>
+				<s>£256.00</s>
+			</nav>
 		</div>
 	</article>
 
 	<article class="isotope-item">
-		<div class="visual">
-			<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-05.jpg" alt="..."></a>
-			<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
+		<div class="media-contur">
+			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-05.jpg" alt="...">
+			<div class="vertical-centering">
+				<a href="#product-url" class="item-url"></a>
+				<form class="shoplist-form">
+					<input type="hidden" name="product" value="7777">
+					{% if page.columns == 2 %}
+					<button class="gbtn gbtn-lg" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 3 %}
+					<button class="gbtn" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 4 %}
+					<button class="gbtn gbtn-sm" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+				</form>
+			</div>
 		</div>
-		<div class="info">
-			<div class="title"><a href="#">Adipisicing elit</a></div>
-			<div class="rating">
-				<span class="icon-star-filled active"></span>
+		<div class="text-content">
+			{% if page.columns == 2 %}
+			<h3><a href="#">Adipisicing Elit</a></h3>
+			{% endif %}
+			{% if page.columns == 3 %}
+			<h4><a href="#">Adipisicing Elit</a></h4>
+			{% endif %}
+			{% if page.columns == 4 %}
+			<h5><a href="#">Adipisicing Elit</a></h5>
+			{% endif %}
+			<nav class="item-rating">
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled"></span>
-			</div>
-			<div class="price">£230.00</div>
+				<span class="icon-star-filled"></span>
+			</nav>
+			<nav class="price">
+				<b>£230.00</b>
+				<s>£256.00</s>
+			</nav>
 		</div>
 	</article>
 
 	<article class="isotope-item">
-		<div class="visual">
-			<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-06.jpg" alt="..."></a>
-			<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
+		<div class="media-contur">
+			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-06.jpg" alt="...">
+			<div class="vertical-centering">
+				<a href="#product-url" class="item-url"></a>
+				<form class="shoplist-form">
+					<input type="hidden" name="product" value="7777">
+					{% if page.columns == 2 %}
+					<button class="gbtn gbtn-lg" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 3 %}
+					<button class="gbtn" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 4 %}
+					<button class="gbtn gbtn-sm" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+				</form>
+			</div>
 		</div>
-		<div class="info">
-			<div class="title"><a href="#">Amet consectetur</a></div>
-			<div class="rating">
-				<span class="icon-star-filled active"></span>
+		<div class="text-content">
+			{% if page.columns == 2 %}
+			<h3><a href="#">Amet Consectetur</a></h3>
+			{% endif %}
+			{% if page.columns == 3 %}
+			<h4><a href="#">Amet Consectetur</a></h4>
+			{% endif %}
+			{% if page.columns == 4 %}
+			<h5><a href="#">Amet Consectetur</a></h5>
+			{% endif %}
+			<nav class="item-rating">
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled"></span>
-			</div>
-			<div class="price">£230.00</div>
+				<span class="icon-star-filled"></span>
+			</nav>
+			<nav class="price">
+				<b>£230.00</b>
+				<s>£256.00</s>
+			</nav>
 		</div>
 	</article>
 
 	<article class="isotope-item">
-		<div class="visual">
-			<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-07.jpg" alt="..."></a>
-			<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
+		<div class="media-contur">
+			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-07.jpg" alt="...">
+			<div class="vertical-centering">
+				<a href="#product-url" class="item-url"></a>
+				<form class="shoplist-form">
+					<input type="hidden" name="product" value="7777">
+					{% if page.columns == 2 %}
+					<button class="gbtn gbtn-lg" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 3 %}
+					<button class="gbtn" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 4 %}
+					<button class="gbtn gbtn-sm" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+				</form>
+			</div>
 		</div>
-		<div class="info">
-			<div class="title"><a href="#">Dolor sit</a></div>
-			<div class="rating">
-				<span class="icon-star-filled active"></span>
+		<div class="text-content">
+			{% if page.columns == 2 %}
+			<h3><a href="#">Dolor Sit</a></h3>
+			{% endif %}
+			{% if page.columns == 3 %}
+			<h4><a href="#">Dolor Sit</a></h4>
+			{% endif %}
+			{% if page.columns == 4 %}
+			<h5><a href="#">Dolor Sit</a></h5>
+			{% endif %}
+			<nav class="item-rating">
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled"></span>
-			</div>
-			<div class="price">£230.00</div>
+				<span class="icon-star-filled"></span>
+			</nav>
+			<nav class="price">
+				<b>£230.00</b>
+				<s>£256.00</s>
+			</nav>
 		</div>
 	</article>
 
 	<article class="isotope-item">
-		<div class="visual">
-			<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-08.jpg" alt="..."></a>
-			<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
+		<div class="media-contur">
+			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-08.jpg" alt="...">
+			<div class="vertical-centering">
+				<a href="#product-url" class="item-url"></a>
+				<form class="shoplist-form">
+					<input type="hidden" name="product" value="7777">
+					{% if page.columns == 2 %}
+					<button class="gbtn gbtn-lg" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 3 %}
+					<button class="gbtn" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+					{% if page.columns == 4 %}
+					<button class="gbtn gbtn-sm" type="submit"><span class="icon-cart"></span> Add to cart</button>
+					{% endif %}
+				</form>
+			</div>
 		</div>
-		<div class="info">
-			<div class="title"><a href="#">Lorem ipsum</a></div>
-			<div class="rating">
-				<span class="icon-star-filled active"></span>
+		<div class="text-content">
+			{% if page.columns == 2 %}
+			<h3><a href="#">Lorem Ipsum</a></h3>
+			{% endif %}
+			{% if page.columns == 3 %}
+			<h4><a href="#">Lorem Ipsum</a></h4>
+			{% endif %}
+			{% if page.columns == 4 %}
+			<h5><a href="#">Lorem Ipsum</a></h5>
+			{% endif %}
+			<nav class="item-rating">
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled active"></span>
 				<span class="icon-star-filled"></span>
-			</div>
-			<div class="price">£230.00</div>
+				<span class="icon-star-filled"></span>
+			</nav>
+			<nav class="price">
+				<b>£230.00</b>
+				<s>£256.00</s>
+			</nav>
 		</div>
 	</article>
 

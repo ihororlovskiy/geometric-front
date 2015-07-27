@@ -1,0 +1,34 @@
+/*-------------------------------------------------------------------------*/
+/* # SHARE
+/*-------------------------------------------------------------------------*/
+nav.share {
+	font-size: 10px;
+	color: #9e9e9e;
+	font-weight: 700;
+	span.title {
+		text-transform: uppercase;
+	}
+	a {
+		display: inline-block;
+		color: #c5c5c5;
+		margin-right: 20px;
+		&:last-child {margin-right: 0;}
+		@include transition(all 0.75s $ease-out-circ);
+		[class^="icon-"] {
+			color: #e2e2e2;
+			font-size: 20px;
+			line-height: 10px;
+			position: relative;
+			top: 5px;
+			@include transition(all 0.75s $ease-out-circ);
+		}
+		.share-count {
+			margin-left: 4px;
+		}
+		&:hover {
+			color: #3679ab;
+			[class^="icon-"] {color: #3679ab;}
+		}
+	}
+}
+

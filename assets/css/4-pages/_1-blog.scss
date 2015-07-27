@@ -4,11 +4,11 @@
 .bloglist {
 	margin-bottom: 60px;
 
-	&.col-2 article {width: 50%;}
-	&.col-3 article {width: 33.3333333333333333333%;}
-	&.col-4 article {width: 25%;}
+	&.col-2 article.isotope-item {width: 50%;}
+	&.col-3 article.isotope-item {width: 33.3333333333333333333%;}
+	&.col-4 article.isotope-item {width: 25%;}
 
-	article {
+	article.isotope-item {
 		position: relative;
 		float: left;
 		@include clearfix;
@@ -200,7 +200,7 @@ nav.meta {
 	.isotope-container {
 		margin-bottom: 20px;
 
-		article {
+		article.isotope-item {
 			margin-bottom: 40px;
 			border-bottom: 1px solid $divider;
 
@@ -248,7 +248,7 @@ nav.meta {
 	.isotope-container {
 		margin-bottom: 20px;
 
-		article {
+		article.isotope-item {
 			margin-bottom: 40px;
 			border-bottom: 1px solid $divider;
 
@@ -285,7 +285,7 @@ nav.meta {
 	.isotope-container {
 		margin: 0 -15px 20px;
 
-		article {
+		article.isotope-item {
 			padding: 0 15px 40px;
 
 			.media-contur {
@@ -322,7 +322,7 @@ nav.meta {
 	.isotope-container-grid {
 		margin: 0 -15px 20px;
 
-		article {
+		article.isotope-item {
 			position: relative;
 			padding: 0 15px 40px;
 
@@ -360,7 +360,7 @@ nav.meta {
 	.isotope-container {
 		margin-bottom: 60px;
 
-		article {
+		article.isotope-item {
 			width: 100%;
 			border-bottom: 1px solid $divider;
 			@include clearfix;
@@ -482,41 +482,11 @@ nav.meta {
 		}
 
 		blockquote {
-			background: #397db1;
-			padding: 70px 40px 40px;
-			margin-bottom: 50px;
-
-			p {
-				color: #fff;
-				font-weight: 300;
-				font-size: 20px;
-				line-height: 1.4;
-
-				&.geo-quote-autor {
-					font-size: 13px;
-					font-weight: 700;
-					padding-top: 15px;
-					position: relative;
-					margin-bottom: 0;
-
-					&:before {
-						position: absolute;
-						content: '';
-						top: 0;
-						left: 0;
-						width: 50px;
-						height: 5px;
-						background: #fff;
-					}
-				}
-			}
-		}
-
-		blockquote {
 			background: #5596c7;
 			padding: 40px 40px 40px;
 			color: #fff;
 			padding-bottom: 30px;
+			margin-bottom: 30px;
 
 			[class^="icon-"] {
 				font-size: 40px;
@@ -586,42 +556,6 @@ nav.meta {
 			@include transition(all 0.75s $ease-out-circ);
 			&:last-child {margin-right: 0;}
 			&:hover {color: #3679ab;}
-		}
-	}
-}
-
-
-/**
-* blogitem share
-* ----------------------------------------------------------------------------
-*/
-nav.share {
-	font-size: 10px;
-	color: #9e9e9e;
-	font-weight: 700;
-	span.title {
-		text-transform: uppercase;
-	}
-	a {
-		display: inline-block;
-		color: #c5c5c5;
-		margin-right: 20px;
-		&:last-child {margin-right: 0;}
-		@include transition(all 0.75s $ease-out-circ);
-		[class^="icon-"] {
-			color: #e2e2e2;
-			font-size: 20px;
-			line-height: 10px;
-			position: relative;
-			top: 5px;
-			@include transition(all 0.75s $ease-out-circ);
-		}
-		.share-count {
-			margin-left: 4px;
-		}
-		&:hover {
-			color: #3679ab;
-			[class^="icon-"] {color: #3679ab;}
 		}
 	}
 }

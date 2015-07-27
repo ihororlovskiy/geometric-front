@@ -5,14 +5,14 @@
 	text-align: center;
 	margin-bottom: 60px;
 
-	&.col-2 article {width: 50%;}
-	&.col-3 article {width: 33.3333333333333333333%;}
-	&.col-4 article {width: 25%;}
+	&.col-2 article.isotope-item {width: 50%;}
+	&.col-3 article.isotope-item {width: 33.3333333333333333333%;}
+	&.col-4 article.isotope-item {width: 25%;}
 
 	.isotope-container {
 		margin-bottom: 60px;
 
-		article {
+		article.isotope-item {
 			position: relative;
 			overflow: hidden;
 		}
@@ -99,7 +99,7 @@
 * ----------------------------------------------------------------------------
 */
 .portfoliolist-mansory {
-	article {
+	article.isotope-item {
 		.fx-layout {
 			position: absolute;
 			top: 0;
@@ -166,7 +166,7 @@
 * ----------------------------------------------------------------------------
 */
 .portfoliolist-grid {
-	article {
+	article.isotope-item {
 		width: 33.3333333333333%;
 		&:nth-child(2),
 		&:nth-child(6),
@@ -223,7 +223,7 @@
 * ----------------------------------------------------------------------------
 */
 .portfoliolist-custom {
-	article {
+	article.isotope-item {
 		width: 100%;
 
 		img {
