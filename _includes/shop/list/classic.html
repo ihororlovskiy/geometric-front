@@ -4,7 +4,7 @@
 	<article class="isotope-item">
 		<div class="media-contur">
 			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-01.jpg" alt="...">
-			<span class="status new">New</span>
+			<span class="status status-new">New</span>
 			<div class="vertical-centering">
 				<a href="#product-url" class="item-url"></a>
 				<form class="shoplist-form">
@@ -31,13 +31,7 @@
 			{% if page.columns == 4 %}
 			<h5><a href="#">Bicycle</a></h5>
 			{% endif %}
-			<nav class="item-rating">
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
-			</nav>
+			{% include global/item-rating.html %}
 			<nav class="price">
 				<b>£230.00</b>
 				<s>£256.00</s>
@@ -48,7 +42,7 @@
 	<article class="isotope-item">
 		<div class="media-contur">
 			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-02.jpg" alt="...">
-			<span class="status sale">Sale</span>
+			<span class="status status-sale">Sale</span>
 			<div class="vertical-centering">
 				<a href="#product-url" class="item-url"></a>
 				<form class="shoplist-form">
@@ -75,13 +69,7 @@
 			{% if page.columns == 4 %}
 			<h5><a href="#">Brass Saxophone</a></h5>
 			{% endif %}
-			<nav class="item-rating">
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
-			</nav>
+			{% include global/item-rating.html %}
 			<nav class="price">
 				<b>£196.00</b>
 				<s>£256.00</s>
@@ -92,7 +80,7 @@
 	<article class="isotope-item">
 		<div class="media-contur">
 			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-03.jpg" alt="...">
-			<span class="status out">Out of stock</span>
+			<span class="status status-out">Out of stock</span>
 			<div class="vertical-centering">
 				<a href="#product-url" class="item-url"></a>
 				<form class="shoplist-form">
@@ -119,13 +107,7 @@
 			{% if page.columns == 4 %}
 			<h5><a href="#">Cinema 3D LED TV</a></h5>
 			{% endif %}
-			<nav class="item-rating">
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
-			</nav>
+			{% include global/item-rating.html %}
 			<nav class="price">
 				<b>£230.00</b>
 				<s>£256.00</s>
@@ -136,7 +118,7 @@
 	<article class="isotope-item">
 		<div class="media-contur">
 			<img src="{{ site.baseurl }}/assets/img/shop/list-classic-04.jpg" alt="...">
-			<span class="status last">Last examples</span>
+			<span class="status status-last">Last examples</span>
 			<div class="vertical-centering">
 				<a href="#product-url" class="item-url"></a>
 				<form class="shoplist-form">
@@ -163,13 +145,7 @@
 			{% if page.columns == 4 %}
 			<h5><a href="#">Dicta Qui</a></h5>
 			{% endif %}
-			<nav class="item-rating">
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
-			</nav>
+			{% include global/item-rating.html %}
 			<nav class="price">
 				<b>£196.00</b>
 				<s>£256.00</s>
@@ -206,13 +182,7 @@
 			{% if page.columns == 4 %}
 			<h5><a href="#">Adipisicing Elit</a></h5>
 			{% endif %}
-			<nav class="item-rating">
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
-			</nav>
+			{% include global/item-rating.html %}
 			<nav class="price">
 				<b>£230.00</b>
 				<s>£256.00</s>
@@ -249,13 +219,7 @@
 			{% if page.columns == 4 %}
 			<h5><a href="#">Amet Consectetur</a></h5>
 			{% endif %}
-			<nav class="item-rating">
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
-			</nav>
+			{% include global/item-rating.html %}
 			<nav class="price">
 				<b>£230.00</b>
 				<s>£256.00</s>
@@ -292,13 +256,7 @@
 			{% if page.columns == 4 %}
 			<h5><a href="#">Dolor Sit</a></h5>
 			{% endif %}
-			<nav class="item-rating">
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
-			</nav>
+			{% include global/item-rating.html %}
 			<nav class="price">
 				<b>£230.00</b>
 				<s>£256.00</s>
@@ -335,13 +293,7 @@
 			{% if page.columns == 4 %}
 			<h5><a href="#">Lorem Ipsum</a></h5>
 			{% endif %}
-			<nav class="item-rating">
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled active"></span>
-				<span class="icon-star-filled"></span>
-				<span class="icon-star-filled"></span>
-			</nav>
+			{% include global/item-rating.html %}
 			<nav class="price">
 				<b>£230.00</b>
 				<s>£256.00</s>
