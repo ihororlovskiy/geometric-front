@@ -91,21 +91,12 @@
 						@include transition(all 0.2s ease);
 					}
 				}
-				.rating {
-					font-size:10px;
 
-					[class^="icon-"] {
-						color: #e6e6e6;
-						cursor: pointer;
-						@include transition(all 0.2s ease);
-						margin-right: 2px;
-
-						&:hover,
-						&.active {
-							color: #3787c4;
-						}
-					}
+				nav.item-rating {
+					font-size: 10px;
+					margin-bottom: 4px;
 				}
+
 				.price {
 					color: #878787;
 					font-size: 15px;

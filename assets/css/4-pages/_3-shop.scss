@@ -611,44 +611,36 @@ ol.breadcrumb {
 .review {
 	position: relative;
 	margin-bottom: 30px;
-}
-.review__img {
-	width: 80px;
-	height: 80px;
-	border-radius: 40px;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-.review__text {
-	margin-left: 80px;
-	min-height: 80px;
-	padding-left: 20px;
-	// color: #afafaf;
-}
-.review__text__name {}
-.review__text__date {}
-.review__text__rating {
-	font-size: 10px;
-	line-height: 1;
-	margin: 10px 0;
 
-	[class^="icon-"] {
-		color: #e6e6e6;
-		cursor: pointer;
-		margin-right: 2px;
-		@include transition(all 0.2s ease);
-		&.active {
-			color: #3787c4;
-		}
-		&:hover {
-			color: #3787c4;
-		}
+	.review__img {
+		width: 80px;
+		height: 80px;
+		border-radius: 40px;
+		position: absolute;
+		left: 0;
+		top: 0;
 	}
-}
-.review__text__message {
-	>p {
-		color: #515151;
+
+	.review__text {
+		margin-left: 80px;
+		min-height: 80px;
+		padding-left: 20px;
+		// color: #afafaf;
+	}
+
+	.review__text__name {}
+
+	.review__text__date {}
+
+	nav.item-rating {
+		font-size: 10px;
+		margin: 10px 0;
+	}
+
+	.review__text__message {
+		>p {
+			color: #515151;
+		}
 	}
 }
 
@@ -715,7 +707,7 @@ ol.breadcrumb {
 	.addreview__form__rating {
 		float: left;
 		font-size: 12px;
-		line-height: 1.4;
+		// line-height: 1.4;
 		.addreview__form__rating__title {
 			color: #afafaf;
 			margin-right: 10px;
@@ -724,7 +716,7 @@ ol.breadcrumb {
 			color: #e6e6e6;
 			cursor: pointer;
 			margin-right: 2px;
-			font-size: 10px;
+			font-size: 14px;
 			@include transition(all 0.75s ease);
 			&.active {
 				color: #3787c4;

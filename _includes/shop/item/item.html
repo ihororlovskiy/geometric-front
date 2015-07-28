@@ -229,13 +229,7 @@
 					<div class="review__text">
 						<span class="review__text__name">Sasha Gray</span>,
 						<span class="review__text__date">January 26, 2015</span>
-						<div class="review__text__rating">
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled"></span>
-						</div>
+						{% include global/item-rating.html %}
 						<div class="review__text__message">
 							<p>The Best Products in this collection</p>
 						</div>
@@ -247,13 +241,7 @@
 					<div class="review__text">
 						<span class="review__text__name">Violetta</span>,
 						<span class="review__text__date">January 26, 2015</span>
-						<div class="review__text__rating">
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled"></span>
-								<span class="icon-star-filled"></span>
-						</div>
+						{% include global/item-rating.html %}
 						<div class="review__text__message">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga totam rem consequuntur esse non quibusdam saepe laborum recusandae minus, aspernatur expedita voluptatum consequatur vero quam sequi voluptas hic commodi vitae, id nesciunt repellendus. Dolor illum doloremque exercitationem, quam. Porro, architecto!</p>
 						</div>
@@ -265,13 +253,7 @@
 					<div class="review__text">
 						<span class="review__text__name">Vitaly Portnikov</span>,
 						<span class="review__text__date">January 26, 2015</span>
-						<div class="review__text__rating">
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-						</div>
+						{% include global/item-rating.html %}
 						<div class="review__text__message">
 							<p>Ciao mi chiamo il italiano</p>
 						</div>
@@ -288,11 +270,11 @@
 						<div class="addreview__form__body">
 							<input class="addreview__form__author" name="author" type="text" value="" aria-required="true"  placeholder="Name *">
 							<input class="addreview__form__email" name="email" type="text" value="" aria-required="true" placeholder="Email *">
-							<textarea class="addreview__form__textarea" name="comment" aria-required="true" placeholder="Comment *" cols="45" rows="5"></textarea>
+							<textarea class="addreview__form__textarea" name="comment" aria-required="true" placeholder="Your Review *" cols="45" rows="5"></textarea>
 						</div>
 						<div class="addreview__form__footer">
 							<div class="addreview__form__rating">
-								<span class="addreview__form__rating__title">Vote:</span>
+								<span class="addreview__form__rating__title">Your Rating:</span>
 								<span class="icon-star-filled"></span>
 								<span class="icon-star-filled"></span>
 								<span class="icon-star-filled"></span>
@@ -328,18 +310,12 @@
 					<article>
 						<div class="visual">
 							<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-01.jpg" alt="..."></a>
-							<span class="status new">New</span>
+							<span class="status status-new">New</span>
 							<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
 						</div>
 						<div class="info">
 							<div class="title"><a href="#">Bicycle</a></div>
-							<div class="rating">
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled"></span>
-								<span class="icon-star-filled"></span>
-								<span class="icon-star-filled"></span>
-							</div>
+							{% include global/item-rating.html %}
 							<div class="price">£230.00</div>
 						</div>
 					</article>
@@ -347,18 +323,12 @@
 					<article>
 						<div class="visual">
 							<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-02.jpg" alt="..."></a>
-							<span class="status out">Out of stock</span>
+							<span class="status status-out">Out of stock</span>
 							<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
 						</div>
 						<div class="info">
 							<div class="title"><a href="#">Brass Saxophone</a></div>
-							<div class="rating">
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled"></span>
-							</div>
+							{% include global/item-rating.html %}
 							<div class="price">£196.00 <del>£256.00</del></div>
 						</div>
 					</article>
@@ -366,18 +336,12 @@
 					<article>
 						<div class="visual">
 							<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-03.jpg" alt="..."></a>
-							<span class="status sale">Sale</span>
+							<span class="status status-sale">Sale</span>
 							<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
 						</div>
 						<div class="info">
 							<div class="title"><a href="#">Cinema 3D LED TV</a></div>
-							<div class="rating">
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled"></span>
-								<span class="icon-star-filled"></span>
-							</div>
+							{% include global/item-rating.html %}
 							<div class="price">£230.00</div>
 						</div>
 					</article>
@@ -385,18 +349,12 @@
 					<article>
 						<div class="visual">
 							<a href="#"><img src="{{ site.baseurl }}/assets/img/shop/list-classic-04.jpg" alt="..."></a>
-							<span class="status last">Last examples</span>
+							<span class="status status-last">Last examples</span>
 							<a href="#" class="gbtn gbtn-sm"><span class="icon-cart"></span> Add to cart</a>
 						</div>
 						<div class="info">
 							<div class="title"><a href="#">Dicta qui</a></div>
-							<div class="rating">
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled active"></span>
-								<span class="icon-star-filled"></span>
-							</div>
+							{% include global/item-rating.html %}
 							<div class="price">£196.00 <del>£256.00</del></div>
 						</div>
 					</article>

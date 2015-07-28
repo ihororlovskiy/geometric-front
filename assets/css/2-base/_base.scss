@@ -214,5 +214,10 @@ textarea:focus::-webkit-input-placeholder {
 /*-------------------------------------------------------------------------*/
 main.wrapper {
 	padding-top: 100px;
+
+	.fullwidth {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
 }
 
