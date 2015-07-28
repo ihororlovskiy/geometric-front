@@ -11,6 +11,7 @@
 
 	.isotope-container {
 		margin-bottom: 60px;
+		@include transition(all 0.4s ease);
 
 		article.isotope-item {
 			position: relative;
@@ -34,7 +35,7 @@
 		font-weight: 500;
 		color: #7c7c7c;
 		cursor: pointer;
-		font-size: 13px;
+		font-size: 14px;
 
 		&:hover,
 		&.is-checked {color: #5596c7;}
@@ -225,88 +226,111 @@
 .portfoliolist-custom {
 	article.isotope-item {
 		width: 100%;
+		@include clearfix;
 
-		img {
-			float: right;
+		.media-contur {
 			width: 50%;
+			float: left;
 			padding: 12.5%;
+
+			a {
+				img {
+					width: 100%;
+				}
+			}
 		}
-		.fx-layout {
+
+		.text-content {
 			width: 50%;
 			height: 100%;
 			position: absolute;
-			top:0;
-			left:0;
+			top: 0;
+			left: 50%;
 
-			>span {
-				display: table;
-				width: 100%;
-				height: 100%;
-				text-align: center;
+			.vertical-centering {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				@include transform(translate(-50%,-50%));
 
-				>i {
-					display: table-cell;
-					vertical-align: middle;
-					@include transition(all 0.25s ease-in-out);
-
-					a.gbtn {
+				nav.categories {
+					font-size: 14px;
+					margin-bottom: 4px;
+					a {
 					}
-					h5 {
-						font-size: 0.6em;
-						margin-bottom: 0.5em;
+				}
+				h4 {
+					margin-bottom: 60px;
+					a {
 					}
-					h4 {
-						font-size: 1.125em;
-						margin-bottom: 4em;
-					}
+				}
+				.gbtn {
 				}
 			}
 		}
 
 		&:nth-child(2n) {
-			img {float: left;}
-			.fx-layout {left: 50%;}
+			.media-contur {float: right;}
+			.text-content {left: 0;}
 		}
 
 		&:nth-child(3n+1) {
 			background: #4385b8;
-			.fx-layout {
+			.text-content {
 				background: #5596c7;
 				a.gbtn {
 					color: #fff;
 					background: #4385b8;
 					border-color: #4385b8;
 				}
-				h5 {color: #95c6eb;}
-				h4 {color: #fff;}
+				nav.categories a {
+					color: #95c6eb;
+					&:hover {color: #95c6eb;}
+				}
+				h4 a {
+					color: #fff;
+					&:hover {color: #fff;}
+				}
 			}
 		}
 		
 		&:nth-child(3n+2) {
 			background: #fff;
-			.fx-layout {
+			.text-content {
 				background: #f1f1f1;
-				a.gbtn {
+				.gbtn {
 					color: #4d8abb;
 					background: #fff;
 					border-color: #fff;
 				}
-				h5 {color: #898989;}
-				h4 {color: #4385b8;}
+				nav.categories a {
+					color: #898989;
+					&:hover {color: #898989;}
+				}
+				h4 a {
+					color: #4385b8;
+					&:hover {color: #4385b8;}
+				}
 			}
 		}
 
 		&:nth-child(3n+3) {
 			background: #343434;
-			.fx-layout {
+			.text-content {
 				background: #3d3d3d;
 				a.gbtn {
 					color: #fff;
 					background: #343434;
 					border-color: #343434;
 				}
-				h5 {color: #898989;}
-				h4 {color: #fff;}
+				nav.categories a {
+					color: #898989;
+					&:hover {color: #898989;}
+				}
+				h4 a {
+					color: #fff;
+					&:hover {color: #fff;}
+				}
 			}
 		}
 	}

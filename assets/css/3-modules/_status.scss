@@ -1,0 +1,15 @@
+/**
+* STATUS
+* ----------------------------------------------------------------------------
+*/
+span.status {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 10px;
+	padding: 1.25em 2em;
+	&.status-new {background: #559acf;}
+	&.status-out {background: #6b6b6b;}
+	&.status-last {background: #de7846;}
+	&.status-sale {background: #CA3F3F;}
+}
+

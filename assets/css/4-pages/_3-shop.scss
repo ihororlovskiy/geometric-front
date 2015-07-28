@@ -14,27 +14,15 @@
 		overflow: hidden;
 
 		.media-contur {
+			position: relative;
+			overflow: hidden;
+			text-align: center;
+			margin: 0 auto;
 		}
 
 		.text-content {
 		}
 	}
-}
-
-
-/**
-* status
-* ----------------------------------------------------------------------------
-*/
-span.status {
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 10px;
-	padding: 1.25em 2em;
-	&.status-new {background: #559acf;}
-	&.status-out {background: #6b6b6b;}
-	&.status-last {background: #de7846;}
-	&.status-sale {background: #CA3F3F;}
 }
 
 
@@ -51,11 +39,6 @@ span.status {
 			padding: 0 15px 40px;
 
 			.media-contur {
-				position: relative;
-				overflow: hidden;
-				text-align: center;
-				margin: 0 auto;
-
 				>img {
 					@include transition(all 1s ease);
 					@include transform(scale(1.0) translateZ(0));
@@ -146,7 +129,6 @@ span.status {
 			&:nth-child(8) {width: 66.6666666666666%;}
 
 			.media-contur {
-
 				>img {
 					@include transition(all 1s ease);
 					@include transform(scale(1.0) translateZ(0));
