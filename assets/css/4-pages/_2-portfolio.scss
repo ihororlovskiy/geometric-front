@@ -136,7 +136,7 @@
 
 				.vertical-centering-1 {
 					position: absolute;
-					top: 75%;
+					top: 60%;
 					left: 0;
 					width: 100%;
 					@include transform(translateY(-50%));
@@ -147,7 +147,7 @@
 
 				.vertical-centering-2 {
 					position: absolute;
-					bottom: 50%;
+					bottom: 30%;
 					left: 0;
 					width: 100%;
 					@include transform(translateY(-50%));
