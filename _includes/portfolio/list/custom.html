@@ -12,8 +12,14 @@
 				<nav class="categories">
 					<a href="#">art</a>
 				</nav>
-				<h4>Venice Art Pavilion</h4>
+				{% if page.fullwidth == true %}
+				<h3>Venice Art Pavilion</h3>
 				<a href="#" class="gbtn gbtn-lg">Read More</a>
+				{% endif %}
+				{% if page.fullwidth == false %}
+				<h4>Venice Art Pavilion</h4>
+				<a href="#" class="gbtn">Read More</a>
+				{% endif %}
 			</div>
 		</div>
 	</article>
@@ -27,8 +33,14 @@
 				<nav class="categories">
 					<a href="#">business</a>
 				</nav>
-				<h4>Venice Art Pavilion</h4>
+				<h3>Venice Art Pavilion</h3>
+				{% if page.fullwidth == true %}
 				<a href="#" class="gbtn gbtn-lg">Read More</a>
+				{% endif %}
+				{% if page.fullwidth == false %}
+				<h4>Venice Art Pavilion</h4>
+				<a href="#" class="gbtn">Read More</a>
+				{% endif %}
 			</div>
 		</div>
 	</article>
@@ -44,8 +56,14 @@
 					<a href="#">art</a>
 					<a href="#">photography</a>
 				</nav>
-				<h4>Venice Art Pavilion</h4>
+				<h3>Venice Art Pavilion</h3>
+				{% if page.fullwidth == true %}
 				<a href="#" class="gbtn gbtn-lg">Read More</a>
+				{% endif %}
+				{% if page.fullwidth == false %}
+				<h4>Venice Art Pavilion</h4>
+				<a href="#" class="gbtn">Read More</a>
+				{% endif %}
 			</div>
 		</div>
 	</article>

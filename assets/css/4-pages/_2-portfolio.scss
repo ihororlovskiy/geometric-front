@@ -16,8 +16,25 @@
 		article.isotope-item {
 			position: relative;
 			overflow: hidden;
+
+			.media-contur {
+				position: relative;
+				overflow: hidden;
+				text-align: center;
+				margin: 0 auto;
+
+				img {
+					width: 100%;
+					@include transition(all 5.25s $ease-out-circ);
+					@include transform(scale(1.0) translateZ(0));
+				}
+			}
 		}
 	}
+
+	&.col-2 nav.categories {font-size: 14px;}
+	&.col-3 nav.categories {font-size: 12px;}
+	&.col-4 nav.categories {font-size: 10px;}
 }
 
 
@@ -44,51 +61,55 @@
 
 
 /**
-* portfolio list classic
+* classic portfolio list
 * ----------------------------------------------------------------------------
 */
 .portfoliolist-classic {
-	article {
+	.isotope-container {
+		article.isotope-item {
 
-		.media-contur {
-			img {
-				width: 100%;
-			}
-		}
-
-		.text-content {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			opacity: 0;
-			background: rgba(#4489C4, 0.7);
-			@include transition(all 0.25s ease-in-out);
-
-			.vertical-centering {
+			.text-content {
 				position: absolute;
-				top: 75%;
-				left: 50%;
-				@include transform(translate(-50%,-50%));
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				background: rgba(#4489C4, 0.7);
 				@include transition(all 0.25s ease-in-out);
 
-				.gbtn {margin-bottom: 30px;}
-				nav.categories {
-					margin-bottom: 4px;
-					a {color: #b9d5eb;}
-				}
-				h4 {
-					color: #fff;
-					margin-bottom: 0;
+				.vertical-centering {
+					position: absolute;
+					top: 75%;
+					left: 0;
+					width: 100%;
+					@include transform(translateY(-50%));
+					@include transition(all 0.25s ease-in-out);
+
+					.gbtn {margin-bottom: 30px;}
+					nav.categories {
+						margin-bottom: 4px;
+						a {color: #b9d5eb;}
+					}
+					h3,
+					h4,
+					h5 {
+						color: #fff;
+						margin-bottom: 0;
+					}
 				}
 			}
-		}
 
-		&:hover {
-			.text-content {
-				opacity: 1;
-				.vertical-centering {top: 50%;}
+			&:hover {
+				.media-contur {
+					img {
+						@include transform(scale(1.2));
+					}
+				}
+				.text-content {
+					opacity: 1;
+					.vertical-centering {top: 50%;}
+				}
 			}
 		}
 	}
@@ -96,64 +117,69 @@
 
 
 /**
-* portfolio list mansory
+* mansory portfolio list
 * ----------------------------------------------------------------------------
 */
 .portfoliolist-mansory {
-	article.isotope-item {
+	.isotope-container {
+		article.isotope-item {
 
-		.media-contur {
-			img {
-				width: 100%;
-			}
-		}
-
-		.text-content {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			opacity: 0;
-			background: rgba(#fff,.85);
-			@include transition(all 0.25s ease-in-out);
-
-			.vertical-centering-1 {
-				position: absolute;
-				top: 75%;
-				left: 50%;
-				@include transform(translate(-50%,-50%));
-				@include transition(all 0.25s ease-in-out);
-
-				.gbtn {margin-bottom: 30px;}
-			}
-
-			.vertical-centering-2 {
-				position: absolute;
-				left: 50%;
-				bottom: 50%;
-				@include transform(translate(-50%,-100%));
-				@include transition(all 0.25s ease-in-out);
-
-				nav.categories {
-					margin-bottom: 4px;
-					a {color: #979797;}
-				}
-				h4 {
-					color: #4385b8;
-					margin-bottom: 0;
-				}
-			}
-		}
-
-		&:hover {
 			.text-content {
-				opacity: 1;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				background: rgba(#fff,.85);
+				@include transition(all 0.25s ease-in-out);
+
 				.vertical-centering-1 {
-					top: 50%;
+					position: absolute;
+					top: 75%;
+					left: 0;
+					width: 100%;
+					@include transform(translateY(-50%));
+					@include transition(all 0.25s ease-in-out);
+
+					.gbtn {margin-bottom: 30px;}
 				}
+
 				.vertical-centering-2 {
-					bottom: 0;
+					position: absolute;
+					bottom: 50%;
+					left: 0;
+					width: 100%;
+					@include transform(translateY(-50%));
+					@include transition(all 0.25s ease-in-out);
+
+					nav.categories {
+						margin-bottom: 4px;
+						a {color: #979797;}
+					}
+					h3,
+					h4,
+					h5 {
+						color: #4385b8;
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			&:hover {
+				.media-contur {
+					img {
+						@include transform(scale(1.2));
+					}
+				}
+				.text-content {
+					opacity: 1;
+					.vertical-centering-1 {
+						top: 50%;
+					}
+					.vertical-centering-2 {
+						bottom: 10%;
+					}
 				}
 			}
 		}
@@ -162,55 +188,59 @@
 
 
 /**
-* portfolio list grid
+* grid portfolio list
 * ----------------------------------------------------------------------------
 */
 .portfoliolist-grid {
-	article.isotope-item {
-		width: 33.3333333333333%;
-		&:nth-child(2),
-		&:nth-child(6),
-		&:nth-child(9) {width: 66.6666666666666%;}
+	.isotope-container {
+		article.isotope-item {
+			width: 33.3333333333333%;
+			&:nth-child(2),
+			&:nth-child(6),
+			&:nth-child(9) {width: 66.6666666666666%;}
 
-		.media-contur {
-			img {
-				width: 100%;
-			}
-		}
-
-		.text-content {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			opacity: 0;
-			background: rgba(#4489C4, 0.7);
-			@include transition(all 0.25s ease-in-out);
-
-			.vertical-centering {
+			.text-content {
 				position: absolute;
-				top: 75%;
-				left: 50%;
-				@include transform(translate(-50%,-50%));
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				background: rgba(#4489C4, 0.7);
 				@include transition(all 0.25s ease-in-out);
 
-				.gbtn {margin-bottom: 30px;}
-				nav.categories {
-					margin-bottom: 4px;
-					a {color: #b9d5eb;}
-				}
-				h5 {
-					color: #fff;
-					margin-bottom: 0;
+				.vertical-centering {
+					position: absolute;
+					top: 75%;
+					left: 0;
+					width: 100%;
+					@include transform(translateY(-50%));
+					@include transition(all 0.25s ease-in-out);
+
+					.gbtn {margin-bottom: 30px;}
+					nav.categories {
+						font-size: 12px;
+						margin-bottom: 4px;
+						a {color: #b9d5eb;}
+					}
+					h3,
+					h4 {
+						color: #fff;
+						margin-bottom: 0;
+					}
 				}
 			}
-		}
 
-		&:hover {
-			.text-content {
-				opacity: 1;
-				.vertical-centering {top: 50%;}
+			&:hover {
+				.media-contur {
+					img {
+						@include transform(scale(1.2));
+					}
+				}
+				.text-content {
+					opacity: 1;
+					.vertical-centering {top: 50%;}
+				}
 			}
 		}
 	}
@@ -218,101 +248,102 @@
 
 
 /**
-* portfolio list custom
+* custom portfolio list
 * ----------------------------------------------------------------------------
 */
 .portfoliolist-custom {
-	article.isotope-item {
-		width: 100%;
+	.isotope-container {
+		article.isotope-item {
+			width: 100%;
 
-		.media-contur {
-			width: 50%;
-			float: left;
-			padding: 12.5%;
-
-			a {
-				img {
-					width: 100%;
-				}
+			.media-contur {
+				width: 50%;
+				float: left;
+				padding: 12.5%;
 			}
-		}
 
-		.text-content {
-			width: 50%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 50%;
-
-			.vertical-centering {
+			.text-content {
+				width: 50%;
+				height: 100%;
 				position: absolute;
-				top: 50%;
+				top: 0;
 				left: 50%;
-				@include transform(translate(-50%,-50%));
 
-				nav.categories {
-					font-size: 14px;
-					margin-bottom: 4px;
-					a {}
+				.vertical-centering {
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 100%;
+					@include transform(translateY(-50%));
+
+					nav.categories {
+						font-size: 14px;
+						margin-bottom: 4px;
+						a {}
+					}
+					h3,
+					h4 {margin-bottom: 60px;}
+					.gbtn {}
 				}
-				h4 {margin-bottom: 60px;}
-				.gbtn {}
 			}
-		}
 
-		&:nth-child(2n) {
-			.media-contur {float: right;}
-			.text-content {left: 0;}
-		}
-
-		&:nth-child(3n+1) {
-			background: #4385b8;
-			.text-content {
-				background: #5596c7;
-				a.gbtn {
-					color: #fff;
-					background: #4385b8;
-					border-color: #4385b8;
-				}
-				nav.categories a {
-					color: #95c6eb;
-					&:hover {color: #95c6eb;}
-				}
-				h4 {color: #fff;}
+			&:nth-child(2n) {
+				.media-contur {float: right;}
+				.text-content {left: 0;}
 			}
-		}
-		
-		&:nth-child(3n+2) {
-			background: #fff;
-			.text-content {
-				background: #f1f1f1;
-				.gbtn {
-					color: #4d8abb;
-					background: #fff;
-					border-color: #fff;
-				}
-				nav.categories a {
-					color: #898989;
-					&:hover {color: #898989;}
-				}
-				h4 {color: #4385b8;}
-			}
-		}
 
-		&:nth-child(3n+3) {
-			background: #343434;
-			.text-content {
-				background: #3d3d3d;
-				a.gbtn {
-					color: #fff;
-					background: #343434;
-					border-color: #343434;
+			&:nth-child(3n+1) {
+				background: #4385b8;
+				.text-content {
+					background: #5596c7;
+					a.gbtn {
+						color: #fff;
+						background: #4385b8;
+						border-color: #4385b8;
+					}
+					nav.categories a {
+						color: #95c6eb;
+						&:hover {color: #95c6eb;}
+					}
+					h3,
+					h4 {color: #fff;}
 				}
-				nav.categories a {
-					color: #898989;
-					&:hover {color: #898989;}
+			}
+			
+			&:nth-child(3n+2) {
+				background: #fff;
+				.text-content {
+					background: #f1f1f1;
+					.gbtn {
+						color: #4d8abb;
+						background: #fff;
+						border-color: #fff;
+					}
+					nav.categories a {
+						color: #898989;
+						&:hover {color: #898989;}
+					}
+					h3,
+					h4 {color: #4385b8;}
 				}
-				h4 {color: #fff;}
+			}
+
+			&:nth-child(3n+3) {
+				background: #343434;
+				.text-content {
+					background: #3d3d3d;
+					a.gbtn {
+						color: #fff;
+						background: #343434;
+						border-color: #343434;
+					}
+					nav.categories a {
+						color: #898989;
+						&:hover {color: #898989;}
+					}
+					h3,
+					h4 {color: #fff;}
+				}
 			}
 		}
 	}

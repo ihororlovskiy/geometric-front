@@ -19,39 +19,28 @@
 			text-align: center;
 			margin: 0 auto;
 
-			>img {
-				@include transition(all 5.25s $ease-out-circ);
-				@include transform(scale(1.0) translateZ(0));
-			}
-
 			.vertical-centering {
 				position: absolute;
 				width: 100%;
 				height: 100%;
 				top: 0;
 				left: 0;
-				@include transition(all 0.75s $ease-out-circ);
-				@include transform(translateY(100%));
+				opacity: 0;
+				@include transition(all 0.25s ease-in-out);
 			}
 
 			&:hover {
-				>img {
-					@include transform(scale(1.25));
-				}
 				.vertical-centering {
-					@include transform(translateY(0));
+					opacity: 1;
 				}
 			}
-		}
-
-		.text-content {
 		}
 	}
 }
 
 
 /**
-* quote item
+* quote item at list
 * ----------------------------------------------------------------------------
 */
 .bloglist {
@@ -159,7 +148,7 @@
 
 
 /**
-* Classic Small Blog List
+* classic small blog list
 * ----------------------------------------------------------------------------
 */
 .bloglist-small {
@@ -171,8 +160,7 @@
 			border-bottom: 1px solid $divider;
 
 			.media-contur {
-				width: 45%;
-				padding-right: 30px;
+				width: 40%;
 				margin-bottom: 40px;
 				float: left;
 
@@ -189,7 +177,8 @@
 			}
 
 			.text-content {
-				width: 55%;
+				width: 60%;
+				padding-left: 30px;
 				float: right;
 				margin-bottom: 40px;
 
@@ -198,6 +187,7 @@
 
 			&.quote-item {
 				.text-content {
+					padding-left: 0;
 					width: 100%;
 				}
 			}
@@ -207,7 +197,7 @@
 
 
 /**
-* Classic Large Blog List
+* classic large blog list
 * ----------------------------------------------------------------------------
 */
 .bloglist-large {
@@ -244,7 +234,7 @@
 
 
 /**
-* Masonry Blog List
+* masonry blog list
 * ----------------------------------------------------------------------------
 */
 .bloglist-masonry {
@@ -281,7 +271,7 @@
 
 
 /**
-* Grid Blog List
+* grid blog list
 * ----------------------------------------------------------------------------
 */
 .bloglist-grid {
@@ -319,7 +309,7 @@
 
 
 /**
-* Custom Blog
+* custom blog list
 * ----------------------------------------------------------------------------
 */
 .bloglist-custom {
@@ -508,11 +498,9 @@
 }
 
 
-
-/**
-* tags
-* ----------------------------------------------------------------------------
-*/
+/*-------------------------------------------------------------------------*/
+/* # TAGS & CATEGORIES
+/*-------------------------------------------------------------------------*/
 nav.tags,
 nav.categories {
 	text-align: center;
@@ -528,7 +516,14 @@ nav.categories {
 		margin-right: 10px;
 		color: #6a6a6a;
 		@include transition(all 0.75s $ease-out-circ);
-		&:last-child {margin-right: 0;}
+
+		&:after {content: ',';}
+
+		&:last-child {
+			margin-right: 0;
+			&:after {content: '';}
+		}
 		&:hover {color: #3679ab;}
 	}
 }
+
