@@ -49,47 +49,47 @@
 */
 .portfoliolist-classic {
 	article {
-		.fx-layout {
+
+		.media-contur {
+			img {
+				width: 100%;
+			}
+		}
+
+		.text-content {
 			position: absolute;
 			top: 0;
 			left: 0;
-			bottom: 0;
-			right: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			background: rgba(#4489C4, 0.7);
+			@include transition(all 0.25s ease-in-out);
 
-			>span {
-				display: table;
-				width: 100%;
-				height: 100%;
-				text-align: center;
+			.vertical-centering {
+				position: absolute;
+				top: 75%;
+				left: 50%;
+				@include transform(translate(-50%,-50%));
+				@include transition(all 0.25s ease-in-out);
 
-				>i {
-					display: table-cell;
-					vertical-align: middle;
-					background: rgba(67,133,184,0.7);
-					opacity: 0;
-					padding-top: 100px;
-					@include transition(all 0.25s ease-in-out);
-
-					a.gbtn {
-						margin-bottom: 30px;
-					}
-					h5 {
-						color: #b9d5eb;
-						font-size: 0.6em;
-						margin-bottom: 0.5em;
-					}
-					h4 {
-						color: #fff;
-						font-size: 1.125em;
-						margin: 0;
-					}
+				.gbtn {margin-bottom: 30px;}
+				nav.categories {
+					margin-bottom: 4px;
+					a {color: #b9d5eb;}
+				}
+				h4 {
+					color: #fff;
+					margin-bottom: 0;
 				}
 			}
 		}
 
-		&:hover .fx-layout>span>i {
-			opacity: 1;
-			padding-top: 0;
+		&:hover {
+			.text-content {
+				opacity: 1;
+				.vertical-centering {top: 50%;}
+			}
 		}
 	}
 }
