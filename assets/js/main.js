@@ -118,20 +118,20 @@ function buttonUp() {
 */
 $(document).ready(function(){
 
-		// Add review
-		$('.addreview>button').click(function(){
-				$('.addreview').toggleClass('addreview--add');
-		});
+	// Add review
+	$('.addreview>button').click(function(){
+			$('.addreview').toggleClass('addreview--add');
+	});
 
-		// Show more
-		$('.gbtn-showmore').click(function(){
-				$('.gbtn-showmore').toggleClass('gbtn-loading active');
-		});
+	// Show more
+	$('.gbtn-showmore').click(function(){
+			$('.gbtn-showmore').toggleClass('gbtn-loading active');
+	});
 
-		// Cart Full/Empty
-		$('a.js-empty-cart').click(function(){
-			 $('body').toggleClass('emptyCart');
-		});
+	// Cart Full/Empty
+	$('a.js-empty-cart').click(function(){
+		 $('body').toggleClass('emptyCart');
+	});
 
 });
 
@@ -192,6 +192,33 @@ $(window).load(function() {
 
 });
 
+/**
+* OwlCarousel
+* http://owlgraphic.com/owlcarousel/
+*/
+$(document).ready(function() {
+
+	var owl = $("#owl-example");
+
+	owl.owlCarousel({
+		items : 4,
+		transitionStyle : "fade",
+		navigation : true,
+		afterInit : function(elem){
+			var that = this
+			that.owlControls.prependTo(elem)
+		}
+	});
+
+	// Custom Navigation Events
+	$(".next").click(function(){
+		owl.trigger('owl.next');
+	})
+	$(".prev").click(function(){
+		owl.trigger('owl.prev');
+	})
+
+});
 
 /**
 * input price range
