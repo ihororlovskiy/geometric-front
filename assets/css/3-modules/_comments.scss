@@ -12,9 +12,7 @@
 	border-bottom: 1px solid $divider;
 	margin-bottom: 60px;
 
-	h4 {
-		margin-bottom: 40px;
-	}
+	h4 {margin-bottom: 40px;}
 
 	ol.reviewlist {
 		li {
@@ -75,14 +73,12 @@
 * ----------------------------------------------------------------------------
 */
 .reviews {
-	// padding-bottom: 20px;
+	padding-bottom: 40px;
 	border-bottom: 1px solid $divider;
 	margin-bottom: 60px;
 	position: relative;
 
-	h4 {
-		margin-bottom: 40px;
-	}
+	h4 {margin-bottom: 40px;}
 
 	ol.reviewlist {
 		li {
@@ -138,44 +134,9 @@
 }
 
 
-/**
-* add review button / shop item
-* ----------------------------------------------------------------------------
-*/
-.reviews {
-	button.gbtn {
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		@include transform(translate(-50%,50%));
-		.putin {
-			display: block;
-			opacity: 1;
-			@include transition(all 0.75s ease);
-		}
-		.putaway {
-			display: none;
-			opacity: 0;
-			@include transition(all 0.75s ease);
-		}
-	}
-	&.addreview-add {
-		button.gbtn {
-			.putin {
-				display: none;
-				opacity: 0;
-			}
-			.putaway {
-				display: block;
-				opacity: 1;
-			}
-		}
-		.addreview {
-			height: auto;
-			opacity: 1;
-		}
-	}
-}
+/*-------------------------------------------------------------------------*/
+/* # ADD 
+/*-------------------------------------------------------------------------*/
 
 
 /**
@@ -186,9 +147,7 @@
 	padding-bottom: 20px;
 	margin-bottom: 60px;
 
-	h4 {
-		margin-bottom: 40px;
-	}
+	h4 {margin-bottom: 40px;}
 
 	form.addreply-form {
 
@@ -243,9 +202,11 @@
 .addreview {
 	// padding-bottom: 20px;
 	margin-bottom: 60px;
+	// height: 0;
+	// opacity: 0;
+	// @include transition(all 0.75s ease);
 
-	h4 {
-	}
+	h4 {margin-bottom: 40px;}
 
 	form.addreview-form {
 
@@ -316,4 +277,47 @@
 		}
 	}
 }
+
+
+/**
+* add review button / shop item
+* ----------------------------------------------------------------------------
+*/
+.reviews {
+	button.gbtn {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		@include transform(translate(-50%,50%));
+		.putin {
+			display: block;
+			opacity: 1;
+			@include transition(all 0.75s ease);
+		}
+		.putaway {
+			display: none;
+			opacity: 0;
+			@include transition(all 0.75s ease);
+		}
+	}
+}
+
+
+// .addreview-add {
+// 		button.gbtn {
+// 			.putin {
+// 				display: none;
+// 				opacity: 0;
+// 			}
+// 			.putaway {
+// 				display: block;
+// 				opacity: 1;
+// 			}
+// 		}
+// 		.addreview {
+// 			height: auto;
+// 			opacity: 1;
+// 		}
+// 	}
+// }
 
