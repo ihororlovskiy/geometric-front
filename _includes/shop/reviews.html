@@ -1,21 +1,18 @@
-
-<div class="comments">
-	<h4>4 Comments</h4>
-
+<div class="reviews">
 	<ol class="reviewlist">
 
 		<li>
 			<div id="comment-511" class="comment">
 				<img class="avatar" src="{{ site.baseurl }}/assets/img/users/user2.jpg" alt="...">
 				<div class="text-content">
-					<h5 class="autor"><a href="#">Fernando Hierro</a></h5>
 					<nav class="review-meta">
+						<h5 class="autor">Fernando Hierro</h5>,
 						<a href="#comment-511"><time>April 23, 2015</time></a>
 					</nav>
+					{% include global/item-rating.html %}
 					<div class="description">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga totam rem consequuntur esse non quibusdam saepe laborum recusandae minus, aspernatur expedita voluptatum consequatur vero quam sequi voluptas hic commodi vitae, id nesciunt repellendus.</p>
 					</div>
-					<a class="reply" href="#">Reply</a>
 				</div>
 			</div>
 		</li>
@@ -24,28 +21,28 @@
 			<div id="comment-611" class="comment">
 				<img class="avatar" src="{{ site.baseurl }}/assets/img/users/user3.jpg" alt="...">
 				<div class="text-content">
-					<h5 class="autor">Stuart Adrian</h5>
 					<nav class="review-meta">
+						<h5 class="autor">Stuart Adrian</h5>,
 						<a href="#comment-611"><time>June 7, 2014</time></a>
 					</nav>
+					{% include global/item-rating.html %}
 					<div class="description">
 						<p>You should force registration to leave a review or better have bought the product to do so.</p>
 					</div>
-					<a class="reply" href="#">Reply</a>
 				</div>
 			</div>
 			<ul class="children">
 				<div id="comment-711" class="comment">
 					<img class="avatar" src="{{ site.baseurl }}/assets/img/users/user1.jpg" alt="...">
 					<div class="text-content">
-						<h5 class="autor"><a href="#">Fernando Hierro</a></h5>
 						<nav class="review-meta">
+							<h5 class="autor">Fernando Hierro</h5>,
 							<a href="#comment-711"><time>June 8, 2014</time></a>
 						</nav>
+						{% include global/item-rating.html %}
 						<div class="description">
 							<p>You should force registration to leave a review or better have bought the product to do so.</p>
 						</div>
-						<a class="reply" href="#">Reply</a>
 					</div>
 				</div>
 			</ul>
@@ -55,34 +52,49 @@
 			<div id="comment-511" class="comment">
 				<img class="avatar" src="{{ site.baseurl }}/assets/img/users/user4.jpg" alt="...">
 				<div class="text-content">
-					<h5 class="autor">Fernando Hierro</h5>
 					<nav class="review-meta">
+						<h5 class="autor">Fernando Hierro</h5>,
 						<a href="#comment-511"><time>April 23, 2015</time></a>
 					</nav>
+					{% include global/item-rating.html %}
 					<div class="description">
 						<p>These will go great with my Hoodie that I ordered a few weeks ago.</p>
 					</div>
-					<a class="reply" href="#">Reply</a>
 				</div>
 			</div>
 		</li>
 
 	</ol>
+
+	<button class="gbtn">
+		<span class="putin">Add Review</span>
+		<span class="putaway">Close</span>
+	</button>
+
 </div>
 
-<div class="addreply">
-	<h4>Leave a Reply</h4>
+<div class="addreview">
+	<h4>Leave a Review</h4>
 
-	<form class="addreply-form">
-		<div class="addreply-header">
-			<div class="addreply-inputs">
+	<form class="addreview-form">
+		<div class="addreview-header">
+			<div class="addreview-inputs">
 				<input type="text" name="author" placeholder="Name *" required>
 				<input type="email" name="email" value="" placeholder="E-mail *" required>
-				<input type="url" name="url" value="" placeholder="Website">
 			</div>
 			<textarea name="comment" placeholder="Your Comment *" required></textarea>
 		</div>
-		<div class="addreply-footer">
+		<div class="addreview-footer">
+			<div class="addreview-rating">
+				<label>Your Rating:</label>
+				<nav class="stars">
+					<a href="#"><span class="icon-star-filled"></span></a>
+					<a href="#"><span class="icon-star-filled"></span></a>
+					<a href="#"><span class="icon-star-filled"></span></a>
+					<a href="#"><span class="icon-star-filled"></span></a>
+					<a href="#"><span class="icon-star-filled"></span></a>
+				</nav>
+			</div>
 			<input class="gbtn" type="submit" value="Submit">
 		</div>
 	</form>

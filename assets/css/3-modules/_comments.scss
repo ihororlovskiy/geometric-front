@@ -2,56 +2,318 @@
 /* # COMMENTS
 /*-------------------------------------------------------------------------*/
 
+
 /**
-* comments
+* comments / blog item & portfolio item
 * ----------------------------------------------------------------------------
 */
 .comments {
+	padding-bottom: 20px;
+	border-bottom: 1px solid $divider;
 	margin-bottom: 60px;
 
-	h5 {
-		span.comments-count {
+	h4 {
+		margin-bottom: 40px;
+	}
+
+	ol.reviewlist {
+		li {
+			margin-bottom: 20px;
+			min-height: 80px;
+
+			.comment {
+			padding-bottom: 20px;
+			position: relative;
+			@include clearfix;
+
+				img.avatar {
+					width: 80px;
+					height: 80px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					border-radius: 50%;
+				}
+
+				.text-content {
+					float: left;
+					padding-left: 110px;
+
+					h5.autor {
+						padding-right: 60px;
+						margin-bottom: 0;
+					}
+
+					nav.review-meta {
+						display: inline-block;
+						margin-bottom: 20px;
+						a {
+							time {
+							}
+						}
+					}
+					.description {
+					}
+					a.reply {
+						position: absolute;
+						top: 0;
+						right: 0;
+					}
+				}
+			}
+			ul.children {
+				padding-left: 110px;
+				padding-bottom: 20px;
+			}
 		}
 	}
-
-	.commentitem {
-		margin-bottom: 30px;
-	}
-
-	img.geo-avatar {
-		width: 60px;
-	}
-
-	h6.geo-comment-author {
-		margin-bottom: 4px;
-		font-weight: 700;
-	}
-
-	h6.geo-comment-author a {
-		color: #6a6a6a;
-	}
-
-	div.geo-comment-date {
-		font-size: 10px;
-		line-height: 1.4;
-		font-weight: 700;
-		text-transform: uppercase;
-		color: #9a9a9a;
-		margin-bottom: 20px;
-	}
-
 }
 
 
 /**
-* add comment
+* reviews / shop item
 * ----------------------------------------------------------------------------
 */
-.addcomment {
+.reviews {
+	// padding-bottom: 20px;
+	border-bottom: 1px solid $divider;
 	margin-bottom: 60px;
+	position: relative;
 
-	h5 {}
+	h4 {
+		margin-bottom: 40px;
+	}
 
+	ol.reviewlist {
+		li {
+			margin-bottom: 20px;
+			min-height: 80px;
+
+			.comment {
+			padding-bottom: 20px;
+			position: relative;
+			@include clearfix;
+
+				img.avatar {
+					width: 80px;
+					height: 80px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					border-radius: 50%;
+				}
+
+				.text-content {
+					float: left;
+					padding-left: 110px;
+
+					nav.review-meta {
+						display: inline-block;
+						margin-bottom: 0;
+
+						h5.autor {
+							display: inline-block;
+							margin-bottom: 0;
+						}
+						a {
+							time {
+								padding-left: 8px;
+							}
+						}
+					}
+					nav.item-rating {
+						font-size: 10px;
+						margin: 8px 0;
+					}
+					.description {
+					}
+				}
+			}
+			ul.children {
+				padding-left: 110px;
+				padding-bottom: 20px;
+			}
+		}
+	}
 }
 
+
+/**
+* add review button / shop item
+* ----------------------------------------------------------------------------
+*/
+.reviews {
+	button.gbtn {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		@include transform(translate(-50%,50%));
+		.putin {
+			display: block;
+			opacity: 1;
+			@include transition(all 0.75s ease);
+		}
+		.putaway {
+			display: none;
+			opacity: 0;
+			@include transition(all 0.75s ease);
+		}
+	}
+	&.addreview-add {
+		button.gbtn {
+			.putin {
+				display: none;
+				opacity: 0;
+			}
+			.putaway {
+				display: block;
+				opacity: 1;
+			}
+		}
+		.addreview {
+			height: auto;
+			opacity: 1;
+		}
+	}
+}
+
+
+/**
+* addreply / blog item & portfolio item
+* ----------------------------------------------------------------------------
+*/
+.addreply {
+	padding-bottom: 20px;
+	margin-bottom: 60px;
+
+	h4 {
+		margin-bottom: 40px;
+	}
+
+	form.addreply-form {
+
+		.addreply-header {
+			position: relative;
+			margin-bottom: 20px;
+			@include clearfix;
+
+			.addreply-inputs {
+				width: 30%;
+				float: left;
+				padding-right: 20px;
+
+				input[type="text"] {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				input[type="email"] {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				input[type="url"] {
+					width: 100%;
+				}
+			}
+			textarea {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 70%;
+				height: 100%;
+				float: right;
+				resize: none;
+				margin-bottom: 20px;
+			}
+		}
+		.addreply-footer {
+			@include clearfix;
+
+			input.gbtn {
+				float: right;
+			}
+		}
+	}
+}
+
+
+/**
+* add review / shop item
+* ----------------------------------------------------------------------------
+*/
+.addreview {
+	// padding-bottom: 20px;
+	margin-bottom: 60px;
+
+	h4 {
+	}
+
+	form.addreview-form {
+
+		.addreview-header {
+			position: relative;
+			margin-bottom: 20px;
+			@include clearfix;
+
+			.addreview-inputs {
+				width: 30%;
+				float: left;
+				padding-right: 20px;
+
+				input[type="text"] {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				input[type="email"] {
+					width: 100%;
+					// margin-bottom: 20px;
+				}
+			}
+			textarea {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 70%;
+				height: 100%;
+				float: right;
+				resize: none;
+				margin-bottom: 20px;
+			}
+		}
+		.addreview-footer {
+			@include clearfix;
+
+			.addreview-rating {
+				float: left;
+				font-size: 12px;
+
+				label {
+					color: #afafaf;
+					font-size: 12px;
+					margin-right: 10px;
+				}
+
+				nav.stars {
+					display: inline-block;
+					a {
+						color: #e6e6e6;
+						font-size: 12px;
+						@include transition(all 0.75s ease);
+						margin-right: -2px;
+						&:last-child {margin-right: 0;}
+
+						[class^="icon-"] {
+						}
+
+						&.active {color: #3787c4;}
+						&:hover {color: #3787c4;}
+					}
+				}
+			}
+
+			input.gbtn {
+				float: right;
+			}
+		}
+	}
+}
 

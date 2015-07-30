@@ -119,8 +119,8 @@ function buttonUp() {
 $(document).ready(function(){
 
 	// Add review
-	$('.addreview>button').click(function(){
-			$('.addreview').toggleClass('addreview--add');
+	$('.reviews>button').click(function(){
+			$('.addreview').toggleClass('addreview-add');
 	});
 
 	// Show more
