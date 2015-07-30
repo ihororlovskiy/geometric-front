@@ -192,29 +192,47 @@ $(window).load(function() {
 
 });
 
+
 /**
 * OwlCarousel
 * http://owlgraphic.com/owlcarousel/
 */
 $(document).ready(function() {
 
-	var owl = $(".similar-default #owl-carousel");
+	// Default
+	var owlDefault = $(".similar-default #similar-default");
 
-	owl.owlCarousel({
+	owlDefault.owlCarousel({
 		items : 4,
 		pagination: false,
 		lazyLoad : true,
 	});
 
-	// Custom Navigation Events
-	$(".similar-next").click(function(){
-		owl.trigger('owl.next');
+	$(".similar-default a.next").click(function(){
+		owlDefault.trigger('owl.next');
 	})
-	$(".similar-prev").click(function(){
-		owl.trigger('owl.prev');
+	$(".similar-default a.prev").click(function(){
+		owlDefault.trigger('owl.prev');
+	})
+
+	// Unborder
+	var owlUnborder = $(".similar-unborder #similar-unborder");
+
+	owlUnborder.owlCarousel({
+		items : 4,
+		pagination: false,
+		lazyLoad : true,
+	});
+
+	$(".similar-unborder a.next").click(function(){
+		owlUnborder.trigger('owl.next');
+	})
+	$(".similar-unborder a.prev").click(function(){
+		owlUnborder.trigger('owl.prev');
 	})
 
 });
+
 
 /**
 * input price range
