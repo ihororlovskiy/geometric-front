@@ -198,23 +198,19 @@ $(window).load(function() {
 */
 $(document).ready(function() {
 
-	var owl = $("#owl-example");
+	var owl = $(".similar-default #owl-carousel");
 
 	owl.owlCarousel({
 		items : 4,
-		transitionStyle : "fade",
-		navigation : true,
-		afterInit : function(elem){
-			var that = this
-			that.owlControls.prependTo(elem)
-		}
+		pagination: false,
+		lazyLoad : true,
 	});
 
 	// Custom Navigation Events
-	$(".next").click(function(){
+	$(".similar-next").click(function(){
 		owl.trigger('owl.next');
 	})
-	$(".prev").click(function(){
+	$(".similar-prev").click(function(){
 		owl.trigger('owl.prev');
 	})
 
