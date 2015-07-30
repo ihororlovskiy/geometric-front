@@ -1,0 +1,58 @@
+
+{% if page.item-type == 'image' %}
+<div class="blogitem-media">
+	<img src="{{ site.baseurl }}/assets/img/blog/item-1.jpg" alt="...">
+</div>
+{% endif %}
+
+{% if page.item-type == 'slider' %}
+<div class="blogitem-media">
+	<div class="tp-banner-container">
+		<div id="blogitem-slider" class="tp-banner">
+			<ul>
+				<li data-transition="fadetoleftfadefromright" data-slotamount="1" data-masterspeed="1000" >
+					<img src="{{ site.baseurl }}/assets/img/blog/item-3.jpg" alt="..." data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+				</li>
+				<li data-transition="fadetoleftfadefromright" data-slotamount="1" data-masterspeed="1000" >
+					<img src="{{ site.baseurl }}/assets/img/blog/item-1.jpg" alt="..." data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+				</li>
+				<li data-transition="fadetoleftfadefromright" data-slotamount="1" data-masterspeed="1000" >
+					<img src="{{ site.baseurl }}/assets/img/blog/item-2.jpg" alt="..." data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endif %}
+
+{% if page.item-type == 'video' %}
+<div class="blogitem-media">
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zI5VR6NXkjM" allowfullscreen></iframe>
+	</div>
+</div>
+{% endif %}
+
+{% if page.item-type == 'soundcloud' %}
+<div class="blogitem-media">
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/179596651&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	</div>
+</div>
+{% endif %}
+
+{% if page.item-type == 'text' %}
+{% endif %}
+
+{% if page.item-type == 'quote' %}
+<div class="blogitem-media">
+</div>
+{% endif %}
+
+{% if page.item-type == 'html5audio' %}
+<div class="blogitem-media">
+</div>
+{% endif %}
+
+{% include blog/item/content.html %}
+
