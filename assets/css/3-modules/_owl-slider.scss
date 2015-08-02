@@ -1,0 +1,29 @@
+/*-------------------------------------------------------------------------*/
+/* # OWL SLIDER
+/*-------------------------------------------------------------------------*/
+#sync1 .item{
+	background: #0c83e7;
+	padding: 0;
+	margin: 5px;
+	color: #fff;
+	border-radius: 180px;
+	text-align: center;
+}
+
+#sync2 .item{
+	background: #C9C9C9;
+	padding: 0;
+	margin: 5px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+#sync2 .item h1{
+	font-size: 18px;
+}
+
+#sync2 .synced .item{
+	background: #0c83e7;
+}
+
