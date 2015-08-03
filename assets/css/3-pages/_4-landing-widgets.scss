@@ -1,0 +1,823 @@
+/*-------------------------------------------------------------------------*/
+/* # LANDING WIDGETS
+/*-------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+/*	# LANDING BASIC
+/*-------------------------------------------------------------------------*/
+
+.land-item {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	@include clearfix;
+}
+
+
+/**
+* Headslider
+* ----------------------------------------------------------------------------
+*/
+.land-headslider {
+	background: #fff;
+	padding: 0;
+	// .flexslider {
+	// 	margin-bottom: 0;
+	// }
+	.left-part {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 50%;
+		text-align: left;
+		padding: 0 50px;
+		@include transform(translateY(-100%));
+		h6 {
+			color: #8c8c8c;
+		}
+		h1 {
+			color: #488cc0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+/**
+* Feachers
+* ----------------------------------------------------------------------------
+*/
+.land-feachers {
+	background: #3374a6;
+	padding: 50px 0;
+	.isotope-item {
+		float: left;
+		width: 33.333333333333%;
+		padding: 50px 10px;
+		[class^="icon-"] {
+			font-size: 80px;
+			color: #77b0db;
+			display: block;
+			margin-bottom: 20px;
+		}
+		h5 {
+			color: #fff;
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+/**
+* Portfolio
+* ----------------------------------------------------------------------------
+*/
+.land-portfolio {
+	text-align: left;
+	padding: 100px 0 0;
+	.right-part {
+		padding: 0 40px;
+		.top-part {
+			margin-bottom: 150px;
+			[class^="icon-"] {
+				font-size: 100px;
+				color: #d9d9d9;
+				display: block;
+				margin-bottom: 60px;
+			}
+			h3 {
+				color: #656565;
+			}
+			p {
+				color: #656565;
+			}
+			.gbtn {
+				margin-top: 40px;
+			}
+		}
+		.isotope-item {
+			float: left;
+			width: 100%;
+			margin-bottom: 80px;
+			[class^="icon-"] {
+				font-size: 60px;
+				color: #d9d9d9;
+				display: block;
+				margin-bottom: 30px;
+			}
+			h4 {
+				color: #656565;
+				margin-bottom: 20px;
+			}
+			p {
+				color: #656565;
+			}
+		}
+	}
+}
+
+
+/**
+* Skills
+* ----------------------------------------------------------------------------
+*/
+.land-skills {
+	background: #fff url("../img/landings/basic/skills/skills-01.jpg");
+	background-size: cover;
+	padding: 0;
+	.left-part {
+		float: left;
+		width: 33.33333333%;
+		text-align: left;
+		padding: 60px 40px;
+		&:before {
+			position: absolute;
+			// z-index: 1;
+			content: '';
+			width: 33.33333333%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.25);
+		}
+		* {
+			position: relative;
+		}
+		svg {
+			margin-bottom: 50px;
+			width: auto;
+			fill: #fff;
+		}
+		h4 {
+			color: #fff;
+		}
+		p {
+			color: #fff;
+		}
+	}
+	.right-part {
+		float: left;
+		width: 66.66666666%;
+		padding: 40px 40px;
+		.isotope-item {
+			float: left;
+			width: 50%;
+			padding: 30px 10px;
+			.number-counter {
+				display: block;
+				color: #fff;
+				font-size: 75px;
+				font-weight: 100;
+				// opacity: 0;
+				// @include transition(all 3.75s $ease-out-circ);
+				// &.show {
+				// 	opacity: 1;
+				// }
+			}
+			h5 {
+				color: #729ec1;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+/**
+* Blog
+* ----------------------------------------------------------------------------
+*/
+.land-basic-blog {
+	background: #fff;
+	padding: 0;
+	.top-part {
+		padding: 100px 20px 80px;
+		[class^="icon-"] {
+			font-size: 100px;
+			color: #d9d9d9;
+			display: block;
+			margin-bottom: 80px;
+		}
+		h3 {
+			color: #656565;
+			margin-bottom: 30px;
+		}
+		p {
+			color: #656565;
+		}
+		.gbtn {
+			margin-top: 40px;
+		}
+	}
+}
+
+
+/**
+* Slider
+* ----------------------------------------------------------------------------
+*/
+.land-slider {
+	background: #fff;
+	padding: 0;
+	.flexslider {
+		margin-bottom: 0;
+		.flex-control-nav {
+			width: 100%;
+			position: absolute;
+			bottom: 40px;
+			text-align: center;
+		}
+		.flex-caption {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: rgba(72, 140, 192, 0.8);
+		}
+	}
+	.central-part {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 50%;
+		@include transform(translate(-50%, -50%));
+		[class^="icon-"] {
+			font-size: 80px;
+			color: #fff;
+			display: block;
+			margin-bottom: 80px;
+		}
+		h3 {
+			color: #fff;
+			margin-bottom: 30px;
+		}
+		p {
+			color: #fff;
+		}
+	}
+}
+
+
+/**
+* Shop
+* ----------------------------------------------------------------------------
+*/
+.land-shop {
+	padding: 0;
+	.top-part {
+		background: #fff;
+		padding: 100px 20px 80px;
+		[class^="icon-"] {
+			font-size: 100px;
+			color: #d9d9d9;
+			display: block;
+			margin-bottom: 80px;
+		}
+		h3 {
+			color: #656565;
+			margin-bottom: 30px;
+		}
+		p {
+			color: #656565;
+		}
+		.gbtn {
+			margin-top: 40px;
+		}
+	}
+	.bottom-part {
+		background: #f7f7f7;
+		padding: 40px 0;
+		.right-part {
+			text-align: left;
+			padding: 60px 30% 0 20px;
+		}
+		.left-part {
+			text-align: right;
+			padding: 60px 20px 0 30%;
+		}
+		[class^="icon-"] {
+			font-size: 60px;
+			color: #d9d9d9;
+			display: block;
+			margin-bottom: 40px;
+		}
+		h4 {
+			color: #656565;
+			margin-bottom: 30px;
+		}
+		p {
+			color: #656565;
+		}
+	}
+}
+
+
+/**
+* Team
+* ----------------------------------------------------------------------------
+*/
+.land-team {
+	padding: 0 0 80px;
+	border-bottom: 1px solid #f5f5f5;
+	.top-part {
+		padding: 100px 0 80px;
+		h4 {
+			color: #5d5d5d;
+		}
+		p {
+			color: #5d5d5d;
+		}
+	}
+	.isotope-item {
+		float: left;
+		width: 33.33333333333%;
+		text-align: left;
+		padding: 0 2%;
+		.image-contour {
+			margin-bottom: 20px;
+			overflow: hidden;
+			position: relative;
+			@include transition(all 3.75s $ease-out-circ);
+			@include filter(grayscale(100%));
+			img {
+				width: 100%;
+				height: auto;
+				@include transition(all 3.75s $ease-out-circ);
+				@include transform(scale(1) translateY(0) translateZ(0));
+			}
+			.extra-content {
+				position: absolute;
+				bottom: -4px;
+				left: -4px;
+				right: -4px;
+				background: $color-white;
+				@include padding(12px 5px);
+				@include transition(all 1.25s $ease-out-circ);
+				@include transform(translateY(100%));
+				overflow: hidden;
+				nav.member-social {
+					width: 100%;
+					a {
+						font-size: 22px;
+						padding: 10px 0;
+						text-align: center;
+						width: 16.66666666666666666666%;
+						float: left;
+						color: #e2e2e2;
+						display: inline-block;
+						@include transition(all 0.25s $ease-out-quint);
+						&:hover {
+							color: #397aa9;
+						}
+					}
+				}
+			}
+		}
+		.text-content {
+			color: #656565;
+			p.position {
+				color: #656565;
+				margin-bottom: 0;
+			}
+			h4 {
+				color: #656565;
+			}
+			p {
+				color: #656565;
+			}
+		}
+		&:hover {
+			.image-contour {
+				@include filter(grayscale(0));
+			}
+				img {
+					@include transform(scale(1.1) translateY(-5%) translateZ(0));
+				}
+			.extra-content {
+				@include transform(translateY(0));
+			}
+		}
+	}
+}
+
+
+/**
+* Clients
+* ----------------------------------------------------------------------------
+*/
+.land-clients {
+	padding: 0 0 80px;
+	.top-part {
+		padding: 80px 0 60px;
+		h4 {
+			color: #5d5d5d;
+		}
+		p {
+			color: #5d5d5d;
+		}
+	}
+	.gallery {
+		padding: 0 0 20px;
+		.gallery-cell {
+			width: 100%;
+			height: 200px;
+			margin-right: 10px;
+			a {
+				display: inline-block;
+				float: left;
+				width: 20%;
+				@include transition(all 3.75s $ease-out-circ);
+				@include filter(grayscale(100%));
+				&:hover {
+					@include filter(grayscale(0));
+				}
+				img {
+				}
+			}
+		}
+		.flickity-page-dots {
+			bottom: 0;
+			// .dot {
+			// 	background: #488cc0;
+			// }
+		}
+		.flickity-prev-next-button {
+			display: none;
+		}
+	}
+}
+
+
+/*-------------------------------------------------------------------------*/
+/*	# LANDING SHOP
+/*-------------------------------------------------------------------------*/
+.land-item {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	@include clearfix;
+}
+
+// title-iconed
+.title-iconed {
+	color: #545454;
+	margin-bottom: 0;
+	[class^="icon-"] {
+		margin-right: 0.5em;
+		font-size: 3em;
+		color: #D2D2D2;
+		position: relative;
+		top: 0.25em;
+	}
+}
+
+// nav.arrows
+nav.arrows {
+	position: absolute;
+	right: 0;
+	top: 0;
+	// a.prev {
+	// 	float: left;
+	// }
+	// a.next {
+	// 	float: left;
+	// }
+	a {
+		float: left;
+		width: 60px;
+		text-align: center;
+		[class^="icon-"] {
+			color: #4A90E2;
+			font-size: 30px;
+			font-weight: 500;
+			line-height: 60px;
+		}
+	}
+}
+
+/**
+* Headslider
+* ----------------------------------------------------------------------------
+*/
+.land-headslider {
+	background: #fff;
+	padding: 0;
+	.image-contur {
+		img {
+			width: 100%;
+		}
+	}
+	.right-part {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 70%;
+		text-align: right;
+		padding: 0 100px;
+		@include transform(translateY(-100%));
+		h1 {
+			color: #fff;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+
+/**
+* Categories
+* ----------------------------------------------------------------------------
+*/
+.land-categories {
+	padding: 0;
+	border-bottom: 1px solid #EBEBEB;
+	.isotope-item {
+		float: left;
+		width: 25%;
+		// a {
+		// 	float: left;
+		// 	width: 100%;
+		// 	overflow: hidden;
+		// 	display: block;
+		// }
+		.image-contur {
+			position: relative;
+			overflow: hidden;
+			img {
+				width: 100%;
+				@include transition(all 3.75s $ease-out-circ);
+				@include transform(scale(1) translateZ(0));
+			}
+		}
+		.vertical-centring {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			// height: 100%;
+			@include transition(all 1.25s $ease-out-circ);
+			@include transform(translateY(-50%));
+			h3 {
+				color: #fff;
+			}
+		}
+		&:hover {
+			.image-contur img {
+				@include transform(scale(1.2));
+			}
+			.vertical-centring {
+				@include transform(translateY(-50%));
+			}
+		}
+	}
+}
+
+
+/**
+* Featured Products
+* ----------------------------------------------------------------------------
+*/
+.land-featured-products {
+	padding: 0 20px 30px;
+	text-align: left;
+	.caption {
+		margin: 30px 20px;
+		position: relative;
+	}
+	.isotope-item {
+		float: left;
+		width: 25%;
+		padding: 0 20px;
+		.image-contur {
+			position: relative;
+			margin-bottom: 20px;
+			img {
+				width: 100%;
+			}
+		.status {
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: #fff;
+				display: block;
+				font-size: 14px;
+				padding: 10px 16px;
+				background: #CA3F3F;
+			}
+		}
+		.text-content {
+			h5 {
+				color: #4489C4;
+				margin-bottom: 20px;
+			}
+			.rating {
+				font-size: 10px;
+				>[class^="icon-"] {
+					color: #e6e6e6;
+					cursor: pointer;
+					transition: .2s;
+					margin-right: 2px;
+					&.active {color:#4489C4;}
+					&:hover {color:#4489C4;}
+				}
+			}
+			.price {
+				font-weight: 700;
+				color: #4A4A4A;
+				font-size: 24px;
+				del {
+					font-size: 18px;
+					color: #BABABA;
+					margin-right: 10px;
+					position: relative;
+					top: -0.25em;
+				}
+			}
+		}
+	}
+}
+
+
+/**
+* Skills
+* ----------------------------------------------------------------------------
+*/
+.land-shop-skills {
+	background: #397DB6;
+	// padding: 40px 0;
+	padding: 0;
+	.left-part {
+		float: left;
+		width: 33.33333333%;
+		text-align: left;
+		padding: 60px 40px;
+		background: #4489C4;
+		// &:before {
+		// 	position: absolute;
+		// 	z-index: 1;
+		// 	content: '';
+		// 	width: 33.33333333%;
+		// 	top: 0;
+		// 	left: 0;
+		// 	bottom: 0;
+		// 	background: #4489C4;
+		// }
+		[class^="icon-"] {
+			position: relative;
+			z-index: 2;
+			font-size: 50px;
+			display: block;
+			margin-bottom: 50px;
+			color: #fff;
+		}
+		h4 {
+			position: relative;
+			z-index: 2;
+			color: #fff;
+		}
+		p {
+			position: relative;
+			z-index: 2;
+			color: #fff;
+		}
+	}
+	.right-part {
+		float: left;
+		width: 66.66666666%;
+		padding: 40px 40px;
+		.isotope-item {
+			float: left;
+			width: 33.33333333%;
+			padding: 30px 10px;
+			span {
+				display: block;
+				color: #5896CA;
+				font-size: 75px;
+				font-weight: 100;
+			}
+			[class^="icon-"] {
+				margin-bottom: 20px;
+				// display: block;
+			}
+			h6 {
+				color: #fff;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+/**
+* Blog
+* ----------------------------------------------------------------------------
+*/
+.land-shop-blog {
+	padding: 0 20px 30px;
+	border-bottom: 1px solid #EBEBEB;
+	text-align: left;
+	.caption {
+		margin: 30px 20px;
+		position: relative;
+		// h4 {
+		// 	color: #545454;
+		// 	margin-bottom: 0;
+		// 	[class^="icon-"] {
+		// 		margin-right: 0.25em;
+		// 		font-size: 2em;
+		// 		color: #D2D2D2;
+		// 		position: relative;
+		// 		top: 0.25em;
+		// 	}
+		// }
+	}
+	.isotope-item {
+		float: left;
+		width: 50%;
+		padding: 20px;
+		.image-contur {
+			float: left;
+			width: 45%;
+			position: relative;
+			img {
+				width: 100%;
+			}
+			.date {
+				position: absolute;
+				top: 0;
+				right: 0;
+				color: #fff;
+				display: block;
+				font-size: 14px;
+				padding: 10px 16px;
+				background: #4489C4;
+			}
+		}
+		.text-content {
+			float: left;
+			width: 55%;
+			padding-left: 30px;
+			h3 {
+				color: #4489C4;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+
+}
+
+
+/**
+* Products
+* ----------------------------------------------------------------------------
+*/
+.land-products {
+	padding: 0 0 20px;
+	text-align: left;
+	background: #fff;
+	.caption {
+		padding: 30px 20px 50px;
+		margin: 0 0 30px;
+		border-bottom: 1px solid #EBEBEB;
+	}
+	.isotope-item {
+		float: left;
+		width: 100%;
+		padding: 0 0 30px;
+		margin: 0 0 30px;
+		border-bottom: 1px solid #EBEBEB;
+		.image-contur {
+			float: left;
+			width: 20%;
+			position: relative;
+			img {
+				width: 100%;
+			}
+		}
+		.text-content {
+			float: left;
+			width: 80%;
+			padding-left: 20px;
+			h5 {
+				color: #4489C4;
+			}
+			.price {
+				font-weight: 700;
+				color: #4A4A4A;
+				font-size: 24px;
+				del {
+					font-size: 18px;
+					color: #BABABA;
+					margin-right: 10px;
+					position: relative;
+					top: -0.25em;
+				}
+			}
+		}
+	}
+}
+
+
