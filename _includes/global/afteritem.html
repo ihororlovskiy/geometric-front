@@ -1,10 +1,10 @@
 
 {% include global/item-navigation.html %}
 
-<div class="blogitem-bottom">
+<div class="afteritem">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4 col-sm-offset-4">
+			<div class="col-sm-6 col-sm-offset-3">
 
 				{% include blog/item/share.html %}
 
@@ -31,13 +31,19 @@
 
 			</div>
 		</div>
+	</div>
+</div>
 
-		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
-				{% include global/comments-area.html %}
-			</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			{% include global/similar-unborder.html %}
 		</div>
-
+	</div>
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1">
+			{% include global/comments-area.html %}
+		</div>
 	</div>
 </div>
 

@@ -1,0 +1,26 @@
+/*-------------------------------------------------------------------------*/
+/* # AFTER ITEM
+/*-------------------------------------------------------------------------*/
+.afteritem {
+	padding-bottom: 60px;
+	border-bottom: 1px solid $divider;
+	margin-bottom: 60px;
+
+	nav.share {
+		text-align: center;
+		margin-bottom: 60px;
+
+		span.title {
+			display: block;
+			margin-bottom: 20px;
+		}
+	}
+
+	nav.tags {
+	}
+
+	nav.categories {
+		margin-bottom: 0;
+	}
+}
+

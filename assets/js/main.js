@@ -248,10 +248,10 @@ $(document).ready(function() {
 	});
 
 	sync2.owlCarousel({
-		items : 15,
-		itemsDesktop      : [1199,10],
-		itemsDesktopSmall : [979,10],
-		itemsTablet       : [768,8],
+		items : 4,
+		itemsDesktop      : [1199,4],
+		itemsDesktopSmall : [979,4],
+		itemsTablet       : [768,4],
 		itemsMobile       : [479,4],
 		pagination:false,
 		responsiveRefreshRate : 100,

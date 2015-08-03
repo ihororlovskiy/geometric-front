@@ -1,29 +1,39 @@
 /*-------------------------------------------------------------------------*/
 /* # OWL SLIDER
 /*-------------------------------------------------------------------------*/
-#sync1 .item{
-	background: #0c83e7;
-	padding: 0;
-	margin: 5px;
-	color: #fff;
-	border-radius: 180px;
-	text-align: center;
+#sync1 {
+	.item {
+		margin: 0 4px 20px;
+
+		img {
+			display: block;
+		}
+	}
 }
 
-#sync2 .item{
-	background: #C9C9C9;
-	padding: 0;
-	margin: 5px;
-	color: #fff;
-	text-align: center;
-	cursor: pointer;
-}
+#sync2 {
+	.item {
+		background: transparent;
+		padding: 2px;
+		margin: 0 2px 20px;
+		cursor: pointer;
+		opacity: 0.5;
+		@include transition(all 0.25s ease);
+		@include transform(translateZ(0));
+		@include filter(grayscale(100%));
+		&:hover {
+			opacity: 1.0;
+			@include filter(grayscale(0));
+		}
 
-#sync2 .item h1{
-	font-size: 18px;
-}
-
-#sync2 .synced .item{
-	background: #0c83e7;
+		img {
+			display: block;
+		}
+	}
+	.synced .item {
+		background: #0c83e7;
+		opacity: 1.0;
+		@include filter(grayscale(0));
+	}
 }
 
