@@ -1,9 +1,9 @@
-# Build settings
-brand-name: Name Of Our Brand
+# build settings
 baseurl: /geometric-front
 markdown: kramdown
 permalink: pretty
 
+host: 0.0.0.0
 port: 9999
 
 exclude: ['README.md']
@@ -11,3 +11,6 @@ exclude: ['README.md']
 sass:
   sass_dir: assets/css
   style: :expanded
+
+# custom settings
+brand-name: Name Of Our Brand
