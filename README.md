@@ -10,6 +10,3 @@ In develop of front-end we used [jekyll](http://jekyllrb.com), [sass](http://sas
 $ jekyll serve --watch --baseurl ""
 ```
 
-### Demo
-
-Actual version [ihororlovskyi.github.io/geometric-front](http://ihororlovskyi.github.io/geometric-front)
